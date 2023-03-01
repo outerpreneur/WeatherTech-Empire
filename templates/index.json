@@ -7,12 +7,12 @@
           "type": "slide",
           "settings": {
             "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
-            "title": "Slide",
-            "text": "Introduce customers to your shop with lifestyle and product imagery",
+            "title": "",
+            "text": "",
             "color": "#ffffff",
             "link": "",
             "text_alignment": "center",
-            "button_one_label": "Button",
+            "button_one_label": "",
             "button_one_link": "",
             "button_one_style": "primary",
             "button_two_label": "",
@@ -20,7 +20,7 @@
             "button_two_style": "secondary",
             "show_overlay": true,
             "overlay_color": "#000000",
-            "overlay_opacity": 13
+            "overlay_opacity": 30
           }
         },
         "slide-2": {
