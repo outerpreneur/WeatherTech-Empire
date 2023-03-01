@@ -1,12 +1,395 @@
+{%- liquid
+  assign full_width = section.settings.full_width
+  if section.blocks.size == 0
+  	assign section_onboarding = true
+  else
+  	assign section_onboarding = false
+  endif
+  if section.settings.use_background_img and section.settings.background_img != blank
+    capture alt
+      if section.settings.background_img.alt != blank
+        echo section.settings.background_img.alt
+      elsif section.settings.title != blank
+        echo section.settings.title
+      elsif section.settings.sub_title != blank
+        echo section.settings.sub_title
+      else
+        echo section.settings.background_img | split: '/' | last | replace: '-', ' ' | replace: '_', ' ' | split: '.' | first | capitalize
+      endif
+    endcapture  
+  endif 
+-%}
+
+<section data-section-id="{{ section.id }}" 
+         {% unless section_onboarding %}data-section-type="filter"{% endunless %}
+         data-url="{{ 'script.filter.js' | asset_url }}"
+         data-tag="{{ settings.filtering }}"
+         class="{% if section.settings.enable_padding %}margins-bottom-section {% endif %}{% if full_width and section.settings.include_color != 'color-none' and section.settings.use_background_img == false %}background-colored {{ section.settings.include_color }} {% endif %}{% if full_width %}{% if section.settings.use_background_img %}{% if section.settings.background_img == blank %}placeholder-svg-background {% else %}background-overlay-{{ section.id }} relative lazycontainer {% endif %}{% endif %}{% endif %}{% if settings.animation_enable %}animate-section-div {% endif %}clearfix">
+  {%- liquid
+    if full_width and section.settings.use_background_img and section.settings.background_img != blank
+      render 'image.load', id: section.id, img_src: section.settings.background_img, size: section.settings.background_img.width, alt: alt, background: true, position: section.settings.background_alignment
+    endif
+  -%}
+  <div class="relative container clearfix">
+    <div{% unless full_width %}{% if section.settings.use_background_img or section.settings.include_color != 'color-none' %} class="twelve"{% endif %}{% endunless %}>
+      <div class="{% if full_width == false %}{% if section.settings.include_color != 'color-none' and section.settings.use_background_img == false %}twelve background-colored {{ section.settings.include_color }} {% endif %}{% if section.settings.use_background_img %}{% if section.settings.background_img == blank %}placeholder-svg-background {% else %}background-overlay-{{ section.id }} relative lazycontainer {% endif %}{% endif %}{% endif %}clearfix">
+        {%- liquid
+          if full_width == false and section.settings.use_background_img and section.settings.background_img != blank
+            render 'image.load', id: section.id, img_src: section.settings.background_img, size: section.settings.background_img.width, alt: alt, background: true, position: section.settings.background_alignment
+          endif
+        -%}
+        <div class="relative{% if full_width == false and section.settings.use_background_img %} container{% endif %}">
+          <div class="table filter-form-{{ section.id }} content-height-{{ section.id }}">
+            <div class="table-cell bottompad">
+              
+              {% if section.settings.title != blank or section.settings.sub_title != blank %}
+              <div class="twelve {% if section.settings.font_color and section.settings.include_color != 'color-none' or section.settings.use_background_img %}white {% endif %}text-center">
+                {% if section.settings.title != blank%}<h2 class="h1">{{ section.settings.title | escape }}</h2>{% endif %}
+                {% if section.settings.sub_title != blank %}<h3>{{ section.settings.sub_title | escape }}</h3>{% endif %}
+              </div>
+              {% endif %}
+              <div class="filter table-center tab-body {% if section.settings.form_layout %}horizontal{% else %}vertical{% endif %}-form{% if settings.animation_enable %} animate-section load{% endif %} clearfix">
+                <div class="center">
+                  {% if section_onboarding %}
+                  <div class="{% if section.settings.form_layout %}three horizontal-form{% else %}twelve vertical-form{% endif %} animate animate-loop-0 animate-filter">
+                    <span class="form mobile">
+                      <span class="select">
+                        <label for="directory_label_0_{{ section.id }}" class="visually-hidden">{% if section.settings.directory_label != blank %}{{ section.settings.directory_label }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}</label>
+                        <select id="directory_label_0_{{ section.id }}" class="tag-select no-select"> 
+                          <option value="">{% if section.settings.directory_label != blank %}{{ section.settings.directory_label }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</option>
+                          {%- for i in (1..3) -%}
+                          <option>Option {{ i }}</option>
+                          {%- endfor -%}
+                        </select>
+                      </span>
+                    </span>
+                  </div>
+                  {%- for i in (1..2) -%}
+                  <div class="{% if section.settings.form_layout %}three horizontal-form{% else %}twelve vertical-form{% endif %} animate animate-loop-{{ forloop.index }} animate-filter">
+                    <span class="form mobile">
+                      <span class="select">
+                        <label for="directory_label_{{ i }}_{{ section.id }}" class="visually-hidden">{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}</label>
+                        <select id="directory_label_{{ i }}_{{ section.id }}" class="tag-select no-select"> 
+                          <option value="">{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</option>
+                          {%- for i in (1..3) -%}
+                          <option>Option {{ i }}</option>
+                          {%- endfor -%}
+                        </select>
+                      </span>
+                    </span>
+                  </div>
+                  {%- endfor -%}
+                  <div class="{% if section.settings.form_layout %}three horizontal-form{% else %}twelve vertical-form{% endif %} animate animate-button animate-loop-4 animate-filter"><span class="form mobile"><input type="button" value="{% if section.settings.button != blank %}{{ section.settings.button }}{% else %}{{ 'general.search.title' | t }}{% endif %}" class="btn auto-full-width" aria-label="{% if section.settings.button != blank %}{{ section.settings.button | escape }}{% else %}{{ 'general.search.title' | t | escape }}{% endif %}" /></span></div>
+                  
+                  {% else %}
+
+                  {%- liquid
+                  
+                    assign tag = 1
+                    assign tag_1 = false
+                    assign tag_2 = false
+                    assign tag_3 = false
+                  
+                    for block in section.blocks
+                      if block.settings.collection != blank
+                      	assign collection = collections[block.settings.collection]
+                      else
+                      	assign collection = collections.all
+                      endif                      
+                      if block.settings.tag_1 != blank
+                        assign tag_1 = true
+                      endif
+                      if block.settings.tag_2 != blank
+                        assign tag_2 = true
+                      endif
+                      if block.settings.tag_3 != blank
+                        assign tag_3 = true
+                      endif                                             
+                    endfor
+                      
+                    if tag_1
+                      assign tag = tag | plus: 1
+                    endif
+                    if tag_2
+                      assign tag = tag | plus: 1
+                    endif
+                    if tag_3
+                      assign tag = tag | plus: 1
+                    endif
+                  -%}
+                  
+                  <div class="{% if section.settings.form_layout %}three horizontal-form{% else %}twelve vertical-form{% endif %} animate animate-loop-0 animate-filter">
+                    <span class="form mobile">
+                      <span id="select_0_{{ section.id }}" 
+                            class="new-select text-left" 
+                            data-columns="{{ tag }}">
+                        <span class="directory_label_0 select enabled open-container">
+                          <select id="directory_label_0_{{ section.id }}" class="hidden no-select" aria-hidden="true" tabindex="-1"> 
+                            <option class="first" value="">{% if section.settings.directory_label != blank %}{{ section.settings.directory_label }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</option>
+                            {%- for block in section.blocks -%}
+                            {%- if block.settings.collection != blank -%}
+                            {%- assign collection = collections[block.settings.collection] -%}  
+                            <option value="{% if settings.filtering %}{{ collection.url | append: '/' }}{% else %}{{ collection.url | append: '?' }}{% endif %}" 
+                                    data-id="{{ collection.id  }}" 
+                                    data-tag-1="{{ block.settings.tag_1 }}" 
+                                    data-tag-2="{{ block.settings.tag_2 }}" 
+                                    data-tag-3="{{ block.settings.tag_3 }}" 
+                                    {{ block.shopify_attributes }}>{% if block.settings.title != blank %}{{ block.settings.title }}{% else %}{{ collection.title }}{% endif %}</option>
+                            {%- else -%} 
+                            <option value="{% if settings.filtering %}{{ routes.all_products_collection_url | append: '/' }}{% else %}{{ routes.all_products_collection_url | append: '?' }}{% endif %}" 
+                                    data-id="all" 
+                                    data-tag-1=""
+                                    data-tag-2="" 
+                                    data-tag-3="" 
+                                    {{ block.shopify_attributes }}>{{ 'homepage.onboarding.collection_all' | t }}</option>
+                            {%- endif -%}
+                            {%- endfor -%}
+                          </select>
+                          <details>
+                            <summary class="styledSelect" title="{% if section.settings.directory_label != blank %}{{ section.settings.directory_label | escape }}{% else %}{{ 'layout.general.please_select' | t | escape }}{% endif %}" aria-label="{% if section.settings.directory_label != blank %}{{ section.settings.directory_label | escape }}{% else %}{{ 'layout.general.please_select' | t | escape }}{% endif %}">{% if section.settings.directory_label != blank %}{{ section.settings.directory_label }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</summary>
+                            <ul class="options unformatted open-slide">
+                              <li class="first hidden">{% if section.settings.directory_label != blank %}{{ section.settings.directory_label }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</li>
+                              {%- for block in section.blocks -%}
+                              {%- if block.settings.collection != blank -%}
+                              {%- assign collection = collections[block.settings.collection] -%}  
+                              <li {{ block.shopify_attributes }}>
+                                <a href="javascript: void(0)" 
+                                   title="{% if block.settings.title != blank %}{{ block.settings.title | escape }}{% else %}{{ collection.title | escape }}{% endif %}"
+                                   rel="{% if settings.filtering %}{{ collection.url | append: '/' }}{% else %}{{ collection.url | append: '?' }}{% endif %}"
+                                   data-id="{{ collection.id  }}">{% if block.settings.title != blank %}{{ block.settings.title }}{% else %}{{ collection.title }}{% endif %}</a></li>
+                              {%- else -%}
+                              <li {{ block.shopify_attributes }}>
+                                <a href="javascript: void(0)" 
+                                   title="{{ 'homepage.onboarding.collection_all' | t | escape }}"
+                                   rel="{% if settings.filtering %}{{ routes.all_products_collection_url | append: '/' }}{% else %}{{ routes.all_products_collection_url | append: '?' }}{% endif %}" 
+                                   data-id="all">{{ 'homepage.onboarding.collection_all' | t }}</a></li>
+                              {%- endif -%}
+                              {%- endfor -%}
+                            </ul>
+                          </details>
+                          <label class="error" style="display:none">{{ 'general.validation.required' | t }}</label>
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                  
+                  {%- if tag > 0 -%}
+                  {%- assign tag = tag | minus: 1 -%}
+                  
+                  {%- for i in (1..tag) -%}
+                  <div class="{% if section.settings.form_layout %}three horizontal-form{% else %}twelve vertical-form{% endif %} animate animate-loop-{{ forloop.index }} animate-filter">
+                    <span class="form mobile">   
+                      <span id="select_{{ i }}_{{ section.id }}" 
+                            class="new-select text-left"
+                            data-tag>
+                        <span class="directory_label_{{ i }}_{{ section.id }} tag-select select open-container disabled advanced">
+                          <select id="directory_label_{{ i }}_{{ section.id }}" class="no-select hidden advanced" disabled="disabled" aria-hidden="true" tabindex="-1">
+                            <option class="first" value="" data-select="{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select | escape }}{% else %}{{ 'layout.general.please_select' | t | escape }}{% endif %}...">{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</option>
+                          </select>                          
+                          <details>
+                            <summary class="styledSelect first" title="{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select | escape }}{% else %}{{ 'layout.general.please_select' | t | escape }}{% endif %}" aria-label="{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select | escape }}{% else %}{{ 'layout.general.please_select' | t | escape }}{% endif %}" data-select="{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select | escape }}{% else %}{{ 'layout.general.please_select' | t | escape }}{% endif %}...">{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</summary>
+                            <ul id="directory_label_{{ i }}_{{ section.id }}_dropdown" class="options unformatted open-slide">
+                              <li class="first hidden">{% if section.settings.directory_label_select != blank %}{{ section.settings.directory_label_select }}{% else %}{{ 'layout.general.please_select' | t }}{% endif %}...</li>
+                            </ul>    
+                          </details>
+                        </span>
+                      </span>
+                    </span>
+                  </div>
+                  {%- endfor -%}
+                  
+                  {%- endif -%}
+                  
+                  <div class="{% if section.settings.form_layout %}three horizontal-form{% else %}twelve vertical-form{% endif %} animate animate-button animate-loop-4 animate-filter"><span class="form mobile"><input type="button" value="{% if section.settings.button != blank %}{{ section.settings.button }}{% else %}{{ 'general.search.title' | t }}{% endif %}" class="{% unless section_onboarding %}advanced {% endunless %}btn auto-full-width" /></span></div>
+
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+</section>
+
+<style>
+  .content-height-{{ section.id }}{height:{{ section.settings.padding }}vh;min-height:{{ section.settings.padding }}vh}
+  {%- if section.settings.background_img != blank and section.settings.background_img_overlay != 'rgba(0,0,0,0)' and section.settings.background_img_overlay_opacity > 0 -%}
+  .background-overlay-{{ section.id }} {background:{{ section.settings.background_img_overlay }};}
+  .background-overlay-{{ section.id }} img {opacity:{{ '100' | minus: section.settings.background_img_overlay_opacity | times: 0.01 }};}
+  {%- endif -%}
+</style>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "t:sections.advanced_filter.name",
+    "settings": [
+	  {
+        "type": "paragraph",
+        "content": "t:sections.advanced_filter.content"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.text.label"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.heading.label",
+        "default": "Advanced filter"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "t:sections.subheading.label",
+		"default": "Filter products using tags or storefront filters"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.options.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "form_layout",
+        "label": "t:sections.horizontal_form.label",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "directory_label",
+        "label": "t:sections.first_dropdown.label",
+		"default": "Select"
+      },
+      {
+        "type": "text",
+        "id": "directory_label_select",
+        "label": "t:sections.remaining.label",
+		"default": "Select"
+      },
+      {
+        "type": "text", 
+        "id": "button",
+        "label": "t:sections.button.label",
+		"default": "Search"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.background.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_background_img",
+        "label": "t:sections.show_image.label",
+        "default": true
+      }, 
+      {
+        "type": "image_picker",
+        "id": "background_img",
+        "label": "t:sections.image.label",
+        "info": "t:sections.image.desktop.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "font_color",
+        "label": "t:sections.white_text.label",
+        "default": true
+      },
+	  {
+       "type": "checkbox",
+       "id": "full_width",
+       "label": "t:sections.full_width.label",
+       "default": true
+      },
+      {
+        "type": "range",
+        "id": "padding",
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:sections.height.label",
+        "default": 50
+      },
+	  {
+        "type": "color",
+        "id": "background_img_overlay",
+        "label": "t:sections.overlay.label"
+      },
+      {
+        "type": "range",
+        "id": "background_img_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:sections.opacity.label",
+        "default": 0
+      },
+	  {
+        "type": "select",
+        "id": "include_color",
+        "label": "t:sections.background_color.label",
+        "default": "color-primary",
+        "options": [
+          {
+            "value": "color-primary",
+            "label": "t:sections.background_color.primary"
+          },
+          {
+            "value": "color-secondary",
+            "label": "t:sections.background_color.secondary"
+          },
+          {
+            "value": "color-none",
+            "label": "t:sections.background_color.none"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_padding",
+        "label": "t:sections.enable_bottom_padding.label",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "t:sections.collection.label",
+        "settings": [ 
+          {
+             "type": "collection",
+             "id": "collection",
+             "label": "t:sections.collection.label"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.title.label"
+          },
+          {
+            "type": "text",
+            "id": "tag_1",
+            "label": "t:sections.advanced_filter.filter_1"
+          },
+          {
+            "type": "text",
+            "id": "tag_2",
+            "label": "t:sections.advanced_filter.filter_2"
+          },
+          {
+            "type": "text",
+            "id": "tag_3",
+            "label": "t:sections.advanced_filter.filter_3"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "advance filter"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
