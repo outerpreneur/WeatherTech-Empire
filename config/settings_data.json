@@ -276,13 +276,13 @@
       "static-utility-bar": {
         "type": "static-utility-bar",
         "settings": {
-          "enable": false,
+          "enable": true,
           "use_full_width": false,
-          "background_color": "#1b175d",
+          "background_color": "#e22120",
           "link_color": "#ffffff",
           "link_hover_color": "#ffffff",
           "border_color": "#ffffff",
-          "menu": "",
+          "menu": "footer",
           "show_menu_mobile": true,
           "mobile_layout": "below",
           "show_locale_selector": true,
