@@ -247,7 +247,7 @@
           "announcement_text_mobile": "",
           "announcement_link": "",
           "announcement_color": "#ffffff",
-          "announcement_background": "#121212"
+          "announcement_background": "#e22120"
         }
       },
       "static-product-recommendations": {
@@ -283,7 +283,7 @@
         "settings": {
           "enable": true,
           "use_full_width": false,
-          "background_color": "#e22120",
+          "background_color": "#121212",
           "link_color": "#ffffff",
           "link_hover_color": "#ffffff",
           "border_color": "#ffffff",
