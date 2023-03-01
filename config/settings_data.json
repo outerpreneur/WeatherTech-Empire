@@ -135,7 +135,7 @@
           "show_mobile_search_bar": true,
           "enable_live_search_images": true,
           "enable_live_search_articles_pages": true,
-          "quick_links": "main-menu",
+          "quick_links": "category",
           "menu": "main-menu",
           "secondary_menu": "",
           "small_promo_heading": "Top rated",
