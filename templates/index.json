@@ -683,6 +683,7 @@
     },
     "a5f228f8-9927-4bb1-80d1-600d1f06f33c": {
       "type": "section-filter-advanced",
+      "disabled": true,
       "blocks": {
         "91b209dc-ec47-42ff-8d27-71fd8652591d": {
           "type": "collection",
@@ -747,6 +748,25 @@
         "include_color": "color-primary",
         "enable_padding": false
       }
+    },
+    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
+      "type": "filter-storefront",
+      "settings": {
+        "title": "Advanced filter",
+        "sub_title": "Filter products using tags or storefront filters",
+        "form_layout": true,
+        "directory_label": "Select",
+        "directory_label_select": "Select",
+        "button": "Search",
+        "use_background_img": true,
+        "font_color": true,
+        "full_width": true,
+        "padding": 50,
+        "background_img_overlay": "",
+        "background_img_overlay_opacity": 0,
+        "include_color": "color-primary",
+        "enable_padding": false
+      }
     }
   },
   "order": [
@@ -764,6 +784,7 @@
     "dynamic_testimonials",
     "dynamic_blog_posts",
     "dynamic_search",
-    "a5f228f8-9927-4bb1-80d1-600d1f06f33c"
+    "a5f228f8-9927-4bb1-80d1-600d1f06f33c",
+    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e"
   ]
 }
