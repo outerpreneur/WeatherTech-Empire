@@ -137,7 +137,8 @@
           "small_promo_text": "",
           "small_promo_text_mobile": "",
           "small_promo_link": "",
-          "small_promo_icon": "none",
+          "small_promo_icon": "icon-rating-five-star",
+          "image": "shopify:\/\/shop_images\/328-3285377_how-to-apply-trustpilot-5-star-logo-clipart-copy-300x140.png",
           "cart_icon": "icon-cart"
         }
       },
