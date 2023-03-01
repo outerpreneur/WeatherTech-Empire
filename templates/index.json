@@ -24,6 +24,7 @@
         },
         "slide-2": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "title": "Slide",
             "text": "Introduce customers to your shop with lifestyle and product imagery",
@@ -43,6 +44,7 @@
         },
         "slide-3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "title": "Slide",
             "text": "Introduce customers to your shop with lifestyle and product imagery",
@@ -62,6 +64,7 @@
         },
         "slide-4": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "title": "Slide",
             "text": "Introduce customers to your shop with lifestyle and product imagery",
@@ -92,7 +95,26 @@
         "slideshow_width": "full",
         "slideshow_height": "medium",
         "slideshow_height_mobile": "x-large",
-        "slideshow_text_below_image": false
+        "slideshow_text_below_image": true
+      }
+    },
+    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
+      "type": "filter-storefront",
+      "settings": {
+        "title": "Advanced filter",
+        "sub_title": "Filter products using tags or storefront filters",
+        "form_layout": true,
+        "directory_label": "Select",
+        "directory_label_select": "Select",
+        "button": "Search",
+        "use_background_img": true,
+        "font_color": true,
+        "full_width": true,
+        "padding": 50,
+        "background_img_overlay": "",
+        "background_img_overlay_opacity": 0,
+        "include_color": "color-primary",
+        "enable_padding": false
       }
     },
     "dynamic_highlights_banner": {
@@ -748,29 +770,11 @@
         "include_color": "color-primary",
         "enable_padding": false
       }
-    },
-    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
-      "type": "filter-storefront",
-      "settings": {
-        "title": "Advanced filter",
-        "sub_title": "Filter products using tags or storefront filters",
-        "form_layout": true,
-        "directory_label": "Select",
-        "directory_label_select": "Select",
-        "button": "Search",
-        "use_background_img": true,
-        "font_color": true,
-        "full_width": true,
-        "padding": 50,
-        "background_img_overlay": "",
-        "background_img_overlay_opacity": 0,
-        "include_color": "color-primary",
-        "enable_padding": false
-      }
     }
   },
   "order": [
     "dynamic_slideshow",
+    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e",
     "dynamic_highlights_banner",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
@@ -784,7 +788,6 @@
     "dynamic_testimonials",
     "dynamic_blog_posts",
     "dynamic_search",
-    "a5f228f8-9927-4bb1-80d1-600d1f06f33c",
-    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e"
+    "a5f228f8-9927-4bb1-80d1-600d1f06f33c"
   ]
 }
