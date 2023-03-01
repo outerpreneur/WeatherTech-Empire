@@ -2,7 +2,7 @@
 <div class="search-bar">   
     <form action="{{ routes.search_url }}"> 
         <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
-            <option value="-Make-">--Make--</option>
+            <option value="-Make-">Make</option>
             <option value="Tesla">Tesla</option>
             <option value="Peugeot">Peugeot</option>
             <option value="Mini">Mini</option>
@@ -11,25 +11,26 @@
             <option value="Audi">Audi</option>
         </select>
             
-        <select id="slct2" name="slct2">
-            <option value="-Make-">--Model--</option>      
+        <select id="slct2" disabled name="slct2">
+            <option value="-Make-">Model</option>      
         </select>
 
-         <select id="year" onChange="update()">
-                <option value="en">--Year--</option>
+         <select id="year" disabled onChange="update()">
+                <option value="en">Year</option>
                 <option value="en">2018</option>
                 <option value="es">2019</option>
-                <option value="pt">2020</option>
-                <option value="pt">2021</option>
-                <option value="pt">2022</option>
+                <option value="ey">2020</option>
+                <option value="er">2021</option>
+                <option value="eu">2022</option>
         </select>
         <input type="text"
         placeholder="Search"
         name="q"
         id="text"
         class="text-bar"
+        disabled
             >
-        <input type="submit" value="Search">
+        <input class="shop-car-button" type="submit" value="Shop by car">
     </form>
 </div>        
 
@@ -39,19 +40,24 @@
     function populate(s1,s2){
         var s1 = document.getElementById(s1);
         var s2 = document.getElementById(s2);
+        var s3 = document.getElementById("year");
+        var text = document.getElementById('text');
         s2.innerHTML = "";
+        s2.removeAttribute("disabled")
+        s3.removeAttribute("disabled")
+        text.removeAttribute("disabled")
         if(s1.value == "Tesla"){
-            var optionArray = ["|--Model--","model y|Model Y","model 3|Model 3", "Tesla Y Sunshade | tesla y sunshade"];
+            var optionArray = ["|--Model--","model y|Model Y","model 3|Model 3", "Tesla Y Sunshade|tesla y sunshade"];
         } else if(s1.value == "Dacia"){
             var optionArray = ["|--Model--","duster|Duster"];
         } else if(s1.value == "Mini"){
-            var optionArray = ["|--Model--","clubman|Clubman","countryman| Countryman"];
+            var optionArray = ["|--Model--","clubman|Clubman","countryman|Countryman"];
         } else if(s1.value == "Peugeot"){
         var optionArray = ["|--Model--","3008|3008"];
         } else if(s1.value == "Audi"){
-        var optionArray = ["|--Model--","e-tron GT cargo|E-tron GT Cargo", "e-tron floorliner|E-tron Floorliner", "e-tron SUV Floorliner", "e-tron SUV Floorliner"];
+        var optionArray = ["|--Model--","e-tron gt cargo|E-tron GT Cargo", "e-tron floorliner|E-tron Floorliner", "e-tron sUV floorliner"|"R-tron SUV Floorliner"];
         } else if(s1.value == "Mercedes"){
-            var optionArray = ["|--Model--","G-Class Floorliner 1st & 2nd row"];
+            var optionArray = ["|--Model--","g-class floorliner 1st & 2nd row|G-Glass Floorliner 1st & 2nd row"];
         }    
         for(var option in optionArray){
             var pair = optionArray[option].split("|");
@@ -87,6 +93,19 @@ function update () {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;  
+    }
+    .search-bar select {
+    padding: 1em
+    }
+    .search-bar input {
+    padding: 1em;
+    }
+    .shop-car-button {
+    background: #e32020;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
     }       
 </style>
     
