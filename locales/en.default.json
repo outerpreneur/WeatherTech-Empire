@@ -543,7 +543,7 @@
       "cancel": "Cancel",
       "label": "Search",
       "placeholder": "Car model and year",
-      "filter_all": "All categories"
+      "filter_all": "Select Make"
     },
     "general": {
       "breadcrumbs_count": {

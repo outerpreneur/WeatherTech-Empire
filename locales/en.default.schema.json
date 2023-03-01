@@ -24,6 +24,13 @@
       "presets": {
         "category": "Promotional",
         "name": "Newsletter"
+      },
+      "advanced_filter": {
+        "name": "Advanced filter",
+        "content": "Advanced filter help documentation is available. [Learn more](https:\/\/redplugdesign.zendesk.com\/hc\/en-us\/articles\/4405953130259)",
+        "filter_1": "Filter 1",
+        "filter_2": "Filter 2",
+        "filter_3": "Filter 3"
       }
     },
     "map": {

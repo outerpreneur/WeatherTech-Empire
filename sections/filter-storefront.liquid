@@ -1,0 +1,255 @@
+{% liquid %}
+<div class="search-bar">   
+    <form action="{{ routes.search_url }}"> 
+        <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+            <option value="-Make-">--Make--</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Dodge">BMW</option>
+            <option value="Ford">Mercedes</option>
+        </select>
+            
+        <select id="slct2" name="slct2">
+            <option value="-Make-">--Model--</option>      
+        </select>
+
+         <select id="year" onChange="update()">
+                <option value="en">--Year--</option>
+                <option value="en">2012</option>
+                <option value="es">2013</option>
+                <option value="pt">2020</option>
+        </select>
+        <input type="text"
+        placeholder="Search"
+        name="q"
+        id="text"
+        class="text-bar"
+            >
+        <input type="submit" value="Search">
+    </form>
+</div>        
+
+ {% liquid %}
+
+<script>       
+    function populate(s1,s2){
+        var s1 = document.getElementById(s1);
+        var s2 = document.getElementById(s2);
+        s2.innerHTML = "";
+        if(s1.value == "Chevy"){
+            var optionArray = ["|--Model--","camaro|Camaro","corvette|Corvette","impala|Impala"];
+        } else if(s1.value == "Dodge"){
+            var optionArray = ["|--Model--","avenger|Avenger","challenger|Challenger","charger|Charger"];
+        } else if(s1.value == "Tesla"){
+            var optionArray = ["|--Model--","model t |Model T","model x| Model X"];
+        }
+        for(var option in optionArray){
+            var pair = optionArray[option].split("|");
+            var newOption = document.createElement("option");
+            newOption.value = pair[0];
+            newOption.innerHTML = pair[1];
+            s2.options.add(newOption);
+        }
+}
+       
+function update () {
+       
+    var make = document.getElementById('slct1');
+    var optionMake = make.options[make.selectedIndex];
+    
+    var model = document.getElementById('slct2');
+    var optionModel = model.options[model.selectedIndex];
+    
+    var year = document.getElementById('year');
+    var optionYear = year.options[year.selectedIndex];
+          
+    document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
+       
+    }
+       
+</script>   
+            
+            
+<style>
+    .search-bar {      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;  
+    }       
+</style>
+    
+<script src="script.js"></script>
+
+{% schema %}
+  {
+    "name": "advance filter",
+    "settings": [
+	  {
+        "type": "paragraph",
+        "content": "t:sections.advanced_filter.content"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.text.label"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.heading.label",
+        "default": "Advanced filter"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "t:sections.subheading.label",
+		"default": "Filter products using tags or storefront filters"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.options.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "form_layout",
+        "label": "t:sections.horizontal_form.label",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "directory_label",
+        "label": "t:sections.first_dropdown.label",
+		"default": "Select"
+      },
+      {
+        "type": "text",
+        "id": "directory_label_select",
+        "label": "t:sections.remaining.label",
+		"default": "Select"
+      },
+      {
+        "type": "text", 
+        "id": "button",
+        "label": "t:sections.button.label",
+		"default": "Search"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.background.label"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_background_img",
+        "label": "t:sections.show_image.label",
+        "default": true
+      }, 
+      {
+        "type": "image_picker",
+        "id": "background_img",
+        "label": "t:sections.image.label",
+        "info": "t:sections.image.desktop.info"
+      },
+      {
+        "type": "checkbox",
+        "id": "font_color",
+        "label": "t:sections.white_text.label",
+        "default": true
+      },
+	  {
+       "type": "checkbox",
+       "id": "full_width",
+       "label": "t:sections.full_width.label",
+       "default": true
+      },
+      {
+        "type": "range",
+        "id": "padding",
+        "min": 5,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:sections.height.label",
+        "default": 50
+      },
+	  {
+        "type": "color",
+        "id": "background_img_overlay",
+        "label": "t:sections.overlay.label"
+      },
+      {
+        "type": "range",
+        "id": "background_img_overlay_opacity",
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "label": "t:sections.opacity.label",
+        "default": 0
+      },
+	  {
+        "type": "select",
+        "id": "include_color",
+        "label": "t:sections.background_color.label",
+        "default": "color-primary",
+        "options": [
+          {
+            "value": "color-primary",
+            "label": "t:sections.background_color.primary"
+          },
+          {
+            "value": "color-secondary",
+            "label": "t:sections.background_color.secondary"
+          },
+          {
+            "value": "color-none",
+            "label": "t:sections.background_color.none"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_padding",
+        "label": "t:sections.enable_bottom_padding.label",
+        "default": false
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "t:sections.collection.label",
+        "settings": [ 
+          {
+             "type": "collection",
+             "id": "collection",
+             "label": "t:sections.collection.label"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.title.label"
+          },
+          {
+            "type": "text",
+            "id": "tag_1",
+            "label": "t:sections.advanced_filter.filter_1"
+          },
+          {
+            "type": "text",
+            "id": "tag_2",
+            "label": "t:sections.advanced_filter.filter_2"
+          },
+          {
+            "type": "text",
+            "id": "tag_3",
+            "label": "t:sections.advanced_filter.filter_3"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "car advance filter"
+      }
+    ]
+  }
+{% endschema %}
