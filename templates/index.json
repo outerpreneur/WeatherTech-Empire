@@ -180,6 +180,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/CargoTech_Cooler.jpg",
             "title": "Mosaic",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
