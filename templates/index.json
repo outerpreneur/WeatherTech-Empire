@@ -234,7 +234,7 @@
             "text_alignment": "center-center",
             "pre_heading": "View all",
             "heading": "Collection",
-            "text_color": "#FFFFFF",
+            "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 50
           }
@@ -683,6 +683,54 @@
     },
     "a5f228f8-9927-4bb1-80d1-600d1f06f33c": {
       "type": "section-filter-advanced",
+      "blocks": {
+        "91b209dc-ec47-42ff-8d27-71fd8652591d": {
+          "type": "collection",
+          "settings": {
+            "collection": "accessories",
+            "title": "",
+            "tag_1": "",
+            "tag_2": "",
+            "tag_3": ""
+          }
+        },
+        "904d0bbc-2129-4e64-b109-f629354797b1": {
+          "type": "collection",
+          "settings": {
+            "collection": "cargo-trunk-liners",
+            "title": "",
+            "tag_1": "",
+            "tag_2": "",
+            "tag_3": ""
+          }
+        },
+        "3f93228d-785b-4609-a595-77f292dcdf40": {
+          "type": "collection",
+          "settings": {
+            "collection": "floor-liners",
+            "title": "",
+            "tag_1": "",
+            "tag_2": "",
+            "tag_3": ""
+          }
+        },
+        "f4b6fb1b-5c8b-4de0-8604-bb1852fd2cc7": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-products",
+            "title": "",
+            "tag_1": "",
+            "tag_2": "",
+            "tag_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "91b209dc-ec47-42ff-8d27-71fd8652591d",
+        "904d0bbc-2129-4e64-b109-f629354797b1",
+        "3f93228d-785b-4609-a595-77f292dcdf40",
+        "f4b6fb1b-5c8b-4de0-8604-bb1852fd2cc7"
+      ],
       "settings": {
         "title": "Advanced filter",
         "sub_title": "Filter products using tags or storefront filters",
