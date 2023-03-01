@@ -222,6 +222,13 @@
       "now": "now",
       "view_details": "View product",
       "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
+    },
+    "pxs-newsletter": {
+      "form": {
+        "placeholder": "Email address",
+        "submit": "Subscribe",
+        "success": "Thanks for subscribing!"
+      }
     }
   },
   "age_gate": {
@@ -535,7 +542,7 @@
     "form": {
       "cancel": "Cancel",
       "label": "Search",
-      "placeholder": "What are you looking for?",
+      "placeholder": "Car model and year",
       "filter_all": "All categories"
     },
     "general": {
