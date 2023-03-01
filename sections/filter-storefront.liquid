@@ -4,8 +4,11 @@
         <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
             <option value="-Make-">--Make--</option>
             <option value="Tesla">Tesla</option>
-            <option value="Dodge">BMW</option>
-            <option value="Ford">Mercedes</option>
+            <option value="Peugeot">Peugeot</option>
+            <option value="Mini">Mini</option>
+            <option value="Dacia">Dacia</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Audi">Audi</option>
         </select>
             
         <select id="slct2" name="slct2">
@@ -14,9 +17,11 @@
 
          <select id="year" onChange="update()">
                 <option value="en">--Year--</option>
-                <option value="en">2012</option>
-                <option value="es">2013</option>
+                <option value="en">2018</option>
+                <option value="es">2019</option>
                 <option value="pt">2020</option>
+                <option value="pt">2021</option>
+                <option value="pt">2022</option>
         </select>
         <input type="text"
         placeholder="Search"
@@ -35,13 +40,19 @@
         var s1 = document.getElementById(s1);
         var s2 = document.getElementById(s2);
         s2.innerHTML = "";
-        if(s1.value == "Chevy"){
-            var optionArray = ["|--Model--","camaro|Camaro","corvette|Corvette","impala|Impala"];
-        } else if(s1.value == "Dodge"){
-            var optionArray = ["|--Model--","avenger|Avenger","challenger|Challenger","charger|Charger"];
-        } else if(s1.value == "Tesla"){
-            var optionArray = ["|--Model--","model t |Model T","model x| Model X"];
-        }
+        if(s1.value == "Tesla"){
+            var optionArray = ["|--Model--","model y|Model Y","model 3|Model 3", "Tesla Y Sunshade | tesla y sunshade"];
+        } else if(s1.value == "Dacia"){
+            var optionArray = ["|--Model--","duster|Duster"];
+        } else if(s1.value == "Mini"){
+            var optionArray = ["|--Model--","clubman|Clubman","countryman| Countryman"];
+        } else if(s1.value == "Peugeot"){
+        var optionArray = ["|--Model--","3008|3008"];
+        } else if(s1.value == "Audi"){
+        var optionArray = ["|--Model--","e-tron GT cargo|E-tron GT Cargo", "e-tron floorliner|E-tron Floorliner", "e-tron SUV Floorliner", "e-tron SUV Floorliner"];
+        } else if(s1.value == "Mercedes"){
+            var optionArray = ["|--Model--","G-Class Floorliner 1st & 2nd row"];
+        }    
         for(var option in optionArray){
             var pair = optionArray[option].split("|");
             var newOption = document.createElement("option");
@@ -216,7 +227,7 @@ function update () {
     "blocks": [
       {
         "type": "collection",
-        "name": "t:sections.collection.label",
+        "name": "car filter",
         "settings": [ 
           {
              "type": "collection",
