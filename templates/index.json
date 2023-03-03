@@ -682,82 +682,15 @@
         "title": "Search",
         "text": "Use this section to help customers find the products they're looking for.",
         "placeholder": "What are you looking for?",
-        "filter_search_by": "disabled",
+        "filter_search_by": "tag",
         "enable_live_search": true,
-        "enable_live_search_images": false,
+        "enable_live_search_images": true,
         "enable_live_search_articles_pages": false,
-        "show-overlay": false,
+        "image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "show-overlay": true,
         "color": "#ffffff",
         "background": "#000000",
-        "opacity": 50
-      }
-    },
-    "a5f228f8-9927-4bb1-80d1-600d1f06f33c": {
-      "type": "section-filter-advanced",
-      "disabled": true,
-      "blocks": {
-        "91b209dc-ec47-42ff-8d27-71fd8652591d": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "title": "",
-            "tag_1": "",
-            "tag_2": "",
-            "tag_3": ""
-          }
-        },
-        "904d0bbc-2129-4e64-b109-f629354797b1": {
-          "type": "collection",
-          "settings": {
-            "collection": "cargo-trunk-liners",
-            "title": "",
-            "tag_1": "",
-            "tag_2": "",
-            "tag_3": ""
-          }
-        },
-        "3f93228d-785b-4609-a595-77f292dcdf40": {
-          "type": "collection",
-          "settings": {
-            "collection": "floor-liners",
-            "title": "",
-            "tag_1": "",
-            "tag_2": "",
-            "tag_3": ""
-          }
-        },
-        "f4b6fb1b-5c8b-4de0-8604-bb1852fd2cc7": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-products",
-            "title": "",
-            "tag_1": "",
-            "tag_2": "",
-            "tag_3": ""
-          }
-        }
-      },
-      "block_order": [
-        "91b209dc-ec47-42ff-8d27-71fd8652591d",
-        "904d0bbc-2129-4e64-b109-f629354797b1",
-        "3f93228d-785b-4609-a595-77f292dcdf40",
-        "f4b6fb1b-5c8b-4de0-8604-bb1852fd2cc7"
-      ],
-      "settings": {
-        "title": "Advanced filter",
-        "sub_title": "Filter products using tags or storefront filters",
-        "form_layout": true,
-        "directory_label": "Select",
-        "directory_label_select": "Select",
-        "button": "Search",
-        "use_background_img": true,
-        "font_color": true,
-        "full_width": true,
-        "padding": 50,
-        "background_img_overlay": "",
-        "background_img_overlay_opacity": 0,
-        "include_color": "color-primary",
-        "enable_padding": false
+        "opacity": 36
       }
     }
   },
@@ -776,7 +709,6 @@
     "dynamic_promo_grid-3",
     "dynamic_testimonials",
     "dynamic_blog_posts",
-    "dynamic_search",
-    "a5f228f8-9927-4bb1-80d1-600d1f06f33c"
+    "dynamic_search"
   ]
 }
