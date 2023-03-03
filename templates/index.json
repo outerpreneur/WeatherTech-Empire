@@ -681,7 +681,7 @@
       "settings": {
         "title": "Search",
         "text": "Use this section to help customers find the products they're looking for.",
-        "placeholder": "What are you looking for?",
+        "placeholder": "Car model and year",
         "filter_search_by": "tag",
         "enable_live_search": true,
         "enable_live_search_images": true,
