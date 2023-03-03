@@ -554,7 +554,7 @@
         "media_blur": 0,
         "parallax_type": "scroll",
         "parallax_speed": 0.5,
-        "parallax_disable_mobile": false,
+        "parallax_disable_mobile": true,
         "pt": 0,
         "pb": 0,
         "mt": 0,
