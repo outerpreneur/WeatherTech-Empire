@@ -138,7 +138,7 @@
           "enable_live_search_articles_pages": true,
           "quick_links": "category",
           "menu": "main-menu",
-          "secondary_menu": "",
+          "secondary_menu": "category",
           "small_promo_heading": "Top rated",
           "small_promo_text": "<p>Highly recommended<\/p>",
           "small_promo_text_mobile": "",
