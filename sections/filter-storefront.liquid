@@ -97,7 +97,7 @@ function update () {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  min-height: 500px;
+  min-height: {{ section.settings.image_height }}px;
   background-image:
   linear-gradient(to bottom right, rgba(0, 0, 0, 0.52),rgba(0, 0, 0, 0.10), rgba(117, 19, 93, 0), #e32020), 
   url("{{ section.settings.background_image | img_url: '1024x1024' }}");
@@ -118,7 +118,7 @@ function update () {
   background: #e32020;
   border: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
   cursor: pointer;
 } 
     
@@ -137,17 +137,27 @@ function update () {
 
 {% schema %}
   {
-    "name": "advance filter",
+    "name": "Car advance filter",
     "settings": [
       {
         "type": "image_picker",
         "id": "background_image",
         "label": "choose image"
+      },
+      {
+        "type": "range",
+        "id": "image_height",
+        "label": "height range in pixels",
+        "max": 600,
+        "min": 200,
+        "step": 100,
+        "default": 500,
+        "unit": "px"
       }
     ],
     "presets": [
       {
-        "name": "car advance filter"
+        "name": "Car advance filter"
       }
     ]
   }
