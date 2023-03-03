@@ -552,7 +552,7 @@
         "media_opacity": 0.7,
         "media_overlay_color": "#000000",
         "media_blur": 0,
-        "parallax_type": "opacity",
+        "parallax_type": "scroll-opacity",
         "parallax_speed": 0.5,
         "parallax_disable_mobile": false,
         "pt": 0,
