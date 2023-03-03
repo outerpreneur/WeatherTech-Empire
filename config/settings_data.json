@@ -140,10 +140,11 @@
           "menu": "main-menu",
           "secondary_menu": "category",
           "small_promo_heading": "Top rated",
-          "small_promo_text": "<p>Highly recommended<\/p>",
+          "small_promo_text": "<p>Car accessory company in the US<\/p>",
           "small_promo_text_mobile": "",
           "small_promo_link": "",
           "small_promo_icon": "icon-rating-five-star",
+          "image": "shopify:\/\/shop_images\/icon-256x256_74ea35dd-6264-4dee-98fd-1fb0073af770.png",
           "cart_icon": "icon-cart"
         }
       },
