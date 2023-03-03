@@ -529,6 +529,38 @@
         "cta_button_style": "primary"
       }
     },
+    "81b0c73a-57ed-440f-96c3-3065a483b831": {
+      "type": "parallax-image",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "img_crop": "center",
+        "img_min_height": "320",
+        "video_start_time": "",
+        "video_end_time": "",
+        "video_loop": true,
+        "video_play_only_visible": true,
+        "video_lazy_loading": true,
+        "mp4_video": "",
+        "max_width": "720",
+        "title": "JOIN THE #WEATHERTECHFAMILY",
+        "title_size": "h1",
+        "description": "",
+        "description_size": "125%",
+        "btn_text": "",
+        "btn_url": "",
+        "btn_color": "btn-primary button--primary",
+        "media_opacity": 0.7,
+        "media_overlay_color": "#000000",
+        "media_blur": 0,
+        "parallax_type": "scroll",
+        "parallax_speed": 0.5,
+        "parallax_disable_mobile": false,
+        "pt": 0,
+        "pb": 0,
+        "mt": 0,
+        "mb": 0
+      }
+    },
     "dynamic_promo_grid-2": {
       "type": "dynamic-promo-grid",
       "blocks": {
@@ -705,6 +737,7 @@
     "dynamic_collection_list",
     "dynamic_shoppable_image",
     "dynamic_featured_collection-2",
+    "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
     "dynamic_promo_grid-3",
     "dynamic_testimonials",
