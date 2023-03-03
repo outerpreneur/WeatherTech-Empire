@@ -679,8 +679,8 @@
     "dynamic_search": {
       "type": "dynamic-search",
       "settings": {
-        "title": "Search",
-        "text": "Use this section to help customers find the products they're looking for.",
+        "title": "Shop by car",
+        "text": "",
         "placeholder": "Car model and year",
         "filter_search_by": "tag",
         "enable_live_search": true,
