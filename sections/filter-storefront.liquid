@@ -1,8 +1,14 @@
-{% liquid %}
+{% liquid
+
+%}
 
 <section class="search-bar">
   <form action="{{ routes.search_url }}">
-    <select id="slct1" name="slct1" onchange="populate(this.id,'slct2')">
+    <select
+      id="slct1"
+      name="slct1"
+      onchange="populate(this.id,'slct2')"
+    >
       <option value="-Make-">Make</option>
       <option value="Tesla">Tesla</option>
       <option value="Peugeot">Peugeot</option>
@@ -12,11 +18,19 @@
       <option value="Audi">Audi</option>
     </select>
 
-    <select id="slct2" disabled name="slct2">
+    <select
+      id="slct2"
+      disabled
+      name="slct2"
+    >
       <option value="-Make-">Model</option>
     </select>
 
-    <select id="year" disabled onChange="update()">
+    <select
+      id="year"
+      disabled
+      onChange="update()"
+    >
       <option value="en">Year</option>
       <option value="en">2018</option>
       <option value="es">2019</option>
@@ -25,48 +39,57 @@
       <option value="eu">2022</option>
       <option value="eu">2023</option>
     </select>
-    <input type="text" placeholder="Search" name="q" id="text" class="text-bar" disabled>
-    <input class="shop-car-button" type="submit" value="Shop by car">
+    <input
+      type="text"
+      placeholder="Search"
+      name="q"
+      id="text"
+      class="text-bar"
+      disabled
+    >
+    <input
+      class="shop-car-button"
+      type="submit"
+      value="Shop by car"
+    >
   </form>
 </section>
 
+{% liquid
 
-{% liquid %}
+%}
 
 <script>
   function populate(s1, s2) {
     var s1 = document.getElementById(s1);
     var s2 = document.getElementById(s2);
-    var s3 = document.getElementById("year");
+    var s3 = document.getElementById('year');
     var text = document.getElementById('text');
-    s2.innerHTML = "";
-    s2
-      .removeAttribute("disabled")
-      s3
-      .removeAttribute("disabled")
-      text
-      .removeAttribute("disabled")
-    if (s1.value == "Tesla") {
-      var optionArray = ["|Model", "model y|Model Y", "model 3|Model 3", "Tesla Y Sunshade|tesla y sunshade"];
-    } else if (s1.value == "Dacia") {
-      var optionArray = ["|Model", "duster|Duster"];
-    } else if (s1.value == "Mini") {
-      var optionArray = ["|Model", "clubman|Clubman", "countryman|Countryman"];
-    } else if (s1.value == "Peugeot") {
-      var optionArray = ["|Model", "3008|3008"];
-    } else if (s1.value == "Audi") {
+    s2.innerHTML = '';
+    s2.removeAttribute('disabled');
+    s3.removeAttribute('disabled');
+    text.removeAttribute('disabled');
+    if (s1.value == 'Tesla') {
+      var optionArray = ['|Model', 'model y|Model Y', 'model 3|Model 3', 'Tesla Y Sunshade|tesla y sunshade'];
+    } else if (s1.value == 'Dacia') {
+      var optionArray = ['|Model', 'duster|Duster'];
+    } else if (s1.value == 'Mini') {
+      var optionArray = ['|Model', 'clubman|Clubman', 'countryman|Countryman'];
+    } else if (s1.value == 'Peugeot') {
+      var optionArray = ['|Model', '3008|3008'];
+    } else if (s1.value == 'Audi') {
       var optionArray = [
-        "|Model",
-        "e-tron gt cargo|E-tron GT Cargo",
-        "e-tron|E-tron ",
-        "e-tron suv" | "E-tron SUV"
+        '|Model',
+        'e-tron gt cargo|E-tron GT Cargo',
+        'e-tron|E-tron ',
+        'e-tron suv' | 'E-tron SUV'
       ];
-    } else if (s1.value == "Mercedes") {
-      var optionArray = ["|Model", "g-class|G-class"];
+    } else if (s1.value == 'Mercedes') {
+      var optionArray = ['|Model', 'g-class|G-class'];
     }
     for (var option in optionArray) {
-      var pair = optionArray[option].split("|");
-      var newOption = document.createElement("option");
+      var pair = optionArray[option].split('|');
+      var newOption = document.createElement('option');
       newOption.value = pair[0];
       newOption.innerHTML = pair[1];
       s2.options.add(newOption);
@@ -74,7 +97,6 @@
   }
 
   function update() {
-
     var make = document.getElementById('slct1');
     var optionMake = make.options[make.selectedIndex];
 
@@ -84,14 +106,11 @@
     var year = document.getElementById('year');
     var optionYear = year.options[year.selectedIndex];
 
-    document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
-
+    document.getElementById('text').value = optionMake.text + ' ' + optionModel.text + ' ' + optionYear.text;
   }
 </script>
 
-
 <style>
-
   .search-bar {
     font-family: "helvetica";
     display: flex;
@@ -133,30 +152,30 @@
   }
 </style>
 
-
 {% schema %}
-  {
-    "name": "Car advance filter",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "background_image",
-        "label": "choose image"
-      }, {
-        "type": "range",
-        "id": "image_height",
-        "label": "height range in pixels",
-        "max": 600,
-        "min": 200,
-        "step": 100,
-        "default": 500,
-        "unit": "px"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Car advance filter"
-      }
-    ]
-  }
+{
+  "name": "Car advance filter",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "choose image"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "label": "height range in pixels",
+      "max": 600,
+      "min": 200,
+      "step": 100,
+      "default": 500,
+      "unit": "px"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Car advance filter"
+    }
+  ]
+}
 {% endschema %}
