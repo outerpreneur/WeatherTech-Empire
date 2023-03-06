@@ -5,7 +5,7 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/adrian-ionita-IgbVFSQrxiU-unsplash_1.jpg",
         "image_height": 500,
-        "image_position": "middle"
+        "image_position": "center"
       }
     },
     "dynamic_highlights_banner": {
