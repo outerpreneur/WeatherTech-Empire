@@ -120,7 +120,7 @@
     min-height: {{ section.settings.image_height }}px;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.52),rgba(0, 0, 0, 0.40), rgba(117, 19, 93, 0), #e32020), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
     background-size: cover;
-    background-position: center;
+    background-position: {{ section.settings.image_position}};
   }
 
 
@@ -171,6 +171,25 @@
       "step": 100,
       "default": 500,
       "unit": "px"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "image position",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ]
     }
   ],
   "presets": [
