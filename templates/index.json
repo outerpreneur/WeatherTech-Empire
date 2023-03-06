@@ -70,23 +70,23 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CargoTech_Cooler.jpg",
-            "title": "Mosaic",
+            "image": "shopify:\/\/shop_images\/Egg_Liner.jpg",
+            "title": "Interior Protection",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
+            "show_overlay": true,
             "background": "rgba(0,0,0,0)",
-            "opacity": 50
+            "opacity": 10
           }
         },
         "promotion-2": {
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/custom_resized_05ffd12c-6fa3-4d94-8da5-b79a86d06f96.jpg",
-            "title": "Mosaic",
+            "title": "Car accesories",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
@@ -94,14 +94,14 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#000000",
-            "opacity": 5
+            "opacity": 10
           }
         },
         "promotion-3": {
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/Ice_Cream_FL_Turned.jpg",
-            "title": "Mosaic",
+            "title": "Cargo \/ Trunk liners",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
@@ -109,22 +109,22 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#000000",
-            "opacity": 3
+            "opacity": 10
           }
         },
         "promotion-4": {
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/wte-floorliner-sq.jpg",
-            "title": "Mosaic",
+            "title": "Floor Liners",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 10
           }
         }
       },
@@ -197,8 +197,8 @@
       ],
       "settings": {
         "product": "tesla-y-2020-sunshade",
-        "gallery_aspect_ratio": "natural",
-        "gallery_image_crop": false,
+        "gallery_aspect_ratio": "short",
+        "gallery_image_crop": true,
         "gallery_thumbnail_position": "left",
         "gallery_video_autoplay": false,
         "gallery_video_looping": true,
