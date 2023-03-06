@@ -184,7 +184,7 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Soccerball_Poster_Muddier.jpg",
+            "image": "shopify:\/\/shop_images\/custom_resized_05ffd12c-6fa3-4d94-8da5-b79a86d06f96.jpg",
             "title": "Mosaic",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -500,7 +500,7 @@
         "hotspot-5"
       ],
       "settings": {
-        "title": "Shoppable image",
+        "title": "",
         "image": "shopify:\/\/shop_images\/CargoTech_Cooler.jpg",
         "image_width": "two-thirds",
         "link_text": "View product",
@@ -645,7 +645,7 @@
         "promotion-1"
       ],
       "settings": {
-        "title": "Grid",
+        "title": "",
         "section_height": "medium",
         "section_columns": 1,
         "text_alignment": "center-left"
