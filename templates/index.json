@@ -3,108 +3,8 @@
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
       "type": "filter-storefront",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "background_image": "shopify:\/\/shop_images\/adrian-ionita-IgbVFSQrxiU-unsplash_1.jpg",
         "image_height": 500
-      }
-    },
-    "dynamic_slideshow": {
-      "type": "dynamic-slideshow",
-      "disabled": true,
-      "blocks": {
-        "slide-1": {
-          "type": "slide",
-          "settings": {
-            "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
-            "title": "",
-            "text": "",
-            "color": "#ffffff",
-            "link": "",
-            "text_alignment": "center",
-            "button_one_label": "",
-            "button_one_link": "",
-            "button_one_style": "primary",
-            "button_two_label": "",
-            "button_two_link": "",
-            "button_two_style": "secondary",
-            "show_overlay": true,
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "slide-2": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "title": "Slide",
-            "text": "Introduce customers to your shop with lifestyle and product imagery",
-            "color": "#1d1d1d",
-            "link": "",
-            "text_alignment": "left",
-            "button_one_label": "Button",
-            "button_one_link": "",
-            "button_one_style": "primary",
-            "button_two_label": "",
-            "button_two_link": "",
-            "button_two_style": "primary",
-            "show_overlay": true,
-            "overlay_color": "#000000",
-            "overlay_opacity": 4
-          }
-        },
-        "slide-3": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "title": "Slide",
-            "text": "Introduce customers to your shop with lifestyle and product imagery",
-            "color": "#ffffff",
-            "link": "",
-            "text_alignment": "center",
-            "button_one_label": "Button",
-            "button_one_link": "",
-            "button_one_style": "primary",
-            "button_two_label": "",
-            "button_two_link": "",
-            "button_two_style": "secondary",
-            "show_overlay": true,
-            "overlay_color": "#000000",
-            "overlay_opacity": 20
-          }
-        },
-        "slide-4": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "title": "Slide",
-            "text": "Introduce customers to your shop with lifestyle and product imagery",
-            "color": "#1d1d1d",
-            "link": "",
-            "text_alignment": "left",
-            "button_one_label": "Button",
-            "button_one_link": "",
-            "button_one_style": "primary",
-            "button_two_label": "",
-            "button_two_link": "",
-            "button_two_style": "secondary",
-            "show_overlay": true,
-            "overlay_color": "#000000",
-            "overlay_opacity": 5
-          }
-        }
-      },
-      "block_order": [
-        "slide-1",
-        "slide-2",
-        "slide-3",
-        "slide-4"
-      ],
-      "settings": {
-        "enable_autoplay": true,
-        "autoplay_duration": 9,
-        "slideshow_width": "full",
-        "slideshow_height": "medium",
-        "slideshow_height_mobile": "x-large",
-        "slideshow_text_below_image": true
       }
     },
     "dynamic_highlights_banner": {
@@ -737,7 +637,6 @@
   },
   "order": [
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e",
-    "dynamic_slideshow",
     "dynamic_highlights_banner",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
