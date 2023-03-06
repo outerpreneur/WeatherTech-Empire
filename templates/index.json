@@ -227,7 +227,7 @@
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/Coffee-Spill-FL2.jpg",
-            "title": "",
+            "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
@@ -559,31 +559,35 @@
         "testimonial-1": {
           "type": "testimonial",
           "settings": {
+            "image": "shopify:\/\/shop_images\/christopher-campbell-kFCdfLbu6zA-unsplash.jpg",
             "star_rating": "4.5",
             "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Author's name<\/p>"
+            "author": "<p>Christine<\/p>"
           }
         },
         "testimonial-2": {
           "type": "testimonial",
           "settings": {
-            "star_rating": "4.5",
+            "image": "shopify:\/\/shop_images\/custom_resized_c5b1185e-bc8a-45ff-a321-79d42eef50f1_1.jpg",
+            "star_rating": "5",
             "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Author's name<\/p>"
+            "author": "<p>Pierre<\/p>"
           }
         },
         "testimonial-3": {
           "type": "testimonial",
           "settings": {
-            "star_rating": "4.5",
+            "image": "shopify:\/\/shop_images\/custom_resized_86eca20c-f17a-4fe9-a170-debd89777a82_1.jpg",
+            "star_rating": "5",
             "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Author's name<\/p>"
+            "author": "<p>Richard<\/p>"
           }
         },
         "testimonial-4": {
           "type": "testimonial",
           "settings": {
-            "star_rating": "4.5",
+            "image": "shopify:\/\/shop_images\/custom_resized_bea954a0-a1f2-4299-a1a3-114074fbd1ed_1.jpg",
+            "star_rating": "5",
             "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
             "author": "<p>Author's name<\/p>"
           }
@@ -591,7 +595,8 @@
         "testimonial-5": {
           "type": "testimonial",
           "settings": {
-            "star_rating": "4.5",
+            "image": "shopify:\/\/shop_images\/custom_resized_2818ff42-b53e-4dfc-b65e-de1f4806641b_1.jpg",
+            "star_rating": "5",
             "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
             "author": "<p>Author's name<\/p>"
           }
@@ -614,7 +619,7 @@
         "testimonial-6"
       ],
       "settings": {
-        "title": "Testimonials",
+        "title": "Don't take our word for granted",
         "image_crop": "circle",
         "text_size": "large"
       }
