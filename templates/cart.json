@@ -22,9 +22,9 @@
       ],
       "settings": {
         "show_sku": false,
-        "enable_order_notes": false,
+        "enable_order_notes": true,
         "enable_shipping_calc": true,
-        "shipping_calc_default_country": "United States"
+        "shipping_calc_default_country": "Switzerland"
       }
     }
   },
