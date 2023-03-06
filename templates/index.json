@@ -147,6 +147,7 @@
         "view-all-card": {
           "type": "view_all_card",
           "settings": {
+            "image": "shopify:\/\/shop_images\/custom_resized_577886da-3d79-45af-8a68-9f18547958dd.jpg",
             "text_alignment": "center-center",
             "pre_heading": "View all",
             "heading": "Collection",
@@ -342,7 +343,7 @@
         "title": "",
         "thumbnail_columns_desktop": 4,
         "thumbnail_columns_mobile": 3,
-        "image-crop": "original",
+        "image-crop": "circle",
         "cta_label": "View All",
         "cta_link": "",
         "cta_button_style": "secondary"
