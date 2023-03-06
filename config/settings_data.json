@@ -103,11 +103,13 @@
           "1517255946962": {
             "type": "meganav_images",
             "settings": {
-              "meganav_trigger": "",
+              "meganav_trigger": "All products",
+              "image_1": "shopify:\/\/shop_images\/custom_resized_633b7c23-6643-4fb5-a031-a47d0bfd5830.jpg",
               "text_1": "",
               "link_1": "",
               "position_1": "last",
               "size_1": "large",
+              "image_2": "shopify:\/\/shop_images\/custom_resized_25f10898-53d1-41d9-bf22-d9f5da3a9e9a.jpg",
               "text_2": "",
               "link_2": "",
               "position_2": "first",
