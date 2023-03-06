@@ -4,7 +4,8 @@
       "type": "filter-storefront",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/adrian-ionita-IgbVFSQrxiU-unsplash_1.jpg",
-        "image_height": 500
+        "image_height": 500,
+        "image_position": "bottom"
       }
     },
     "dynamic_highlights_banner": {
@@ -529,7 +530,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+            "image": "shopify:\/\/shop_images\/adrian-ionita-IgbVFSQrxiU-unsplash_1.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
