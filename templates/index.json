@@ -23,8 +23,8 @@
         "highlight-2": {
           "type": "highlight",
           "settings": {
-            "icon": "icon-cell-phone",
-            "title": "Give Us A Call",
+            "icon": "icon-thumbs-up",
+            "title": "Lifetime Limited Warranty",
             "text": "<p>+1 (201) 555-5555<\/p>",
             "link": ""
           }
@@ -41,8 +41,8 @@
         "highlight-4": {
           "type": "highlight",
           "settings": {
-            "icon": "icon-pin",
-            "title": "Locations",
+            "icon": "icon-rating-five-star",
+            "title": "Excelent service",
             "text": "<p>Find a store near you<\/p>",
             "link": ""
           }
