@@ -3,7 +3,8 @@
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
       "type": "filter-storefront",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg"
+        "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "image_height": 500
       }
     },
     "dynamic_slideshow": {
@@ -168,6 +169,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/CargoTech_Cooler.jpg",
             "title": "Mosaic",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -182,6 +184,7 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Soccerball_Poster_Muddier.jpg",
             "title": "Mosaic",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -196,6 +199,7 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Ice_Cream_FL_Turned.jpg",
             "title": "Mosaic",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -210,6 +214,7 @@
         "promotion-4": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/wte-floorliner-sq.jpg",
             "title": "Mosaic",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -257,7 +262,7 @@
       "settings": {
         "title": "",
         "layout": "slideshow",
-        "collection": "",
+        "collection": "all-products",
         "product_count": 9,
         "cta_label": "",
         "cta_button_style": "primary"
@@ -532,9 +537,10 @@
     "81b0c73a-57ed-440f-96c3-3065a483b831": {
       "type": "parallax-image",
       "settings": {
-        "img": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "img": "shopify:\/\/shop_images\/ShopByCategory1-trimmed.jpg",
         "img_crop": "bottom",
         "img_min_height": "320",
+        "video": "",
         "video_start_time": "",
         "video_end_time": "",
         "video_loop": true,
