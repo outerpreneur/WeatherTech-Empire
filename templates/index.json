@@ -87,14 +87,14 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/custom_resized_05ffd12c-6fa3-4d94-8da5-b79a86d06f96.jpg",
             "title": "Car accesories",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text": "Vehicle Sun-Shades, FloorLiner Cleaning & Protective Spray, Home ComfortMats and Seat Protectors",
             "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#000000",
-            "opacity": 10
+            "opacity": 20
           }
         },
         "promotion-3": {
@@ -256,7 +256,7 @@
         "promotion-4": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/vintage-car-speedometer.jpg",
+            "image": "shopify:\/\/shop_images\/22_Winter_Floorliner_Shoe_IV1_GIF.gif",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
