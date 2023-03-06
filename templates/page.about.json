@@ -1,12 +1,137 @@
 {
   "sections": {
+    "744f40d9-ab5b-488f-893e-6fad7ca9c25a": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "medium",
+        "image": "shopify:\/\/shop_images\/custom_resized_859823b5-fff2-4d88-ba82-32deb1593eb8.jpg",
+        "title": "About us",
+        "text": "<p>Say a bit about your brand, a specific product, or promotion.<\/p>",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "",
+        "button_text": "Button"
+      }
+    },
     "main": {
       "type": "page",
       "settings": {
       }
+    },
+    "6a5c8756-58fe-4bc6-9e9c-696fb4406cd9": {
+      "type": "dynamic-promo-grid",
+      "blocks": {
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-0": {
+          "type": "promotion",
+          "settings": {
+            "title": "Grid",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-1": {
+          "type": "promotion",
+          "settings": {
+            "title": "Grid",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-2": {
+          "type": "promotion",
+          "settings": {
+            "title": "Grid",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-3": {
+          "type": "promotion",
+          "settings": {
+            "title": "Grid",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-0",
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-1",
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-2",
+        "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-3"
+      ],
+      "settings": {
+        "title": "Grid",
+        "section_height": "small",
+        "section_columns": 2,
+        "text_alignment": "top-left"
+      }
+    },
+    "93bfddaf-a6a1-4b53-a1a2-ec94ec16b451": {
+      "type": "dynamic-video",
+      "settings": {
+        "title": "Video",
+        "url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "show_caption": false,
+        "caption": "<p>A short description of the video.<\/p>",
+        "autoplay": false,
+        "aspect_ratio": "16-9",
+        "show_overlay": false,
+        "background": "#000000",
+        "opacity": 50
+      }
+    },
+    "727cf57a-1033-40b6-81e6-5efcc40084c5": {
+      "type": "pxs-map",
+      "settings": {
+        "section_height": "medium",
+        "title": "Location",
+        "content": "<p>1221 Broad St<br\/>Victoria, BC<\/p>",
+        "text_alignment": "center",
+        "layout": "overlay-center-center",
+        "layout_mobile": "below",
+        "address": "1221 Broad St, Victoria, BC",
+        "api_key": "",
+        "enable_custom_colors": false,
+        "foreground_color": "#292929",
+        "background_color": "#ffffff",
+        "zoom": 2,
+        "overlay_color": "#000000",
+        "opacity": 10
+      }
     }
   },
   "order": [
-    "main"
+    "744f40d9-ab5b-488f-893e-6fad7ca9c25a",
+    "main",
+    "6a5c8756-58fe-4bc6-9e9c-696fb4406cd9",
+    "93bfddaf-a6a1-4b53-a1a2-ec94ec16b451",
+    "727cf57a-1033-40b6-81e6-5efcc40084c5"
   ]
 }
