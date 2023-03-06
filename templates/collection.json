@@ -4,7 +4,7 @@
       "type": "pxs-image-with-text-overlay",
       "settings": {
         "section_height": "small",
-        "image": "{{ collection.metafields.custom.collection_banner.value }}",
+        "image": "{{ collection.image }}",
         "title": "{{ collection.title }}",
         "text": "<p>{{ shop.brand.short_description }}<\/p>",
         "content_position": "center-center",
