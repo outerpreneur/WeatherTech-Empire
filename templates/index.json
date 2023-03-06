@@ -640,21 +640,6 @@
         "background": "#000000",
         "opacity": 36
       }
-    },
-    "04cc0932-3476-4da8-ba13-12f28dfbc5cb": {
-      "type": "dynamic-video",
-      "settings": {
-        "title": "",
-        "url": "https:\/\/www.youtube.com\/watch?v=6nrzOf2RDZc",
-        "show_caption": false,
-        "caption": "<p>A short description of the video.<\/p>",
-        "autoplay": true,
-        "aspect_ratio": "16-9",
-        "cover": "shopify:\/\/shop_images\/custom_resized_da80d8c4-fd92-4b9f-8a65-680206af56a3.jpg",
-        "show_overlay": true,
-        "background": "#000000",
-        "opacity": 50
-      }
     }
   },
   "order": [
@@ -671,7 +656,6 @@
     "dynamic_promo_grid-2",
     "dynamic_promo_grid-3",
     "dynamic_testimonials",
-    "dynamic_search",
-    "04cc0932-3476-4da8-ba13-12f28dfbc5cb"
+    "dynamic_search"
   ]
 }
