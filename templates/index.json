@@ -649,7 +649,7 @@
         "show_caption": false,
         "caption": "<p>A short description of the video.<\/p>",
         "autoplay": true,
-        "aspect_ratio": "21-9",
+        "aspect_ratio": "16-9",
         "cover": "shopify:\/\/shop_images\/custom_resized_da80d8c4-fd92-4b9f-8a65-680206af56a3.jpg",
         "show_overlay": true,
         "background": "#000000",
