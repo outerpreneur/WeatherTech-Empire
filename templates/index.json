@@ -309,6 +309,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/danny-sleeuwenhoek-JXHN4c5CyUs-unsplash.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -323,7 +324,8 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "title": "Grid",
+            "image": "shopify:\/\/shop_images\/Coffee-Spill-FL2.jpg",
+            "title": "",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
@@ -337,6 +339,7 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Hose_Wash_Liner_SE.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -351,6 +354,7 @@
         "promotion-4": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/vintage-car-speedometer.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -382,33 +386,34 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "accessories",
             "title": ""
           }
         },
         "collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "cargo-trunk-liners",
             "title": ""
           }
         },
         "collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "floor-liners",
             "title": ""
           }
         },
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "all-products",
             "title": ""
           }
         },
         "collection-5": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "title": ""
@@ -416,6 +421,7 @@
         },
         "collection-6": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "",
             "title": ""
@@ -431,8 +437,8 @@
         "collection-6"
       ],
       "settings": {
-        "title": "Collection list",
-        "thumbnail_columns_desktop": 6,
+        "title": "",
+        "thumbnail_columns_desktop": 4,
         "thumbnail_columns_mobile": 3,
         "image-crop": "original",
         "cta_label": "View All",
@@ -493,6 +499,7 @@
       ],
       "settings": {
         "title": "Shoppable image",
+        "image": "shopify:\/\/shop_images\/CargoTech_Cooler.jpg",
         "image_width": "two-thirds",
         "link_text": "View product",
         "textbox_title": "Shop the look",
@@ -616,15 +623,16 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/adrian-ionita-IgbVFSQrxiU-unsplash_1.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#1e1e1e",
+            "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 23
           }
         }
       },
@@ -704,16 +712,6 @@
         "text_size": "large"
       }
     },
-    "dynamic_blog_posts": {
-      "type": "dynamic-blog-posts",
-      "settings": {
-        "title": "Blog posts",
-        "blog": "",
-        "show_date": true,
-        "show_author": false,
-        "show_excerpt": true
-      }
-    },
     "dynamic_search": {
       "type": "dynamic-search",
       "settings": {
@@ -724,7 +722,7 @@
         "enable_live_search": true,
         "enable_live_search_images": true,
         "enable_live_search_articles_pages": true,
-        "image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "image": "shopify:\/\/shop_images\/dominik-garbera-2DrK_hrVsrk-unsplash.jpg",
         "show-overlay": true,
         "color": "#ffffff",
         "background": "#000000",
@@ -747,7 +745,6 @@
     "dynamic_promo_grid-2",
     "dynamic_promo_grid-3",
     "dynamic_testimonials",
-    "dynamic_blog_posts",
     "dynamic_search"
   ]
 }
