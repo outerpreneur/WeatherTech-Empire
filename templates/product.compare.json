@@ -6,6 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
+            "text": "Product information"
           }
         },
         "description": {
@@ -21,6 +22,8 @@
         "inventory-status": {
           "type": "availability",
           "settings": {
+            "inventory_display": "hidden",
+            "inventory_transfer_notice": true
           }
         },
         "rating": {
@@ -37,19 +40,22 @@
         "dynamic-comparison": {
           "type": "dynamic_comparison",
           "settings": {
-            "title": "Dimensions"
+            "title": "Dimensions",
+            "text": "<p>Use this text to share additional information about your product.<\/p>"
           }
         },
         "dynamic-comparison-2": {
           "type": "dynamic_comparison",
           "settings": {
-            "title": "Weight"
+            "title": "Weight",
+            "text": "<p>Use this text to share additional information about your product.<\/p>"
           }
         },
         "dynamic-comparison-3": {
           "type": "dynamic_comparison",
           "settings": {
-            "title": "General features"
+            "title": "General features",
+            "text": "<p>Use this text to share additional information about your product.<\/p>"
           }
         }
       },
@@ -65,6 +71,7 @@
         "dynamic-comparison-3"
       ],
       "settings": {
+        "filter_groups": "expand_first"
       }
     },
     "dynamic-highlights-banner": {
@@ -75,7 +82,8 @@
           "settings": {
             "icon": "icon-delivery",
             "title": "Free Shipping",
-            "text": "<p>When you spend $100+<\/p>"
+            "text": "<p>When you spend $100+<\/p>",
+            "link": ""
           }
         },
         "highlight-2": {
@@ -83,7 +91,8 @@
           "settings": {
             "icon": "icon-cell-phone",
             "title": "Give Us A Call",
-            "text": "<p>+1 (201) 555-5555<\/p>"
+            "text": "<p>+1 (201) 555-5555<\/p>",
+            "link": ""
           }
         },
         "highlight-3": {
@@ -91,7 +100,8 @@
           "settings": {
             "icon": "icon-chat-alternate",
             "title": "Chat With Us",
-            "text": "<p>We offer 24-hour chat support<\/p>"
+            "text": "<p>We offer 24-hour chat support<\/p>",
+            "link": ""
           }
         },
         "highlight-4": {
@@ -99,7 +109,8 @@
           "settings": {
             "icon": "icon-pin",
             "title": "Locations",
-            "text": "<p>Find a store near you<\/p>"
+            "text": "<p>Find a store near you<\/p>",
+            "link": ""
           }
         }
       },
@@ -111,9 +122,12 @@
       ],
       "settings": {
         "section_spacing": true,
+        "section_width": "full-width",
         "icon_layout": "center",
-        "icon_color": "#046e82",
-        "background_color": "rgba(0,0,0,0)"
+        "color": "#4d4d4d",
+        "icon_color": "#cc1313",
+        "background_color": "rgba(0,0,0,0)",
+        "mobile_layout": "slider"
       }
     }
   },
