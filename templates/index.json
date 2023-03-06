@@ -294,7 +294,7 @@
         "view-product-link"
       ],
       "settings": {
-        "product": "",
+        "product": "tesla-y-2020-sunshade",
         "gallery_aspect_ratio": "natural",
         "gallery_image_crop": false,
         "gallery_thumbnail_position": "left",
@@ -339,10 +339,10 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hose_Wash_Liner_SE.jpg",
+            "image": "shopify:\/\/shop_images\/gabriel-alenius-TIBTPctWBxU-unsplash.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
+            "color": "#121212",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
@@ -580,6 +580,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/hyundai-motor-group-Y4WK2hM2-Jk-unsplash.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -594,6 +595,7 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
+            "image": "shopify:\/\/shop_images\/milan-degraeve-89sXVIkgYnI-unsplash.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
