@@ -1,5 +1,20 @@
 {
   "sections": {
+    "9d1793f0-53a3-404d-a862-d3cc7ec101b3": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/custom_resized_25f10898-53d1-41d9-bf22-d9f5da3a9e9a.jpg",
+        "title": "{{ collection.title }}",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 42,
+        "link": "",
+        "button_text": ""
+      }
+    },
     "main": {
       "type": "static-collection",
       "blocks": {
@@ -39,7 +54,7 @@
         "grid_list": true,
         "default_view": "grid-view",
         "enable_subcollection": false,
-        "show_product_count": false,
+        "show_product_count": true,
         "thumbnail_image": "product-image",
         "image_crop": "original"
       }
@@ -52,6 +67,7 @@
     }
   },
   "order": [
+    "9d1793f0-53a3-404d-a862-d3cc7ec101b3",
     "main",
     "static-recently-viewed"
   ]
