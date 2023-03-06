@@ -2,7 +2,29 @@
   "sections": {
     "main": {
       "type": "static-cart",
+      "blocks": {
+        "a59428d8-0d76-4208-9eee-226e9a34e890": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/CoffeeSpillFloorLiner2.jpg"
+          }
+        },
+        "410a1c92-95aa-476f-ae05-05be9ea18047": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "a59428d8-0d76-4208-9eee-226e9a34e890",
+        "410a1c92-95aa-476f-ae05-05be9ea18047"
+      ],
       "settings": {
+        "show_sku": false,
+        "enable_order_notes": false,
+        "enable_shipping_calc": true,
+        "shipping_calc_default_country": "United States"
       }
     }
   },
