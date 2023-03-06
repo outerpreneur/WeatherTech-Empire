@@ -1,5 +1,20 @@
 {
   "sections": {
+    "7d2ae621-57b7-4629-aaec-8f63e1734a0b": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/adrian-ionita-IgbVFSQrxiU-unsplash_1.jpg",
+        "title": "Cart",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "",
+        "button_text": ""
+      }
+    },
     "main": {
       "type": "static-cart",
       "blocks": {
@@ -21,7 +36,7 @@
         "410a1c92-95aa-476f-ae05-05be9ea18047"
       ],
       "settings": {
-        "show_sku": false,
+        "show_sku": true,
         "enable_order_notes": true,
         "enable_shipping_calc": true,
         "shipping_calc_default_country": "Switzerland"
@@ -29,6 +44,7 @@
     }
   },
   "order": [
+    "7d2ae621-57b7-4629-aaec-8f63e1734a0b",
     "main"
   ]
 }
