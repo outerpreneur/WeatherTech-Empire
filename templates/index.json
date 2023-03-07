@@ -603,6 +603,7 @@
         },
         "testimonial-6": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "star_rating": "4.5",
             "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
