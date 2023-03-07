@@ -106,13 +106,14 @@
             "settings": {
               "meganav_trigger": "All products",
               "image_1": "shopify:\/\/shop_images\/custom_resized_633b7c23-6643-4fb5-a031-a47d0bfd5830.jpg",
-              "text_1": "",
+              "text_1": "Summer collection",
               "link_1": "",
               "position_1": "last",
               "size_1": "large",
-              "text_2": "",
+              "image_2": "shopify:\/\/shop_images\/y4mrtvRP7Hi297ufEiIRo_FNH_Wz6QCa7UyoA4yIWmNL7Gq2Aix1p5S2EFtJm52_mj3pr8g3wDZuLoyWrpGi7x0TGthY6V6QIBQWZ83V9D9IxEppB7hi2vxqjYsMdV9AoVauN1N0cn5lOlJ0WZUiWGwWYk2bfFajtJq-2RQM4B2MX62YJ9GA8Cr.jpg",
+              "text_2": "Winter collection",
               "link_2": "",
-              "position_2": "first",
+              "position_2": "last",
               "size_2": "large"
             }
           },
