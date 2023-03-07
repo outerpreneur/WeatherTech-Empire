@@ -243,14 +243,14 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/gabriel-alenius-TIBTPctWBxU-unsplash.jpg",
             "title": "Go Deeper in the Woods",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text": "WeatherTech offer endless opportunities for outdoor adventure",
             "color": "#121212",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#ffffff",
-            "opacity": 16
+            "opacity": 24
           }
         },
         "promotion-4": {
