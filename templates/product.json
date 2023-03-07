@@ -8,22 +8,34 @@
           "settings": {
           }
         },
+        "77b76149-b8f7-4a55-9fa6-7b36e6446b41": {
+          "type": "sku",
+          "settings": {
+          }
+        },
         "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5": {
           "type": "tabs",
           "settings": {
             "show_product_description": true,
             "show_tabs_below_product_gallery": true,
-            "tab_heading_1": "Tab 1",
+            "tab_heading_1": "Instructions",
             "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
-            "tab_heading_2": "Tab 2",
+            "tab_heading_2": "Video",
             "tab_text_2": "<p>Use this text to share information about your product.<\/p>",
-            "tab_heading_3": "Tab 3",
+            "tab_heading_3": "Reviews",
             "tab_text_3": "<p>Use this text to share information about your product.<\/p>"
           }
         },
         "vendor": {
           "type": "vendor",
           "settings": {
+          }
+        },
+        "c3cabf86-f486-4491-8054-276a77f10f63": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_display": "hidden",
+            "inventory_transfer_notice": true
           }
         },
         "rating": {
@@ -50,19 +62,50 @@
         },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {
+          }
+        },
+        "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Measures",
+            "collapsible_tab_text": "<p>Use this text to share information about your product.<\/p>"
+          }
+        },
+        "65d6eda9-6fd4-4d84-bacb-454032735dbe": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Material",
+            "collapsible_tab_text": "<p>Use this text to share information about your product.<\/p>"
+          }
+        },
+        "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7": {
+          "type": "key_details",
+          "settings": {
+            "icon": "icon-delivery-package",
+            "title": "Delivery time",
+            "text": "<p>Use this text to share information about your product and policies with your customers.<\/p>",
+            "text_color": "#1D1D1D",
+            "icon_color": "#1D1D1D",
+            "background_color": "#f5f3ed"
           }
         }
       },
       "block_order": [
         "title",
+        "77b76149-b8f7-4a55-9fa6-7b36e6446b41",
         "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5",
         "vendor",
+        "c3cabf86-f486-4491-8054-276a77f10f63",
         "rating",
         "price",
         "description",
         "form",
-        "share"
+        "share",
+        "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
+        "65d6eda9-6fd4-4d84-bacb-454032735dbe",
+        "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
