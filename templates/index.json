@@ -218,24 +218,24 @@
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 20
           }
         },
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mini_countryman_2018_2ndrow_9984555e-d2e4-4a9d-86e6-a8a86028d5e1.jpg",
+            "image": "shopify:\/\/shop_images\/Colorado_Location_snowboard_Load_2452.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 28
           }
         },
         "promotion-3": {
@@ -248,24 +248,24 @@
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#ffffff",
+            "opacity": 16
           }
         },
         "promotion-4": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/22_Winter_Floorliner_Shoe_IV1_GIF.gif",
+            "image": "shopify:\/\/shop_images\/y4mvxxuWqJi3er9FXrwlAaEH8SZ20aPbpEcT4fJ3QpV8cc8u4gzrG2aPpPKjz3XVnf_Djk8quSFxncKbJALOe9tp-r8ziynBkySl8B0zai36INe-e8zTmvHOjcejkm4dE1-SOhsn10L9BPSjr0yYVFgnh5BDK6XO7hOFiuyqdGmx9cggKUy61Zq.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 29
           }
         }
       },
@@ -634,7 +634,7 @@
         "enable_live_search": true,
         "enable_live_search_images": true,
         "enable_live_search_articles_pages": true,
-        "image": "shopify:\/\/shop_images\/dominik-garbera-2DrK_hrVsrk-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/y4mxltTPwuMzUCHpajWlGH7iOjh2Pr-B9SfdNjPCZDrXFAn4I9Y1GgGConDbKaGS9ReEmMOO1nRoKzZWZ7IYTq3Bw7BEZkRmDbP7If1Sov5Lnre12hGtUS98s8RC8zFEm9PKSzVCkjqv6FMVhMdmRHRqHRIIUx-0l-JxzUz2hWgwXatP1dYaRbq.jpg",
         "show-overlay": true,
         "color": "#ffffff",
         "background": "#000000",
