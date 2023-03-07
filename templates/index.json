@@ -74,7 +74,7 @@
             "title": "Interior Protection",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
-            "block_link": "",
+            "block_link": "shopify:\/\/collections\/all-products",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
@@ -89,7 +89,7 @@
             "title": "Car accesories",
             "text": "Vehicle Sun-Shades, FloorLiner Cleaning & Protective Spray, Home ComfortMats and Seat Protectors",
             "color": "#ffffff",
-            "block_link": "",
+            "block_link": "shopify:\/\/collections\/accessories",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
@@ -100,16 +100,16 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ice_Cream_FL_Turned.jpg",
+            "image": "shopify:\/\/shop_images\/y4mM0B8YwLoqyxdpw8vYj5SFF9uaOMFA3ExwpU5SyNnQb1UpOJBcLrYRV2VMmhSjYFkpaRYaHo8ZhzLMA62NOvNP54ImkGPqSsrkIqd1EFu8jluLPGfqpwzcq2CFfYbVx2ulOr5NFkv1cQLgKr7ofafhyMRGLwdmt8rCJH4h7XDsYrJXVzDVDm0.jpg",
             "title": "Cargo \/ Trunk liners",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
-            "block_link": "",
+            "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#000000",
-            "opacity": 10
+            "opacity": 25
           }
         },
         "promotion-4": {
@@ -119,7 +119,7 @@
             "title": "Floor Liners",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
-            "block_link": "",
+            "block_link": "shopify:\/\/collections\/floor-liners",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
@@ -500,15 +500,15 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/y4mM0B8YwLoqyxdpw8vYj5SFF9uaOMFA3ExwpU5SyNnQb1UpOJBcLrYRV2VMmhSjYFkpaRYaHo8ZhzLMA62NOvNP54ImkGPqSsrkIqd1EFu8jluLPGfqpwzcq2CFfYbVx2ulOr5NFkv1cQLgKr7ofafhyMRGLwdmt8rCJH4h7XDsYrJXVzDVDm0.jpg",
+            "image": "shopify:\/\/shop_images\/y4mrtvRP7Hi297ufEiIRo_FNH_Wz6QCa7UyoA4yIWmNL7Gq2Aix1p5S2EFtJm52_mj3pr8g3wDZuLoyWrpGi7x0TGthY6V6QIBQWZ83V9D9IxEppB7hi2vxqjYsMdV9AoVauN1N0cn5lOlJ0WZUiWGwWYk2bfFajtJq-2RQM4B2MX62YJ9GA8Cr.jpg",
             "title": "Grid",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#121212",
+            "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
-            "background": "#ffffff",
+            "background": "#121212",
             "opacity": 18
           }
         }
