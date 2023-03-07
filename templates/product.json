@@ -22,7 +22,7 @@
             "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
             "tab_heading_2": "Video",
             "tab_text_2": "<p>Use this text to share information about your product.<\/p>",
-            "tab_heading_3": "Reviews",
+            "tab_heading_3": "FAQ",
             "tab_text_3": "<p>Use this text to share information about your product.<\/p>"
           }
         },
@@ -80,6 +80,13 @@
             "collapsible_tab_text": "<p>Use this text to share information about your product.<\/p>"
           }
         },
+        "0028e7f1-b0c9-4425-875f-cccf193432c6": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Lifetime Limited Warranty",
+            "collapsible_tab_text": "<h3>Lifetime Limited Warranty<\/h3><p>WeatherTech Direct, LLC warrants that our products will be free from any defects in materials and workmanship for the life of the original purchaser and only for the original vehicle they were installed in. That does not mean that a product that simply and naturally wears out from normal use is a candidate for a warranty replacement or a refund. Like tires, brake pads or the shoes on your feet, everything wears out and when it does, that does not mean you did not receive good value for your money.<br\/><br\/>We are reasonable people and we believe in true customer satisfaction. We will work with you for a fair resolution to any issue you may have. Fair is defined as being fair to both you the customer and to WeatherTech. We do not charge extra for our products to our vast majority of customers so we can accommodate ridiculous warranty claims by the few. Our decision is final and will consist of either replacement of your product at no charge or charge you a prorated amount for a replacement, meaning we may extend a discount to you to purchase an exact replacement. Our goal is to keep our customers happy for a lifetime and always reach a fair resolution to any issue. Proof of purchase is required.<br\/><br\/>Exclusions to this warranty include wear due to severe abrasive conditions, chemical contamination, such as spilled gasoline, bleach, vehicle accidents, misuse, abuse, incorrect installation, incorrect use, etc.<\/p>"
+          }
+        },
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7": {
           "type": "key_details",
           "settings": {
@@ -105,6 +112,7 @@
         "share",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "65d6eda9-6fd4-4d84-bacb-454032735dbe",
+        "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7"
       ],
       "settings": {
