@@ -195,13 +195,13 @@
           "1498182586280": {
             "type": "menu",
             "settings": {
-              "menu": "main-menu"
+              "menu": "footer"
             }
           },
           "1498182572847": {
             "type": "menu",
             "settings": {
-              "menu": "main-menu"
+              "menu": "category"
             }
           },
           "static-footer-1": {
