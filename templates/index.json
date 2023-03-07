@@ -212,7 +212,7 @@
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/danny-sleeuwenhoek-JXHN4c5CyUs-unsplash.jpg",
-            "title": "",
+            "title": "RUGGED EQUIPMENT FOR YOUR ADVENTURES",
             "text": "",
             "color": "#ffffff",
             "block_link": "",
@@ -235,7 +235,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 28
+            "opacity": 34
           }
         },
         "promotion-3": {
@@ -244,12 +244,12 @@
             "image": "shopify:\/\/shop_images\/gabriel-alenius-TIBTPctWBxU-unsplash.jpg",
             "title": "Go Deeper Into the Woods",
             "text": "WeatherTech offer endless opportunities for outdoor adventure",
-            "color": "#121212",
+            "color": "#ffffff",
             "block_link": "",
             "button_text": "",
             "button_style": "primary",
             "show_overlay": true,
-            "background": "#ffffff",
+            "background": "#121212",
             "opacity": 24
           }
         },
@@ -265,7 +265,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 29
+            "opacity": 34
           }
         }
       },
