@@ -105,14 +105,14 @@
             "type": "meganav_images",
             "settings": {
               "meganav_trigger": "All products",
-              "image_1": "shopify:\/\/shop_images\/custom_resized_633b7c23-6643-4fb5-a031-a47d0bfd5830.jpg",
-              "text_1": "Summer collection",
-              "link_1": "",
+              "image_1": "shopify:\/\/shop_images\/y4m4-bWwEzk1ti0D41tMY4_ME5d8QpZadWFbpzVfcHRHMKKpLZjt7BUAj90424jZuBwXNRH-3arw_0RN1Dnu6ySnm8BbDYQfAaZxXPuWL66k4A40DUVleVHE72EBaFoDbzwTLE8cYBr9Ye_2KphZiKaUf9z8R2zc46nVsBb2AIcl8_kJgT9Qb9x.jpg",
+              "text_1": "Interior protection",
+              "link_1": "shopify:\/\/collections\/all-products",
               "position_1": "last",
               "size_1": "large",
-              "image_2": "shopify:\/\/shop_images\/y4mrtvRP7Hi297ufEiIRo_FNH_Wz6QCa7UyoA4yIWmNL7Gq2Aix1p5S2EFtJm52_mj3pr8g3wDZuLoyWrpGi7x0TGthY6V6QIBQWZ83V9D9IxEppB7hi2vxqjYsMdV9AoVauN1N0cn5lOlJ0WZUiWGwWYk2bfFajtJq-2RQM4B2MX62YJ9GA8Cr.jpg",
-              "text_2": "Winter collection",
-              "link_2": "",
+              "image_2": "shopify:\/\/shop_images\/y4mxltTPwuMzUCHpajWlGH7iOjh2Pr-B9SfdNjPCZDrXFAn4I9Y1GgGConDbKaGS9ReEmMOO1nRoKzZWZ7IYTq3Bw7BEZkRmDbP7If1Sov5Lnre12hGtUS98s8RC8zFEm9PKSzVCkjqv6FMVhMdmRHRqHRIIUx-0l-JxzUz2hWgwXatP1dYaRbq.jpg",
+              "text_2": "Floor liners",
+              "link_2": "shopify:\/\/collections\/floor-liners",
               "position_2": "last",
               "size_2": "large"
             }
