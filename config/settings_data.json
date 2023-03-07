@@ -151,7 +151,7 @@
           "logo_width": 150,
           "filter_search_by": "tag",
           "enable_live_search": true,
-          "show_mobile_search_bar": true,
+          "show_mobile_search_bar": false,
           "enable_live_search_images": true,
           "enable_live_search_articles_pages": true,
           "quick_links": "category",
