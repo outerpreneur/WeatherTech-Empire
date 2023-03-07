@@ -425,12 +425,12 @@
             "horizontal_size": "3",
             "vertical_size": "1",
             "text_alignment": "center-center",
-            "pre_heading": "Featured",
-            "heading": "Collection",
+            "pre_heading": "Shop",
+            "heading": "BMW",
             "text_color": "#ffffff",
             "cta_label": "See more",
             "overlay_color": "#000000",
-            "overlay_opacity": 10
+            "overlay_opacity": 21
           }
         }
       },
@@ -438,7 +438,7 @@
         "title-card"
       ],
       "settings": {
-        "title": "Shop the BMW collection",
+        "title": "",
         "layout": "grid",
         "collection": "all-products",
         "product_count": 7,
