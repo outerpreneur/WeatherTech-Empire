@@ -20,12 +20,14 @@
       "blocks": {
         "a59428d8-0d76-4208-9eee-226e9a34e890": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/CoffeeSpillFloorLiner2.jpg"
           }
         },
         "410a1c92-95aa-476f-ae05-05be9ea18047": {
           "type": "richtext",
+          "disabled": true,
           "settings": {
             "richtext": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.<\/p>"
           }
