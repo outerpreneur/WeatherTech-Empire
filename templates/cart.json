@@ -20,6 +20,7 @@
       "blocks": {
         "a59428d8-0d76-4208-9eee-226e9a34e890": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/y4mtOWZ1i5TkeJ6cGyeLo9UDbtdWuv2zypbv8uP3dfQKXbe0Cgh-pcEoy9OYxJ4phTKE5jSAlKEwt22akDzymNnyPw_JGf99VZykdn6Bq5egC5C3NJrWI5LEcLE9BOgkf6pGSRsNbae90sxiuGBWOY3_g_E5oRQk-DZ-NCvzs4GIV5Dvoy0Gobn.jpg"
           }
