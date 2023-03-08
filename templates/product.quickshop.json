@@ -9,8 +9,14 @@
           "settings": {
           }
         },
+        "f3fcca36-06a3-49ac-898b-497a5e89d6d4": {
+          "type": "sku",
+          "settings": {
+          }
+        },
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {
           }
         },
@@ -27,23 +33,43 @@
         "form": {
           "type": "form",
           "settings": {
+            "enable_local_pickup": true
           }
         },
         "description": {
           "type": "description",
           "settings": {
           }
+        },
+        "3b6a3f2d-0079-44a6-ab4e-3f3548b102a6": {
+          "type": "key_details",
+          "settings": {
+            "icon": "icon-delivery-package",
+            "title": "Delivery time",
+            "text": "<p>Use this text to share information about your product and policies with your customers.<\/p>",
+            "text_color": "#1D1D1D",
+            "icon_color": "#1D1D1D",
+            "background_color": "#f5f3ed"
+          }
         }
       },
       "block_order": [
         "title",
+        "f3fcca36-06a3-49ac-898b-497a5e89d6d4",
         "vendor",
         "rating",
         "price",
         "form",
-        "description"
+        "description",
+        "3b6a3f2d-0079-44a6-ab4e-3f3548b102a6"
       ],
       "settings": {
+        "quickshop_gallery_aspect_ratio": "natural",
+        "quickshop_gallery_image_crop": true,
+        "quickshop_gallery_thumbnail_position": "below",
+        "quickshop_gallery_video_autoplay": true,
+        "quickshop_gallery_video_looping": true,
+        "quickshop_gallery_hover_zoom": "disabled"
       }
     }
   },
