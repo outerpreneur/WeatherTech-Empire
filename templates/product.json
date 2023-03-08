@@ -58,7 +58,7 @@
         "form": {
           "type": "form",
           "settings": {
-            "enable_local_pickup": true
+            "enable_local_pickup": false
           }
         },
         "share": {
@@ -88,6 +88,14 @@
             "collapsible_tab_text": "<h3>Lifetime Limited Warranty<\/h3><p>WeatherTech Direct, LLC warrants that our products will be free from any defects in materials and workmanship for the life of the original purchaser and only for the original vehicle they were installed in. That does not mean that a product that simply and naturally wears out from normal use is a candidate for a warranty replacement or a refund. Like tires, brake pads or the shoes on your feet, everything wears out and when it does, that does not mean you did not receive good value for your money.<br\/><br\/>We are reasonable people and we believe in true customer satisfaction. We will work with you for a fair resolution to any issue you may have. Fair is defined as being fair to both you the customer and to WeatherTech. We do not charge extra for our products to our vast majority of customers so we can accommodate ridiculous warranty claims by the few. Our decision is final and will consist of either replacement of your product at no charge or charge you a prorated amount for a replacement, meaning we may extend a discount to you to purchase an exact replacement. Our goal is to keep our customers happy for a lifetime and always reach a fair resolution to any issue. Proof of purchase is required.<br\/><br\/>Exclusions to this warranty include wear due to severe abrasive conditions, chemical contamination, such as spilled gasoline, bleach, vehicle accidents, misuse, abuse, incorrect installation, incorrect use, etc.<\/p>"
           }
         },
+        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6": {
+          "type": "request_quote",
+          "settings": {
+            "title": "Want to do a bulk order? Request a quote",
+            "show_quantity": true,
+            "show_message": true
+          }
+        },
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7": {
           "type": "key_details",
           "settings": {
@@ -105,6 +113,14 @@
           "settings": {
             "custom_liquid": "{% liquid\n\n%}\n\n<section class=\"search-bar\">\n  <form action=\"{{ routes.search_url }}\">\n    <select\n      id=\"slct1\"\n      name=\"slct1\"\n      onchange=\"populate(this.id,'slct2')\"\n    >\n      <option value=\"-Make-\">Make<\/option>\n      <option value=\"Tesla\">Tesla<\/option>\n      <option value=\"Peugeot\">Peugeot<\/option>\n      <option value=\"Mini\">Mini<\/option>\n      <option value=\"Dacia\">Dacia<\/option>\n      <option value=\"Mercedes\">Mercedes<\/option>\n      <option value=\"Audi\">Audi<\/option>\n    <\/select>\n\n    <select\n      id=\"slct2\"\n      disabled\n      name=\"slct2\"\n    >\n      <option value=\"-Make-\">Model<\/option>\n    <\/select>\n\n    <select\n      id=\"year\"\n      disabled\n      onChange=\"update()\"\n    >\n      <option value=\"en\">Year<\/option>\n      <option value=\"en\">2018<\/option>\n      <option value=\"es\">2019<\/option>\n      <option value=\"ey\">2020<\/option>\n      <option value=\"er\">2021<\/option>\n      <option value=\"eu\">2022<\/option>\n      <option value=\"eu\">2023<\/option>\n    <\/select>\n    <input\n      type=\"text\"\n      placeholder=\"Search\"\n      name=\"q\"\n      id=\"text\"\n      class=\"text-bar\"\n      disabled\n    >\n    <input\n      class=\"shop-car-button\"\n      type=\"submit\"\n      value=\"Shop by car\"\n    >\n  <\/form>\n<\/section>\n\n{% liquid\n\n%}\n\n<script>\n  function populate(s1, s2) {\n    var s1 = document.getElementById(s1);\n    var s2 = document.getElementById(s2);\n    var s3 = document.getElementById('year');\n    var text = document.getElementById('text');\n    s2.innerHTML = '';\n    s2.removeAttribute('disabled');\n    s3.removeAttribute('disabled');\n    text.removeAttribute('disabled');\n    if (s1.value == 'Tesla') {\n      var optionArray = ['|Model', 'model y|Model Y', 'model 3|Model 3', 'Tesla Y Sunshade|tesla y sunshade'];\n    } else if (s1.value == 'Dacia') {\n      var optionArray = ['|Model', 'duster|Duster'];\n    } else if (s1.value == 'Mini') {\n      var optionArray = ['|Model', 'clubman|Clubman', 'countryman|Countryman'];\n    } else if (s1.value == 'Peugeot') {\n      var optionArray = ['|Model', '3008|3008'];\n    } else if (s1.value == 'Audi') {\n      var optionArray = [\n        '|Model',\n        'e-tron gt cargo|E-tron GT Cargo',\n        'e-tron|E-tron ',\n        'e-tron suv' | 'E-tron SUV'\n      ];\n    } else if (s1.value == 'Mercedes') {\n      var optionArray = ['|Model', 'g-class|G-class'];\n    }\n    for (var option in optionArray) {\n      var pair = optionArray[option].split('|');\n      var newOption = document.createElement('option');\n      newOption.value = pair[0];\n      newOption.innerHTML = pair[1];\n      s2.options.add(newOption);\n    }\n  }\n\n  function update() {\n    var make = document.getElementById('slct1');\n    var optionMake = make.options[make.selectedIndex];\n\n    var model = document.getElementById('slct2');\n    var optionModel = model.options[model.selectedIndex];\n\n    var year = document.getElementById('year');\n    var optionYear = year.options[year.selectedIndex];\n\n    document.getElementById('text').value = optionMake.text + ' ' + optionModel.text + ' ' + optionYear.text;\n  }\n<\/script>\n\n<style>\n  .search-bar {\n    font-family: \"helvetica\";\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin: 0;\n    min-height: {{ section.settings.image_height }}px;\n    background-size: cover;\n    background-position: {{ section.settings.image_position }};\n  }\n\n\n  .search-bar select {\n    padding: 0.5em;\n    appearance: none;\n    cursor: pointer;\n    border-radius: 5px;\n\n  }\n\n  .search-bar input {\n    padding: 1em;\n    border-radius: 5px;\n\n  }\n\n  .shop-car-button {\n    background: #e32020;\n    border: none;\n    color: #fff;\n    font-weight: 800;\n    cursor: pointer;\n  }\n\n  @media(max-width: 800px) {\n    .search-bar form {\n      display: flex;\n      flex-direction: column;\n      gap: 2em;\n      width: 100%;\n      padding: 2em;\n    }\n  }\n<\/style>"
           }
+        },
+        "101d50bc-9c39-49b7-b6c9-b541a061409d": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "product_recommendation_limit": 5,
+            "products_per_slide": 2
+          }
         }
       },
       "block_order": [
@@ -121,8 +137,10 @@
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "65d6eda9-6fd4-4d84-bacb-454032735dbe",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
+        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
-        "ddb370e5-182c-44ba-904d-0d3dd9b80569"
+        "ddb370e5-182c-44ba-904d-0d3dd9b80569",
+        "101d50bc-9c39-49b7-b6c9-b541a061409d"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
@@ -146,11 +164,20 @@
       "settings": {
         "enable_recently_viewed_products": true
       }
+    },
+    "2fc37264-a577-4d77-a829-313b401689e6": {
+      "type": "filter-storefront",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/Snow_Close_Up_Cargo_Horz.jpg",
+        "image_height": 500,
+        "image_position": "center"
+      }
     }
   },
   "order": [
     "main",
     "recommendations",
-    "recently-viewed"
+    "recently-viewed",
+    "2fc37264-a577-4d77-a829-313b401689e6"
   ]
 }

@@ -67,7 +67,7 @@
     "social_vimeo": "",
     "social_whatsapp": "https:\/\/www.whatsapp.com\/",
     "social_youtube": "https:\/\/www.youtube.com\/user\/shopify",
-    "enable_checkout_lock_icon": false,
+    "enable_checkout_lock_icon": true,
     "continue_shopping_url": "shopify:\/\/collections\/all",
     "continue_url_cart": true,
     "continue_url_404": true,
