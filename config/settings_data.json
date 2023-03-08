@@ -192,7 +192,7 @@
           "static-footer-0": {
             "type": "menu",
             "settings": {
-              "menu": "policies"
+              "menu": "category"
             }
           },
           "1498182586280": {
@@ -223,10 +223,10 @@
           "static-footer-1"
         ],
         "settings": {
-          "payment_icons": false,
+          "payment_icons": true,
           "show_locale_selector": true,
           "show_currency_selector": true,
-          "additional_menu": "footer"
+          "additional_menu": "policies"
         }
       },
       "static-collection": {
