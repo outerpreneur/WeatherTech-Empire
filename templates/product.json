@@ -19,9 +19,9 @@
             "show_product_description": true,
             "show_tabs_below_product_gallery": true,
             "tab_heading_1": "Material \/ application",
-            "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
+            "tab_text_1": "<p>{{ product.metafields.custom.material | metafield_tag }}<\/p>",
             "tab_heading_2": "Benefits \/ tips",
-            "tab_text_2": "<p>Use this text to share information about your product.<\/p>",
+            "tab_text_2": "<p>{{ product.metafields.custom.benefits_hints | metafield_tag }}<\/p>",
             "tab_heading_3": "FAQ",
             "tab_text_3": "<p>Use this text to share information about your product.<\/p>"
           }
