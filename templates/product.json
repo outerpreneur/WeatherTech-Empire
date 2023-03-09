@@ -112,7 +112,7 @@
           "settings": {
             "heading": "Pairs well with",
             "product_recommendation_limit": 5,
-            "products_per_slide": 2
+            "products_per_slide": 3
           }
         }
       },
