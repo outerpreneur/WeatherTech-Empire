@@ -93,7 +93,7 @@
           "settings": {
             "heading": "Pairs well with",
             "product_recommendation_limit": 5,
-            "products_per_slide": 3
+            "products_per_slide": 1
           }
         }
       },
