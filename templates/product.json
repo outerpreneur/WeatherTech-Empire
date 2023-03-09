@@ -26,12 +26,6 @@
             "tab_text_3": "<p>Use this text to share information about your product.<\/p>"
           }
         },
-        "vendor": {
-          "type": "vendor",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "c3cabf86-f486-4491-8054-276a77f10f63": {
           "type": "inventory_status",
           "settings": {
@@ -70,14 +64,7 @@
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
           "type": "collapsible-tab",
           "settings": {
-            "collapsible_tab_heading": "Measures",
-            "collapsible_tab_text": "<p>Use this text to share information about your product.<\/p>"
-          }
-        },
-        "65d6eda9-6fd4-4d84-bacb-454032735dbe": {
-          "type": "collapsible-tab",
-          "settings": {
-            "collapsible_tab_heading": "Material",
+            "collapsible_tab_heading": "Details",
             "collapsible_tab_text": "<p>Use this text to share information about your product.<\/p>"
           }
         },
@@ -100,11 +87,11 @@
           "type": "key_details",
           "settings": {
             "icon": "icon-delivery-package",
-            "title": "Delivery time",
-            "text": "<p>Use this text to share information about your product and policies with your customers.<\/p>",
-            "text_color": "#1d1d1d",
-            "icon_color": "#1d1d1d",
-            "background_color": "#f5f3ed"
+            "title": "FREE Delivery for orders over $200",
+            "text": "<p>We endeavour to provide a FREE 3-5 day delivery service from receipt of the order and cleared payment across all of Switzerland for those products that we have in stock<\/p>",
+            "text_color": "#ffffff",
+            "icon_color": "#ffffff",
+            "background_color": "#052c49"
           }
         },
         "101d50bc-9c39-49b7-b6c9-b541a061409d": {
@@ -120,7 +107,6 @@
         "title",
         "77b76149-b8f7-4a55-9fa6-7b36e6446b41",
         "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5",
-        "vendor",
         "c3cabf86-f486-4491-8054-276a77f10f63",
         "rating",
         "price",
@@ -128,7 +114,6 @@
         "form",
         "share",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
-        "65d6eda9-6fd4-4d84-bacb-454032735dbe",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
