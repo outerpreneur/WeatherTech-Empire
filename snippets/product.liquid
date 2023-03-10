@@ -160,7 +160,7 @@
                   </h1>
                 {% endif %}
               {% endif %}
-
+            
             {% when 'vendor' %}
               {% if product.vendor != blank or onboarding %}
                 <div class="product-vendor">
@@ -356,7 +356,7 @@
                   {% endunless %}
                 </div>
               </div>
-
+            {% render 'search-popup' %}
             {% when 'text' %}
               <div class="product-text">
                 {{ block.settings.text }}

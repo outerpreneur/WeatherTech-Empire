@@ -79,10 +79,12 @@
     .search-bar select {
     	padding: 1em;
     }
+
     dialog {
     border: none;
-    position: absolute;
-    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 {% endstyle %}
 
@@ -92,9 +94,9 @@
     const openModal = document.querySelector(".open-button");
 
     openModal.addEventListener('click', () => {
-      const wrapper = document.getElementById("dialog-wrapper");
+      {% comment %} const wrapper = document.getElementById("dialog-wrapper");
       dialog.style.left = wrapper.offsetLeft + "px";
-      dialog.style.top = wrapper.offsetTop + "px";
+      dialog.style.top = wrapper.offsetTop + "px"; {% endcomment %}
       dialog.showModal()
     })
 
