@@ -1,10 +1,12 @@
 {% liquid
 
 %}
-<button class="open-button">Search</button>
+<button class="open-button">
+  Search your car again<img src="/assets/icons8-sedan-50.png | asset_img">
+</button>
 
 <div id="dialog-wrapper">
-  <dialog>
+  <dialog class="modales">
     <section class="search-bar">
       <form action="{{ routes.search_url }}">
         <select
@@ -64,27 +66,47 @@
 %}
 
 {% style %}
-    .search-bar {
-      	display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+      .open-button {
+          width: 100%;
+          padding: 1.1em;
+          background-color: #194ba0;
+          color: #fff;
+          font-weight: 600;
+          border: none;
+          cursor: pointer;
+      }
+
+      .search-bar {
+        	display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          margin-bottom: 30px;
+      }
+
+      .search-bar input {
+      	padding: 1em;
+      }
+
+      .search-bar select {
+      	padding: 1em;
+      }
+
+      .shop-car-button {
+          background-color: #e32020;
+          border: none;
+          color: #fff;
+      }
+
+      dialog {
+      border: none;
+      position: fixed;
+      top: 0;
+      left: 0;
     }
 
-    .search-bar input {
-    	padding: 1em;
-    }
-
-    .search-bar select {
-    	padding: 1em;
-    }
-
-    dialog {
-    border: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+    .modales::backdrop {
+    background: rgb(0 0 0 / 0.4);
   }
 {% endstyle %}
 
