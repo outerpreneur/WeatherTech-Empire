@@ -59,6 +59,14 @@
           value="Shop by car"
         >
       </form>
+      <svg
+        class="close"
+        width="15"
+        height="15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M11.314 0l2.828 2.828L9.9 7.071l4.243 4.243-2.828 2.828L7.07 9.9l-4.243 4.243L0 11.314 4.242 7.07 0 2.828 2.828 0l4.243 4.242L11.314 0z" fill="#000" fill-rule="evenodd" opacity=".4"/>
+      </svg>
     </section>
   </dialog>
 </div>
@@ -93,6 +101,7 @@
       align-items: center;
       margin-top: 30px;
       margin-bottom: 30px;
+
   }
 
   .search-bar input {
@@ -123,18 +132,39 @@
       .modales::backdrop {
       background: rgb(0 0 0 / 0.4);
     }
+
+    .close {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      top: 1em;
+      right: 1em;
+      cursor: pointer;
+    }
+
+    @media(max-width: 800px) {
+    .search-bar form {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      width: 100%;
+      padding: 2em;
+    }
+  }
 {% endstyle %}
 
 <script>
   {% comment %} modal {% endcomment %}
     const dialog = document.querySelector('dialog')
     const openModal = document.querySelector(".open-button");
+    const closeModal = document.querySelector(".close");
 
     openModal.addEventListener('click', () => {
-      {% comment %} const wrapper = document.getElementById("dialog-wrapper");
-      dialog.style.left = wrapper.offsetLeft + "px";
-      dialog.style.top = wrapper.offsetTop + "px"; {% endcomment %}
       dialog.showModal()
+    })
+
+    closeModal.addEventListener('click', () => {
+      dialog.close()
     })
 
     {% comment %} Car-filter {% endcomment %}
