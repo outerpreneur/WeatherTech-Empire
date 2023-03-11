@@ -356,7 +356,11 @@
                   {% endunless %}
                 </div>
               </div>
+            {% when 'search-popup-block' %}
+            
             {% render 'search-popup' %}
+            
+
             {% when 'text' %}
               <div class="product-text">
                 {{ block.settings.text }}
