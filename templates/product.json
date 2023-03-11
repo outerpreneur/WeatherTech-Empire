@@ -55,6 +55,11 @@
             "enable_local_pickup": false
           }
         },
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01": {
+          "type": "search-popup-block",
+          "settings": {
+          }
+        },
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
           "type": "collapsible-tab",
           "settings": {
@@ -106,6 +111,7 @@
         "price",
         "description",
         "form",
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
