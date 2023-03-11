@@ -2,7 +2,8 @@
 
 %}
 <button class="open-button">
-  Search for your car again<img src="/assets/icons8-sedan-50.png | img_url">
+  Search for your vehicle
+  <img src="/assets/car-white.png" width="15" height="15" | asset_img_url>
 </button>
 
 <div id="dialog-wrapper">
@@ -74,6 +75,16 @@
       font-weight: 600;
       border: none;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 1em;
+      font-size:1em;
+  }
+
+  .open-button:hover {
+      filter: brightness(1.2)
   }
 
   .search-bar {
