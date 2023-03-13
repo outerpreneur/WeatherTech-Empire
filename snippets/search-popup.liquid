@@ -15,56 +15,7 @@
 <div id="dialog-wrapper">
   <dialog class="modales">
     <section class="search-bar">
-      <form action="{{ routes.search_url }}">
-        <select
-          id="slct1"
-          name="slct1"
-          onchange="populate(this.id,'slct2')"
-        >
-          <option value="-Make-">Make</option>
-          <option value="Tesla">Tesla</option>
-          <option value="Peugeot">Peugeot</option>
-          <option value="Mini">Mini</option>
-          <option value="Dacia">Dacia</option>
-          <option value="Mercedes">Mercedes</option>
-          <option value="Audi">Audi</option>
-        </select>
-
-        <select
-          id="slct2"
-          disabled
-          name="slct2"
-        >
-          <option value="-Make-">Model</option>
-        </select>
-
-        <select
-          id="year"
-          disabled
-          onChange="update()"
-        >
-          <option value="en">Year</option>
-          <option value="en">2018</option>
-          <option value="es">2019</option>
-          <option value="ey">2020</option>
-          <option value="er">2021</option>
-          <option value="eu">2022</option>
-          <option value="eu">2023</option>
-        </select>
-        <input
-          type="text"
-          placeholder="Search"
-          name="q"
-          id="text"
-          class="text-bar"
-          disabled
-        >
-        <input
-          class="shop-car-button"
-          type="submit"
-          value="Shop by car"
-        >
-      </form>
+      {% render 'car-filter-master' %}
       <svg
         class="close"
         width="15"
@@ -82,19 +33,19 @@
 
 {% style %}
   .open-button {
-      width: 100%;
-      padding: 0.9em;
-      background-color: #194ba0;
-      color: #fff;
-      font-weight: 600;
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      gap: 1em;
-      font-size:1em;
+    width: 100%;
+    padding: 0.9em;
+    background-color: #194ba0;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1em;
+    font-size:1em;
   }
 
   .open-button:hover {
@@ -102,60 +53,43 @@
   }
 
   .search-bar {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
   }
 
-  .search-bar input {
-  padding: 1em;
-  appearance: none;
+
+  dialog {
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
-  .search-bar select {
-    appearance:none;
-  padding: 1em;
+  .modales::backdrop {
+    background: rgb(0 0 0 / 0.4);
   }
 
-  .shop-car-button {
-      background-color: #e32020;
-      border: none;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
+  .close {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
   }
 
-      dialog {
-      border: none;
-      position: fixed;
-      top: 0;
-      left: 0;
+  @media(max-width: 800px) {
+  .search-bar form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    padding: 2em;
   }
-
-      .modales::backdrop {
-      background: rgb(0 0 0 / 0.4);
-    }
-
-    .close {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      top: 1em;
-      right: 1em;
-      cursor: pointer;
-    }
-
-    @media(max-width: 800px) {
-    .search-bar form {
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
-      width: 100%;
-      padding: 2em;
-    }
   }
 {% endstyle %}
 
