@@ -408,8 +408,8 @@
         "link_text": "View product",
         "textbox_title": "New Tesla Y 2022 Accessory Kit",
         "textbox_subheading": "<p>Make an image shoppable by adding hotspots that link to various products.<\/p>",
-        "textbox_button_label": "Shop all",
-        "textbox_button_link": "",
+        "textbox_button_label": "Shop Tesla",
+        "textbox_button_link": "shopify:\/\/collections\/tesla",
         "textbox_button_style": "primary",
         "textbox_text_alignment": "center",
         "textbox_text_position": "left"
@@ -440,7 +440,7 @@
       "settings": {
         "title": "",
         "layout": "grid",
-        "collection": "all-products",
+        "collection": "bmw",
         "product_count": 7,
         "cta_label": "",
         "cta_button_style": "primary"
