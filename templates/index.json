@@ -421,12 +421,12 @@
         "title-card": {
           "type": "title_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_e854926f-dabe-458e-a1a8-d85e46c02220.jpg",
+            "image": "shopify:\/\/shop_images\/custom_resized_bfe61b66-ffd6-44a9-a2eb-0ff93bfdfe31.jpg",
             "horizontal_size": "3",
             "vertical_size": "1",
             "text_alignment": "center-center",
             "pre_heading": "Shop",
-            "heading": "BMW",
+            "heading": "Audi",
             "text_color": "#ffffff",
             "cta_label": "See more",
             "overlay_color": "#000000",
@@ -440,7 +440,7 @@
       "settings": {
         "title": "",
         "layout": "grid",
-        "collection": "bmw",
+        "collection": "audi",
         "product_count": 7,
         "cta_label": "",
         "cta_button_style": "primary"
