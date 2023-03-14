@@ -164,7 +164,7 @@
       "settings": {
         "title": "",
         "layout": "slideshow",
-        "collection": "all-products",
+        "collection": "floor-liners",
         "product_count": 9,
         "cta_label": "",
         "cta_button_style": "primary"
@@ -172,6 +172,7 @@
     },
     "dynamic_featured_product": {
       "type": "dynamic-featured-product",
+      "disabled": true,
       "blocks": {
         "title": {
           "type": "title",
