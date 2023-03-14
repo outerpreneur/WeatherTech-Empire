@@ -10,31 +10,37 @@
 %}
 
 <style>
-  .search-bar-section {
-    font-family: "helvetica";
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    min-height: {{ section.settings.image_height }}px;
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.40), rgba(117, 19, 93, 0), #e32020), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: {{ section.settings.image_position }};
-  }
+    .search-bar-section {
+      font-family: "helvetica";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      min-height: {{ section.settings.image_height }}px;
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.40), rgba(117, 19, 93, 0), #e32020), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: {{ section.settings.image_position }};
+    }
 
-  .search-bar-container input {
-    padding: 1em;
-    border-radius: 5px;
-    border: none;
-  }
+    .search-bar-container input {
+      padding: 1em;
+      border-radius: 5px;
+      border: none;
+    }
 
-  .shop-car-button {
-    background-color: #e32020;
-    border: none;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
+    .shop-car-button {
+      background-color: #e32020;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+  @media (max-width: 800px) {
+    .search-bar-container {
+      width: 100%;
+    }
   }
 </style>
 
