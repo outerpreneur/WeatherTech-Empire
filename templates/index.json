@@ -27,7 +27,7 @@
             "icon": "icon-thumbs-up",
             "image": "shopify:\/\/shop_images\/WT_Web_Icon-Auto-Cleaning_Hover.png",
             "title": "Lifetime Limited Warranty",
-            "text": "<p>+1 (201) 555-5555<\/p>",
+            "text": "",
             "link": ""
           }
         },
@@ -47,7 +47,7 @@
             "icon": "icon-rating-five-star",
             "image": "shopify:\/\/shop_images\/WT_Web_Icon-LLL_Hover.png",
             "title": "Excelent service",
-            "text": "<p>Find a store near you<\/p>",
+            "text": "",
             "link": ""
           }
         }
