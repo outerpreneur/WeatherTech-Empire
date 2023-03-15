@@ -15,6 +15,7 @@
           "type": "highlight",
           "settings": {
             "icon": "icon-delivery",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Products_Hover.png",
             "title": "Free Shipping",
             "text": "<p>When you spend CHF 200+<\/p>",
             "link": ""
@@ -24,6 +25,7 @@
           "type": "highlight",
           "settings": {
             "icon": "icon-thumbs-up",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Auto-Cleaning_Hover.png",
             "title": "Lifetime Limited Warranty",
             "text": "<p>+1 (201) 555-5555<\/p>",
             "link": ""
@@ -33,6 +35,7 @@
           "type": "highlight",
           "settings": {
             "icon": "icon-chat-alternate",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Customer-Service_Hover.png",
             "title": "Chat With Us",
             "text": "<p>We offer 24-hour chat support<\/p>",
             "link": ""
@@ -42,6 +45,7 @@
           "type": "highlight",
           "settings": {
             "icon": "icon-rating-five-star",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-LLL_Hover.png",
             "title": "Excelent service",
             "text": "<p>Find a store near you<\/p>",
             "link": ""
