@@ -1,12 +1,36 @@
 {
   "sections": {
+    "2c3c3e58-b203-4834-9698-a5d16c57c208": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "medium",
+        "image": "shopify:\/\/shop_images\/oleksandr-horbach-CP4PfqpQNNk-unsplash.jpg",
+        "title": "Shop by make",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "",
+        "button_text": ""
+      }
+    },
     "main": {
       "type": "static-subcollections-menu",
       "settings": {
+        "show_breadcrumbs": true,
+        "show_description": true,
+        "show_collection_image": false,
+        "thumbnail_columns_desktop": "3",
+        "thumbnail_image": "collection-image",
+        "image_align": "left",
+        "cta": "Shop all",
+        "expand_mobile_menus": false
       }
     }
   },
   "order": [
+    "2c3c3e58-b203-4834-9698-a5d16c57c208",
     "main"
   ]
 }
