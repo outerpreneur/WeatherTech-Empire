@@ -1,12 +1,36 @@
 {
   "sections": {
+    "1a38d8af-f9fa-4a08-8140-df0468f980d7": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "medium",
+        "image": "shopify:\/\/shop_images\/custom_resized_859823b5-fff2-4d88-ba82-32deb1593eb8.jpg",
+        "title": "Make",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "",
+        "button_text": ""
+      }
+    },
     "main": {
       "type": "static-subcollections-grid",
       "settings": {
+        "show_breadcrumbs": true,
+        "show_description": true,
+        "show_collection_image": false,
+        "show_product_count": false,
+        "thumbnail_columns_desktop": 5,
+        "thumbnail_columns_mobile": 2,
+        "thumbnail_image": "product-image",
+        "image_crop": "original"
       }
     }
   },
   "order": [
+    "1a38d8af-f9fa-4a08-8140-df0468f980d7",
     "main"
   ]
 }
