@@ -68,6 +68,28 @@
         "mobile_layout": "grid"
       }
     },
+    "1678964004457b5f22": {
+      "type": "apps",
+      "blocks": {
+        "3aaadd72-2616-4d90-915f-8b7a2f150157": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "3aaadd72-2616-4d90-915f-8b7a2f150157"
+      ],
+      "settings": {
+        "include_padding": true
+      }
+    },
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
@@ -560,6 +582,7 @@
     },
     "dynamic_testimonials": {
       "type": "dynamic-testimonials",
+      "disabled": true,
       "blocks": {
         "testimonial-1": {
           "type": "testimonial",
@@ -632,6 +655,7 @@
     },
     "dynamic_search": {
       "type": "dynamic-search",
+      "disabled": true,
       "settings": {
         "title": "Shop by car",
         "text": "",
@@ -651,6 +675,7 @@
   "order": [
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e",
     "dynamic_highlights_banner",
+    "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
     "dynamic_featured_product",
