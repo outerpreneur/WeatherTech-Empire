@@ -35,7 +35,7 @@
 
           <p class="site-footer-credits">
             {% assign year = 'now' | date: '%Y' %}
-            {{ 'footer.general.copyright_html' | t: year: year }}
+            {{ 'footer.general.copyright_html' | t: year: year, shop_name: shop.name }}
             Mauwi Enterprises SA.
           </p>
           <p>Mauwi Enterprises SA. </p>
