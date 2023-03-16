@@ -100,7 +100,9 @@
     </script>
     {% comment %}Inject theme-object end{% endcomment %}
 
-  </head>
+  
+	{{ shop.metafields.loox["global_html_head"] }}
+</head>
 
   <body class="template-{{ template.name }}" data-instant-allow-query-string {% if settings.reduce_animations %}data-reduce-animations{% endif %}>
     <div style="--background-color: {{ settings.color_background }}">
@@ -591,5 +593,7 @@
       defer
     >
     </script>
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>
