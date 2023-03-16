@@ -24,8 +24,8 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "filter_option": "tag",
-            "filter_groups": "collapse_all",
+            "filter_option": "faceted",
+            "filter_groups": "expand_first",
             "show_filter_product_count": true,
             "filter_style": "groups",
             "filter_limit": "5",
@@ -56,7 +56,7 @@
         "sort_by": true,
         "grid_list": true,
         "default_view": "grid-view",
-        "enable_subcollection": false,
+        "enable_subcollection": true,
         "show_product_count": true,
         "thumbnail_image": "product-image",
         "image_crop": "original"
