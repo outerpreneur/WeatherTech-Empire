@@ -21,7 +21,7 @@
             "tab_heading_1": "Material \/ application",
             "tab_text_1": "<p>{{ product.metafields.custom.material | metafield_tag }}<\/p>",
             "tab_heading_2": "Benefits \/ tips",
-            "tab_text_2": "<p>{{ product.metafields.custom.benefits_hints | metafield_tag }}<\/p>",
+            "tab_text_2": "",
             "tab_heading_3": "FAQ",
             "tab_text_3": "<p>Use this text to share information about your product.{{ product.metafields[\"shopify--discovery--product_recommendation\"].related_products_display.value }}<\/p>"
           }
@@ -69,7 +69,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "Details",
-            "collapsible_tab_text": "<p>Use this text to share information about your product.<\/p>"
+            "collapsible_tab_text": "<p>Make: {{ product.metafields.custom.make.value }}<\/p><p>Model: {{ product.metafields.custom.model.value }}<\/p><p>Material: {{ product.metafields.custom.material | metafield_tag }}<\/p>"
           }
         },
         "0028e7f1-b0c9-4425-875f-cccf193432c6": {
