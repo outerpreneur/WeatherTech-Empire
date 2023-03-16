@@ -69,7 +69,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "Details",
-            "collapsible_tab_text": "<p><strong>Suitable for:<\/strong><\/p><p>Make: {{ product.metafields.custom.make.value }}<\/p><p>Model: {{ product.metafields.custom.model.value }}<\/p><p>Material: {{ product.metafields.custom.material | metafield_tag }}<\/p>"
+            "collapsible_tab_text": "<p><strong>Suitable for:<\/strong><\/p><p>Make: {{ product.metafields.custom.make.value }}<\/p><p>Model: {{ product.metafields.custom.model.value }}<\/p><p>Year: <\/p>{{ product.metafields.custom.year3 | metafield_tag }}<p>Material: {{ product.metafields.custom.material | metafield_tag }}<\/p>"
           }
         },
         "0028e7f1-b0c9-4425-875f-cccf193432c6": {
