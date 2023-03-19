@@ -136,11 +136,16 @@
 
       <div class="productgrid--masthead filters-active--{{ active_filters }}">
         <h1 class="visually-hidden">{{ page_title }}</h1>
-        {%
+        {% comment %} remove native search filter {% endcomment %}
+        {% comment %} {%
           render 'page-search-form',
           enable_content: enable_content,
           search_filter_string: search_filter_string,
           sanitized_terms: sanitized_terms,
+        %} {% endcomment %}
+        {% comment %} enable car filter solution {% endcomment %}
+        {%
+          render 'car-filter-master'
         %}
 
         {% if active_filters == true %}
