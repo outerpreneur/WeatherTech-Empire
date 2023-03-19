@@ -266,6 +266,24 @@
   blocks: section.blocks,
 %}
 
+{% style %}
+
+/* hidding search header */
+
+@media (min-width:720px) {
+  .live-search {
+    display: none;
+  }
+}
+
+@media (min-width:1024px) {
+  .site-header-main-content{
+    justify-content: space-between;
+  }
+}
+
+{% endstyle %}
+
 {% schema %}
 {
   "name": "t:sections.header.name",
