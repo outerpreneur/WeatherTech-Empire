@@ -2,7 +2,8 @@
   type="application/json"
   data-section-type="dynamic-search"
   data-section-id="{{ section.id }}"
-  data-section-data>
+  data-section-data
+>
   {
     "settings": {
       "live_search": {
@@ -98,6 +99,7 @@
       placeholder: section.settings.placeholder,
       quick_links: nil,
     %}
+    {% comment %} {% render 'car-filter-master' %} {% endcomment %}
   </div>
 </section>
 
