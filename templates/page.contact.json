@@ -35,9 +35,9 @@
         },
         "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-1": {
           "type": "menu",
-          "disabled": true,
           "settings": {
-            "menu": ""
+            "menu": "footer",
+            "image": "shopify:\/\/shop_images\/CoffeeSpillFloorLiner2.jpg"
           }
         },
         "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-2": {
