@@ -585,12 +585,28 @@
             "background": "#121212",
             "opacity": 22
           }
+        },
+        "59087409-d7bf-4d0b-9239-c5097aed41f2": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cargo_Tech_TOYO_Sienna_13_41552.jpg",
+            "title": "Cargo tech",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#ffffff",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 10
+          }
         }
       },
       "block_order": [
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-0",
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1",
-        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2"
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2",
+        "59087409-d7bf-4d0b-9239-c5097aed41f2"
       ],
       "settings": {
         "title": "",
