@@ -195,6 +195,7 @@
           },
           "static-footer-0": {
             "type": "menu",
+            "disabled": true,
             "settings": {
               "menu": "main-menu"
             }
