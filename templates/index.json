@@ -106,7 +106,7 @@
             "title": "Interior Protection",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/all-products",
+            "block_link": "shopify:\/\/collections\/interior-protection",
             "button_text": "Interior protection",
             "button_style": "primary",
             "show_overlay": true,
@@ -212,7 +212,7 @@
       "settings": {
         "title": "",
         "layout": "slideshow",
-        "collection": "all-products",
+        "collection": "interior-protection",
         "product_count": 4,
         "cta_label": "See more",
         "cta_button_style": "primary"
@@ -360,7 +360,7 @@
         "collection-4": {
           "type": "collection",
           "settings": {
-            "collection": "all-products",
+            "collection": "interior-protection",
             "title": ""
           }
         },
