@@ -537,6 +537,66 @@
         "text_alignment": "center-left"
       }
     },
+    "36612375-1729-4764-874c-6ec3e9370468": {
+      "type": "dynamic-promo-mosaic",
+      "disabled": true,
+      "blocks": {
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-0": {
+          "type": "promotion",
+          "settings": {
+            "title": "Mosaic",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1": {
+          "type": "promotion",
+          "settings": {
+            "title": "Mosaic",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2": {
+          "type": "promotion",
+          "settings": {
+            "title": "Mosaic",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-0",
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1",
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2"
+      ],
+      "settings": {
+        "title": "Mosaic",
+        "section_height": "small",
+        "text_alignment": "top-left",
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
     "dynamic_promo_grid-3": {
       "type": "dynamic-promo-grid",
       "blocks": {
@@ -598,6 +658,7 @@
     "dynamic_featured_collection-2",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
+    "36612375-1729-4764-874c-6ec3e9370468",
     "dynamic_promo_grid-3",
     "dynamic_search"
   ]
