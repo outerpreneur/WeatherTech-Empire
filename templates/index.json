@@ -132,7 +132,7 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/y4mM0B8YwLoqyxdpw8vYj5SFF9uaOMFA3ExwpU5SyNnQb1UpOJBcLrYRV2VMmhSjYFkpaRYaHo8ZhzLMA62NOvNP54ImkGPqSsrkIqd1EFu8jluLPGfqpwzcq2CFfYbVx2ulOr5NFkv1cQLgKr7ofafhyMRGLwdmt8rCJH4h7XDsYrJXVzDVDm0.jpg",
+            "image": "shopify:\/\/shop_images\/FORD_Expedition_15_89042.jpg",
             "title": "Cargo \/ Trunk liners",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -158,13 +158,29 @@
             "background": "#121212",
             "opacity": 10
           }
+        },
+        "d2ed044b-a1fb-4f32-833a-53b85f8dd783": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RackSack_Zipper_New_Logo.jpg",
+            "title": "Rack sack",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#ffffff",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
         }
       },
       "block_order": [
         "promotion-1",
         "promotion-2",
         "promotion-3",
-        "promotion-4"
+        "promotion-4",
+        "d2ed044b-a1fb-4f32-833a-53b85f8dd783"
       ],
       "settings": {
         "title": "",
@@ -483,7 +499,7 @@
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/TechShade_Black_Winter_BMW_copy_copy.jpg",
-            "title": "EXTERIOR PROTECTION",
+            "title": "SUN SHADES",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "",
@@ -550,79 +566,6 @@
         "text_alignment": "center-left"
       }
     },
-    "dynamic_testimonials": {
-      "type": "dynamic-testimonials",
-      "disabled": true,
-      "blocks": {
-        "testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/christopher-campbell-kFCdfLbu6zA-unsplash.jpg",
-            "star_rating": "4.5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Christine<\/p>"
-          }
-        },
-        "testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_c5b1185e-bc8a-45ff-a321-79d42eef50f1_1.jpg",
-            "star_rating": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Pierre<\/p>"
-          }
-        },
-        "testimonial-3": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_86eca20c-f17a-4fe9-a170-debd89777a82_1.jpg",
-            "star_rating": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Richard<\/p>"
-          }
-        },
-        "testimonial-4": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_bea954a0-a1f2-4299-a1a3-114074fbd1ed_1.jpg",
-            "star_rating": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Author's name<\/p>"
-          }
-        },
-        "testimonial-5": {
-          "type": "testimonial",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_2818ff42-b53e-4dfc-b65e-de1f4806641b_1.jpg",
-            "star_rating": "5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Author's name<\/p>"
-          }
-        },
-        "testimonial-6": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "star_rating": "4.5",
-            "text": "<p>Add customer reviews and testimonials to showcase your store's happy customers.<\/p>",
-            "author": "<p>Author's name<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial-1",
-        "testimonial-2",
-        "testimonial-3",
-        "testimonial-4",
-        "testimonial-5",
-        "testimonial-6"
-      ],
-      "settings": {
-        "title": "Don't take our word for granted",
-        "image_crop": "circle",
-        "text_size": "large"
-      }
-    },
     "dynamic_search": {
       "type": "dynamic-search",
       "settings": {
@@ -656,7 +599,6 @@
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
     "dynamic_promo_grid-3",
-    "dynamic_testimonials",
     "dynamic_search"
   ]
 }
