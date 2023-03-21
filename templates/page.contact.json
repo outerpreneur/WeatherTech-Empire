@@ -1,12 +1,109 @@
 {
   "sections": {
+    "4d176aaa-4b24-4c8b-adf4-2e4d83512277": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "medium",
+        "image": "shopify:\/\/shop_images\/y4mokWXiAu7cJKuXEQD1W1IjkYc3u72S0Zw3EeInGoyJ5_VD40fM0QsREZK4hHuor95C0QWCcbx-_f98VPKqDr9rLkaY5p6cQd9vJ1Wlq0B8jGW-fvDQDT_Sr_MYUkw9Ss8AIgDjgXT36Ha6GS7mmozr7go9vmk1tOnmAld8zPbLFDM4Y_LooMj.jpg",
+        "title": "Contact us",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "",
+        "button_text": "Button"
+      }
+    },
     "main": {
       "type": "page-contact",
       "settings": {
       }
+    },
+    "5011f6ab-82e8-4c6c-bd77-e8123897a2d9": {
+      "type": "dynamic-menu-list",
+      "blocks": {
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-0": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        },
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-1": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": ""
+          }
+        },
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-2": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": ""
+          }
+        },
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-3": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": ""
+          }
+        },
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-4": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": ""
+          }
+        },
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-5": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-0",
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-1",
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-2",
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-3",
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-4",
+        "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-5"
+      ],
+      "settings": {
+        "title": "Menu list"
+      }
+    },
+    "1679390896e4315118": {
+      "type": "apps",
+      "blocks": {
+        "ee396b4f-15bb-4935-8295-dfc1e1c01c37": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "ee396b4f-15bb-4935-8295-dfc1e1c01c37"
+      ],
+      "settings": {
+        "include_padding": true
+      }
     }
   },
   "order": [
-    "main"
+    "4d176aaa-4b24-4c8b-adf4-2e4d83512277",
+    "main",
+    "5011f6ab-82e8-4c6c-bd77-e8123897a2d9",
+    "1679390896e4315118"
   ]
 }
