@@ -12,11 +12,14 @@
         "overlay_background": "#000000",
         "overlay_opacity": 50,
         "link": "",
-        "button_text": "Button"
+        "button_text": ""
       }
     },
     "main": {
       "type": "page-contact",
+      "custom_css": [
+
+      ],
       "settings": {
       }
     },
@@ -26,7 +29,8 @@
         "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-0": {
           "type": "menu",
           "settings": {
-            "menu": ""
+            "menu": "customer-support",
+            "image": "shopify:\/\/shop_images\/hands-hold-a-cellphone-showing-the-shopify-home-page.jpg"
           }
         },
         "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-1": {
@@ -74,7 +78,7 @@
         "template--16956439462052__5011f6ab-82e8-4c6c-bd77-e8123897a2d9-167939085842625a0e-5"
       ],
       "settings": {
-        "title": "Menu list"
+        "title": "Support links"
       }
     },
     "1679390896e4315118": {
