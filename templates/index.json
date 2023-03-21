@@ -161,6 +161,7 @@
         },
         "d2ed044b-a1fb-4f32-833a-53b85f8dd783": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/RackSack_Zipper_New_Logo.jpg",
             "title": "Rack sack",
@@ -199,7 +200,7 @@
             "image": "shopify:\/\/shop_images\/W274TN_F150_Ford_2013.jpg",
             "text_alignment": "center-center",
             "pre_heading": "View all",
-            "heading": "Collection",
+            "heading": "Interior protection",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 50
@@ -434,12 +435,12 @@
         "title-card": {
           "type": "title_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_bfe61b66-ffd6-44a9-a2eb-0ff93bfdfe31.jpg",
+            "image": "shopify:\/\/shop_images\/Cupfone_Hand_Sanitizer_Holder_Instructions_IN_VEHICLE_STEP_5b_Color_new.jpg",
             "horizontal_size": "2",
             "vertical_size": "1",
             "text_alignment": "center-center",
             "pre_heading": "Shop",
-            "heading": "Audi",
+            "heading": "Accessories",
             "text_color": "#ffffff",
             "cta_label": "See more",
             "overlay_color": "#000000",
@@ -453,9 +454,9 @@
       "settings": {
         "title": "",
         "layout": "grid",
-        "collection": "audi",
+        "collection": "accessories",
         "product_count": 3,
-        "cta_label": "Shop Audi",
+        "cta_label": "Accessories",
         "cta_button_style": "primary"
       }
     },
