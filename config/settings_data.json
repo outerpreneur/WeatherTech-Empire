@@ -165,11 +165,12 @@
           "quick_links": "category",
           "menu": "main-menu",
           "secondary_menu": "",
-          "small_promo_heading": "Top rated",
-          "small_promo_text": "<p>car accessory company<\/p>",
+          "small_promo_heading": "Made in USA",
+          "small_promo_text": "",
           "small_promo_text_mobile": "",
           "small_promo_link": "shopify:\/\/pages\/our-products",
           "small_promo_icon": "icon-rating-star",
+          "image": "shopify:\/\/shop_images\/icons8-usa-100.png",
           "cart_icon": "icon-cart"
         }
       },
