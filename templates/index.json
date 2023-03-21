@@ -386,14 +386,6 @@
     "dynamic_shoppable_image": {
       "type": "dynamic-shoppable-image",
       "blocks": {
-        "hotspot-1": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 24,
-            "y_axis": 79
-          }
-        },
         "hotspot-2": {
           "type": "hotspot",
           "settings": {
@@ -401,42 +393,14 @@
             "x_axis": 64,
             "y_axis": 67
           }
-        },
-        "hotspot-3": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 61,
-            "y_axis": 5
-          }
-        },
-        "hotspot-4": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 15,
-            "y_axis": 19
-          }
-        },
-        "hotspot-5": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 87,
-            "y_axis": 48
-          }
         }
       },
       "block_order": [
-        "hotspot-1",
-        "hotspot-2",
-        "hotspot-3",
-        "hotspot-4",
-        "hotspot-5"
+        "hotspot-2"
       ],
       "settings": {
         "title": "",
-        "image": "shopify:\/\/shop_images\/custom_resized_4d5cc18f-3088-40a9-bac6-fe56e080cad5.jpg",
+        "image": "shopify:\/\/shop_images\/CupFone_Extension_with_Hand_Sanitizer.jpg",
         "image_width": "two-thirds",
         "link_text": "View product",
         "textbox_title": "Car accessories",
