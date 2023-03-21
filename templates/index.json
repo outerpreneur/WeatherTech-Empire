@@ -5,7 +5,7 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
         "image_height": 600,
-        "image_position": "center"
+        "image_position": "bottom"
       }
     },
     "dynamic_highlights_banner": {
