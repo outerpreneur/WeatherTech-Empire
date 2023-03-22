@@ -9,6 +9,13 @@
     "78bba563-8fd0-440f-8756-aeb8ca6f9db0": {
       "type": "faq",
       "blocks": {
+        "27c7b402-9b31-4e62-9c81-179f1d411aab": {
+          "type": "faq",
+          "settings": {
+            "question": "Who is WeatherTech and what is unique about their interior vehicle products?",
+            "answer": "<p>WeatherTech is a company that specializes in<br\/>manufacturing automotive accessories and protective products. The company was<br\/>founded in 1989 by David MacNeil and is headquartered in Bolingbrook, Illinois,<br\/>USA.<br\/><br\/>WeatherTech is known for its high-quality and durable automotive products that<br\/>are designed to protect and enhance the interior and exterior of cars, trucks,<br\/>and SUVs. The company's most popular products include floor liners, cargo<br\/>liners, and window deflectors.<br\/><br\/>One of the unique features of WeatherTech products is that they are designed<br\/>and manufactured in the United States using domestically sourced materials.<br\/>This allows the company to maintain strict quality control over their products<br\/>and ensure that they meet the highest standards.<br\/><br\/>Another unique feature of WeatherTech products is their custom-fit design. Each<br\/>product is specifically designed to fit the exact make and model of a<br\/>particular vehicle, providing a perfect fit and maximum protection.<br\/><br\/>WeatherTech is also committed to environmental sustainability and uses<br\/>eco-friendly manufacturing processes, including recycling and waste reduction.<br\/><br\/>Overall, WeatherTech is a reputable brand that is known for its high-quality,<br\/>custom-fit, and eco-friendly automotive products.<\/p>"
+          }
+        },
         "897a7b31-5a74-4951-b8e9-eb0c5d71ef50": {
           "type": "faq",
           "settings": {
@@ -16,17 +23,18 @@
             "answer": "<p>WeatherTech HP (High Performance) and TPE (Thermoplastic Elastomer) floor liners are both high-quality and durable options for protecting the interior of your vehicle from dirt, debris, and spills. However, there are some differences between the two.<\/p><p>Here are some key differences between WeatherTech HP and TPE floor liners:<\/p><ol><li>Material: The WeatherTech HP liners are made from a proprietary blend of thermoplastic elastomers, while the TPE liners are made entirely of thermoplastic elastomers.<\/li><li>Texture: WeatherTech HP liners have a smooth surface with a raised outer lip to contain spills and debris, while TPE liners have a textured surface for added grip and a lower outer lip.<\/li><li>Price: WeatherTech HP liners are typically more expensive than TPE liners.<\/li><li>Fit: Both liners are custom-fit for specific makes and models of vehicles, but some users have reported that the WeatherTech HP liners have a more precise fit.<\/li><li>Warranty: Both liners come with a limited lifetime warranty, but the terms and conditions may vary.<\/li><\/ol><p>Ultimately, the choice between WeatherTech HP and TPE floor liners depends on your personal preferences and needs. If you want a smooth and precise fit with a raised outer lip for maximum spill and debris containment, WeatherTech HP liners may be the better choice. However, if you prefer a more textured surface for added grip and a lower outer lip, TPE liners may be a better option.<\/p>"
           }
         },
-        "27c7b402-9b31-4e62-9c81-179f1d411aab": {
+        "38a2a71c-880a-4879-8c18-ac021e9b8074": {
           "type": "faq",
           "settings": {
-            "question": "Who is WeatherTech and what is unique about their interior vehicle products?",
-            "answer": "<p>WeatherTech is a company that specializes in<br\/>manufacturing automotive accessories and protective products. The company was<br\/>founded in 1989 by David MacNeil and is headquartered in Bolingbrook, Illinois,<br\/>USA.<br\/><br\/>WeatherTech is known for its high-quality and durable automotive products that<br\/>are designed to protect and enhance the interior and exterior of cars, trucks,<br\/>and SUVs. The company's most popular products include floor liners, cargo<br\/>liners, and window deflectors.<br\/><br\/>One of the unique features of WeatherTech products is that they are designed<br\/>and manufactured in the United States using domestically sourced materials.<br\/>This allows the company to maintain strict quality control over their products<br\/>and ensure that they meet the highest standards.<br\/><br\/>Another unique feature of WeatherTech products is their custom-fit design. Each<br\/>product is specifically designed to fit the exact make and model of a<br\/>particular vehicle, providing a perfect fit and maximum protection.<br\/><br\/>WeatherTech is also committed to environmental sustainability and uses<br\/>eco-friendly manufacturing processes, including recycling and waste reduction.<br\/><br\/>Overall, WeatherTech is a reputable brand that is known for its high-quality,<br\/>custom-fit, and eco-friendly automotive products.<\/p>"
+            "question": "WeatherTech offer two types of Vehicle floorliner materials, how do I decide which is bestfor my vehicle?",
+            "answer": "<p>Choosing between WeatherTech's two types of<br\/>vehicle floor liner materials - the HP (High Performance) series and the TPE<br\/>(Thermoplastic Elastomer) series - largely depends on your individual needs and<br\/>preferences.<br\/><br\/>If you are looking for maximum protection and durability, the HP series is a<br\/>great choice. It is made from a proprietary blend of thermoplastic elastomers<br\/>that offer superior strength and wear resistance. The HP series also has a<br\/>rigid core that provides additional support and stability to the liner, making<br\/>it perfect for heavy-duty use.<br\/><br\/>On the other hand, if you are looking for a more affordable and comfortable<br\/>option, the TPE series is a great choice. It is made from a softer and more<br\/>flexible thermoplastic elastomer material, which provides a more comfortable<br\/>feel underfoot. The TPE series also comes with a non-slip finish that prevents<br\/>slipping and sliding, making it a great option for everyday use.<br\/><br\/>Ultimately, your choice of floor liner material will depend on your personal<br\/>preferences, your budget, and how you plan to use your vehicle. If you<br\/>frequently transport heavy cargo or have pets that ride in your vehicle, the HP<br\/>series might be the better option. But if you're mainly using your vehicle for<br\/>commuting and running errands, the TPE series might be the more practical<br\/>choice.<\/p>"
           }
         }
       },
       "block_order": [
+        "27c7b402-9b31-4e62-9c81-179f1d411aab",
         "897a7b31-5a74-4951-b8e9-eb0c5d71ef50",
-        "27c7b402-9b31-4e62-9c81-179f1d411aab"
+        "38a2a71c-880a-4879-8c18-ac021e9b8074"
       ],
       "settings": {
         "faq_title": "Frequently Asked Questions",
