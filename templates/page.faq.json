@@ -4,9 +4,37 @@
       "type": "page",
       "settings": {
       }
+    },
+    "78bba563-8fd0-440f-8756-aeb8ca6f9db0": {
+      "type": "faq",
+      "blocks": {
+        "897a7b31-5a74-4951-b8e9-eb0c5d71ef50": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have a question?",
+            "answer": "<p>I have an answer<\/p>"
+          }
+        },
+        "27c7b402-9b31-4e62-9c81-179f1d411aab": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you have a question?",
+            "answer": "<p>I have an answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "897a7b31-5a74-4951-b8e9-eb0c5d71ef50",
+        "27c7b402-9b31-4e62-9c81-179f1d411aab"
+      ],
+      "settings": {
+        "faq_title": "Frequently Asked Questions",
+        "faq_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "78bba563-8fd0-440f-8756-aeb8ca6f9db0"
   ]
 }
