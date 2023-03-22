@@ -49,6 +49,18 @@
       "id": "faq_description",
       "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "faq_bgcolor",
+      "label": "Choose tab background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "faq_color",
+      "label": "Choose tab text color",
+      "default": "#ffffff"
     }
   ],
   "blocks": [
@@ -67,18 +79,6 @@
           "id": "answer",
           "label": "Answer",
           "default": "<p>I have an answer</p>"
-        },
-        {
-          "type": "color",
-          "id": "faq_bgcolor",
-          "label": "Choose tab background color",
-          "default": "#000000"
-        },
-        {
-          "type": "color",
-          "id": "faq_color",
-          "label": "Choose tab text color",
-          "default": "#ffffff"
         }
       ]
     }
@@ -139,8 +139,8 @@
     justify-content: space-between;
     padding: 1em;
     font-weight: bold;
-    color: {{ block.settings.faq_color }};
-    background-color: {{ block.settings.faq_bgcolor }};
+    color: {{ section.settings.faq_color }};
+    background-color: {{ section.settings.faq_bgcolor }};
   }
 
   .tab-label:hover {
