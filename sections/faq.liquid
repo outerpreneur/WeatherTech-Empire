@@ -93,7 +93,7 @@
 
 {% style %}
   .page-width {
-      width: 1400px;
+      width: 80%;
       margin: 0 auto;
       display: flex;
       justify-content: center;
@@ -162,5 +162,14 @@
   .faq-checkbox:checked ~ .tab-content {
     max-height: 100vh;
     padding: 1em;
+  }
+
+  @media (max-width: 1000px ) {
+    .page-width {
+        width: 100%;
+    }
+    .faq-container {
+        width: 90%;
+    }
   }
 {% endstyle %}
