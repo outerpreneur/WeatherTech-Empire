@@ -5,24 +5,27 @@
   <form action="{{ routes.search_url }}">
     <select id="slct1" name="slct1" onchange="unblockYear()">
       <option value="-Make-">--Make--</option>
-      <option value="Alfa romeo">Alfa Romeo</option>
+      <option value="Universal">Universal</option>
+      {% comment %} <option value="Alfa romeo">Alfa Romeo</option> {% endcomment %}
       <option value="Audi">Audi</option>
-      <option value="Aston Martin">Aston Martin</option>
+      {% comment %} <option value="Aston Martin">Aston Martin</option> {% endcomment %}
       <option value="BMW">BMW</option>
       <option value="Dacia">Dacia</option>
       <option value="Ford">Ford</option>
       <option value="Jaguar">Jaguar</option>
       <option value="Jeep">Jeep</option>
-      <option value="Kia">Kia</option>
-      <option value="Lexus">Lexus</option>
-      <option value="Mazda">Mazda</option>
+      {% comment %} <option value="Kia">Kia</option> {% endcomment %}
+      {% comment %} <option value="Lexus">Lexus</option> {% endcomment %}
+      <option value="Land rover">Land rover</option>
+      {% comment %} <option value="Mazda">Mazda</option> {% endcomment %}
       <option value="Mercedes">Mercedes</option>
-      <option value="Mini Cooper">Mini Cooper</option>
+      <option value="Mini">Mini</option>
       <option value="Mitsubishi">Mitsubishi</option>
       <option value="Nissan">Nissan</option>
-      <option value="Renault">Renault</option>
+      {% comment %} <option value="Renault">Renault</option> {% endcomment %}
       <option value="Peugeot">Peugeot</option>
       <option value="Porsche">Porsche</option>
+      <option value="Skoda">Skoda</option>
       <option value="Tesla">Tesla</option>
       <option value="Toyota">Toyota</option>
       <option value="Volskvagen">Volskvagen</option>
@@ -66,86 +69,138 @@
 %}
 
 <script>
-  function populate(s1,s2){
-    var s1 = document.getElementById("slct1");
-    var s2 = document.getElementById("slct2");
-    const yearValue = document.getElementById("year")
-    s2.innerHTML = "";
-      s1.removeAttribute('disabled');
-      s2.removeAttribute('disabled');
-
-    if(s1.value == "Tesla" && yearValue.value == "2018"){
-      var optionArray = ["|Model","camaro|Camaro","corvette|Corvette","impala|Impala"];
-    } else if(s1.value == "Tesla" && yearValue.value == "2019"){
-      var optionArray = ["|Model","avenger|Avenger","challenger|Challenger","charger|Charger"];
-    } else if(s1.value == "Tesla" && yearValue.value == "2020"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    }else if(s1.value == "Tesla" && yearValue.value == "2021"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    }else if(s1.value == "Tesla" && yearValue.value == "2022"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    }else if(s1.value == "Tesla" && yearValue.value == "2023"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    }
-
-    if(s1.value == "Peugeot" && yearValue.value == "2018"){
-      var optionArray = ["|Model","almera|Almera","supra|Supra","x-trail|X-trail"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2019"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2020"){
-      var optionArray = ["|Model","306|306","306|306"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2021"){
-      var optionArray = ["|Model","3008|3008","306|306"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2022"){
-      var optionArray = ["|Model","3008|3008","306|306"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2023"){
-      var optionArray = ["|Model","3008|3008","306|306"];
-    }
-
-    if(s1.value == "Mini" && yearValue.value == "2018"){
-      var optionArray = ["|Model","almera|Almera","supra|Supra","x-trail|X-trail"];
-    } else if(s1.value == "Mini" && yearValue.value == "2019"){
-      var optionArray = ["|Model","avenger|Avenger","challenger|Challenger","charger|Charger"];
-    } else if(s1.value == "Mini" && yearValue.value == "2020"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    } else if(s1.value == "Mini" && yearValue.value == "2021"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    } else if(s1.value == "Mini" && yearValue.value == "2022"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    } else if(s1.value == "Mini" && yearValue.value == "2023"){
-      var optionArray = ["|Model","mustang|Mustang","shelby|Shelby"];
-    }
-
-    for(var option in optionArray){
-      var pair = optionArray[option].split("|");
-      var newOption = document.createElement("option");
-      newOption.value = pair[0];
-      newOption.innerHTML = pair[1];
-      s2.options.add(newOption);
-      text.placeholder = "Search vehicle"
-    }
-  }
-
-     function update () {
-
-       var make = document.getElementById('slct1');
-      var optionMake = make.options[make.selectedIndex];
-
-      var model = document.getElementById('slct2');
-      var optionModel = model.options[model.selectedIndex];
-
-      const year = document.getElementById('year');
-      const optionYear = year.options[year.selectedIndex];
-
-
-      document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
-
-     }
-
-     function unblockYear() {
+    function populate(s1,s2){
+      var s1 = document.getElementById("slct1");
+      var s2 = document.getElementById("slct2");
       const yearValue = document.getElementById("year")
-      yearValue.removeAttribute('disabled');
-     }
+      s2.innerHTML = "";
+        s1.removeAttribute('disabled');
+        s2.removeAttribute('disabled');
+
+    {% comment %} Universal {% endcomment %}
+    if(s1.value == "Universal" && yearValue.value == "2016"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Universal" && yearValue.value == "2017"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Universal" && yearValue.value == "2018"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Universal" && yearValue.value == "2019"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Universal" && yearValue.value == "2020"){
+      var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
+    }else if(s1.value == "Universal" && yearValue.value == "2021"){
+      var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
+    }else if(s1.value == "Universal" && yearValue.value == "2022"){
+      var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
+    }else if(s1.value == "Universal" && yearValue.value == "2023"){
+      var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
+    }
+
+  {% comment %} Audi {% endcomment %}
+      if(s1.value == "Audi" && yearValue.value == "2016"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Audi" && yearValue.value == "2017"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Audi" && yearValue.value == "2018"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Audi" && yearValue.value == "2019"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Audi" && yearValue.value == "2020"){
+        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
+      }else if(s1.value == "Audi" && yearValue.value == "2021"){
+        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
+      }else if(s1.value == "Audi" && yearValue.value == "2022"){
+        var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
+      }else if(s1.value == "Audi" && yearValue.value == "2023"){
+        var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
+      }
+
+  {% comment %} Tesla {% endcomment %}
+
+      if(s1.value == "Tesla" && yearValue.value == "2016"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Audi" && yearValue.value == "2017"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      } else if(s1.value == "Tesla" && yearValue.value == "2018"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      } else if(s1.value == "Tesla" && yearValue.value == "2019"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      } else if(s1.value == "Tesla" && yearValue.value == "2020"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      }else if(s1.value == "Tesla" && yearValue.value == "2021"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      }else if(s1.value == "Tesla" && yearValue.value == "2022"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      }else if(s1.value == "Tesla" && yearValue.value == "2023"){
+        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      }
+
+  {% comment %} Peugeot {% endcomment %}
+
+      if(s1.value == "Peugeot" && yearValue.value == "2018"){
+        var optionArray = ["|Model","3008|3008"];
+      } else if(s1.value == "Peugeot" && yearValue.value == "2019"){
+        var optionArray = ["|Model","3008|3008"];
+      } else if(s1.value == "Peugeot" && yearValue.value == "2020"){
+        var optionArray = ["|Model","3008|3008"];
+      } else if(s1.value == "Peugeot" && yearValue.value == "2021"){
+        var optionArray = ["|Model","3008|3008"];
+      } else if(s1.value == "Peugeot" && yearValue.value == "2022"){
+        var optionArray = ["|Model","3008|3008"];
+      } else if(s1.value == "Peugeot" && yearValue.value == "2023"){
+        var optionArray = ["|Model","3008|3008"];
+      }
+
+  {% comment %} Mini {% endcomment %}
+
+      if(s1.value == "Mini" && yearValue.value == "2016"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Mini" && yearValue.value == "2017"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Mini" && yearValue.value == "2018"){
+        var optionArray = ["|Model","countryman| Countryman"];
+      } else if(s1.value == "Mini" && yearValue.value == "2019"){
+        var optionArray = ["|Model","countryman| Countryman"];
+      } else if(s1.value == "Mini" && yearValue.value == "2020"){
+        var optionArray = ["|Model","countryman| Countryman"];
+      } else if(s1.value == "Mini" && yearValue.value == "2021"){
+        var optionArray = ["|Model","countryman| Countryman"];
+      } else if(s1.value == "Mini" && yearValue.value == "2022"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Mini" && yearValue.value == "2023"){
+        var optionArray = ["|Model","no match| no match"];
+      }
+
+      for(var option in optionArray){
+        var pair = optionArray[option].split("|");
+        var newOption = document.createElement("option");
+        newOption.value = pair[0];
+        newOption.innerHTML = pair[1];
+        s2.options.add(newOption);
+        text.placeholder = "Search vehicle"
+      }
+    }
+
+       function update () {
+
+         var make = document.getElementById('slct1');
+        var optionMake = make.options[make.selectedIndex];
+
+        var model = document.getElementById('slct2');
+        var optionModel = model.options[model.selectedIndex];
+
+        const year = document.getElementById('year');
+        const optionYear = year.options[year.selectedIndex];
+
+
+        document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
+
+       }
+
+       function unblockYear() {
+        const yearValue = document.getElementById("year")
+        yearValue.removeAttribute('disabled');
+       }
 </script>
 
 <style>
