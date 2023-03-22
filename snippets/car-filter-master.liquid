@@ -12,11 +12,10 @@
       <option value="BMW">BMW</option>
       <option value="Dacia">Dacia</option>
       <option value="Ford">Ford</option>
-      <option value="Jaguar">Jaguar</option>
+      <option value="Jaguar Land Rover">Jaguar Land Rover</option>
       <option value="Jeep">Jeep</option>
       {% comment %} <option value="Kia">Kia</option> {% endcomment %}
       {% comment %} <option value="Lexus">Lexus</option> {% endcomment %}
-      <option value="Land rover">Land rover</option>
       {% comment %} <option value="Mazda">Mazda</option> {% endcomment %}
       <option value="Mercedes">Mercedes</option>
       <option value="Mini">Mini</option>
@@ -69,34 +68,34 @@
 %}
 
 <script>
-    function populate(s1,s2){
-      var s1 = document.getElementById("slct1");
-      var s2 = document.getElementById("slct2");
-      const yearValue = document.getElementById("year")
-      s2.innerHTML = "";
-        s1.removeAttribute('disabled');
-        s2.removeAttribute('disabled');
+      function populate(s1,s2){
+        var s1 = document.getElementById("slct1");
+        var s2 = document.getElementById("slct2");
+        const yearValue = document.getElementById("year")
+        s2.innerHTML = "";
+          s1.removeAttribute('disabled');
+          s2.removeAttribute('disabled');
 
-    {% comment %} Universal {% endcomment %}
-    if(s1.value == "Universal" && yearValue.value == "2016"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Universal" && yearValue.value == "2017"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Universal" && yearValue.value == "2018"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Universal" && yearValue.value == "2019"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Universal" && yearValue.value == "2020"){
-      var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
-    }else if(s1.value == "Universal" && yearValue.value == "2021"){
-      var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
-    }else if(s1.value == "Universal" && yearValue.value == "2022"){
-      var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
-    }else if(s1.value == "Universal" && yearValue.value == "2023"){
-      var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
-    }
+      {% comment %} Universal {% endcomment %}
+      if(s1.value == "Universal" && yearValue.value == "2016"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Universal" && yearValue.value == "2017"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Universal" && yearValue.value == "2018"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Universal" && yearValue.value == "2019"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "Universal" && yearValue.value == "2020"){
+        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
+      }else if(s1.value == "Universal" && yearValue.value == "2021"){
+        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3"];
+      }else if(s1.value == "Universal" && yearValue.value == "2022"){
+        var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
+      }else if(s1.value == "Universal" && yearValue.value == "2023"){
+        var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
+      }
 
-  {% comment %} Audi {% endcomment %}
+      {% comment %} Audi {% endcomment %}
       if(s1.value == "Audi" && yearValue.value == "2016"){
         var optionArray = ["|Model","no match| no match"];
       } else if(s1.value == "Audi" && yearValue.value == "2017"){
@@ -115,115 +114,191 @@
         var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q8|Q8","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3"];
       }
 
-  {% comment %} BMW {% endcomment %}
-  if(s1.value == "BMW" && yearValue.value == "2016"){
-    var optionArray = ["|Model","no match| no match"];
-  } else if(s1.value == "BMW" && yearValue.value == "2017"){
-    var optionArray = ["|Model","no match| no match"];
-  } else if(s1.value == "BMW" && yearValue.value == "2018"){
-    var optionArray = ["|Model","no match| no match"];
-  } else if(s1.value == "BMW" && yearValue.value == "2019"){
-    var optionArray = ["|Model","no match| no match"];
-  } else if(s1.value == "BMW" && yearValue.value == "2020"){
-    var optionArray = ["|Model","x6|X6","x5|X5"];
-  }else if(s1.value == "BMW" && yearValue.value == "2021"){
-    var optionArray = ["|Model","x6|X6","x5|X5"];
-  }else if(s1.value == "BMW" && yearValue.value == "2022"){
-    var optionArray = ["|Model","x6|X6","x5|X5","x4|X4","x3|X3","x1|X1"];
-  }else if(s1.value == "BMW" && yearValue.value == "2023"){
-    var optionArray = ["|Model","x6|X6","x5|X5","x4|X4","x3|X3","x1|X1"];
-  }
-
-  {% comment %} Tesla {% endcomment %}
-
-      if(s1.value == "Tesla" && yearValue.value == "2016"){
+    {% comment %} BMW {% endcomment %}
+      if(s1.value == "BMW" && yearValue.value == "2016"){
         var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Audi" && yearValue.value == "2017"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-      } else if(s1.value == "Tesla" && yearValue.value == "2018"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-      } else if(s1.value == "Tesla" && yearValue.value == "2019"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-      } else if(s1.value == "Tesla" && yearValue.value == "2020"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-      }else if(s1.value == "Tesla" && yearValue.value == "2021"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-      }else if(s1.value == "Tesla" && yearValue.value == "2022"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-      }else if(s1.value == "Tesla" && yearValue.value == "2023"){
-        var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+      } else if(s1.value == "BMW" && yearValue.value == "2017"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "BMW" && yearValue.value == "2018"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "BMW" && yearValue.value == "2019"){
+        var optionArray = ["|Model","no match| no match"];
+      } else if(s1.value == "BMW" && yearValue.value == "2020"){
+        var optionArray = ["|Model","x6|X6","x5|X5"];
+      }else if(s1.value == "BMW" && yearValue.value == "2021"){
+        var optionArray = ["|Model","x6|X6","x5|X5"];
+      }else if(s1.value == "BMW" && yearValue.value == "2022"){
+        var optionArray = ["|Model","x6|X6","x5|X5","x4|X4","x3|X3","x1|X1"];
+      }else if(s1.value == "BMW" && yearValue.value == "2023"){
+        var optionArray = ["|Model","x6|X6","x5|X5","x4|X4","x3|X3","x1|X1"];
       }
 
-  {% comment %} Peugeot {% endcomment %}
+    {% comment %} Dacia {% endcomment %}
+    if(s1.value == "Dacia" && yearValue.value == "2016"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Dacia" && yearValue.value == "2017"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Dacia" && yearValue.value == "2018"){
+      var optionArray = ["|Model","duster|Duster"];
+    } else if(s1.value == "Dacia" && yearValue.value == "2019"){
+      var optionArray = ["|Model","duster|Duster"];
+    } else if(s1.value == "Dacia" && yearValue.value == "2020"){
+      var optionArray = ["|Model","duster|Duster"];
+    }else if(s1.value == "Dacia" && yearValue.value == "2021"){
+      var optionArray = ["|Model","duster|Duster"];
+    }else if(s1.value == "Dacia" && yearValue.value == "2022"){
+      var optionArray = ["|Model","duster|Duster"];
+    }else if(s1.value == "Dacia" && yearValue.value == "2023"){
+      var optionArray = ["|Model","duster|Duster"];
+    }
 
-      if(s1.value == "Peugeot" && yearValue.value == "2016"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2017"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2018"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2019"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2020"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2021"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2022"){
-        var optionArray = ["|Model","3008|3008"];
-      } else if(s1.value == "Peugeot" && yearValue.value == "2023"){
-        var optionArray = ["|Model","3008|3008"];
-      }
+    {% comment %} Ford {% endcomment %}
+    if(s1.value == "Ford" && yearValue.value == "2016"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    } else if(s1.value == "Ford" && yearValue.value == "2017"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    } else if(s1.value == "Ford" && yearValue.value == "2018"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    } else if(s1.value == "Ford" && yearValue.value == "2019"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    } else if(s1.value == "Ford" && yearValue.value == "2020"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    }else if(s1.value == "Ford" && yearValue.value == "2021"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    }else if(s1.value == "Ford" && yearValue.value == "2022"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    }else if(s1.value == "Ford" && yearValue.value == "2023"){
+      var optionArray = ["|Model","f-150 raptor|F-150 Raptor"];
+    }
+
+    {% comment %} Jeep {% endcomment %}
+    if(s1.value == "Jeep" && yearValue.value == "2016"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jeep" && yearValue.value == "2017"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jeep" && yearValue.value == "2018"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jeep" && yearValue.value == "2019"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jeep" && yearValue.value == "2020"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }else if(s1.value == "Jeep" && yearValue.value == "2021"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }else if(s1.value == "Jeep" && yearValue.value == "2022"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }else if(s1.value == "Jeep" && yearValue.value == "2023"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }
+
+    {% comment %} Jaguar Land Rover {% endcomment %}
+    if(s1.value == "Jaguar Land Rover" && yearValue.value == "2016"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2017"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2018"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2019"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    } else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2020"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2021"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2022"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }else if(s1.value == "Jaguar Land Rover" && yearValue.value == "2023"){
+      var optionArray = ["|Model","wrangler unlimited 4 door|Wrangler unlimited 4 door"];
+    }
+
+    {% comment %} Tesla {% endcomment %}
+
+    if(s1.value == "Tesla" && yearValue.value == "2016"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Audi" && yearValue.value == "2017"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    } else if(s1.value == "Tesla" && yearValue.value == "2018"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    } else if(s1.value == "Tesla" && yearValue.value == "2019"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    } else if(s1.value == "Tesla" && yearValue.value == "2020"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    }else if(s1.value == "Tesla" && yearValue.value == "2021"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    }else if(s1.value == "Tesla" && yearValue.value == "2022"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    }else if(s1.value == "Tesla" && yearValue.value == "2023"){
+      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
+    }
+
+    {% comment %} Peugeot {% endcomment %}
+
+    if(s1.value == "Peugeot" && yearValue.value == "2016"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2017"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2018"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2019"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2020"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2021"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2022"){
+      var optionArray = ["|Model","3008|3008"];
+    } else if(s1.value == "Peugeot" && yearValue.value == "2023"){
+      var optionArray = ["|Model","3008|3008"];
+    }
 
   {% comment %} Mini {% endcomment %}
 
-      if(s1.value == "Mini" && yearValue.value == "2016"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Mini" && yearValue.value == "2017"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Mini" && yearValue.value == "2018"){
-        var optionArray = ["|Model","countryman| Countryman"];
-      } else if(s1.value == "Mini" && yearValue.value == "2019"){
-        var optionArray = ["|Model","countryman| Countryman"];
-      } else if(s1.value == "Mini" && yearValue.value == "2020"){
-        var optionArray = ["|Model","countryman| Countryman"];
-      } else if(s1.value == "Mini" && yearValue.value == "2021"){
-        var optionArray = ["|Model","countryman| Countryman"];
-      } else if(s1.value == "Mini" && yearValue.value == "2022"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Mini" && yearValue.value == "2023"){
-        var optionArray = ["|Model","no match| no match"];
-      }
-
-      for(var option in optionArray){
-        var pair = optionArray[option].split("|");
-        var newOption = document.createElement("option");
-        newOption.value = pair[0];
-        newOption.innerHTML = pair[1];
-        s2.options.add(newOption);
-        text.placeholder = "Search vehicle"
-      }
+    if(s1.value == "Mini" && yearValue.value == "2016"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Mini" && yearValue.value == "2017"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Mini" && yearValue.value == "2018"){
+      var optionArray = ["|Model","countryman| Countryman"];
+    } else if(s1.value == "Mini" && yearValue.value == "2019"){
+      var optionArray = ["|Model","countryman| Countryman"];
+    } else if(s1.value == "Mini" && yearValue.value == "2020"){
+      var optionArray = ["|Model","countryman| Countryman"];
+    } else if(s1.value == "Mini" && yearValue.value == "2021"){
+      var optionArray = ["|Model","countryman| Countryman"];
+    } else if(s1.value == "Mini" && yearValue.value == "2022"){
+      var optionArray = ["|Model","no match| no match"];
+    } else if(s1.value == "Mini" && yearValue.value == "2023"){
+      var optionArray = ["|Model","no match| no match"];
     }
 
-       function update () {
+        for(var option in optionArray){
+          var pair = optionArray[option].split("|");
+          var newOption = document.createElement("option");
+          newOption.value = pair[0];
+          newOption.innerHTML = pair[1];
+          s2.options.add(newOption);
+          text.placeholder = "Search vehicle"
+        }
+      }
 
-         var make = document.getElementById('slct1');
-        var optionMake = make.options[make.selectedIndex];
+         function update () {
 
-        var model = document.getElementById('slct2');
-        var optionModel = model.options[model.selectedIndex];
+           var make = document.getElementById('slct1');
+          var optionMake = make.options[make.selectedIndex];
 
-        const year = document.getElementById('year');
-        const optionYear = year.options[year.selectedIndex];
+          var model = document.getElementById('slct2');
+          var optionModel = model.options[model.selectedIndex];
+
+          const year = document.getElementById('year');
+          const optionYear = year.options[year.selectedIndex];
 
 
-        document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
+          document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
 
-       }
+         }
 
-       function unblockYear() {
-        const yearValue = document.getElementById("year")
-        yearValue.removeAttribute('disabled');
-       }
+         function unblockYear() {
+          const yearValue = document.getElementById("year")
+          yearValue.removeAttribute('disabled');
+         }
 </script>
 
 <style>
