@@ -29,12 +29,20 @@
             "question": "WeatherTech offer two types of Vehicle floorliner materials, how do I decide which is bestfor my vehicle?",
             "answer": "<p>Choosing between WeatherTech's two types of<br\/>vehicle floor liner materials - the HP (High Performance) series and the TPE<br\/>(Thermoplastic Elastomer) series - largely depends on your individual needs and<br\/>preferences.<br\/><br\/>If you are looking for maximum protection and durability, the HP series is a<br\/>great choice. It is made from a proprietary blend of thermoplastic elastomers<br\/>that offer superior strength and wear resistance. The HP series also has a<br\/>rigid core that provides additional support and stability to the liner, making<br\/>it perfect for heavy-duty use.<br\/><br\/>On the other hand, if you are looking for a more affordable and comfortable<br\/>option, the TPE series is a great choice. It is made from a softer and more<br\/>flexible thermoplastic elastomer material, which provides a more comfortable<br\/>feel underfoot. The TPE series also comes with a non-slip finish that prevents<br\/>slipping and sliding, making it a great option for everyday use.<br\/><br\/>Ultimately, your choice of floor liner material will depend on your personal<br\/>preferences, your budget, and how you plan to use your vehicle. If you<br\/>frequently transport heavy cargo or have pets that ride in your vehicle, the HP<br\/>series might be the better option. But if you're mainly using your vehicle for<br\/>commuting and running errands, the TPE series might be the more practical<br\/>choice.<\/p>"
           }
+        },
+        "106911c9-1f98-4905-80df-96fa313e2182": {
+          "type": "faq",
+          "settings": {
+            "question": "Why are WeatherTech products highly suitable for the Swiss market?",
+            "answer": "<p>WeatherTech products are highly suitable for<br\/>the Swiss market for several reasons:<\/p><ol><li>Weather conditions: Switzerland experiences a wide range of weather conditions throughout the year, including heavy snowfall and rain. WeatherTech products are designed to protect vehicles from these harsh conditions, making them highly suitable for the Swiss market.<\/li><li>High-quality standards: Switzerland is known for its high standard of living and its residents demand high-quality products. WeatherTech products are made with high-quality materials and are designed to meet strict standards, making them a good fit for the Swiss market.<\/li><li>Active lifestyle: Switzerland is known for its outdoor activities, including skiing, hiking, and cycling. WeatherTech products such as floor liners, cargo liners, roof bags, and other accessories are designed to help people transport their gear and equipment safely and securely, making them ideal for the active Swiss lifestyle.<\/li><li>Custom-fit design: WeatherTech products are custom-fit to specific makes and models of vehicles, providing a perfect fit and maximum protection. This is particularly important in Switzerland where many people own luxury cars and want to protect them from wear and tear.<\/li><\/ol><p>Overall, WeatherTech products are highly<br\/>suitable for the Swiss market due to their ability to protect vehicles from<br\/>harsh weather conditions, high-quality standards, compatibility with the active<br\/>Swiss lifestyle, and custom-fit design.<\/p>"
+          }
         }
       },
       "block_order": [
         "27c7b402-9b31-4e62-9c81-179f1d411aab",
         "897a7b31-5a74-4951-b8e9-eb0c5d71ef50",
-        "38a2a71c-880a-4879-8c18-ac021e9b8074"
+        "38a2a71c-880a-4879-8c18-ac021e9b8074",
+        "106911c9-1f98-4905-80df-96fa313e2182"
       ],
       "settings": {
         "faq_title": "Frequently Asked Questions",
