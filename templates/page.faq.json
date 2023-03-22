@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -18,8 +19,8 @@
         "27c7b402-9b31-4e62-9c81-179f1d411aab": {
           "type": "faq",
           "settings": {
-            "question": "Do you have a question?",
-            "answer": "<p>I have an answer<\/p>"
+            "question": "Who is WeatherTech and what is unique about their interior vehicle products?",
+            "answer": "<p>WeatherTech is a company that specializes in<br\/>manufacturing automotive accessories and protective products. The company was<br\/>founded in 1989 by David MacNeil and is headquartered in Bolingbrook, Illinois,<br\/>USA.<br\/><br\/>WeatherTech is known for its high-quality and durable automotive products that<br\/>are designed to protect and enhance the interior and exterior of cars, trucks,<br\/>and SUVs. The company's most popular products include floor liners, cargo<br\/>liners, and window deflectors.<br\/><br\/>One of the unique features of WeatherTech products is that they are designed<br\/>and manufactured in the United States using domestically sourced materials.<br\/>This allows the company to maintain strict quality control over their products<br\/>and ensure that they meet the highest standards.<br\/><br\/>Another unique feature of WeatherTech products is their custom-fit design. Each<br\/>product is specifically designed to fit the exact make and model of a<br\/>particular vehicle, providing a perfect fit and maximum protection.<br\/><br\/>WeatherTech is also committed to environmental sustainability and uses<br\/>eco-friendly manufacturing processes, including recycling and waste reduction.<br\/><br\/>Overall, WeatherTech is a reputable brand that is known for its high-quality,<br\/>custom-fit, and eco-friendly automotive products.<\/p>"
           }
         }
       },
