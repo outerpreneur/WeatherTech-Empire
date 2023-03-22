@@ -40,8 +40,22 @@
         "311390bf-6391-46d2-995e-6ff770d784d5": {
           "type": "faq",
           "settings": {
-            "question": "Do you have a question?",
+            "question": "Why are you partnering with a new WeatherTech reseller\/distributor with a Swiss  based Logistics Service Provider (LSP)?",
             "answer": "<p>WeatherTech may be using a reseller and distribution partner in Switzerland for several reasons:<\/p><p><br\/>1. Local market knowledge: By partnering with a local reseller and distribution partner, WeatherTech can benefit from their expertise and knowledge of the Swiss market. This can help WeatherTech to better understand the needs and preferences of Swiss customers and tailor its products and marketing efforts accordingly.<\/p><p><br\/>2. Distribution network: A local reseller and distribution partner can provide WeatherTech with an established distribution network in Switzerland, which can help to streamline the delivery and fulfillment process. This can help to improve the speed and efficiency of product delivery to Swiss customers.<\/p><p><br\/>3. Regulatory compliance: A local reseller and distribution partner can also help WeatherTech to navigate the complex regulatory environment in Switzerland, including compliance with local laws and regulations related to product safety and labeling.<\/p><p><br\/>4. Brand reputation: Partnering with a reputable reseller and distribution partner can help to improve WeatherTech's brand reputation in Switzerland. By working with a trusted partner, WeatherTech can demonstrate its commitment to providing high-quality products and customer service to Swiss customers.<\/p><p><br\/>Overall, partnering with a reseller and distribution partner in Switzerland can help WeatherTech to better understand the local market, streamline its distribution network, comply with local regulations, and improve its brand reputation.<\/p>"
+          }
+        },
+        "02f520c4-7c91-4d2c-b617-da81033b01fe": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I protect and clean my WeatherTech floorliners?",
+            "answer": "<p>WeatherTech floorliners are designed to be durable and easy to clean, but they still require proper maintenance to keep them looking and performing their best. Here are some tips for protecting and cleaning your WeatherTech floorliners:<\/p><p><br\/>1.\tRegularly remove and shake out any loose dirt or debris from your floorliners to prevent buildup.<\/p><p><br\/>2.\tClean your floorliners using a mild detergent or all-purpose cleaner and a soft-bristled brush or sponge. Avoid using harsh chemicals or abrasive tools that could damage the surface of the floorliners.<\/p><p><br\/>3.\tRinse the floorliners thoroughly with water and allow them to air dry before reinstalling them in your vehicle.<\/p><p><br\/>4.\tFor tougher stains, use a cleaner specifically designed for the type of material your floorliners are made of (e.g., TPE or HP) and follow the manufacturer's instructions carefully.<br\/>5.\tTo protect your floorliners from fading or cracking, avoid exposing them to prolonged periods of direct sunlight and extreme temperatures.<br\/>6.\tConsider using WeatherTech's TechCare line of products, which are specially formulated to clean and protect WeatherTech floorliners and other automotive accessories.<br\/>By following these simple tips, you can help keep your WeatherTech floorliners looking and performing their best for years to come.<br\/><\/p>"
+          }
+        },
+        "5edce98a-4f0d-45dd-be79-9d321d499d5c": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I install my new weathertech HP or TPE floorliners",
+            "answer": "<p>Installing WeatherTech HP or TPE (Thermoplastic Elastomer) Floorliners is a simple process that you can do yourself in a few easy steps:<\/p><p><br\/>1.\tFirst, remove any existing floor mats or liners from your vehicle's floor. Clean the floor area thoroughly to remove any dirt or debris.<\/p><p><br\/>2.\tTake the WeatherTech TPE Floorliners out of the packaging and place them on a flat surface. You may notice that they are shaped differently from your vehicle's original mats, but don't worry – they are designed to fit your vehicle perfectly.<\/p><p><br\/>3.\tPlace the driver's side Floorliner in your vehicle's footwell. Adjust the liner to ensure that it fits snugly against the sides of the footwell and that it covers the entire foot area. Repeat the process with the passenger side Floorliner.<\/p><p><br\/>4.\tIf you have a two-row vehicle, install the rear Floorliner next. Place the liner in the rear footwell and adjust it to ensure that it fits snugly and covers the entire foot area.<\/p><p><br\/>5.\tFinally, test the Floorliners to ensure that they are securely in place and that they don't interfere with your vehicle's pedals. You may need to adjust them slightly to achieve the perfect fit.<\/p><p><br\/>And that's it – you've successfully installed your new WeatherTech TPE Floorliners! Enjoy the protection they provide for your vehicle's floors.<br\/><\/p>"
           }
         }
       },
@@ -50,7 +64,9 @@
         "897a7b31-5a74-4951-b8e9-eb0c5d71ef50",
         "38a2a71c-880a-4879-8c18-ac021e9b8074",
         "106911c9-1f98-4905-80df-96fa313e2182",
-        "311390bf-6391-46d2-995e-6ff770d784d5"
+        "311390bf-6391-46d2-995e-6ff770d784d5",
+        "02f520c4-7c91-4d2c-b617-da81033b01fe",
+        "5edce98a-4f0d-45dd-be79-9d321d499d5c"
       ],
       "settings": {
         "faq_title": "Frequently Asked Questions",
