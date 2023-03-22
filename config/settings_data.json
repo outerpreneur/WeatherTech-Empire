@@ -46,7 +46,7 @@
     "product_option_style": "select",
     "show_dynamic_checkout_button": false,
     "enable_cart_redirection": false,
-    "swatches_enable": true,
+    "swatches_enable": false,
     "swatches_product_card_size": 32,
     "swatches_product_page_size": 64,
     "swatches_swatch_trigger": "Color",
