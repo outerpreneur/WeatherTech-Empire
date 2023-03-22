@@ -17,7 +17,7 @@
             "icon": "icon-delivery",
             "image": "shopify:\/\/shop_images\/WT_Web_Icon-Products_Hover.png",
             "title": "Free Shipping",
-            "text": "<p>When you spend more than CHF 200+<\/p>",
+            "text": "<p>When you spend CHF 200+<\/p>",
             "link": "shopify:\/\/policies\/shipping-policy"
           }
         },
