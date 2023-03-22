@@ -29,7 +29,9 @@
       ],
       "settings": {
         "faq_title": "Frequently Asked Questions",
-        "faq_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "faq_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "faq_bgcolor": "#cc1313",
+        "faq_color": "#ffffff"
       }
     }
   },
