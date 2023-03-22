@@ -42,10 +42,46 @@
         "enable_shipping_calc": false,
         "shipping_calc_default_country": "CH"
       }
+    },
+    "38e9ca57-2dce-4e34-a43b-6eb63c5974fd": {
+      "type": "dynamic-featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "layout": "grid",
+        "collection": "accessories",
+        "product_count": 5,
+        "cta_label": "Shop collection",
+        "cta_button_style": "primary"
+      }
+    },
+    "167948051210e9555b": {
+      "type": "apps",
+      "blocks": {
+        "b7bb2f1e-3896-4576-865b-00c3ea84d00e": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 20,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "b7bb2f1e-3896-4576-865b-00c3ea84d00e"
+      ],
+      "settings": {
+        "include_padding": true
+      }
     }
   },
   "order": [
     "7d2ae621-57b7-4629-aaec-8f63e1734a0b",
-    "main"
+    "main",
+    "38e9ca57-2dce-4e34-a43b-6eb63c5974fd",
+    "167948051210e9555b"
   ]
 }
