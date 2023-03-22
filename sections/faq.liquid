@@ -67,6 +67,18 @@
           "id": "answer",
           "label": "Answer",
           "default": "<p>I have an answer</p>"
+        },
+        {
+          "type": "color",
+          "id": "faq_bgcolor",
+          "label": "Choose background color",
+          "default": "#000000"
+        },
+        {
+          "type": "color",
+          "id": "faq_color",
+          "label": "Choose text color",
+          "default": "#ffffff"
         }
       ]
     }
@@ -80,6 +92,24 @@
 {% endschema %}
 
 {% style %}
+  .page-width {
+      width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+  }
+
+  .main-page-title, .faq-description {
+      text-align: center;
+  }
+
+  .faq-container {
+    margin: 0 auto;
+    width: 60%;
+  }
+
   .faq-description {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -99,7 +129,7 @@
 
   .tab {
     width: 100%;
-    color: white;
+    color: red;
     overflow: hidden;
   }
 
@@ -109,14 +139,19 @@
     justify-content: space-between;
     padding: 1em;
     font-weight: bold;
-    color: white;
+    color: {{ block.settings.faq_color }};
+    background-color: {{ block.settings.faq_bgcolor }};
+  }
+
+  .tab-label:hover {
+    background-color: black;
   }
 
   .tab-content {
     max-height: 0;
     padding: 0 1em;
     background-color: white;
-    transition: all 0.5s ease;
+    transition: all 0.2s ease;
     color: black;
   }
 
