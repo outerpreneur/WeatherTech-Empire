@@ -3,7 +3,9 @@
   <select id="make-select" name="make">
     <option value="">Select a make</option>
     {% for product in collections.all.products %}
-      <option value="{{ product.vendor }}">{{ product.vendor }}</option>
+      <option value="{{ product.metafields.custom.automake }}">
+        {{ product.metafields.custom.automake }}
+      </option>
     {% endfor %}
   </select>
 </div>
@@ -13,8 +15,8 @@
   <select id="year-select" name="year">
     <option value="">Select a year</option>
     {% for product in collections.all.products %}
-      <option value="{{ product.metafields.car.year }}">
-        {{ product.metafields.car.year }}
+      <option value="{{ product.metafields.custom.year3 }}">
+        {{ product.metafields.custom.year3 }}
       </option>
     {% endfor %}
   </select>
@@ -25,7 +27,9 @@
   <select id="model-select" name="model">
     <option value="">Select a model</option>
     {% for product in collections.all.products %}
-      <option value="{{ product.title }}">{{ product.title }}</option>
+      <option value="{{ product.metafields.custom.automodel }}">
+        {{ product.metafields.custom.automodel }}
+      </option>
     {% endfor %}
   </select>
 </div>
