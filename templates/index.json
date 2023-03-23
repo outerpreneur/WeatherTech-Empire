@@ -647,11 +647,6 @@
         "background": "#000000",
         "opacity": 36
       }
-    },
-    "eaf9baaa-ae44-455b-8f7f-b82d987687e0": {
-      "type": "car-filter-section",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -669,7 +664,6 @@
     "dynamic_promo_grid-2",
     "36612375-1729-4764-874c-6ec3e9370468",
     "dynamic_promo_grid-3",
-    "dynamic_search",
-    "eaf9baaa-ae44-455b-8f7f-b82d987687e0"
+    "dynamic_search"
   ]
 }
