@@ -1,0 +1,77 @@
+<div>
+  <label for="make-select">Make:</label>
+  <select id="make-select" name="make">
+    <option value="">Select a make</option>
+    {% for product in collections.all.products %}
+      <option value="{{ product.vendor }}">{{ product.vendor }}</option>
+    {% endfor %}
+  </select>
+</div>
+
+<div>
+  <label for="year-select">Year:</label>
+  <select id="year-select" name="year">
+    <option value="">Select a year</option>
+    {% for product in collections.all.products %}
+      <option value="{{ product.metafields.car.year }}">
+        {{ product.metafields.car.year }}
+      </option>
+    {% endfor %}
+  </select>
+</div>
+
+<div>
+  <label for="model-select">Model:</label>
+  <select id="model-select" name="model">
+    <option value="">Select a model</option>
+    {% for product in collections.all.products %}
+      <option value="{{ product.title }}">{{ product.title }}</option>
+    {% endfor %}
+  </select>
+</div>
+
+<button id="search-button">Search</button>
+
+<div id="search-results"></div>
+
+<script>
+      function search() {
+          var make = document.getElementById("make-select").value;
+          var year = document.getElementById("year-select").value;
+          var model = document.getElementById("model-select").value;
+
+          var filteredProducts = [];
+
+          {% for product in collections.all.products %}
+            {% if product.vendor == make and product.metafields.car.year == year and product.title == model %}
+              filteredProducts.push(`
+                <div class="product">
+                  <h2>${product.title}</h2>
+                  <p>Make: ${product.vendor}</p>
+                  <p>Year: ${product.metafields.car.year}</p>
+                  <p>Model: ${product.title}</p>
+                </div>
+              `);
+            {% endif %}
+          {% endfor %}
+
+          var searchResults = document.getElementById("search-results");
+          searchResults.innerHTML = filteredProducts.join("") || "<p>No results found</p>";
+        }
+
+  document.getElementById("make-select").addEventListener("change", search);
+  document.getElementById("year-select").addEventListener("change", search);
+  document.getElementById("model-select").addEventListener("change", search);
+  document.getElementById("search-button").addEventListener("click", search);
+</script>
+
+{% schema %}
+{
+  "name": "Car advance filter 3",
+  "presets": [
+    {
+      "name": "Car advance filter 3"
+    }
+  ]
+}
+{% endschema %}
