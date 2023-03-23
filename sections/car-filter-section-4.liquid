@@ -6,17 +6,17 @@
 {% comment %}
   This tag template retrieves the available car makes.
 {% endcomment %}
-{% assign makes = collections.all.products | map: 'metafields.custom.automake' | uniq %}
+{% assign makes = collections.all.products | map: 'vendor' | uniq %}
 
 {% comment %}
   This tag template retrieves the available car years.
 {% endcomment %}
-{% assign years = collections.all.products | map: 'metafields.custom.year3' | uniq %}
+{% assign years = collections.all.products | map: 'product.metafields.car.year' | uniq %}
 
 {% comment %}
   This tag template retrieves the available car models.
 {% endcomment %}
-{% assign models = collections.all.products | map: 'metafields.custom.automodel' | uniq %}
+{% assign models = collections.all.products | map: 'title' | uniq %}
 
 {% comment %} // HTML code for the section {% endcomment %}
 <div id="car-filter-search">
@@ -82,7 +82,7 @@
   "name": "Car advance filter 4",
   "presets": [
     {
-      "name": "Car advance filter 3"
+      "name": "Car advance filter 4"
     }
   ]
 }
