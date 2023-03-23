@@ -51,9 +51,9 @@
               filteredProducts.push(`
                 <div class="product">
                   <h2>${product.title}</h2>
-                  <p>Make: ${product.vendor}</p>
-                  <p>Year: ${product.metafields.car.year}</p>
-                  <p>Model: ${product.title}</p>
+                  <p>Make: ${product.metafields.custom.automake}</p>
+                  <p>Year: ${product.metafields.custom.year3}</p>
+                  <p>Model: ${product.metafields.custom.automodel}</p>
                 </div>
               `);
             {% endif %}

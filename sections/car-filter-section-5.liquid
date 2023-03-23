@@ -1,0 +1,140 @@
+<section class="car-filter-section">
+  <form class="car-filter-form">
+    <label for="make">Make:</label>
+    <select id="make">
+      <option value="">Select make</option>
+      <option value="Honda">Honda</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Ford">Ford</option>
+    </select>
+
+    <label for="year">Year:</label>
+    <select id="year">
+      <option value="">Select year</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+    </select>
+
+    <label for="model">Model:</label>
+    <select id="model">
+      <option value="">Select model</option>
+      <option value="Civic">Civic</option>
+      <option value="Camry">Camry</option>
+      <option value="F-150">F-150</option>
+    </select>
+
+    <button type="submit">Filter</button>
+  </form>
+
+  <ul class="car-filter-list"></ul>
+</section>
+
+<script>
+  (function() {
+    var productBlock = document.querySelector('.car-filter-list');
+    var filterForm = document.querySelector('.car-filter-form');
+
+    // Get all products with make, year, and model tags
+    function getProducts(filters) {
+      return new Promise(function(resolve, reject) {
+        var tagQuery = filters.map(function(filter) {
+          return filter.key + ':' + filter.value;
+        }).join('+');
+
+        var url = '/collections/all/' + tagQuery + '?view=json';
+
+        fetch(url)
+          .then(function(response) {
+            return response.json();
+          })
+          .then(function(products) {
+            resolve(products);
+          })
+          .catch(function(error) {
+            reject('Error getting products:', error);
+          });
+      });
+    }
+
+    // Render the filtered products
+    function renderProducts(products) {
+      productBlock.innerHTML = '';
+
+      products.forEach(function(product) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.textContent = product.title;
+          a.href = product.url;
+          li.appendChild(a);
+          productBlock.appendChild(li);
+      });
+    }
+
+    // Handle form submit
+    filterForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var make = document.querySelector('#make').value;
+      var year = document.querySelector('#year').value;
+      var model = document.querySelector('#model').value;
+
+      var filters = [];
+
+      if (make) {
+        filters.push({ key: 'make', value: make });
+      }
+
+      if (year) {
+        filters.push({ key: 'year', value: year });
+      }
+
+      if (model) {
+        filters.push({ key: 'model', value: model });
+      }
+
+      getProducts(filters)
+        .then(function(products) {
+          renderProducts(products);
+        })
+        .catch(function(error) {
+          console.error(error);
+        });
+    });
+  })();
+</script>
+
+{% style %}
+  .car-filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .car-filter-form label {
+    margin-right: 10px;
+  }
+
+  .car-filter-form select {
+    margin-right: 20px;
+  }
+
+  .car-filter-form button {
+    margin-left: auto;
+  }
+
+  .car-filter-list li {
+    margin-bottom: 10px;
+  }
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Car advance filter 5",
+  "presets": [
+    {
+      "name": "Car advance filter 5"
+    }
+  ]
+}
+{% endschema %}

@@ -11,7 +11,7 @@
 {% comment %}
   This tag template retrieves the available car years.
 {% endcomment %}
-{% assign years = collections.all.products | map: 'product.metafields.car.year' | uniq %}
+{% assign years = collections.all.products | map: 'metafields.car.year' | uniq %}
 
 {% comment %}
   This tag template retrieves the available car models.
@@ -19,6 +19,8 @@
 {% assign models = collections.all.products | map: 'title' | uniq %}
 
 {% comment %} // HTML code for the section {% endcomment %}
+{{ 'metafields.car.year' }}
+{{ 'metafields.custom.year3' }}
 <div id="car-filter-search">
   <div>
     <label for="make-dropdown">Make:</label>
@@ -75,7 +77,6 @@
   document.getElementById('model-dropdown').addEventListener('change', searchCars);
   document.getElementById('search-button').addEventListener('click', searchCars);
 </script>
-```
 
 {% schema %}
 {
