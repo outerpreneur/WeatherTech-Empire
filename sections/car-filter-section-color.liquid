@@ -1,0 +1,50 @@
+{% assign colors = '' %}
+{% for product in collection.products %}
+  {% assign color = product.metafields.custom.color | split: ", " %}
+  {% for c in color %}
+    {% assign colors = colors | append: c | append: ", " %}
+  {% endfor %}
+{% endfor %}
+
+{% assign unique_colors = colors | split: ", " | uniq %}
+
+<div class="filter">
+  <label for="color">Color</label>
+  <select id="color" onChange="filter()">
+    <option value="">All</option>
+    {% for c in unique_colors %}
+      <option value="{{c}}">{{ c }}</option>
+    {% endfor %}
+  </select>
+</div>
+
+{% for product in collection.products %}
+  {% assign color = product.metafields.custom.color | split: ", " %}
+  {% if color contains selected_color or selected_color == "" %}
+    <div class="product">
+      {{ product.title }}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<script>
+  function filter() {
+  var color = document.getElementById("color").value;
+  window.location.href = "?color=" + color;
+  }
+  var query_string = window.location.search;
+  var url_params = new URLSearchParams(query_string);
+  var selected_color = url_params.get("color");
+  document.getElementById("color").value = selected_color;
+</script>
+
+{% schema %}
+{
+  "name": "Car Filter section color",
+  "presets": [
+    {
+      "name": "Car Filter section color"
+    }
+  ]
+}
+{% endschema %}
