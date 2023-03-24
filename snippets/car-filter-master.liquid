@@ -389,6 +389,26 @@
       var optionArray = ["|Model","x40|X40","xc40|XC40","xc60 (standard)|XC60 (Standard)","xc90|XC90"];
     }
 
+    {% comment %} Volkswagen {% endcomment %}
+
+    if(s1.value == "Volkswagen" && yearValue.value == "2016"){
+    var optionArray = ["|Model","t-rock|T-Rock","tiguain|Tiguain"];
+  } else if(s1.value == "Volkswagen" && yearValue.value == "2017"){
+    var optionArray = ["|Model","t-rock|T-Rock","tiguain|Tiguain"];
+  } else if(s1.value == "Volvo" && yearValue.value == "2018"){
+    var optionArray = ["|Model","t-rock|T-Rock","tiguain|Tiguain"];
+  } else if(s1.value == "Volvo" && yearValue.value == "2019"){
+    var optionArray = ["|Model","t-rock|T-Rock","tiguain|Tiguain"];
+  } else if(s1.value == "Volkswagen" && yearValue.value == "2020"){
+    var optionArray = ["|Model","id.4|ID.4","t-rock|T-Rock","tiguain|Tiguain"];
+  }else if(s1.value == "Volkswagen" && yearValue.value == "2021"){
+    var optionArray = ["|Model","id.4|ID.4","t-rock|T-Rock","tiguain|Tiguain"];
+  }else if(s1.value == "Volkswagen" && yearValue.value == "2022"){
+    var optionArray = ["|Model","id.4|ID.4","t-rock|T-Rock","tiguain|Tiguain"];
+  }else if(s1.value == "Volkswagen" && yearValue.value == "2023"){
+    var optionArray = ["|Model","id.4|ID.4","t-rock|T-Rock","tiguain|Tiguain"];
+  }
+
 
         for(var option in optionArray){
           var pair = optionArray[option].split("|");
