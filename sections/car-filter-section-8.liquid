@@ -1,0 +1,120 @@
+{% schema %}
+{
+  "name": "Car Filter Search 8",
+  "presets": [
+    {
+      "name": "Car advance filter 8"
+    }
+  ]
+}
+{% endschema %}
+
+<section
+  class="car-filter-search"
+  data-make-metafield="{{ section.settings.make_metafield }}"
+  data-year-metafield="{{ section.settings.year_metafield }}"
+  data-model-metafield="{{ section.settings.model_metafield }}"
+>
+  <div class="filters">
+    <select data-filter="make">
+      <option value="">All Makes</option>
+      {%- for product in collections.all.products -%}
+        <option value="{{ product.metafields.custom.automake.value }}">
+          {{ product.metafields.custom.automake.value }}
+        </option>
+      {%- endfor -%}
+    </select>
+    <select data-filter="year">
+      <option value="">All Years</option>
+      {%- for product in collections.all.products -%}
+        <option value="{{ product.metafields.custom.year3.value }}">
+          {{ product.metafields.custom.year3.value }}
+        </option>
+      {%- endfor -%}
+    </select>
+    <select data-filter="model">
+      <option value="">All Models</option>
+      {%- for product in collections.all.products -%}
+        <option value="{{ product.metafields.custom.automodel.value }}">
+          {{ product.metafields.custom.automake.value }}
+        </option>
+      {%- endfor -%}
+    </select>
+  </div>
+  <div data-product-list></div>
+</section>
+
+<script>
+  class CarFilterSearch {
+      constructor(element) {
+          this.element = element;
+          this.makeFilter = element.querySelector('[data-filter="make"]');
+          this.yearFilter = element.querySelector('[data-filter="year"]');
+          this.modelFilter = element.querySelector('[data-filter="model"]');
+          this.productList = element.querySelector('[data-product-list]');
+          this.baseUrl = '/collections/all';
+          this.init();
+      }
+
+      init() {
+          this.fetchProducts();
+          this.makeFilter.addEventListener('change', () => this.filterProducts());
+          this.yearFilter.addEventListener('change', () => this.filterProducts());
+          this.modelFilter.addEventListener('change', () => this.filterProducts());
+      }
+
+      async fetchProducts() {
+          const products = await fetch(`${this.baseUrl}.json`).then(res => res.json());
+          this.products = products.products;
+          this.renderProducts();
+      }
+
+      renderProducts() {
+          const productsHtml = this.products.map(product => `
+              <div class="product-card">
+                  <h3>${product.title}</h3>
+                  <img src="${product.images[0].src}" alt="${product.images[0].alt}">
+                  <p>Year: ${product.metafields.global[this.yearMetafieldKey]}</p>
+                  <p>Make: ${product.metafields.global[this.makeMetafieldKey]}</p>
+                  <p>Model: ${product.metafields.global[this.modelMetafieldKey]}</p>
+              </div>
+          `).join('');
+          this.productList.innerHTML = productsHtml;
+      }
+
+      filterProducts() {
+          const make = this.makeFilter.value;
+          const year = this.yearFilter.value;
+          const model = this.modelFilter.value;
+          let filteredProducts = this.products;
+
+          if (make) {
+              filteredProducts = filteredProducts.filter(product => product.metafields.custom[this.makeMetafieldKey] === make);
+          }
+
+          if (year) {
+              filteredProducts = filteredProducts.filter(product => product.metafields.custom[this.yearMetafieldKey] === year);
+          }
+
+          if (model) {
+              filteredProducts = filteredProducts.filter(product => product.metafields.custom[this.modelMetafieldKey] === model);
+          }
+
+          this.renderProducts(filteredProducts);
+      }
+
+      get makeMetafieldKey() {
+          return this.element.dataset.makeMetafield || 'make';
+      }
+
+      get yearMetafieldKey() {
+          return this.element.dataset.yearMetafield || 'year';
+      }
+
+      get modelMetafieldKey() {
+          return this.element.dataset.modelMetafield || 'model';
+      }
+  }
+
+  document.querySelectorAll('.car-filter-search').forEach(element => new CarFilterSearch(element));
+</script>
