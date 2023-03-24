@@ -19,8 +19,8 @@
     <select data-filter="make">
       <option value="">All Makes</option>
       {%- for product in collections.all.products -%}
-        <option value="{{ product.metafields.custom.automake.value }}">
-          {{ product.metafields.custom.automake.value }}
+        <option value="{{ product.metafields.custom.automake }}">
+          {{ product.metafields.custom.automake.value | uniq }}
         </option>
       {%- endfor -%}
     </select>
@@ -36,7 +36,7 @@
       <option value="">All Models</option>
       {%- for product in collections.all.products -%}
         <option value="{{ product.metafields.custom.automodel.value }}">
-          {{ product.metafields.custom.automake.value }}
+          {{ product.metafields.custom.automodel.value | split }}
         </option>
       {%- endfor -%}
     </select>
