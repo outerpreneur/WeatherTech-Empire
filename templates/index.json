@@ -367,14 +367,13 @@
     },
     "dynamic_shoppable_image": {
       "type": "dynamic-shoppable-image",
-      "disabled": true,
       "blocks": {
         "hotspot-2": {
           "type": "hotspot",
           "settings": {
             "product": "",
-            "x_axis": 64,
-            "y_axis": 67
+            "x_axis": 73,
+            "y_axis": 31
           }
         }
       },
@@ -383,12 +382,12 @@
       ],
       "settings": {
         "title": "",
-        "image": "shopify:\/\/shop_images\/CupFone_Extension_with_Hand_Sanitizer.jpg",
+        "image": "shopify:\/\/shop_images\/VW_Golf_Xray_19.jpg",
         "image_width": "two-thirds",
         "link_text": "View product",
-        "textbox_title": "Car accessories",
+        "textbox_title": "Shop Volkswagen",
         "textbox_subheading": "<p>Find simple solutions that fit your life<\/p>",
-        "textbox_button_label": "Accessories",
+        "textbox_button_label": "Shop the Bundle",
         "textbox_button_link": "shopify:\/\/collections\/accessories",
         "textbox_button_style": "primary",
         "textbox_text_alignment": "center",
