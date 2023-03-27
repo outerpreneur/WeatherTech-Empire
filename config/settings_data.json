@@ -112,14 +112,14 @@
             "type": "meganav_images",
             "settings": {
               "meganav_trigger": "All products",
-              "image_1": "shopify:\/\/shop_images\/CupFone_Purell_Holder_Angle_3.jpg",
-              "text_1": "Accessories",
-              "link_1": "shopify:\/\/collections\/interior-protection",
+              "image_1": "shopify:\/\/shop_images\/MB_ML350_13_446901_snow_RHD.jpg",
+              "text_1": "Floor liners",
+              "link_1": "shopify:\/\/collections\/floor-liners",
               "position_1": "last",
               "size_1": "medium",
-              "image_2": "shopify:\/\/shop_images\/MB_ML350_13_446901_snow_RHD.jpg",
-              "text_2": "Floor liners",
-              "link_2": "shopify:\/\/collections\/floor-liners",
+              "image_2": "shopify:\/\/shop_images\/Winter_Snowboard_Cargo_Liner21.jpg",
+              "text_2": "Cargo\/ Trunk liners",
+              "link_2": "shopify:\/\/collections\/cargo-trunk-liners",
               "position_2": "last",
               "size_2": "medium"
             }
