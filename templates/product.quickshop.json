@@ -59,11 +59,11 @@
           "settings": {
             "show_product_description": true,
             "show_tabs_below_product_gallery": true,
-            "tab_heading_1": "Tab 1",
+            "tab_heading_1": "How",
             "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
             "tab_heading_2": "Tab 2",
             "tab_text_2": "<p>Use this text to share information about your product.<\/p>",
-            "tab_heading_3": "Tab 3",
+            "tab_heading_3": "FAQ",
             "tab_text_3": "<p>Use this text to share information about your product.<\/p>"
           }
         },
@@ -72,6 +72,13 @@
           "settings": {
             "collapsible_tab_heading": "Details",
             "collapsible_tab_text": "<p><strong>Suitable for:<\/strong><\/p><p>Make:<\/p><p>Model:<\/p><p>Year:<\/p>"
+          }
+        },
+        "f0e74f80-f474-4904-ada9-71f381add950": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Lifetime Limited Warranty",
+            "collapsible_tab_text": "<p>WeatherTech Direct, LLC warrants that our products will be free from any defects in materials and workmanship for the life of the original purchaser and only for the original vehicle they were installed in. That does not mean that a product that simply and naturally wears out from normal use is a candidate for a warranty replacement or a refund. Like tires, brake pads or the shoes on your feet, everything wears out and when it does, that does not mean you did not receive good value for your money.<br\/><br\/>We are reasonable people and we believe in true customer satisfaction. We will work with you for a fair resolution to any issue you may have. Fair is defined as being fair to both you the customer and to WeatherTech. We do not charge extra for our products to our vast majority of customers so we can accommodate ridiculous warranty claims by the few. Our decision is final and will consist of either replacement of your product at no charge or charge you a prorated amount for a replacement, meaning we may extend a discount to you to purchase an exact replacement. Our goal is to keep our customers happy for a lifetime and always reach a fair resolution to any issue. Proof of purchase is required.<br\/><br\/>Exclusions to this warranty include wear due to severe abrasive conditions, chemical contamination, such as spilled gasoline, bleach, vehicle accidents, misuse, abuse, incorrect installation, incorrect use, etc.<\/p>"
           }
         }
       },
@@ -85,7 +92,8 @@
         "description",
         "3b6a3f2d-0079-44a6-ab4e-3f3548b102a6",
         "c23dfb62-24de-40aa-a646-986d6cb74e3a",
-        "ae8774b4-3010-46d9-87b5-3f0e5fdb4b30"
+        "ae8774b4-3010-46d9-87b5-3f0e5fdb4b30",
+        "f0e74f80-f474-4904-ada9-71f381add950"
       ],
       "settings": {
         "quickshop_gallery_aspect_ratio": "natural",
