@@ -86,6 +86,9 @@
       "block_order": [
         "3aaadd72-2616-4d90-915f-8b7a2f150157"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "include_padding": true
       }
@@ -195,6 +198,7 @@
     },
     "dynamic_shoppable_image": {
       "type": "dynamic-shoppable-image",
+      "disabled": true,
       "blocks": {
         "hotspot-2": {
           "type": "hotspot",
