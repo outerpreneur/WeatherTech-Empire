@@ -252,8 +252,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/W274TN_F150_Ford_2013.jpg",
             "text_alignment": "center-center",
-            "pre_heading": "View all",
-            "heading": "Interior protection",
+            "pre_heading": "Shop all",
+            "heading": "Spring collection",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 50
