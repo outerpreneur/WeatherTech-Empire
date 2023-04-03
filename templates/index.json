@@ -101,7 +101,6 @@
     },
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
-      "disabled": true,
       "blocks": {
         "promotion-1": {
           "type": "promotion",
