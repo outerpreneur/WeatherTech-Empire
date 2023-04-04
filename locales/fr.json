@@ -223,6 +223,13 @@
       "now": "À présent",
       "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "view_details": "Voir le produit"
+    },
+    "pxs-newsletter": {
+      "form": {
+        "placeholder": "Adresse e-mail",
+        "submit": "S'abonner",
+        "success": "Merci pour votre subscription!"
+      }
     }
   },
   "age_gate": {
