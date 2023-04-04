@@ -14,9 +14,26 @@
         "shop_all_card_text_color": "#ffffff",
         "shop_all_card_background_color": "#052c49"
       }
+    },
+    "9bb9278e-426c-4121-973c-489af5dcc60a": {
+      "type": "dynamic-search",
+      "settings": {
+        "title": "Search by product or SKU",
+        "text": "",
+        "placeholder": "What are you looking for?",
+        "filter_search_by": "disabled",
+        "enable_live_search": true,
+        "enable_live_search_images": true,
+        "enable_live_search_articles_pages": false,
+        "show-overlay": false,
+        "color": "#ffffff",
+        "background": "#000000",
+        "opacity": 50
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "9bb9278e-426c-4121-973c-489af5dcc60a"
   ]
 }
