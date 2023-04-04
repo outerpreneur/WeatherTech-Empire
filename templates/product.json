@@ -81,6 +81,7 @@
         },
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6": {
           "type": "request_quote",
+          "disabled": true,
           "settings": {
             "title": "Want to do a bulk order? Request a quote",
             "show_quantity": true,
@@ -99,7 +100,7 @@
           "type": "key_details",
           "settings": {
             "icon": "icon-delivery-package",
-            "title": "FREE Delivery for orders over $200",
+            "title": "FREE Delivery for orders over CHF 200",
             "text": "<p>We endeavour to provide a FREE 3-5 day delivery service from receipt of the order and cleared payment across all of Switzerland for those products that we have in stock<\/p>",
             "text_color": "#ffffff",
             "icon_color": "#ffffff",
