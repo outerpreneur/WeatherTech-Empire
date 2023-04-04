@@ -39,7 +39,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
@@ -56,6 +55,7 @@
         },
         "c23dfb62-24de-40aa-a646-986d6cb74e3a": {
           "type": "tabs",
+          "disabled": true,
           "settings": {
             "show_product_description": true,
             "show_tabs_below_product_gallery": true,
