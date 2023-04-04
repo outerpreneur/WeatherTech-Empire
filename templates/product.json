@@ -15,6 +15,7 @@
         },
         "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5": {
           "type": "tabs",
+          "disabled": true,
           "settings": {
             "show_product_description": true,
             "show_tabs_below_product_gallery": true,
@@ -50,7 +51,6 @@
         },
         "description": {
           "type": "description",
-          "disabled": true,
           "settings": {
           }
         },
@@ -158,43 +158,11 @@
       "settings": {
         "enable_recently_viewed_products": true
       }
-    },
-    "2fc37264-a577-4d77-a829-313b401689e6": {
-      "type": "filter-storefront",
-      "disabled": true,
-      "settings": {
-        "background_image": "shopify:\/\/shop_images\/Snow_Close_Up_Cargo_Horz.jpg",
-        "image_height": 500,
-        "image_position": "center"
-      }
-    },
-    "loox-product-reviews-app-section": {
-      "type": "apps",
-      "blocks": {
-        "loox-product-reviews": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "loox-product-reviews"
-      ],
-      "settings": {
-        "include_padding": true
-      }
     }
   },
   "order": [
     "main",
     "recommendations",
-    "recently-viewed",
-    "2fc37264-a577-4d77-a829-313b401689e6",
-    "loox-product-reviews-app-section"
+    "recently-viewed"
   ]
 }
