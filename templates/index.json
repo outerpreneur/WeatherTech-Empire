@@ -418,6 +418,7 @@
     },
     "dynamic_featured_collection-2": {
       "type": "dynamic-featured-collection",
+      "disabled": true,
       "blocks": {
         "title-card": {
           "type": "title_card",
@@ -476,7 +477,7 @@
         "parallax_disable_mobile": true,
         "pt": 0,
         "pb": 0,
-        "mt": 2,
+        "mt": 3,
         "mb": 3
       }
     },
