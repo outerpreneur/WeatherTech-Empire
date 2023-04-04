@@ -28,6 +28,7 @@
         },
         "rating": {
           "type": "rating",
+          "disabled": true,
           "settings": {
           }
         },
@@ -37,25 +38,25 @@
             "text": "Specifications"
           }
         },
-        "dynamic-comparison": {
-          "type": "dynamic_comparison",
-          "settings": {
-            "title": "Dimensions",
-            "text": "<p>Use this text to share additional information about your product.<\/p>"
-          }
-        },
         "dynamic-comparison-2": {
           "type": "dynamic_comparison",
           "settings": {
-            "title": "Weight",
-            "text": "<p>Use this text to share additional information about your product.<\/p>"
+            "title": "Make",
+            "text": "<p>Use this text to share additional information about your product.<\/p>{{ product.metafields.custom.automake | metafield_tag }}"
+          }
+        },
+        "dynamic-comparison": {
+          "type": "dynamic_comparison",
+          "settings": {
+            "title": "Model",
+            "text": "{{ product.metafields.custom.automodel | metafield_tag }}"
           }
         },
         "dynamic-comparison-3": {
           "type": "dynamic_comparison",
           "settings": {
-            "title": "General features",
-            "text": "<p>Use this text to share additional information about your product.<\/p>"
+            "title": "Year",
+            "text": "{{ product.metafields.custom.year3 | metafield_tag }}"
           }
         }
       },
@@ -66,8 +67,8 @@
         "inventory-status",
         "rating",
         "heading-2",
-        "dynamic-comparison",
         "dynamic-comparison-2",
+        "dynamic-comparison",
         "dynamic-comparison-3"
       ],
       "settings": {
