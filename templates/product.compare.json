@@ -16,6 +16,7 @@
         },
         "vendor": {
           "type": "vendor",
+          "disabled": true,
           "settings": {
           }
         },
@@ -28,7 +29,6 @@
         },
         "rating": {
           "type": "rating",
-          "disabled": true,
           "settings": {
           }
         },
@@ -83,12 +83,13 @@
           "settings": {
             "icon": "icon-delivery",
             "title": "Free Shipping",
-            "text": "<p>When you spend $100+<\/p>",
+            "text": "<p>When you spend CHF 200+<\/p>",
             "link": ""
           }
         },
         "highlight-2": {
           "type": "highlight",
+          "disabled": true,
           "settings": {
             "icon": "icon-cell-phone",
             "title": "Give Us A Call",
@@ -101,12 +102,13 @@
           "settings": {
             "icon": "icon-chat-alternate",
             "title": "Chat With Us",
-            "text": "<p>We offer 24-hour chat support<\/p>",
+            "text": "<p>Get in touch with our support team<\/p>",
             "link": ""
           }
         },
         "highlight-4": {
           "type": "highlight",
+          "disabled": true,
           "settings": {
             "icon": "icon-pin",
             "title": "Locations",
