@@ -62,6 +62,22 @@
         "image_crop": "original"
       }
     },
+    "c4bed344-b833-4bf1-9861-2729b51804ef": {
+      "type": "dynamic-search",
+      "settings": {
+        "title": "Search by product or SKU",
+        "text": "",
+        "placeholder": "What are you looking for?",
+        "filter_search_by": "disabled",
+        "enable_live_search": false,
+        "enable_live_search_images": false,
+        "enable_live_search_articles_pages": false,
+        "show-overlay": false,
+        "color": "#ffffff",
+        "background": "#000000",
+        "opacity": 50
+      }
+    },
     "static-recently-viewed": {
       "type": "static-recently-viewed",
       "settings": {
@@ -72,6 +88,7 @@
   "order": [
     "9d1793f0-53a3-404d-a862-d3cc7ec101b3",
     "main",
+    "c4bed344-b833-4bf1-9861-2729b51804ef",
     "static-recently-viewed"
   ]
 }
