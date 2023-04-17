@@ -340,19 +340,11 @@
               "description": "<p>Free shipping for orders over 200 CHF<\/p>",
               "url": ""
             }
-          },
-          "da37e71c-db52-4c74-ba5f-32e9a9981992": {
-            "type": "Announcement",
-            "settings": {
-              "description": "",
-              "url": ""
-            }
           }
         },
         "block_order": [
           "07063f27-9651-4f4d-b700-d0525d804a0f",
-          "50dfcbbe-a6ee-45f7-a453-27d025434a49",
-          "da37e71c-db52-4c74-ba5f-32e9a9981992"
+          "50dfcbbe-a6ee-45f7-a453-27d025434a49"
         ],
         "custom_css": [
           "#eg-announcement-bar-advanced-announcement-bar p {padding: 0.5em !important;}"
