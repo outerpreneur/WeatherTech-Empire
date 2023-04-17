@@ -351,7 +351,7 @@
         ],
         "settings": {
           "show": true,
-          "homepage": true,
+          "homepage": false,
           "bg_color": "#e22120",
           "text_color": "#ffffff",
           "font_size": "",
