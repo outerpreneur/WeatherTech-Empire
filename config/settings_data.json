@@ -270,7 +270,7 @@
       "static-announcement": {
         "type": "static-announcement",
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "homepage_announcement": false,
           "announcement_text": "Authorised WeatherTech Agent for Switzerland",
           "announcement_text_mobile": "",
@@ -322,6 +322,41 @@
           "show_locale_selector": true,
           "show_currency_selector": true,
           "show_social_icons": true
+        }
+      },
+      "advanced-announcement-bar": {
+        "type": "advanced-announcement-bar",
+        "blocks": {
+          "07063f27-9651-4f4d-b700-d0525d804a0f": {
+            "type": "Announcement",
+            "settings": {
+              "description": "<p>Authorised WeatherTech Agent for Switzerland<\/p>",
+              "url": ""
+            }
+          }
+        },
+        "block_order": [
+          "07063f27-9651-4f4d-b700-d0525d804a0f"
+        ],
+        "custom_css": [
+          "#eg-announcement-bar-advanced-announcement-bar p {padding: 0em !important;}"
+        ],
+        "settings": {
+          "show": true,
+          "homepage": true,
+          "bg_color": "#e22120",
+          "text_color": "#ffffff",
+          "font_size": "",
+          "font_weight": "fw-bold",
+          "text_transform": "",
+          "arrows": true,
+          "autoplay": true,
+          "auto_speed": 5000,
+          "speed": 0.6,
+          "pt": 1,
+          "pb": 1,
+          "mt": 0,
+          "mb": 0
         }
       }
     },
