@@ -6,7 +6,7 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "filter_groups": "collapse_all",
+            "filter_groups": "expand_first",
             "show_filter_product_count": true
           }
         }
