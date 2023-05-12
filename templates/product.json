@@ -64,7 +64,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "Suitable for",
-            "collapsible_tab_text": "<p>Make: <\/p>{{ product.metafields.custom.automake | metafield_tag }}<p>Model: <\/p>{{ product.metafields.custom.year3 | metafield_tag }}<p>Year: <\/p>{{ product.metafields.custom.year3 | metafield_tag }}"
+            "collapsible_tab_text": "<p>Make: <\/p>{{ product.metafields.custom.automake | metafield_tag }}<p>Model: <\/p>{{ product.metafields.custom.automodel | metafield_tag }}<p>Year: <\/p>{{ product.metafields.custom.year3 | metafield_tag }}"
           }
         },
         "0028e7f1-b0c9-4425-875f-cccf193432c6": {
