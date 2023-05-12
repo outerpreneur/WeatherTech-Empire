@@ -9,7 +9,7 @@
         "section_height": "small",
         "image": "{{ collection.image }}",
         "title": "{{ collection.title }}",
-        "text": "<p>{{ shop.brand.short_description }}<\/p>",
+        "text": "<p>{{ collection.metafields.custom.collection_tagline.value }}<\/p>",
         "content_position": "center-center",
         "color": "#ffffff",
         "overlay_background": "#000000",
