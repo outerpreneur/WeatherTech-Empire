@@ -317,7 +317,7 @@
           "link_hover_color": "#ffffff",
           "border_color": "#ffffff",
           "menu": "footer",
-          "show_menu_mobile": true,
+          "show_menu_mobile": false,
           "mobile_layout": "below",
           "show_locale_selector": true,
           "show_currency_selector": true,
