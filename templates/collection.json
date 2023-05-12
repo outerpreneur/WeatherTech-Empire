@@ -41,7 +41,7 @@
           "settings": {
             "menu": "category",
             "show_prod_count": true,
-            "menu_depth_range": 1
+            "menu_depth_range": 3
           }
         }
       },
@@ -51,7 +51,7 @@
       ],
       "settings": {
         "show_collection_image": false,
-        "products_per_page_range": 24,
+        "products_per_page_range": 36,
         "products_per_row": "4",
         "sort_by": true,
         "grid_list": true,
