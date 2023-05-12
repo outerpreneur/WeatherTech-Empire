@@ -158,18 +158,11 @@
       "settings": {
         "enable_recently_viewed_products": true
       }
-    },
-    "29912e9f-65b8-441c-92c3-9a8538a6d37a": {
-      "type": "dynamic-custom-liquid",
-      "settings": {
-        "custom_liquid": "{% for variant in product.variants %}\n{% if product.selected_or_first_available_variant.id == variant.id %}\n<strong>Only {{ variant.metafields.variant.make.value }} PCS are available in {{variant.title}}!<\/strong>\n{% endif %}\n{% endfor %}\n<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.5.1\/jquery.min.js\"><\/script>\n<script type=\"text\/javascript\">\njQuery(document).ready(function($){\n$(\".no-js-hidden\").on(\"click\", function(){\nvar refreshint = setInterval(function(){\nlocation.reload();\n}, 1000);    });   });\n<\/script>"
-      }
     }
   },
   "order": [
     "main",
     "recommendations",
-    "recently-viewed",
-    "29912e9f-65b8-441c-92c3-9a8538a6d37a"
+    "recently-viewed"
   ]
 }
