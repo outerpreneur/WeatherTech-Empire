@@ -133,12 +133,27 @@
             "opacity": 24
           }
         },
+        "promotion-4": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/wte-floorliner-sq.jpg",
+            "title": "Floorliners",
+            "text": "Our floorliners are the ideal solution that will help you to conquer your daily battle with poor quality carpet or plastic car mats.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/floor-liners",
+            "button_text": "Floor liners",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 10
+          }
+        },
         "promotion-3": {
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/y4mtOWZ1i5TkeJ6cGyeLo9UDbtdWuv2zypbv8uP3dfQKXbe0Cgh-pcEoy9OYxJ4phTKE5jSAlKEwt22akDzymNnyPw_JGf99VZykdn6Bq5egC5C3NJrWI5LEcLE9BOgkf6pGSRsNbae90sxiuGBWOY3_g_E5oRQk-DZ-NCvzs4GIV5Dvoy0Gobn.jpg",
             "title": "Cargoliners",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text": "Our cargoliners are digitally designed to fit your vehicle and feature a raised lip to keep spills, dirt and grease off your vehicle’s interior",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "Cargo \/ Trunk Liners",
@@ -163,29 +178,14 @@
             "background": "",
             "opacity": 50
           }
-        },
-        "promotion-4": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/wte-floorliner-sq.jpg",
-            "title": "Floorliners",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/floor-liners",
-            "button_text": "Floor liners",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 10
-          }
         }
       },
       "block_order": [
         "promotion-1",
         "promotion-2",
+        "promotion-4",
         "promotion-3",
-        "d2ed044b-a1fb-4f32-833a-53b85f8dd783",
-        "promotion-4"
+        "d2ed044b-a1fb-4f32-833a-53b85f8dd783"
       ],
       "settings": {
         "title": "",
