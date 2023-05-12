@@ -310,7 +310,7 @@
       "static-utility-bar": {
         "type": "static-utility-bar",
         "settings": {
-          "enable": true,
+          "enable": false,
           "use_full_width": false,
           "background_color": "#121212",
           "link_color": "#ffffff",
