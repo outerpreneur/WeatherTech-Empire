@@ -2,9 +2,9 @@
   <label for="language">Language:</label>
   <select id="language" name="language">
     {% for language in shop.languages %}
-      <option value="{{ language.url }}">{{ language.name }}</option>
-      <option value="{{ language.url }}">{{ language.name }}</option>
-      <option value="{{ language.url }}">{{ language.name }}</option>
+      <option value="{{ language.url }}">{{ language.name }}English</option>
+      <option value="{{ language.url }}">{{ language.name }}French</option>
+      <option value="{{ language.url }}">{{ language.name }}German</option>
     {% endfor %}
   </select>
 </div>
