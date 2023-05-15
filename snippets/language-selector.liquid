@@ -3,6 +3,17 @@
   <select id="language" name="language">
     {% for language in shop.languages %}
       <option value="{{ language.url }}">{{ language.name }}</option>
+      <option value="{{ language.url }}">{{ language.name }}</option>
+      <option value="{{ language.url }}">{{ language.name }}</option>
     {% endfor %}
   </select>
 </div>
+
+<script>
+  $(document).ready(function() {
+  $('#language').on('change', function() {
+    var url = $(this).val();
+    window.location.href = url;
+  });
+});
+</script>
