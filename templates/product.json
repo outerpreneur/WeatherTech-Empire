@@ -13,6 +13,12 @@
           "settings": {
           }
         },
+        "622cbc79-588c-4959-acce-a75e49601744": {
+          "type": "custom-liquid",
+          "settings": {
+            "custom_liquid": "{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% endif %}"
+          }
+        },
         "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5": {
           "type": "tabs",
           "disabled": true,
@@ -116,17 +122,12 @@
             "hide_thumbnails": false,
             "maxwidth": 1080
           }
-        },
-        "622cbc79-588c-4959-acce-a75e49601744": {
-          "type": "custom-liquid",
-          "settings": {
-            "custom_liquid": "{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% endif %}"
-          }
         }
       },
       "block_order": [
         "title",
         "77b76149-b8f7-4a55-9fa6-7b36e6446b41",
+        "622cbc79-588c-4959-acce-a75e49601744",
         "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5",
         "c3cabf86-f486-4491-8054-276a77f10f63",
         "rating",
@@ -140,8 +141,7 @@
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
         "101d50bc-9c39-49b7-b6c9-b541a061409d",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
-        "afaed067-835d-4561-b6aa-d93ceebf8ddc",
-        "622cbc79-588c-4959-acce-a75e49601744"
+        "afaed067-835d-4561-b6aa-d93ceebf8ddc"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
