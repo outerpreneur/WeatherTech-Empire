@@ -565,8 +565,8 @@
 </div>
 
 <script>
-  document.querySelector('.options-selection__option-value').addEventListener('click', function() {
-    console.log('It works')
+  document.querySelector('.options-selection__option-value').addEventListener('change', function() {
+    updateMetafields(this.value);
   });
 
   function updateMetafields(variantId) {
