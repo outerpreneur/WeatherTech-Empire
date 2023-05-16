@@ -549,3 +549,15 @@
     {{ readmore_split[1] }}
   </div>
 {% endif %}
+
+{% assign selected_variant = product.selected_or_first_available_variant %}
+{% if selected_variant %}
+  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}
+  <p>Make: {{ metafield_value }}</p>
+{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}
+  <p>Model: {{ metafield_value }}</p>
+{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}
+  <p>Year: {{ metafield_value }}</p>
+{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}
+  <p>Placement: {{ metafield_value }}</p>
+{% endif %}
