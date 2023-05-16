@@ -51260,7 +51260,7 @@ if (ageGatePage) {
 ;
 
 {% comment %} product variant update metafields  {% endcomment %}
-  document.getElementById('.options-selection__option-value-input').addEventListener('click', function() {
+  document.queryselector('options-selection__option-value-name').addEventListener('click', function() {
     console.log('It works')
   });
 
@@ -51268,6 +51268,6 @@ if (ageGatePage) {
     // Fetch and update the variant metafields based on the selected variant ID
     // You can use the Shopify Ajax API or make an AJAX request to retrieve the metafield data
     // Once you have the data, update the corresponding elements on the page
-    var metafieldInfoElement = document.getElementById('metafield-info');
+    var metafieldInfoElement = document.queryselector('metafield-info');
     metafieldInfoElement.textContent = variantMetafields[variantId];
   }
