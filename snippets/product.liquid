@@ -561,3 +561,17 @@
 {% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}
   <p>Placement: {{ metafield_value }}</p>
 {% endif %}
+
+<script>
+  document.getElementById('options-selection__option-value').addEventListener('change', function() {
+    updateMetafields(this.value);
+  });
+
+  function updateMetafields(variantId) {
+    // Fetch and update the variant metafields based on the selected variant ID
+    // You can use the Shopify Ajax API or make an AJAX request to retrieve the metafield data
+    // Once you have the data, update the corresponding elements on the page
+    var metafieldInfoElement = document.getElementById('metafield-info');
+    metafieldInfoElement.textContent = variantMetafields[variantId];
+  }
+</script>
