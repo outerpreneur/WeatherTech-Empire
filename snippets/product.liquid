@@ -550,7 +550,7 @@
   </div>
 {% endif %}
 
-<div class="metafield-info"
+<div class="metafield-info">
 {% assign selected_variant = product.selected_or_first_available_variant %}
 {% if selected_variant %}
   {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}
