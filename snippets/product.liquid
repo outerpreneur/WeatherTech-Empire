@@ -571,10 +571,15 @@
   });
 
   function updateMetafields(variantId) {
-    // Fetch and update the variant metafields based on the selected variant ID
-    // You can use the Shopify Ajax API or make an AJAX request to retrieve the metafield data
-    // Once you have the data, update the corresponding elements on the page
-    var metafieldInfoElement = document.querySelector('.metafield-info');
-    metafieldInfoElement.textContent = variantMetafields[variantId];
+    Shopify.getProduct(variantId, function(product) {
+    // Access the metafield information from the 'product' object
+    var metafieldData = product.metafields;
+
+    // Update the page elements based on the received data
+    // Example code to update a specific element with ID 'metafield-info'
+    var metafieldInfoElement = document.querySelector(.'metafield-info');
+    metafieldInfoElement.textContent = metafields.custom.variant_identifier;
   }
+
+
 </script>
