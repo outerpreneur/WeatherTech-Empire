@@ -51260,14 +51260,15 @@ if (ageGatePage) {
 ;
 
 {% comment %} product variant update metafields  {% endcomment %}
+
   document.querySelector('.options-selection__option-values').addEventListener('change', function() {
     console.log('It works')
   });
 
-//   function updateMetafields(variantId) {
-//     // Fetch and update the variant metafields based on the selected variant ID
-//     // You can use the Shopify Ajax API or make an AJAX request to retrieve the metafield data
-//     // Once you have the data, update the corresponding elements on the page
-//     var metafieldInfoElement = document.queryselector('.metafield-info');
-//     metafieldInfoElement.textContent = variantMetafields[variantId];
-//   }
+  function updateMetafields(variantId) {
+    // Fetch and update the variant metafields based on the selected variant ID
+    // You can use the Shopify Ajax API or make an AJAX request to retrieve the metafield data
+    // Once you have the data, update the corresponding elements on the page
+    var metafieldInfoElement = document.querySelector('.metafield-info');
+    metafieldInfoElement.textContent = variantMetafields[variantId];
+  }
