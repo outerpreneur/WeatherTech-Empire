@@ -565,7 +565,7 @@
 </div>
 
 <script>
-  document.queryselector('.options-selection__option-value').addEventListener('click', function() {
+  document.querySelector('.options-selection__option-value').addEventListener('click', function() {
     console.log('It works')
   });
 
@@ -573,7 +573,7 @@
     // Fetch and update the variant metafields based on the selected variant ID
     // You can use the Shopify Ajax API or make an AJAX request to retrieve the metafield data
     // Once you have the data, update the corresponding elements on the page
-    var metafieldInfoElement = document.queryselector('.metafield-info');
+    var metafieldInfoElement = document.querySelector('.metafield-info');
     metafieldInfoElement.textContent = variantMetafields[variantId];
   }
 </script>
