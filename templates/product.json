@@ -64,7 +64,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "Suitable for",
-            "collapsible_tab_text": "{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% endif %}"
+            "collapsible_tab_text": "<div class=\"variant-metafields-section\">\n{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% endif %}\n<\/div>"
           }
         },
         "0028e7f1-b0c9-4425-875f-cccf193432c6": {
