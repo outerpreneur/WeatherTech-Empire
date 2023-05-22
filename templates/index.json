@@ -102,37 +102,6 @@
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
-        "promotion-1": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/JEEP_Gladiator_20_4413134IM.jpg",
-            "title": "Interior Protection",
-            "text": "Keep your vehicle looking like new",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/interior-protection",
-            "button_text": "Interior protection",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "rgba(0,0,0,0)",
-            "opacity": 10
-          }
-        },
-        "promotion-2": {
-          "type": "promotion",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Car_coasters_in_vehicle_coaster_Hero_Coffee_TumblerV2.jpg",
-            "title": "Car accesories",
-            "text": "Vehicle Sun-Shades, FloorLiner Cleaning & Protective Spray, Home ComfortMats and Seat Protectors",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/accessories",
-            "button_text": "Accessories",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#000000",
-            "opacity": 24
-          }
-        },
         "promotion-4": {
           "type": "promotion",
           "settings": {
@@ -145,6 +114,21 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
+            "opacity": 10
+          }
+        },
+        "promotion-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/JEEP_Gladiator_20_4413134IM.jpg",
+            "title": "Floorliners HP",
+            "text": "Our FloorLiner HP is made using advanced rubber-like, Thermoplastic Elastomer (TPE) compound making it both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/floorliners-hp",
+            "button_text": "Interior protection",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "rgba(0,0,0,0)",
             "opacity": 10
           }
         },
@@ -162,30 +146,12 @@
             "background": "#000000",
             "opacity": 25
           }
-        },
-        "d2ed044b-a1fb-4f32-833a-53b85f8dd783": {
-          "type": "promotion",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/FORD_Expedition_15_89042.jpg",
-            "title": "Exterior protection",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/exterior-protection",
-            "button_text": "Exterior protection",
-            "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
-          }
         }
       },
       "block_order": [
-        "promotion-1",
-        "promotion-2",
         "promotion-4",
-        "promotion-3",
-        "d2ed044b-a1fb-4f32-833a-53b85f8dd783"
+        "promotion-1",
+        "promotion-3"
       ],
       "settings": {
         "title": "",
