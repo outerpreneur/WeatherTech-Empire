@@ -123,6 +123,12 @@
           "settings": {
             "custom_liquid": "{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% endif %}"
           }
+        },
+        "2b0e53db-5c58-4078-823a-886fb3a5df2d": {
+          "type": "shopify:\/\/apps\/qr-code-hub\/blocks\/home_landing\/4500f4b8-8cd3-4443-9a62-c1d1d9888ad7",
+          "settings": {
+            "has_icon": true
+          }
         }
       },
       "block_order": [
@@ -142,7 +148,8 @@
         "101d50bc-9c39-49b7-b6c9-b541a061409d",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
         "afaed067-835d-4561-b6aa-d93ceebf8ddc",
-        "622cbc79-588c-4959-acce-a75e49601744"
+        "622cbc79-588c-4959-acce-a75e49601744",
+        "2b0e53db-5c58-4078-823a-886fb3a5df2d"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
