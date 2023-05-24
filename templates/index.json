@@ -243,9 +243,9 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/car-parked-by-the-water-at-sunset.jpg",
-            "title": "RUGGED EQUIPMENT FOR YOUR FAMILY ADVENTURES",
-            "text": "",
+            "image": "shopify:\/\/shop_images\/911.jpg",
+            "title": "Enhance the elegance",
+            "text": "See our Porsche range of in-car protection made to perfection for all weather.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/porsche",
             "button_text": "Porsche collection",
