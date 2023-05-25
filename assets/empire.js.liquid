@@ -51260,10 +51260,13 @@ if (ageGatePage) {
 ;
 
 {% comment %} product variant update metafields  {% endcomment %}
+const options = document.querySelectorAll('.options-selection__option-values')
 
-  document.querySelector('.options-selection__option-values').addEventListener('change', function() {
-    console.log('It works')
-    location.reload()
+    options.forEach(link => {
+      link.addEventListener('change', () => {
+      console.log('It works')
+      location.reload()
+    })
   });
 
   function updateMetafields(variantId) {
