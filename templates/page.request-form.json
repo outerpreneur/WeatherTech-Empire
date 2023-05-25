@@ -2,11 +2,19 @@
   "sections": {
     "main": {
       "type": "page",
+      "disabled": true,
       "settings": {
+      }
+    },
+    "dca936aa-64a7-4137-97e0-891859dd8767": {
+      "type": "dynamic-custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-request-form' %}"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "dca936aa-64a7-4137-97e0-891859dd8767"
   ]
 }
