@@ -8,7 +8,7 @@
     "dca936aa-64a7-4137-97e0-891859dd8767": {
       "type": "dynamic-custom-liquid",
       "settings": {
-        "custom_liquid": "{% render 'car-model-request-form' %}"
+        "custom_liquid": "{{ shop.name }}"
       }
     }
   },
