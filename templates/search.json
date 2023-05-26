@@ -22,9 +22,25 @@
         "products_per_row": "4",
         "enable_search_articles_pages": true
       }
+    },
+    "24636bc1-287f-44d4-8970-761078c9819f": {
+      "type": "pxs-image-with-text-overlay",
+      "settings": {
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/911.jpg",
+        "title": "Can't find your car model?",
+        "text": "",
+        "content_position": "center-center",
+        "color": "#ffffff",
+        "overlay_background": "#000000",
+        "overlay_opacity": 50,
+        "link": "shopify:\/\/pages\/product-request-form",
+        "button_text": "Fill up this form"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "24636bc1-287f-44d4-8970-761078c9819f"
   ]
 }
