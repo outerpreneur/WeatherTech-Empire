@@ -8,12 +8,30 @@
     "dca936aa-64a7-4137-97e0-891859dd8767": {
       "type": "dynamic-custom-liquid",
       "settings": {
-        "custom_liquid": "{{ shop.name }}"
+        "custom_liquid": ""
+      }
+    },
+    "16850885894d16405e": {
+      "type": "apps",
+      "blocks": {
+        "03e43db1-7f31-4c63-bf2f-f8bfb53d6e35": {
+          "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+          "settings": {
+            "shortcode": "{formbuilder:NTA1NQ==}"
+          }
+        }
+      },
+      "block_order": [
+        "03e43db1-7f31-4c63-bf2f-f8bfb53d6e35"
+      ],
+      "settings": {
+        "include_padding": true
       }
     }
   },
   "order": [
     "main",
-    "dca936aa-64a7-4137-97e0-891859dd8767"
+    "dca936aa-64a7-4137-97e0-891859dd8767",
+    "16850885894d16405e"
   ]
 }
