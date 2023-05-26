@@ -207,7 +207,7 @@
         "41b716ed-6367-4d13-8a6e-92dd8a74f08f": {
           "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-block\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
           "settings": {
-            "shortcode": "{formbuilder:NTA1NQ==}"
+            "shortcode": ""
           }
         }
       },
