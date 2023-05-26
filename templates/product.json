@@ -78,7 +78,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "I can't find my car",
-            "collapsible_tab_text": "<h2>Product request form\n{formbuilder:NTA1NQ==}"
+            "collapsible_tab_text": "<h4 style=\"text-align: center\">Product request form<\/h2>\n{formbuilder:NTA1NQ==}"
           }
         },
         "description": {
