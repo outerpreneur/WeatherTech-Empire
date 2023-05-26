@@ -62,6 +62,9 @@
     >
     <input class="shop-car-button" type="submit" value="Shop by car">
   </form>
+  <div class="request-form-container">
+    <a href="https://mauwi.com/pages/product-request-form" class="request-form-button"><button>I can't find my car</button></a>
+  <div>
 </div>
 
 {% liquid
@@ -446,9 +449,11 @@
   .search-bar-container {
       font-family: "helvetica";
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       margin: 0;
+      gap: 1rem;
   }
 
 
@@ -480,6 +485,21 @@
       color: #fff;
       font-weight: 600;
       cursor: pointer;
+  }
+
+  .request-form-container {
+    color: white;
+    font-size: 1.1rem;
+    font-family: "helvetica";
+  }
+
+
+  .request-form-button button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 500;
   }
 
     @media(max-width: 800px) {
