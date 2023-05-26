@@ -635,6 +635,12 @@
         "background": "#000000",
         "opacity": 36
       }
+    },
+    "1685086930051b47ad": {
+      "type": "apps",
+      "settings": {
+        "include_padding": true
+      }
     }
   },
   "order": [
@@ -652,6 +658,7 @@
     "dynamic_promo_grid-2",
     "36612375-1729-4764-874c-6ec3e9370468",
     "dynamic_promo_grid-3",
-    "dynamic_search"
+    "dynamic_search",
+    "1685086930051b47ad"
   ]
 }
