@@ -88,6 +88,7 @@
         },
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6": {
           "type": "request_quote",
+          "disabled": true,
           "settings": {
             "title": "Missing your car model and year? Fill up this form and we will let you know it is available for pre-order",
             "show_quantity": true,
