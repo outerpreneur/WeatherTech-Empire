@@ -81,6 +81,13 @@
             "collapsible_tab_text": "<h4 style=\"text-align: center\">Product request form<\/h2>\n{formbuilder:NTA1NQ==}"
           }
         },
+        "9953b17a-14fa-4851-a311-403f09beb7f2": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "VOLUME DISCOUNT",
+            "collapsible_tab_text": "<ul>\n<li>Buy 2 pieces, get 3 % DISCOUNT<\/li>\n<li>Buy 3 pieces, get 5 % DISCOUNT<\/li>\n<li>Buy 4 pieces, get 7 % DISCOUNT<\/li>\n<li>Buy 5 pieces, get 10 % DISCOUNT<\/li>"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -138,6 +145,7 @@
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
+        "9953b17a-14fa-4851-a311-403f09beb7f2",
         "description",
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
         "101d50bc-9c39-49b7-b6c9-b541a061409d",
