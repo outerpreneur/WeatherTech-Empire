@@ -118,7 +118,7 @@
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8": {
           "type": "collapsible-tab",
           "settings": {
-            "collapsible_tab_heading": "I can't find my car",
+            "collapsible_tab_heading": "I can't find my vehicle",
             "collapsible_tab_text": "<h4 style=\"text-align: center\">Product request form<\/h2>\n{formbuilder:NTA1NQ==}"
           }
         },
