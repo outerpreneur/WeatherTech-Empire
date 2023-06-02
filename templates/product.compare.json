@@ -40,23 +40,26 @@
         },
         "dynamic-comparison-2": {
           "type": "dynamic_comparison",
+          "disabled": true,
           "settings": {
             "title": "Make",
-            "text": "<p>Use this text to share additional information about your product.<\/p>{{ product.metafields.custom.automake | metafield_tag }}"
+            "text": "<p>Use this text to share additional information about your product.<\/p><p><\/p>"
           }
         },
         "dynamic-comparison": {
           "type": "dynamic_comparison",
+          "disabled": true,
           "settings": {
             "title": "Model",
-            "text": "{{ product.metafields.custom.automodel | metafield_tag }}"
+            "text": ""
           }
         },
         "dynamic-comparison-3": {
           "type": "dynamic_comparison",
+          "disabled": true,
           "settings": {
             "title": "Year",
-            "text": "{{ product.metafields.custom.year3 | metafield_tag }}"
+            "text": ""
           }
         }
       },
