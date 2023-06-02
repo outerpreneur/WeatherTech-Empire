@@ -7,7 +7,7 @@
       ],
       "settings": {
         "section_height": "small",
-        "image": "shopify:\/\/shop_images\/adrien-delforge-hQvZI3dcA9Y-unsplash.jpg",
+        "image": "{{ collection.image }}",
         "title": "{{ collection.title }}",
         "text": "<p>{{ collection.metafields.custom.collection_tagline.value }}<\/p>",
         "content_position": "center-center",
