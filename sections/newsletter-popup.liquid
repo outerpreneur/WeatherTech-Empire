@@ -1,0 +1,217 @@
+<div class="entire-popup">
+  <div id="newsletter-popup" class="newsletter-popup">
+    <div class="newsletter-popup-content">
+      <img src="{{ section.settings.image | img_url: "500x" }}" class="popup-image">
+      <h2 class="newsletter-popup-heading">{{ section.settings.heading }}</h2>
+      <p class="newsletter-popup-description">{{ section.settings.description }}</p>
+      <form
+        id="newsletter-popup-form"
+        class="newsletter-popup-form"
+        action="/newsletter"
+        method="post">
+        <input
+          type="email"
+          name="email"
+          class="newsletter-popup-input"
+          placeholder="Your email address"
+          required>
+        <button type="submit" class="newsletter-popup-button">{{ section.settings.button_text }}</button>
+      </form>
+      <button
+        id="close-newsletter-popup"
+        class="close-newsletter-popup"
+        aria-label="Close"
+        role="button">×</button>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .entire-popup {
+    display: none;
+  }
+
+
+  .newsletter-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+  }
+
+  .newsletter-popup-content {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .newsletter-popup-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-popup-description {
+    margin-bottom: 20px;
+  }
+
+  .newsletter-popup-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-popup-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #e32020;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+  }
+
+  .newsletter-popup-timer {
+    margin-top: 20px;
+  }
+
+  .newsletter-popup-timer-message {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .newsletter-popup-timer-countdown {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .close-newsletter-popup {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+  .newsletter-popup-content {
+    max-width: 500px;
+  }
+    .popup-image {
+    width: 90%;
+    }
+  }
+
+</style>
+
+<script>
+   
+document.addEventListener('DOMContentLoaded', function() {
+  var popupDelay = 30000; // Delay in milliseconds (30 seconds)
+  var scrollThreshold = 0.5; // Scroll threshold as a percentage of the page height
+  var exitIntent = false;
+  var timer;
+
+  // Show the popup after the delay or when the scroll threshold is reached
+  timer = setTimeout(function() {
+    if (!exitIntent && !isPopupVisible()) {
+      showNewsletterPopup();
+    }
+  }, popupDelay);
+
+  // Show the popup on exit intent
+  document.addEventListener('mouseout', function(event) {
+    if (!exitIntent && event.clientY <= 0) {
+      showNewsletterPopup();
+      exitIntent = true;
+    }
+  });
+
+  // Show the popup when the scroll threshold is reached
+  window.addEventListener('scroll', function() {
+    if (!exitIntent && !isPopupVisible() && reachedScrollThreshold()) {
+      clearTimeout(timer);
+      showNewsletterPopup();
+    }
+  });
+
+  // Function to check if the popup is visible
+  function isPopupVisible() {
+    var popup = document.querySelector('.entire-popup');
+    return popup.style.display === 'block';
+  }
+
+  // Function to check if the scroll threshold is reached
+  function reachedScrollThreshold() {
+    var scrollPosition = window.scrollY || window.pageYOffset;
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var documentHeight = Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
+    var scrollThresholdPosition = scrollThreshold * (documentHeight - windowHeight);
+
+    return scrollPosition >= scrollThresholdPosition;
+  }
+
+  // Function to show the newsletter popup
+  function showNewsletterPopup() {
+    clearTimeout(timer);
+    document.querySelector('.entire-popup').style.display = 'block';
+  }
+
+  // Function to close the newsletter popup
+  document.getElementById('close-newsletter-popup').addEventListener('click', function() {
+    document.getElementById('newsletter-popup').style.display = 'none';
+  });
+});
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Newsletter Popup",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Heading",
+        "id": "heading",
+        "default": "Sign up for our newsletter!"
+      }, {
+        "type": "image_picker",
+        "label": "Image",
+        "id": "image"
+      }, {
+        "type": "textarea",
+        "label": "Description",
+        "id": "description",
+        "default": "Stay up to date with our latest news and promotions."
+      }, {
+        "type": "text",
+        "label": "Button Text",
+        "id": "button_text",
+        "default": "Subscribe"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Newsletter pop-up",
+        "settings": {},
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}
