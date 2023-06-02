@@ -641,6 +641,15 @@
       "settings": {
         "include_padding": true
       }
+    },
+    "0be49436-a45a-4b31-ae35-3c277dfdc6dd": {
+      "type": "newsletter-popup",
+      "settings": {
+        "heading": "Sign up for our newsletter!",
+        "image": "shopify:\/\/shop_images\/weathertech-sunshades-jeep-wrangler-unlimited-4-door-front-windshield-sunshade-allround-sunshade-kit-42866553651364.jpg",
+        "description": "Stay up to date with our latest news and promotions.",
+        "button_text": "Subscribe"
+      }
     }
   },
   "order": [
@@ -659,6 +668,7 @@
     "36612375-1729-4764-874c-6ec3e9370468",
     "dynamic_promo_grid-3",
     "dynamic_search",
-    "1685086930051b47ad"
+    "1685086930051b47ad",
+    "0be49436-a45a-4b31-ae35-3c277dfdc6dd"
   ]
 }
