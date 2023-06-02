@@ -53,27 +53,6 @@
             "background_color": "#e22120"
           }
         },
-        "c23dfb62-24de-40aa-a646-986d6cb74e3a": {
-          "type": "tabs",
-          "disabled": true,
-          "settings": {
-            "show_product_description": true,
-            "show_tabs_below_product_gallery": true,
-            "tab_heading_1": "How",
-            "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
-            "tab_heading_2": "Tab 2",
-            "tab_text_2": "<p>Use this text to share information about your product.<\/p>",
-            "tab_heading_3": "FAQ",
-            "tab_text_3": "<p>Use this text to share information about your product.<\/p>"
-          }
-        },
-        "ae8774b4-3010-46d9-87b5-3f0e5fdb4b30": {
-          "type": "collapsible-tab",
-          "settings": {
-            "collapsible_tab_heading": "Details",
-            "collapsible_tab_text": "<p><strong>Suitable for:<\/strong><\/p><p>Make: <\/p>{{ product.metafields.custom.automake | metafield_tag }}<p>Model:<\/p>{{ product.metafields.custom.automodel | metafield_tag }}<p>Year:<\/p>{{ product.metafields.custom.year3 | metafield_tag }}"
-          }
-        },
         "f0e74f80-f474-4904-ada9-71f381add950": {
           "type": "collapsible-tab",
           "settings": {
@@ -91,8 +70,6 @@
         "form",
         "description",
         "3b6a3f2d-0079-44a6-ab4e-3f3548b102a6",
-        "c23dfb62-24de-40aa-a646-986d6cb74e3a",
-        "ae8774b4-3010-46d9-87b5-3f0e5fdb4b30",
         "f0e74f80-f474-4904-ada9-71f381add950"
       ],
       "settings": {
