@@ -370,7 +370,7 @@
       "newsletter-popup": {
         "type": "newsletter-popup",
         "settings": {
-          "show_popup": false,
+          "show_popup": true,
           "heading": "Sign up for our newsletter!",
           "image": "shopify:\/\/shop_images\/weathertech-sunshades-jeep-wrangler-unlimited-4-door-front-windshield-sunshade-allround-sunshade-kit-42866553651364.jpg",
           "description": "Stay up to date with our latest news and promotions.",
