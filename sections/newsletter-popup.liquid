@@ -1,18 +1,20 @@
-<div class="entire-popup">
-  <div id="newsletter-popup" class="newsletter-popup">
-    <div class="newsletter-popup-content">
-      <img src="{{ section.settings.image | img_url: "500x" }}" class="popup-image">
-      <h2 class="newsletter-popup-heading">{{ section.settings.heading }}</h2>
-      <p class="newsletter-popup-description">{{ section.settings.description }}</p>
-      {% render 'newsletter' %}
-      <button
-        id="close-newsletter-popup"
-        class="close-newsletter-popup"
-        aria-label="Close"
-        role="button">×</button>
+{% if section.settings.show_popup %}
+  <div class="entire-popup">
+    <div id="newsletter-popup" class="newsletter-popup">
+      <div class="newsletter-popup-content">
+        <img src="{{ section.settings.image | img_url: "500x" }}" class="popup-image">
+        <h2 class="newsletter-popup-heading">{{ section.settings.heading }}</h2>
+        <p class="newsletter-popup-description">{{ section.settings.description }}</p>
+        {% render 'newsletter' %}
+        <button
+          id="close-newsletter-popup"
+          class="close-newsletter-popup"
+          aria-label="Close"
+          role="button">×</button>
+      </div>
     </div>
   </div>
-</div>
+{% endif %}
 
 <style>
 
@@ -211,15 +213,23 @@
     "name": "Newsletter Popup",
     "settings": [
       {
+        "type": "checkbox",
+        "label": "Show popup",
+        "id": "show_popup",
+        "default": false
+      },
+      {
         "type": "text",
         "label": "Heading",
         "id": "heading",
         "default": "Sign up for our newsletter!"
-      }, {
+      },
+      {
         "type": "image_picker",
         "label": "Image",
         "id": "image"
-      }, {
+      },
+      {
         "type": "textarea",
         "label": "Description",
         "id": "description",
