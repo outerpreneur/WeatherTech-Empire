@@ -370,7 +370,7 @@
       "newsletter-popup": {
         "type": "newsletter-popup",
         "settings": {
-          "show_popup": true,
+          "show_popup": false,
           "heading": "Sign up for our newsletter!",
           "image": "shopify:\/\/shop_images\/wte-floorliner-sq.jpg",
           "description": "Stay up to date with our latest news and promotions.",
