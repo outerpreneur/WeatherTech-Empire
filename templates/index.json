@@ -3,7 +3,7 @@
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
       "type": "filter-storefront",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/CoffeeSpillFL_crop.jpg",
+        "background_image": "shopify:\/\/shop_images\/walser-shop-banner-home.png",
         "image_height": 400,
         "image_position": "bottom"
       }
