@@ -5,7 +5,7 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/weathertech-ch-bmw-x5-x6-1st-row-floorliners-bundle-42927386263716.jpg",
         "image_height": 400,
-        "image_position": "bottom"
+        "image_position": "center"
       }
     },
     "dynamic_highlights_banner": {
