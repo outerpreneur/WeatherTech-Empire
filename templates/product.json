@@ -47,6 +47,13 @@
         "loox-rating": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false
           }
         },
         "form": {
@@ -90,7 +97,7 @@
           "type": "complementary_products",
           "settings": {
             "heading": "Pairs well with",
-            "product_recommendation_limit": 7,
+            "product_recommendation_limit": 10,
             "products_per_slide": 3
           }
         },
