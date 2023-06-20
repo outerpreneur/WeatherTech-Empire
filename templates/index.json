@@ -281,6 +281,7 @@
         },
         "promotion-4": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/y4mvxxuWqJi3er9FXrwlAaEH8SZ20aPbpEcT4fJ3QpV8cc8u4gzrG2aPpPKjz3XVnf_Djk8quSFxncKbJALOe9tp-r8ziynBkySl8B0zai36INe-e8zTmvHOjcejkm4dE1-SOhsn10L9BPSjr0yYVFgnh5BDK6XO7hOFiuyqdGmx9cggKUy61Zq.jpg",
             "title": "BUILT FOR THE WILD",
@@ -319,7 +320,7 @@
       ],
       "settings": {
         "title": "",
-        "section_height": "medium",
+        "section_height": "large",
         "section_columns": 4,
         "text_alignment": "top-left"
       }
