@@ -252,8 +252,8 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/custom_resized_859823b5-fff2-4d88-ba82-32deb1593eb8.jpg",
-            "title": "The Perfect Gear-Haulers",
+            "image": "shopify:\/\/shop_images\/craventure-media-BOhTjxHvfkU-unsplash_tesla_model_y_1.jpg",
+            "title": "Electric Vehicles",
             "text": "Electric Vehicle (EV's) Collection\nEV's are the fastest growing sector in new vehicles in Switzerland, new innovations arrive daily, check-out our protective products for this innovative sector.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/emv",
@@ -267,9 +267,9 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/RackSack_Forrest.jpg",
-            "title": "American Trucks (yup), we have the best for the best!",
-            "text": "There are Truck's then there are American Trucks! Check out our unique range of interior products for your American Vehicle. (meta-data, Truck, USA)",
+            "image": "shopify:\/\/shop_images\/pavel-anoshin--mlSAA10MKg-unsplash_ford_ranger_raptor_1.jpg",
+            "title": "American Trucks",
+            "text": "American Trucks (yup), we have the best for the best!\n\nThere are Truck's then there are American Trucks! Check out our unique range of interior products for your American Vehicle. (meta-data, Truck, USA)",
             "color": "#ffffff",
             "block_link": "#",
             "button_text": "USA collection",
@@ -297,11 +297,12 @@
         "84a1c22a-a2e6-42fe-a78c-09f5de6c132a": {
           "type": "promotion",
           "settings": {
-            "title": "Grid",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#4d4d4d",
-            "block_link": "",
-            "button_text": "",
+            "image": "shopify:\/\/shop_images\/anton-jansson-LV_TsMPTATE-unsplash_Audi_SUV_1.jpg",
+            "title": "SUVs",
+            "text": "Sports Utility Vehicles (SUV) dominate the Swiss market with 50% of all vehicles sold in 2022. So clearly, we are in the mountains, all year round, with friends, family and pets. So to combat the Summer storms, dirt, grit and water from getting into your vehicle, check out our leading range for your SUV.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/suv",
+            "button_text": "SUV",
             "button_style": "primary",
             "show_overlay": false,
             "background": "",
