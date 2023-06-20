@@ -93,12 +93,6 @@
         "include_padding": true
       }
     },
-    "16789641500712c542": {
-      "type": "apps",
-      "settings": {
-        "include_padding": true
-      }
-    },
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
@@ -647,7 +641,6 @@
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e",
     "dynamic_highlights_banner",
     "1678964004457b5f22",
-    "16789641500712c542",
     "dynamic_promo_mosaic",
     "dynamic_shoppable_image",
     "dynamic_featured_collection",
