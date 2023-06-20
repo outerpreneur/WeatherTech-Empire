@@ -108,7 +108,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 10
+            "opacity": 50
           }
         },
         "promotion-1": {
@@ -122,8 +122,8 @@
             "button_text": "Interior protection",
             "button_style": "primary",
             "show_overlay": true,
-            "background": "rgba(0,0,0,0)",
-            "opacity": 10
+            "background": "#121212",
+            "opacity": 50
           }
         },
         "promotion-3": {
@@ -138,7 +138,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#000000",
-            "opacity": 25
+            "opacity": 51
           }
         }
       },
@@ -325,38 +325,6 @@
         "text_alignment": "top-left"
       }
     },
-    "dynamic_featured_collection-2": {
-      "type": "dynamic-featured-collection",
-      "disabled": true,
-      "blocks": {
-        "title-card": {
-          "type": "title_card",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/TechShade_2_CU_Snow_Flare.jpg",
-            "horizontal_size": "2",
-            "vertical_size": "1",
-            "text_alignment": "center-center",
-            "pre_heading": "Shop",
-            "heading": "Sunshades",
-            "text_color": "#ffffff",
-            "cta_label": "See more",
-            "overlay_color": "#000000",
-            "overlay_opacity": 21
-          }
-        }
-      },
-      "block_order": [
-        "title-card"
-      ],
-      "settings": {
-        "title": "",
-        "layout": "grid",
-        "collection": "accessories",
-        "product_count": 3,
-        "cta_label": "Accessories",
-        "cta_button_style": "primary"
-      }
-    },
     "81b0c73a-57ed-440f-96c3-3065a483b831": {
       "type": "parallax-image",
       "settings": {
@@ -451,7 +419,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 31
+            "opacity": 49
           }
         },
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1": {
@@ -466,7 +434,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 18
+            "opacity": 50
           }
         },
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2": {
@@ -481,48 +449,14 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 22
-          }
-        },
-        "59087409-d7bf-4d0b-9239-c5097aed41f2": {
-          "type": "promotion",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Cargo_Tech_TOYO_Sienna_13_41552.jpg",
-            "title": "Cargo tech",
-            "text": "Keeps cargo of all different shapes and sizes from shifting and sliding all over your trunk area.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/cargo-tech",
-            "button_text": "Cargo tech",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 10
-          }
-        },
-        "ed047d78-25e3-4416-bf5a-e896e9beba73": {
-          "type": "promotion",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/RackSack_Zipper_New_Logo.jpg",
-            "title": "Rack sack",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
-            "block_link": "",
-            "button_text": "",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 21
+            "opacity": 51
           }
         }
       },
       "block_order": [
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-0",
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1",
-        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2",
-        "59087409-d7bf-4d0b-9239-c5097aed41f2",
-        "ed047d78-25e3-4416-bf5a-e896e9beba73"
+        "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2"
       ],
       "settings": {
         "title": "",
@@ -530,36 +464,6 @@
         "text_alignment": "top-left",
         "maintain_aspect_ratio": false,
         "compress_blocks": false
-      }
-    },
-    "dynamic_promo_grid-3": {
-      "type": "dynamic-promo-grid",
-      "disabled": true,
-      "blocks": {
-        "promotion-1": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/y4mtOWZ1i5TkeJ6cGyeLo9UDbtdWuv2zypbv8uP3dfQKXbe0Cgh-pcEoy9OYxJ4phTKE5jSAlKEwt22akDzymNnyPw_JGf99VZykdn6Bq5egC5C3NJrWI5LEcLE9BOgkf6pGSRsNbae90sxiuGBWOY3_g_E5oRQk-DZ-NCvzs4GIV5Dvoy0Gobn.jpg",
-            "title": "ANYTHING BUT SOFT",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
-            "block_link": "",
-            "button_text": "",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 23
-          }
-        }
-      },
-      "block_order": [
-        "promotion-1"
-      ],
-      "settings": {
-        "title": "",
-        "section_height": "medium",
-        "section_columns": 1,
-        "text_alignment": "center-left"
       }
     },
     "dynamic_search": {
@@ -578,12 +482,6 @@
         "background": "#000000",
         "opacity": 36
       }
-    },
-    "1685086930051b47ad": {
-      "type": "apps",
-      "settings": {
-        "include_padding": true
-      }
     }
   },
   "order": [
@@ -594,12 +492,9 @@
     "dynamic_shoppable_image",
     "dynamic_featured_collection",
     "dynamic_promo_grid",
-    "dynamic_featured_collection-2",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
     "36612375-1729-4764-874c-6ec3e9370468",
-    "dynamic_promo_grid-3",
-    "dynamic_search",
-    "1685086930051b47ad"
+    "dynamic_search"
   ]
 }
