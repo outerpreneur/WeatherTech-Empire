@@ -131,7 +131,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/y4mtOWZ1i5TkeJ6cGyeLo9UDbtdWuv2zypbv8uP3dfQKXbe0Cgh-pcEoy9OYxJ4phTKE5jSAlKEwt22akDzymNnyPw_JGf99VZykdn6Bq5egC5C3NJrWI5LEcLE9BOgkf6pGSRsNbae90sxiuGBWOY3_g_E5oRQk-DZ-NCvzs4GIV5Dvoy0Gobn.jpg",
             "title": "Cargoliners",
-            "text": "Our cargoliners are digitally designed to fit your vehicle and feature a raised lip to keep spills, dirt and grease off your vehicle’s interior",
+            "text": "Our Custom made Cargo and FloorLiners together provide a great way to protect the inside of your entire vehicle, so check them out now in the Summer and be ready for the Winter with confidence!",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "Cargoliners",
@@ -254,7 +254,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/custom_resized_859823b5-fff2-4d88-ba82-32deb1593eb8.jpg",
             "title": "The Perfect Gear-Haulers",
-            "text": "Protect BOTH your equipment and car",
+            "text": "Electric Vehicle (EV's) Collection\nEV's are the fastest growing sector in new vehicles in Switzerland, new innovations arrive daily, check-out our protective products for this innovative sector.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/emv",
             "button_text": "Electric Vehicle collection",
@@ -268,8 +268,8 @@
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/RackSack_Forrest.jpg",
-            "title": "Go Deeper Into the Woods",
-            "text": "All vehicles of country origin US",
+            "title": "American Trucks (yup), we have the best for the best!",
+            "text": "There are Truck's then there are American Trucks! Check out our unique range of interior products for your American Vehicle. (meta-data, Truck, USA)",
             "color": "#ffffff",
             "block_link": "#",
             "button_text": "USA collection",
@@ -293,13 +293,28 @@
             "background": "#121212",
             "opacity": 34
           }
+        },
+        "84a1c22a-a2e6-42fe-a78c-09f5de6c132a": {
+          "type": "promotion",
+          "settings": {
+            "title": "Grid",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": false,
+            "background": "",
+            "opacity": 50
+          }
         }
       },
       "block_order": [
         "promotion-1",
         "promotion-2",
         "promotion-3",
-        "promotion-4"
+        "promotion-4",
+        "84a1c22a-a2e6-42fe-a78c-09f5de6c132a"
       ],
       "settings": {
         "title": "",
