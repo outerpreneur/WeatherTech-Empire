@@ -246,7 +246,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 33
+            "opacity": 49
           }
         },
         "promotion-2": {
@@ -261,7 +261,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 44
+            "opacity": 50
           }
         },
         "promotion-3": {
@@ -276,7 +276,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 38
+            "opacity": 50
           }
         },
         "promotion-4": {
@@ -307,7 +307,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 34
+            "opacity": 49
           }
         }
       },
