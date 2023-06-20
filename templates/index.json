@@ -246,7 +246,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 20
+            "opacity": 33
           }
         },
         "promotion-2": {
@@ -261,7 +261,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 34
+            "opacity": 44
           }
         },
         "promotion-3": {
@@ -276,7 +276,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 24
+            "opacity": 38
           }
         },
         "promotion-4": {
@@ -305,9 +305,9 @@
             "block_link": "shopify:\/\/collections\/suv",
             "button_text": "SUV",
             "button_style": "primary",
-            "show_overlay": false,
-            "background": "",
-            "opacity": 50
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 34
           }
         }
       },
@@ -323,74 +323,6 @@
         "section_height": "large",
         "section_columns": 4,
         "text_alignment": "top-left"
-      }
-    },
-    "dynamic_collection_list": {
-      "type": "dynamic-collection-list",
-      "disabled": true,
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "accessories",
-            "image": "shopify:\/\/shop_images\/custom_resized_577886da-3d79-45af-8a68-9f18547958dd.jpg",
-            "title": ""
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "cargo-trunk-liners",
-            "title": ""
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "floor-liners",
-            "title": ""
-          }
-        },
-        "collection-4": {
-          "type": "collection",
-          "settings": {
-            "collection": "interior-protection",
-            "title": ""
-          }
-        },
-        "collection-5": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        },
-        "collection-6": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "collection": "",
-            "title": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3",
-        "collection-4",
-        "collection-5",
-        "collection-6"
-      ],
-      "settings": {
-        "title": "",
-        "thumbnail_columns_desktop": 4,
-        "thumbnail_columns_mobile": 3,
-        "image-crop": "circle",
-        "cta_label": "View All",
-        "cta_link": "",
-        "cta_button_style": "secondary"
       }
     },
     "dynamic_featured_collection-2": {
@@ -519,7 +451,7 @@
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 19
+            "opacity": 31
           }
         },
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1": {
@@ -662,7 +594,6 @@
     "dynamic_shoppable_image",
     "dynamic_featured_collection",
     "dynamic_promo_grid",
-    "dynamic_collection_list",
     "dynamic_featured_collection-2",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
