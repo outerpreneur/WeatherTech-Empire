@@ -96,6 +96,21 @@
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
+        "277faa58-f359-44db-9102-8816c73aa539": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/weathertech-2nd-row-floorliner-446976im-2nd-row-floorliner-42947361472676.jpg",
+            "title": "Floorliner Sets",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/floorliner-sets",
+            "button_text": "",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 50
+          }
+        },
         "promotion-4": {
           "type": "promotion",
           "settings": {
@@ -143,6 +158,7 @@
         }
       },
       "block_order": [
+        "277faa58-f359-44db-9102-8816c73aa539",
         "promotion-4",
         "promotion-1",
         "promotion-3"
