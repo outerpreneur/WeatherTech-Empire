@@ -171,54 +171,6 @@
         "compress_blocks": false
       }
     },
-    "dynamic_shoppable_image": {
-      "type": "dynamic-shoppable-image",
-      "disabled": true,
-      "blocks": {
-        "hotspot-2": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 73,
-            "y_axis": 31
-          }
-        },
-        "5095725a-8f8a-41ab-bb62-4e486fd76eb9": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 45,
-            "y_axis": 43
-          }
-        },
-        "fa9a9386-7820-41a9-b3eb-fcc434758ef6": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "x_axis": 49,
-            "y_axis": 30
-          }
-        }
-      },
-      "block_order": [
-        "hotspot-2",
-        "5095725a-8f8a-41ab-bb62-4e486fd76eb9",
-        "fa9a9386-7820-41a9-b3eb-fcc434758ef6"
-      ],
-      "settings": {
-        "title": "",
-        "image": "shopify:\/\/shop_images\/VW_Golf_Xray_19.jpg",
-        "image_width": "two-thirds",
-        "link_text": "View product",
-        "textbox_title": "Shop Volkswagen",
-        "textbox_subheading": "<p>Buy the entire set of  Volskwagen's Floor liners<\/p>",
-        "textbox_button_label": "Shop the Bundle",
-        "textbox_button_link": "shopify:\/\/collections\/accessories",
-        "textbox_button_style": "primary",
-        "textbox_text_alignment": "center",
-        "textbox_text_position": "left"
-      }
-    },
     "dynamic_featured_collection": {
       "type": "dynamic-featured-collection",
       "blocks": {
@@ -505,7 +457,6 @@
     "dynamic_highlights_banner",
     "1678964004457b5f22",
     "dynamic_promo_mosaic",
-    "dynamic_shoppable_image",
     "dynamic_featured_collection",
     "dynamic_promo_grid",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
