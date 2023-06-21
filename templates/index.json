@@ -98,6 +98,7 @@
       "blocks": {
         "277faa58-f359-44db-9102-8816c73aa539": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/weathertech-2nd-row-floorliner-446976im-2nd-row-floorliner-42947361472676.jpg",
             "title": "Floorliner Sets",
