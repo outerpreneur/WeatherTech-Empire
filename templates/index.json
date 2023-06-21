@@ -104,7 +104,7 @@
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliner-sets",
-            "button_text": "",
+            "button_text": "Floorliner sets",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
