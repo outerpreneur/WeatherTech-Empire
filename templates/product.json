@@ -62,11 +62,6 @@
             "enable_local_pickup": false
           }
         },
-        "44b73dad-292d-41eb-b2ce-c2c17100cb01": {
-          "type": "search-popup-block",
-          "settings": {
-          }
-        },
         "3619e91a-1005-4177-bcb3-476da40ce1f0": {
           "type": "collapsible-tab",
           "settings": {
@@ -144,6 +139,11 @@
             "show_quantity": true,
             "show_message": true
           }
+        },
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01": {
+          "type": "search-popup-block",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -155,7 +155,6 @@
         "price",
         "loox-rating",
         "form",
-        "44b73dad-292d-41eb-b2ce-c2c17100cb01",
         "3619e91a-1005-4177-bcb3-476da40ce1f0",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
@@ -165,7 +164,8 @@
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
         "afaed067-835d-4561-b6aa-d93ceebf8ddc",
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
-        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6"
+        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
