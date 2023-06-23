@@ -70,7 +70,7 @@
         "3619e91a-1005-4177-bcb3-476da40ce1f0": {
           "type": "collapsible-tab",
           "settings": {
-            "collapsible_tab_heading": "Description",
+            "collapsible_tab_heading": "Product description",
             "collapsible_tab_text": "{{ product.description }}"
           }
         },
