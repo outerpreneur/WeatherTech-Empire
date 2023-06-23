@@ -96,7 +96,7 @@
         "101d50bc-9c39-49b7-b6c9-b541a061409d": {
           "type": "complementary_products",
           "settings": {
-            "heading": "Get a discount when you buy with",
+            "heading": "Pairs well with",
             "product_recommendation_limit": 10,
             "products_per_slide": 3
           }
