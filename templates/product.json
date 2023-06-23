@@ -67,6 +67,13 @@
           "settings": {
           }
         },
+        "3619e91a-1005-4177-bcb3-476da40ce1f0": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Description",
+            "collapsible_tab_text": "{{ product.description }}"
+          }
+        },
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
           "type": "collapsible-tab",
           "settings": {
@@ -90,6 +97,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -148,6 +156,7 @@
         "loox-rating",
         "form",
         "44b73dad-292d-41eb-b2ce-c2c17100cb01",
+        "3619e91a-1005-4177-bcb3-476da40ce1f0",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "9953b17a-14fa-4851-a311-403f09beb7f2",
