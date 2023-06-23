@@ -115,17 +115,6 @@
             "background_color": "#e22120"
           }
         },
-        "afaed067-835d-4561-b6aa-d93ceebf8ddc": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "only_photos": false,
-            "aggregated": true,
-            "limit": 3,
-            "hide_thumbnails": false,
-            "maxwidth": 1080
-          }
-        },
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8": {
           "type": "collapsible-tab",
           "settings": {
@@ -163,7 +152,6 @@
         "description",
         "101d50bc-9c39-49b7-b6c9-b541a061409d",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
-        "afaed067-835d-4561-b6aa-d93ceebf8ddc",
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
         "44b73dad-292d-41eb-b2ce-c2c17100cb01"
