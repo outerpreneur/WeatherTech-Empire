@@ -65,7 +65,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "Product description",
-            "collapsible_tab_text": ""
+            "collapsible_tab_text": "{{ product.description }}"
           }
         }
       },
