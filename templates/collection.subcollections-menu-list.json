@@ -4,8 +4,8 @@
       "type": "pxs-image-with-text-overlay",
       "settings": {
         "section_height": "medium",
-        "image": "shopify:\/\/shop_images\/oleksandr-horbach-CP4PfqpQNNk-unsplash.jpg",
-        "title": "Shop by make",
+        "image": "{{ collection.image }}",
+        "title": "{{ collection.title }}",
         "text": "",
         "content_position": "center-center",
         "color": "#ffffff",
