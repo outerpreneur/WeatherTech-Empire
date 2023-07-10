@@ -239,7 +239,7 @@
             "title": "American Trucks",
             "text": "US Trucks, yup, we have the best protection for the best!",
             "color": "#ffffff",
-            "block_link": "#",
+            "block_link": "shopify:\/\/collections\/united-states",
             "button_text": "USA collection",
             "button_style": "primary",
             "show_overlay": true,
