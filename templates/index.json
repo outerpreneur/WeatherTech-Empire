@@ -3,7 +3,7 @@
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
       "type": "filter-storefront",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/weathertech-2nd-row-floorliner-446976im-2nd-row-floorliner-42947361407140.jpg",
+        "background_image": "shopify:\/\/shop_images\/weathertech-floorliner-audi-a3-s3-rs3-1st-row-2nd-row-floorliners-43003422834852.jpg",
         "image_height": 400,
         "image_position": "center"
       }
@@ -100,7 +100,6 @@
           "type": "promotion",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/weathertech-2nd-row-floorliner-446976im-2nd-row-floorliner-42947361472676.jpg",
             "title": "Floorliner Sets",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
