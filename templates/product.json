@@ -17,7 +17,8 @@
             "alignment": "",
             "textColor": "",
             "starColor": "",
-            "showAllReviews": false
+            "showAllReviews": false,
+            "emptyRatingWidget": false
           }
         },
         "77b76149-b8f7-4a55-9fa6-7b36e6446b41": {
@@ -101,7 +102,7 @@
           "settings": {
             "heading": "Pairs well with",
             "product_recommendation_limit": 10,
-            "products_per_slide": 1
+            "products_per_slide": 3
           }
         },
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7": {
@@ -208,6 +209,7 @@
           "settings": {
             "only_photos": false,
             "aggregated": false,
+            "limit": 20,
             "hide_thumbnails": false,
             "maxwidth": 1080
           }
@@ -217,6 +219,7 @@
         "loox-product-reviews"
       ],
       "settings": {
+        "include_padding": true
       }
     }
   },
