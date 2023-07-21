@@ -448,9 +448,24 @@
   var optionArray = ["id.4|ID.4","t-rock|T-Rock","tiguan|Tiguan","golf|Golf","id.4|ID.4"];
 }
 
-  optionArray.sort(function(a, b) {
-    return a.split("|")[1].localeCompare(b.split("|")[1]);
-  });
+optionArray.sort(function(a, b) {
+  var aText = a.split("|")[1];
+  var bText = b.split("|")[1];
+  // Check if both aText and bText are numbers
+  if (!isNaN(aText) && !isNaN(bText)) {
+    return Number(aText) - Number(bText);
+  }
+  // Check if only aText is a number
+  if (!isNaN(aText)) {
+    return -1;
+  }
+  // Check if only bText is a number
+  if (!isNaN(bText)) {
+    return 1;
+  }
+  // Both are non-numeric strings, sort them alphabetically
+  return aText.localeCompare(bText);
+});
 
 
   for(var option in optionArray){
