@@ -3,69 +3,9 @@
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
       "type": "filter-storefront",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/weathertech-floorliner-audi-a3-s3-rs3-1st-row-2nd-row-floorliners-43003422834852.jpg",
+        "background_image": "shopify:\/\/shop_images\/JEEP_Gladiator_20_4413131_IM.jpg",
         "image_height": 400,
         "image_position": "center"
-      }
-    },
-    "dynamic_highlights_banner": {
-      "type": "dynamic-highlights-banner",
-      "blocks": {
-        "highlight-1": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-delivery",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Products_Hover.png",
-            "title": "Free Shipping",
-            "text": "<p>When you spend CHF 200+<\/p>",
-            "link": "shopify:\/\/policies\/shipping-policy"
-          }
-        },
-        "highlight-2": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-thumbs-up",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Auto-Cleaning_Hover.png",
-            "title": "Lifetime Limited Warranty",
-            "text": "",
-            "link": "shopify:\/\/pages\/advance-faq"
-          }
-        },
-        "highlight-3": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-chat-alternate",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Customer-Service_Hover.png",
-            "title": "Chat With Us",
-            "text": "",
-            "link": "shopify:\/\/pages\/contact-us"
-          }
-        },
-        "highlight-4": {
-          "type": "highlight",
-          "settings": {
-            "icon": "icon-rating-five-star",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-LLL_Hover.png",
-            "title": "Excellent Service",
-            "text": "",
-            "link": "shopify:\/\/pages\/our-products"
-          }
-        }
-      },
-      "block_order": [
-        "highlight-1",
-        "highlight-2",
-        "highlight-3",
-        "highlight-4"
-      ],
-      "settings": {
-        "section_spacing": false,
-        "section_width": "content-width",
-        "icon_layout": "center",
-        "color": "#052c49",
-        "icon_color": "#e22120",
-        "background_color": "#ffffff",
-        "mobile_layout": "grid"
       }
     },
     "1678964004457b5f22": {
@@ -111,12 +51,27 @@
             "opacity": 50
           }
         },
+        "15a11642-af66-4957-b11a-4b9e906f2c32": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Silver_200723.jpg",
+            "title": "Sunshades",
+            "text": "It's HOT out there! We have the perfect solution with our custom & precision fitting sunshades to keep you cool and fresh.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/sunshades",
+            "button_text": "Sunshades",
+            "button_style": "primary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 50
+          }
+        },
         "promotion-4": {
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/wte-floorliner-sq.jpg",
             "title": "Floorliners",
-            "text": "Our floorliners are the ideal solution that will help you to conquer your daily battle with poor quality carpet or plastic car mats.",
+            "text": "Our custom fit FloorLiners are the ideal solution that will help you to conquer your all year battle with poor quality carpet or rubber car mats.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliners",
             "button_text": "Floorliners",
@@ -131,7 +86,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/JEEP_Gladiator_20_4413134IM.jpg",
             "title": "Floorliners HP",
-            "text": "Our FloorLiner HP is made using advanced rubber-like, Thermoplastic Elastomer (TPE) compound making it both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
+            "text": "Our FloorLiner HP are our most advanced rubber-like, Thermoplastic Elastomer (TPE) FloorLiners making them both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliners-hp",
             "button_text": "Interior protection",
@@ -146,7 +101,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/y4mtOWZ1i5TkeJ6cGyeLo9UDbtdWuv2zypbv8uP3dfQKXbe0Cgh-pcEoy9OYxJ4phTKE5jSAlKEwt22akDzymNnyPw_JGf99VZykdn6Bq5egC5C3NJrWI5LEcLE9BOgkf6pGSRsNbae90sxiuGBWOY3_g_E5oRQk-DZ-NCvzs4GIV5Dvoy0Gobn.jpg",
             "title": "Cargoliners",
-            "text": "Our Custom made Cargo and FloorLiners together provide a great way to protect the inside of your entire vehicle, so check them out now in the Summer and be ready for the Winter with confidence!",
+            "text": "Our Custom fit CargoLiners provide a great way to protect the daily rigours of loading and unloading from your luggage\/cargo area. Check out our range here.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "Cargoliners",
@@ -159,6 +114,7 @@
       },
       "block_order": [
         "277faa58-f359-44db-9102-8816c73aa539",
+        "15a11642-af66-4957-b11a-4b9e906f2c32",
         "promotion-4",
         "promotion-1",
         "promotion-3"
@@ -307,7 +263,7 @@
         "video_lazy_loading": true,
         "mp4_video": "",
         "max_width": "720",
-        "title": "JOIN THE #WEATHERTECHFAMILY",
+        "title": "JOIN #WEATHERTECHTIME",
         "title_size": "h1",
         "description": "",
         "description_size": "125%",
@@ -377,6 +333,7 @@
       "blocks": {
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-0": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/TechShade_Black_Winter_BMW_copy_copy.jpg",
             "title": "Sunshades",
@@ -450,11 +407,70 @@
         "background": "#000000",
         "opacity": 36
       }
+    },
+    "dynamic_highlights_banner": {
+      "type": "dynamic-highlights-banner",
+      "blocks": {
+        "highlight-1": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-delivery",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Products_Hover.png",
+            "title": "Free Shipping",
+            "text": "<p>When you spend CHF 200+<\/p>",
+            "link": "shopify:\/\/policies\/shipping-policy"
+          }
+        },
+        "highlight-2": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-thumbs-up",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Auto-Cleaning_Hover.png",
+            "title": "Lifetime Limited Warranty",
+            "text": "",
+            "link": "shopify:\/\/pages\/advance-faq"
+          }
+        },
+        "highlight-3": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-chat-alternate",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Customer-Service_Hover.png",
+            "title": "Chat With Us",
+            "text": "",
+            "link": "shopify:\/\/pages\/contact-us"
+          }
+        },
+        "highlight-4": {
+          "type": "highlight",
+          "settings": {
+            "icon": "icon-rating-five-star",
+            "image": "shopify:\/\/shop_images\/WT_Web_Icon-LLL_Hover.png",
+            "title": "Excellent Service",
+            "text": "",
+            "link": "shopify:\/\/pages\/our-products"
+          }
+        }
+      },
+      "block_order": [
+        "highlight-1",
+        "highlight-2",
+        "highlight-3",
+        "highlight-4"
+      ],
+      "settings": {
+        "section_spacing": false,
+        "section_width": "content-width",
+        "icon_layout": "center",
+        "color": "#052c49",
+        "icon_color": "#e22120",
+        "background_color": "#ffffff",
+        "mobile_layout": "grid"
+      }
     }
   },
   "order": [
     "b327e860-39f1-452d-a4c9-b1ed0b79ad1e",
-    "dynamic_highlights_banner",
     "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
@@ -462,6 +478,7 @@
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
     "36612375-1729-4764-874c-6ec3e9370468",
-    "dynamic_search"
+    "dynamic_search",
+    "dynamic_highlights_banner"
   ]
 }
