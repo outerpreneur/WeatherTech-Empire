@@ -18,6 +18,7 @@
             "textColor": "",
             "starColor": "",
             "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
             "emptyRatingWidget": false
           }
         },
