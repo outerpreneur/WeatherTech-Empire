@@ -27,20 +27,6 @@
           "settings": {
           }
         },
-        "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5": {
-          "type": "tabs",
-          "disabled": true,
-          "settings": {
-            "show_product_description": true,
-            "show_tabs_below_product_gallery": true,
-            "tab_heading_1": "Material \/ application",
-            "tab_text_1": "",
-            "tab_heading_2": "",
-            "tab_text_2": "",
-            "tab_heading_3": "",
-            "tab_text_3": ""
-          }
-        },
         "c3cabf86-f486-4491-8054-276a77f10f63": {
           "type": "inventory_status",
           "settings": {
@@ -92,6 +78,20 @@
             "collapsible_tab_text": "<ul>\n<li>Buy 2 pieces, get 3 % DISCOUNT<\/li>\n<li>Buy 3 pieces, get 5 % DISCOUNT<\/li>\n<li>Buy 4 pieces, get 7 % DISCOUNT<\/li>\n<li>Buy 5 pieces, get 10 % DISCOUNT<\/li>\n<\/ul>"
           }
         },
+        "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5": {
+          "type": "tabs",
+          "disabled": true,
+          "settings": {
+            "show_product_description": false,
+            "show_tabs_below_product_gallery": false,
+            "tab_heading_1": "Lifetime Limited Warranty",
+            "tab_text_1": "<p>WeatherTech Direct, LLC warrants that our products will be free from any defects in materials and workmanship for the life of the original purchaser and only for the original vehicle they were installed in. That does not mean that a product that simply and naturally wears out from normal use is a candidate for a warranty replacement or a refund. Like tires, brake pads or the shoes on your feet, everything wears out and when it does, that does not mean you did not receive good value for your money.<br\/><br\/>We are reasonable people and we believe in true customer satisfaction. We will work with you for a fair resolution to any issue you may have. Fair is defined as being fair to both you the customer and to WeatherTech. We do not charge extra for our products to our vast majority of customers so we can accommodate ridiculous warranty claims by the few. Our decision is final and will consist of either replacement of your product at no charge or charge you a prorated amount for a replacement, meaning we may extend a discount to you to purchase an exact replacement. Our goal is to keep our customers happy for a lifetime and always reach a fair resolution to any issue. Proof of purchase is required.<br\/><br\/>Exclusions to this warranty include wear due to severe abrasive conditions, chemical contamination, such as spilled gasoline, bleach, vehicle accidents, misuse, abuse, incorrect installation, incorrect use, etc.<\/p>",
+            "tab_heading_2": "Get a DISCOUNT when you buy 2 or more",
+            "tab_text_2": "<p>Get a DISCOUNT when you buy 2 or more<\/p>",
+            "tab_heading_3": "",
+            "tab_text_3": ""
+          }
+        },
         "description": {
           "type": "description",
           "disabled": true,
@@ -112,9 +112,9 @@
             "icon": "icon-delivery-package",
             "title": "FREE Delivery for orders over CHF 200",
             "text": "<p>We endeavour to provide a FREE 3-5 day delivery service from receipt of the order and cleared payment across all of Switzerland for those products that we have in stock<\/p>",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "icon_color": "#ffffff",
-            "background_color": "#e22120"
+            "background_color": "#ffffff"
           }
         },
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8": {
@@ -142,7 +142,6 @@
         "title",
         "loox-rating",
         "77b76149-b8f7-4a55-9fa6-7b36e6446b41",
-        "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5",
         "c3cabf86-f486-4491-8054-276a77f10f63",
         "rating",
         "price",
@@ -151,12 +150,16 @@
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "9953b17a-14fa-4851-a311-403f09beb7f2",
+        "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5",
         "description",
         "101d50bc-9c39-49b7-b6c9-b541a061409d",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
         "44b73dad-292d-41eb-b2ce-c2c17100cb01"
+      ],
+      "custom_css": [
+        ".key-details {border: 1px solid black ;}"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
