@@ -88,6 +88,55 @@
       "miles": "mi"
     }
   },
+  "sales_point": {
+    "name": "Sales point",
+    "settings": {
+      "icon": {
+        "label": "Icon",
+        "options": {
+          "checkmark": {
+            "label": "Checkmark"
+          },
+          "gift": {
+            "label": "Gift"
+          },
+          "globe": {
+            "label": "Globe"
+          },
+          "heart": {
+            "label": "Heart"
+          },
+          "leaf": {
+            "label": "Leaf"
+          },
+          "lock": {
+            "label": "Lock"
+          },
+          "package": {
+            "label": "Package"
+          },
+          "phone": {
+            "label": "Phone"
+          },
+          "ribbon": {
+            "label": "Ribbon"
+          },
+          "shield": {
+            "label": "Shield"
+          },
+          "tag": {
+            "label": "Tag"
+          },
+          "truck": {
+            "label": "Truck"
+          }
+        }
+      },
+      "text": {
+        "label": "Text"
+      }
+    }
+  },
   "structured_data": {
     "breadcrumbs": {
       "cart": "Cart",
