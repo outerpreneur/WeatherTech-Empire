@@ -160,7 +160,8 @@
         "44b73dad-292d-41eb-b2ce-c2c17100cb01"
       ],
       "custom_css": [
-        ".key-details {border: 1px solid black;}"
+        ".key-details {border: 1px solid black;}",
+        ".product-form--atc-button {border: 1px solid black;}"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
