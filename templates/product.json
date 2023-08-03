@@ -75,7 +75,7 @@
           "type": "collapsible-tab",
           "settings": {
             "collapsible_tab_heading": "Description",
-            "collapsible_tab_text": "{{ product.description }}"
+            "collapsible_tab_text": "{{ product.description }}\n\n<button style=\"padding: 5px 15px; margin-top: 10px;\"><a href=\"https:\/\/weathertechch.com\/pages\/product-request-form\" style=\"text-decoration: none;\">I can't find my vehicle<\/a><\/button>"
           }
         },
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
