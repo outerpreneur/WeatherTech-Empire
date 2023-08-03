@@ -71,6 +71,42 @@
             "text": "Volume discount for 2 or more items"
           }
         },
+        "1e9467b1-9063-4cfe-9fb6-ba82387684a8": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "I can't find my vehicle",
+            "collapsible_tab_text": "<h4 style=\"text-align: center\">Product request form<\/h2>\n{formbuilder:NTA1NQ==}"
+          }
+        },
+        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6": {
+          "type": "request_quote",
+          "settings": {
+            "title": "I need more units",
+            "show_quantity": true,
+            "show_message": true
+          }
+        },
+        "101d50bc-9c39-49b7-b6c9-b541a061409d": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "product_recommendation_limit": 10,
+            "products_per_slide": 3
+          }
+        },
+        "76bb9a41-2eb4-46a4-a0c5-38a0a02e08d6": {
+          "type": "tabs",
+          "settings": {
+            "show_product_description": true,
+            "show_tabs_below_product_gallery": true,
+            "tab_heading_1": "Fits for",
+            "tab_text_1": "<div class=\"variant-metafields-section\" style=\"display: flex; flex-wrap: wrap; gap: 20px;\">\n  {% assign selected_variant = product.selected_or_first_available_variant %}\n  {% if selected_variant %}\n    <div style=\"flex: 0 0 calc(50% - 10px); padding: 5px; border: 1px solid #ccc;\">\n      <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Make:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.make | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Model:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.model | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Year:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.year | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Placement:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.custom.variant_identifier | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Vehicle body style:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.vehicle_body_style | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Fuel type:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.fuel_type | metafield_tag }}<\/td>\n        <\/tr>\n      <\/table>\n    <\/div>\n    <div style=\"flex: 0 0 calc(50% - 10px); padding: 5px; border: 1px solid #ccc;\">\n      <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Number of doors:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.number_of_doors | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Number of seats:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.number_seats | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Country of origin:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.country_of_origin | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Transmission:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.transmission | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Model version:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.model_version | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Drive:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.drive | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Additional identifier:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.additional_identifier | metafield_tag }}<\/td>\n        <\/tr>\n      <\/table>\n    <\/div>\n  {% endif %}\n<\/div>",
+            "tab_heading_2": "",
+            "tab_text_2": "",
+            "tab_heading_3": "",
+            "tab_text_3": ""
+          }
+        },
         "3619e91a-1005-4177-bcb3-476da40ce1f0": {
           "type": "collapsible-tab",
           "disabled": true,
@@ -85,14 +121,6 @@
           "settings": {
             "collapsible_tab_heading": "Fits for",
             "collapsible_tab_text": "<div class=\"variant-metafields-section\">\n{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.additional_identifier | metafield_tag %}\n  <p>Additional identifier: {{ metafield_value }}<\/p>\n\n<p>Transmission: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Transmission: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.transmission | metafield_tag %}\n  <p>Additional identifier: {{ metafield_value }}<\/p>\n{% endif %}\n<\/div>\n\n\n\n<button style=\"padding: 5px 15px; margin-top: 10px;\"><a href=\"https:\/\/weathertechch.com\/pages\/product-request-form\" style=\"text-decoration: none;\">I can't find my vehicle<\/a><\/button>"
-          }
-        },
-        "101d50bc-9c39-49b7-b6c9-b541a061409d": {
-          "type": "complementary_products",
-          "settings": {
-            "heading": "Pairs well with",
-            "product_recommendation_limit": 10,
-            "products_per_slide": 3
           }
         },
         "0028e7f1-b0c9-4425-875f-cccf193432c6": {
@@ -129,38 +157,10 @@
             "background_color": "#ffffff"
           }
         },
-        "1e9467b1-9063-4cfe-9fb6-ba82387684a8": {
-          "type": "collapsible-tab",
-          "settings": {
-            "collapsible_tab_heading": "I can't find my vehicle",
-            "collapsible_tab_text": "<h4 style=\"text-align: center\">Product request form<\/h2>\n{formbuilder:NTA1NQ==}"
-          }
-        },
-        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6": {
-          "type": "request_quote",
-          "settings": {
-            "title": "I need more units",
-            "show_quantity": true,
-            "show_message": true
-          }
-        },
         "44b73dad-292d-41eb-b2ce-c2c17100cb01": {
           "type": "search-popup-block",
           "disabled": true,
           "settings": {
-          }
-        },
-        "76bb9a41-2eb4-46a4-a0c5-38a0a02e08d6": {
-          "type": "tabs",
-          "settings": {
-            "show_product_description": true,
-            "show_tabs_below_product_gallery": true,
-            "tab_heading_1": "Technical information",
-            "tab_text_1": "<div class=\"variant-metafields-section\" style=\"display: flex; flex-wrap: wrap; gap: 20px;\">\n  {% assign selected_variant = product.selected_or_first_available_variant %}\n  {% if selected_variant %}\n    <div style=\"flex: 0 0 calc(50% - 10px); padding: 5px; border: 1px solid #ccc;\">\n      <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Make:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.make | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Model:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.model | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Year:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.year | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Placement:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.custom.variant_identifier | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Vehicle body style:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.vehicle_body_style | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Fuel type:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.fuel_type | metafield_tag }}<\/td>\n        <\/tr>\n      <\/table>\n    <\/div>\n    <div style=\"flex: 0 0 calc(50% - 10px); padding: 5px; border: 1px solid #ccc;\">\n      <table style=\"width: 100%; border-collapse: collapse;\">\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Number of doors:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.number_of_doors | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Number of seats:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.number_seats | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Country of origin:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.country_of_origin | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Transmission:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.transmission | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Model version:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.model_version | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Drive:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.drive | metafield_tag }}<\/td>\n        <\/tr>\n        <tr>\n          <td style=\"padding: 5px;\"><strong>Additional identifier:<\/strong><\/td>\n          <td style=\"padding: 5px;\">{{ selected_variant.metafields.car.additional_identifier | metafield_tag }}<\/td>\n        <\/tr>\n      <\/table>\n    <\/div>\n  {% endif %}\n<\/div>",
-            "tab_heading_2": "",
-            "tab_text_2": "",
-            "tab_heading_3": "",
-            "tab_text_3": ""
           }
         }
       },
@@ -175,17 +175,17 @@
         "15256d3a-1cd0-4a03-a509-3556a4c4041b",
         "806ebc73-da80-4776-a73d-b8c185df778d",
         "ba12821f-2ef0-490a-8071-e216322265cf",
+        "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
+        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
+        "101d50bc-9c39-49b7-b6c9-b541a061409d",
+        "76bb9a41-2eb4-46a4-a0c5-38a0a02e08d6",
         "3619e91a-1005-4177-bcb3-476da40ce1f0",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
-        "101d50bc-9c39-49b7-b6c9-b541a061409d",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "9953b17a-14fa-4851-a311-403f09beb7f2",
         "description",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
-        "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
-        "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
-        "44b73dad-292d-41eb-b2ce-c2c17100cb01",
-        "76bb9a41-2eb4-46a4-a0c5-38a0a02e08d6"
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01"
       ],
       "custom_css": [
         ".key-details {border: 1px solid black;}",
