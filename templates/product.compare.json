@@ -43,7 +43,7 @@
           "disabled": true,
           "settings": {
             "title": "Make",
-            "text": "<p>Use this text to share additional information about your product.<\/p><p><\/p>"
+            "text": "{% assign selected_variant = product.selected_or_first_available_variant %}\n  {% if selected_variant %}\n    {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n{% endif %}\n<\/div>"
           }
         },
         "dynamic-comparison": {
