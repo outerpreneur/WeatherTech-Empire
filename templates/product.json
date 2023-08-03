@@ -61,7 +61,7 @@
           "type": "sales_point",
           "settings": {
             "icon": "tag",
-            "text": "Get a discount when order 2 or more items"
+            "text": "Volume discount when ordering 2 or more items"
           }
         },
         "806ebc73-da80-4776-a73d-b8c185df778d": {
