@@ -50,20 +50,6 @@
             "enable_local_pickup": false
           }
         },
-        "3619e91a-1005-4177-bcb3-476da40ce1f0": {
-          "type": "collapsible-tab",
-          "settings": {
-            "collapsible_tab_heading": "Description",
-            "collapsible_tab_text": "{{ product.description }}"
-          }
-        },
-        "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
-          "type": "collapsible-tab",
-          "settings": {
-            "collapsible_tab_heading": "Suitable for",
-            "collapsible_tab_text": "<div class=\"variant-metafields-section\">\n{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.additional_identifier | metafield_tag %}\n  <p>Additional identifier: {{ metafield_value }}<\/p>\n{% endif %}\n<\/div>"
-          }
-        },
         "15256d3a-1cd0-4a03-a509-3556a4c4041b": {
           "type": "sales_point",
           "settings": {
@@ -85,6 +71,20 @@
             "text": "Lifetime limited Guarantee"
           }
         },
+        "7b6b80fb-3b0a-4293-98f6-d322cd84c01f": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Suitable for",
+            "collapsible_tab_text": "<div class=\"variant-metafields-section\">\n{% assign selected_variant = product.selected_or_first_available_variant %}\n{% if selected_variant %}\n  {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n  <p>Make: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.model | metafield_tag %}\n  <p>Model: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.year | metafield_tag %}\n  <p>Year: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.custom.variant_identifier | metafield_tag %}\n  <p>Placement: {{ metafield_value }}<\/p>\n{% assign metafield_value = selected_variant.metafields.car.additional_identifier | metafield_tag %}\n  <p>Additional identifier: {{ metafield_value }}<\/p>\n{% endif %}\n<\/div>"
+          }
+        },
+        "3619e91a-1005-4177-bcb3-476da40ce1f0": {
+          "type": "collapsible-tab",
+          "settings": {
+            "collapsible_tab_heading": "Description",
+            "collapsible_tab_text": "{{ product.description }}"
+          }
+        },
         "0028e7f1-b0c9-4425-875f-cccf193432c6": {
           "type": "collapsible-tab",
           "disabled": true,
@@ -99,20 +99,6 @@
           "settings": {
             "collapsible_tab_heading": "Get a DISCOUNT when you buy 2 or more",
             "collapsible_tab_text": "<ul>\n<li>Buy 2 pieces, get 3 % DISCOUNT<\/li>\n<li>Buy 3 pieces, get 5 % DISCOUNT<\/li>\n<li>Buy 4 pieces, get 7 % DISCOUNT<\/li>\n<li>Buy 5 pieces, get 10 % DISCOUNT<\/li>\n<\/ul>"
-          }
-        },
-        "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5": {
-          "type": "tabs",
-          "disabled": true,
-          "settings": {
-            "show_product_description": false,
-            "show_tabs_below_product_gallery": false,
-            "tab_heading_1": "Lifetime Limited Warranty",
-            "tab_text_1": "<p>WeatherTech Direct, LLC warrants that our products will be free from any defects in materials and workmanship for the life of the original purchaser and only for the original vehicle they were installed in. That does not mean that a product that simply and naturally wears out from normal use is a candidate for a warranty replacement or a refund. Like tires, brake pads or the shoes on your feet, everything wears out and when it does, that does not mean you did not receive good value for your money.<br\/><br\/>We are reasonable people and we believe in true customer satisfaction. We will work with you for a fair resolution to any issue you may have. Fair is defined as being fair to both you the customer and to WeatherTech. We do not charge extra for our products to our vast majority of customers so we can accommodate ridiculous warranty claims by the few. Our decision is final and will consist of either replacement of your product at no charge or charge you a prorated amount for a replacement, meaning we may extend a discount to you to purchase an exact replacement. Our goal is to keep our customers happy for a lifetime and always reach a fair resolution to any issue. Proof of purchase is required.<br\/><br\/>Exclusions to this warranty include wear due to severe abrasive conditions, chemical contamination, such as spilled gasoline, bleach, vehicle accidents, misuse, abuse, incorrect installation, incorrect use, etc.<\/p>",
-            "tab_heading_2": "Get a DISCOUNT when you buy 2 or more",
-            "tab_text_2": "<p>Get a DISCOUNT when you buy 2 or more<\/p>",
-            "tab_heading_3": "",
-            "tab_text_3": ""
           }
         },
         "description": {
@@ -173,14 +159,13 @@
         "rating",
         "price",
         "form",
-        "3619e91a-1005-4177-bcb3-476da40ce1f0",
-        "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "15256d3a-1cd0-4a03-a509-3556a4c4041b",
         "ba12821f-2ef0-490a-8071-e216322265cf",
         "806ebc73-da80-4776-a73d-b8c185df778d",
+        "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
+        "3619e91a-1005-4177-bcb3-476da40ce1f0",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
         "9953b17a-14fa-4851-a311-403f09beb7f2",
-        "4ade2965-cebc-48d0-8cb6-1de6ec28d7f5",
         "description",
         "101d50bc-9c39-49b7-b6c9-b541a061409d",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
