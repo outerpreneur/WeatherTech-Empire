@@ -148,6 +148,19 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "76bb9a41-2eb4-46a4-a0c5-38a0a02e08d6": {
+          "type": "tabs",
+          "settings": {
+            "show_product_description": true,
+            "show_tabs_below_product_gallery": true,
+            "tab_heading_1": "Extra information",
+            "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
+            "tab_heading_2": "",
+            "tab_text_2": "",
+            "tab_heading_3": "",
+            "tab_text_3": ""
+          }
         }
       },
       "block_order": [
@@ -170,7 +183,8 @@
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
         "1e9467b1-9063-4cfe-9fb6-ba82387684a8",
         "55843a62-b0e6-4e03-bfe5-e8c19b761fd6",
-        "44b73dad-292d-41eb-b2ce-c2c17100cb01"
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01",
+        "76bb9a41-2eb4-46a4-a0c5-38a0a02e08d6"
       ],
       "custom_css": [
         ".key-details {border: 1px solid black;}",
