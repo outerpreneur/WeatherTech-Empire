@@ -8,6 +8,13 @@
           "settings": {
           }
         },
+        "d8563f87-db28-4a20-a0f2-4858c0fe572c": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_display": "hidden",
+            "inventory_transfer_notice": true
+          }
+        },
         "vendor": {
           "type": "vendor",
           "settings": {
@@ -25,6 +32,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -34,34 +42,63 @@
             "enable_local_pickup": false
           }
         },
-        "key_details": {
-          "type": "key_details",
+        "bd5bdbcb-3a0c-482d-8078-776169c79a26": {
+          "type": "collapsible-tab",
           "settings": {
+            "collapsible_tab_heading": "Description",
+            "collapsible_tab_text": "{{ product.description }}"
           }
         },
-        "share": {
-          "type": "share",
+        "2b6a9f83-3338-4f72-b46e-c394d3a3668b": {
+          "type": "sales_point",
           "settings": {
+            "icon": "package",
+            "text": "Free shipping for orders over CHF 200"
+          }
+        },
+        "4f805109-2fde-4082-9a44-f3cbbc725107": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shield",
+            "text": "Lifetime limited Guarantee"
+          }
+        },
+        "772f761c-900c-4ac4-9f6e-670f9033d51e": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "truck",
+            "text": "Preorder and receive it in 20 days"
           }
         }
       },
       "block_order": [
         "title",
+        "d8563f87-db28-4a20-a0f2-4858c0fe572c",
         "vendor",
         "rating",
         "price",
         "description",
         "form",
-        "key_details",
-        "share"
+        "bd5bdbcb-3a0c-482d-8078-776169c79a26",
+        "2b6a9f83-3338-4f72-b46e-c394d3a3668b",
+        "4f805109-2fde-4082-9a44-f3cbbc725107",
+        "772f761c-900c-4ac4-9f6e-670f9033d51e"
       ],
       "settings": {
+        "gallery_aspect_ratio": "natural",
+        "gallery_image_crop": false,
+        "gallery_thumbnail_position": "below",
+        "gallery_video_autoplay": true,
+        "gallery_video_looping": true,
+        "gallery_hover_zoom": "disabled",
+        "gallery_click_to_zoom": "always"
       }
     },
     "recommendations": {
       "type": "static-product-recommendations",
       "settings": {
-        "show_product_recommendations": true
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like"
       }
     },
     "recently-viewed": {
