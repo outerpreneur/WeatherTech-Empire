@@ -40,10 +40,9 @@
         },
         "dynamic-comparison-2": {
           "type": "dynamic_comparison",
-          "disabled": true,
           "settings": {
             "title": "Make",
-            "text": "{% assign selected_variant = product.selected_or_first_available_variant %}\n  {% if selected_variant %}\n    {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %}\n{% endif %}\n<\/div>"
+            "text": "{% assign selected_variant = product.selected_or_first_available_variant %}\n  {% if selected_variant %}\n    {% assign metafield_value = selected_variant.metafields.car.make | metafield_tag %} {{ metafield_value }}<\/p>\n{% endif %}\n<\/div>"
           }
         },
         "dynamic-comparison": {
