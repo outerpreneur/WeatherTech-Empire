@@ -53,7 +53,7 @@
         "15256d3a-1cd0-4a03-a509-3556a4c4041b": {
           "type": "sales_point",
           "settings": {
-            "icon": "globe",
+            "icon": "package",
             "text": "Free shipping for orders over CHF 200"
           }
         },
