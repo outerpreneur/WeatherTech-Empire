@@ -50,6 +50,27 @@
             "enable_local_pickup": false
           }
         },
+        "15256d3a-1cd0-4a03-a509-3556a4c4041b": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free shipping for orders over CHF 200"
+          }
+        },
+        "ba12821f-2ef0-490a-8071-e216322265cf": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "tag",
+            "text": "Get a discount when order 2 or more items"
+          }
+        },
+        "806ebc73-da80-4776-a73d-b8c185df778d": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "shield",
+            "text": "Lifetime limited Guarantee"
+          }
+        },
         "3619e91a-1005-4177-bcb3-476da40ce1f0": {
           "type": "collapsible-tab",
           "settings": {
@@ -110,6 +131,7 @@
         },
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7": {
           "type": "key_details",
+          "disabled": true,
           "settings": {
             "icon": "icon-delivery-package",
             "title": "FREE Delivery for orders over CHF 200",
@@ -151,6 +173,9 @@
         "rating",
         "price",
         "form",
+        "15256d3a-1cd0-4a03-a509-3556a4c4041b",
+        "ba12821f-2ef0-490a-8071-e216322265cf",
+        "806ebc73-da80-4776-a73d-b8c185df778d",
         "3619e91a-1005-4177-bcb3-476da40ce1f0",
         "7b6b80fb-3b0a-4293-98f6-d322cd84c01f",
         "0028e7f1-b0c9-4425-875f-cccf193432c6",
