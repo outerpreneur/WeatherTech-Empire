@@ -69,6 +69,19 @@
             "icon": "truck",
             "text": "Preorder and receive it in 20 days"
           }
+        },
+        "9a63f4d8-6922-4f15-886d-aa0ca45d3f48": {
+          "type": "tabs",
+          "settings": {
+            "show_product_description": true,
+            "show_tabs_below_product_gallery": true,
+            "tab_heading_1": "Fits for",
+            "tab_text_1": "<p>Use this text to share information about your product.<\/p>",
+            "tab_heading_2": "",
+            "tab_text_2": "",
+            "tab_heading_3": "",
+            "tab_text_3": ""
+          }
         }
       },
       "block_order": [
@@ -82,7 +95,8 @@
         "bd5bdbcb-3a0c-482d-8078-776169c79a26",
         "2b6a9f83-3338-4f72-b46e-c394d3a3668b",
         "4f805109-2fde-4082-9a44-f3cbbc725107",
-        "772f761c-900c-4ac4-9f6e-670f9033d51e"
+        "772f761c-900c-4ac4-9f6e-670f9033d51e",
+        "9a63f4d8-6922-4f15-886d-aa0ca45d3f48"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
