@@ -1,0 +1,91 @@
+<div class="variant-metafields-section" style="display: flex; flex-wrap: wrap; gap: 20px;">
+  {% assign selected_variant = product.selected_or_first_available_variant %}
+  {% if selected_variant %}
+    <div style="flex: 0 0 calc(50% - 10px); padding: 5px;">
+      <table class="equal-width-table">
+        <tr>
+          <td>
+            <strong>Make:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.make | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Model:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.model | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Year:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.year | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Placement:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.custom.variant_identifier | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Vehicle body style:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.vehicle_body_style | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Fuel type:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.fuel_type | metafield_tag }}</td>
+        </tr>
+      </table>
+    </div>
+    <div style="flex: 0 0 calc(50% - 10px); padding: 5px;">
+      <table class="equal-width-table">
+        <tr>
+          <td>
+            <strong>Number of doors:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.number_of_doors | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Number of seats:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.number_seats | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Country of origin:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.country_of_origin | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Transmission:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.transmission | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Model version:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.model_version | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Drive:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.drive | metafield_tag }}</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Additional identifier:</strong>
+          </td>
+          <td>{{ selected_variant.metafields.car.additional_identifier | metafield_tag }}</td>
+        </tr>
+      </table>
+    </div>
+  {% endif %}
+</div>
