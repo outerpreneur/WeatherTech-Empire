@@ -49,9 +49,9 @@
             "icon": "icon-delivery-package",
             "title": "FREE Delivery for orders over CHF 200",
             "text": "<p>We endeavour to provide a FREE 3-5 day delivery service from receipt of the order and cleared payment across all of Switzerland for those products that we have in stock<\/p>",
-            "text_color": "#ffffff",
+            "text_color": "#121212",
             "icon_color": "#ffffff",
-            "background_color": "#e22120"
+            "background_color": "#ffffff"
           }
         },
         "8c69ca14-b1c7-4752-8a20-38b2478041fc": {
@@ -89,16 +89,9 @@
         "quickshop_gallery_video_looping": true,
         "quickshop_gallery_hover_zoom": "disabled"
       }
-    },
-    "155e92a5-6be0-45a9-a249-321b2ca11e26": {
-      "type": "dynamic-custom-liquid",
-      "settings": {
-        "custom_liquid": ""
-      }
     }
   },
   "order": [
-    "main",
-    "155e92a5-6be0-45a9-a249-321b2ca11e26"
+    "main"
   ]
 }
