@@ -18,6 +18,12 @@
         "button_text": ""
       }
     },
+    "2b9ef34c-1e87-429a-998b-0a271b5c9b17": {
+      "type": "dynamic-custom-liquid",
+      "settings": {
+        "custom_liquid": "<h1>{{ collection.title }}<\/h1>\n{% assign max_words = 50 %}\n{% capture words %}\n  {{ collection.description | strip_html | truncatewords: max_words }}\n{% endcapture %}\n{% if collection.description.size > words.size %}\n  <p>{{ words }}... <a href=\"{{ collection.url }}\">Read More<\/a><\/p>\n{% else %}\n  <p>{{ collection.description }}<\/p>\n{% endif %}"
+      }
+    },
     "main": {
       "type": "static-collection",
       "blocks": {
@@ -87,6 +93,7 @@
   },
   "order": [
     "9d1793f0-53a3-404d-a862-d3cc7ec101b3",
+    "2b9ef34c-1e87-429a-998b-0a271b5c9b17",
     "main",
     "c4bed344-b833-4bf1-9861-2729b51804ef",
     "static-recently-viewed"
