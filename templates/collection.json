@@ -21,7 +21,7 @@
     "2b9ef34c-1e87-429a-998b-0a271b5c9b17": {
       "type": "dynamic-custom-liquid",
       "settings": {
-        "custom_liquid": "{% assign max_words = 50 %}\n{% capture words %}\n  {{ collection.description | strip_html | truncatewords: max_words }}\n{% endcapture %}\n\n<div id=\"descriptionWrapper\">\n  <p>{{ words }}<span id=\"truncatedDescription\">... <a href=\"#\" id=\"readMoreLink\">Read More<\/a><\/span><\/p>\n  <p style=\"display: none;\" id=\"fullDescription\">{{ collection.description }}<\/p>\n<\/div>"
+        "custom_liquid": "{% assign max_words = 50 %}\n{% capture words %}\n  {{ collection.description | strip_html | truncatewords: max_words }}\n{% endcapture %}\n\n<div id=\"descriptionWrapper\">\n  <p>{{ words }}... <a href=\"#\" id=\"readMoreLink\">Read More<\/a><\/p>\n  <p style=\"display: none;\" id=\"fullDescription\">{{ collection.description }}<\/p>\n<\/div>"
       }
     },
     "main": {
