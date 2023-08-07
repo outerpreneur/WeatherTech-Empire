@@ -51281,23 +51281,8 @@ if (ageGatePage) {
 {% comment %} // description truncation  {% endcomment %}
 
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // When the "Read More" link is clicked
-    var readMoreLink = document.getElementById("read-more-link");
-    readMoreLink.addEventListener("click", function(event) {
-      event.preventDefault();
-      // Toggle the visibility of the truncated and full description
-      var truncatedDescription = document.getElementById("description-truncated");
-      var fullDescription = document.getElementById("description-full");
-
-      if (truncatedDescription.style.display === "none") {
-        truncatedDescription.style.display = "block";
-        fullDescription.style.display = "none";
-        readMoreLink.innerText = "Read More";
-      } else {
-        truncatedDescription.style.display = "none";
-        fullDescription.style.display = "block";
-        readMoreLink.innerText = "Read Less";
-      }
-    });
+  document.getElementById("readMoreLink").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.getElementById("fullDescription").style.display = "block";
+    document.getElementById("readMoreLink").style.display = "none";
   });
