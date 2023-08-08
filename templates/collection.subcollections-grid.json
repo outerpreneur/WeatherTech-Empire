@@ -5,8 +5,8 @@
       "settings": {
         "section_height": "medium",
         "image": "shopify:\/\/shop_images\/custom_resized_859823b5-fff2-4d88-ba82-32deb1593eb8.jpg",
-        "title": "Make",
-        "text": "",
+        "title": "{{ collection.title }}",
+        "text": "<p>{{ collection.metafields.custom.collection_tagline.value }}<\/p>",
         "content_position": "center-center",
         "color": "#ffffff",
         "overlay_background": "#000000",
