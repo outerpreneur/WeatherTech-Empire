@@ -24,7 +24,7 @@
         "show_product_count": false,
         "thumbnail_columns_desktop": 5,
         "thumbnail_columns_mobile": 2,
-        "thumbnail_image": "product-image",
+        "thumbnail_image": "collection-image",
         "image_crop": "original"
       }
     }
