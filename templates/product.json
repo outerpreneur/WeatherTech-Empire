@@ -30,7 +30,7 @@
         "c3cabf86-f486-4491-8054-276a77f10f63": {
           "type": "inventory_status",
           "settings": {
-            "inventory_display": "hidden",
+            "inventory_display": "all_products",
             "inventory_transfer_notice": true
           }
         },
