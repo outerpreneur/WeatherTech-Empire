@@ -603,5 +603,51 @@
     "breadcrumb": "Retour à {{ location }}",
     "breadcrumb_generic": "Retour",
     "remove": "Éliminer"
+  },
+  "sales_point": {
+    "name": "Point de vente",
+    "settings": {
+      "icon": {
+        "label": "Icône",
+        "options": {
+          "checkmark": {
+            "label": "Coche"
+          },
+          "gift": {
+            "label": "Cadeau"
+          },
+          "heart": {
+            "label": "Cœur"
+          },
+          "leaf": {
+            "label": "Feuille"
+          },
+          "lock": {
+            "label": "Serrure"
+          },
+          "package": {
+            "label": "Emballer"
+          },
+          "phone": {
+            "label": "Téléphone"
+          },
+          "ribbon": {
+            "label": "Ruban"
+          },
+          "shield": {
+            "label": "Bouclier"
+          },
+          "tag": {
+            "label": "Étiqueter"
+          },
+          "truck": {
+            "label": "Camion"
+          }
+        }
+      },
+      "text": {
+        "label": "Texte"
+      }
+    }
   }
 }
