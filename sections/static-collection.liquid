@@ -51,7 +51,7 @@
   "filter_style": {{ filter_block.settings.filter_style | json }},
   "no_matched_products_text": {{ 'general.accessibility.no_matched_products' | t: tag: '*tag*' | json }},
   "context": {
-                "see_more": {{ 'general.general.see_more' | t | json }},
+                  "see_more": {{ 'general.general.see_more' | t | json }},
   "see_less": {{ 'general.general.see_less' | t | json }},
   "grid_list": {{ section.settings.default_view | json }},
   "collectionUrl": {{ collection.url | default: '/collections/all' | json }},
@@ -134,6 +134,8 @@
         </figure>
       {% endif %}
 
+      {% comment %} collection description moved to bottom of collection {% endcomment %}
+
       {% comment %} <h1 class="collection--title">
       {{ collection.title }}
       </h1>
@@ -177,10 +179,10 @@
         <div class="productgrid--utils-sticky-intersection" data-utils-intersection-target></div>
         <nav
           class="
-                                                                        {{ utility_class | strip_newlines }}
-                                                                        productgrid--utils-container
-                                                                        productgrid--utils-sticky
-                                                                      "
+                                                                                    {{ utility_class | strip_newlines }}
+                                                                                    productgrid--utils-container
+                                                                                    productgrid--utils-sticky
+                                                                                  "
           aria-label="{{ 'general.accessibility.nav_collection_utilities' | t }}"
           data-sticky-utils>
           {% if show_filter_trigger %}
@@ -232,8 +234,7 @@
               {% endif %}">
               <div class="utils-view-container">
                 {% if settings.enable_product_compare %}
-                  <div
-                    class="utils-compare-toggle">
+                  <div class="utils-compare-toggle">
                     <span class="utils-compare-toggle__label">
                       {{ 'product_compare.compare' | t }}
                     </span>
@@ -241,9 +242,9 @@
                     <div class="utils-compare-toggle__container">
                       <input
                         class="
-                                                                                                                                                            utils-compare-toggle__checkbox
-                                                                                                                                                            visually-hidden
-                                                                                                                                                          "
+                                                                                                                                                                                      utils-compare-toggle__checkbox
+                                                                                                                                                                                      visually-hidden
+                                                                                                                                                                                    "
                         id="utils-compare-toggle__checkbox"
                         aria-label="{{ 'product_compare.compare' | t }}"
                         type="checkbox"
@@ -314,9 +315,9 @@
       {% if collection.products.size > 0 %}
         <ul
           class="
-                                                                        productgrid--items
-                                                                        products-per-row-{{- section.settings.products_per_row -}}
-                                                                      "
+                                                                                    productgrid--items
+                                                                                    products-per-row-{{- section.settings.products_per_row -}}
+                                                                                  "
           data-html="productgrid-items"
           data-productgrid-items>
           {% for product in collection.products %}
