@@ -84,6 +84,17 @@
             "tab_heading_3": "",
             "tab_text_3": ""
           }
+        },
+        "8c334a5f-a20d-46d8-b294-b77fd98e28fa": {
+          "type": "key_details",
+          "settings": {
+            "icon": "icon-lock",
+            "title": "Pre-order",
+            "text": "<p>This item will be in stock soon. Pre-order to lock it!<\/p>",
+            "text_color": "#1D1D1D",
+            "icon_color": "#1D1D1D",
+            "background_color": "#f5f3ed"
+          }
         }
       },
       "block_order": [
@@ -98,7 +109,8 @@
         "2b6a9f83-3338-4f72-b46e-c394d3a3668b",
         "4f805109-2fde-4082-9a44-f3cbbc725107",
         "772f761c-900c-4ac4-9f6e-670f9033d51e",
-        "9a63f4d8-6922-4f15-886d-aa0ca45d3f48"
+        "9a63f4d8-6922-4f15-886d-aa0ca45d3f48",
+        "8c334a5f-a20d-46d8-b294-b77fd98e28fa"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
