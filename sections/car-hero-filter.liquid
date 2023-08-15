@@ -2,7 +2,12 @@
 
 %}
 <section class="search-bar-section">
-  <h1 class="search-bar-section-title">{{ section.settings.header_hero }}</h1>
+  <div>
+
+    <h1 class="search-bar-section-title">{{ section.settings.header_hero }}</h1>
+    <h3 class="search-bar-section-subheader">{{ section.settings.subheader_hero }}</h3>
+
+  </div>
   <div class="search-bar-inner-section">
     {% render 'car-filter-master' %}
   </div>
@@ -28,10 +33,24 @@
     ;
   }
 
+
   .search-bar-section-title {
     color: #fff;
     font-size: 58px;
     text-align: center;
+    margin: 0;
+  }
+
+  .search-bar-section-subheader {
+    color: #fff;
+    text-align: center;
+
+  }
+
+  .search-bar-section-subheader {
+    color: #fff;
+    text-align: center;
+
   }
 
   .search-bar-inner-section {}
@@ -68,7 +87,8 @@
         "type": "image_picker",
         "id": "background_image",
         "label": "choose image"
-      }, {
+      },
+      {
         "type": "range",
         "id": "image_height",
         "label": "height range in pixels",
@@ -77,7 +97,8 @@
         "step": 100,
         "default": 500,
         "unit": "px"
-      }, {
+      },
+      {
         "type": "select",
         "id": "image_position",
         "label": "image position",
@@ -93,10 +114,15 @@
             "label": "Bottom"
           }
         ]
-      }, {
+      },
+      {
         "type": "text",
         "id": "header_hero",
         "default": "Select your vehicle"
+      }, {
+        "type": "text",
+        "id": "subheader_hero",
+        "default": "Show fitting products for your vehicle"
       }
     ],
     "presets": [
