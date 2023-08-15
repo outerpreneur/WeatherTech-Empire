@@ -2,7 +2,7 @@
 
 %}
 <section class="search-bar-section">
-  <h1 class="search-bar-section-title">Select your vehicle</h1>
+  <h1 class="search-bar-section-title">{{ section.settings.header_hero }}</h1>
   <div class="search-bar-inner-section">
     {% render 'car-filter-master' %}
   </div>
@@ -93,6 +93,10 @@
             "label": "Bottom"
           }
         ]
+      }, {
+        "type": "text",
+        "id": "header_hero",
+        "default": "Select your vehicle"
       }
     ],
     "presets": [
