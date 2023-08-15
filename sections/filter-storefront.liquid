@@ -2,7 +2,10 @@
 
 %}
 <section class="search-bar-section">
-  {% render 'car-filter-master' %}
+  <h1 class="search-bar-section-title">Select your vehicle</h1>
+  <div class="search-bar-inner-section">
+    {% render 'car-filter-master' %}
+  </div>
 </section>
 
 {% liquid
@@ -13,6 +16,7 @@
   .search-bar-section {
     font-family: "helvetica";
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -23,6 +27,14 @@
     background-position: {{ section.settings.image_position }}
     ;
   }
+
+  .search-bar-section-title {
+    color: #fff;
+    font-size: 58px;
+    text-align: center;
+  }
+
+  .search-bar-inner-section {}
 
   .search-bar-container input {
     padding: 1em;
@@ -41,6 +53,9 @@
   @media(max-width: 800px) {
     .search-bar-container {
       width: 100%;
+    }
+    .search-bar-section-title {
+      font-size: 30px;
     }
   }
 </style>
