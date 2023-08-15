@@ -1,11 +1,11 @@
 {
   "sections": {
-    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e": {
-      "type": "filter-storefront",
+    "9261d2ae-6703-4b00-aaf0-f78a5c7dcd27": {
+      "type": "car-hero-filter",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/JEEP_Gladiator_20_4413131_IM.jpg",
-        "image_height": 400,
-        "image_position": "center"
+        "background_image": "shopify:\/\/shop_images\/weathertech-2nd-row-floorliner-pairs-bmw-x7-2019-2023-6-2nd-row-floorliner-left-43133043540132.jpg",
+        "image_height": 500,
+        "image_position": "top"
       }
     },
     "1678964004457b5f22": {
@@ -284,7 +284,6 @@
     },
     "dynamic_promo_grid-2": {
       "type": "dynamic-promo-grid",
-      "disabled": true,
       "blocks": {
         "promotion-1": {
           "type": "promotion",
@@ -321,6 +320,7 @@
         "promotion-1",
         "promotion-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "section_height": "small",
@@ -470,7 +470,7 @@
     }
   },
   "order": [
-    "b327e860-39f1-452d-a4c9-b1ed0b79ad1e",
+    "9261d2ae-6703-4b00-aaf0-f78a5c7dcd27",
     "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
