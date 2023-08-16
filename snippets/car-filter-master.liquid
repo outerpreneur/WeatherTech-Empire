@@ -44,16 +44,16 @@
       onchange="unblockText()"
       disabled
     >
-      <option value="{{ "hero_filter.search.main_input" | t }}"></option>
+      <option value="Make">{{ "hero_filter.filter.model" | t }}</option>
     </select>
     <input
       type="text"
-      placeholder="{{ "hero_filter.search.button" | t }}"
+      placeholder="{{ "hero_filter.search.main_input" | t }}"
       name="q"
       id="text"
       class="text-bar"
     >
-    <input class="shop-car-button" type="submit" value="{{ "hero_filter.filter.model" | t }}">
+    <input class="shop-car-button" type="submit" value="{{ "hero_filter.search.button" | t }}">
   </form>
   <div class="request-form-container">
     <a href="https://mauwi.com/pages/product-request-form" class="request-form-button"><button>{{ "hero_filter.no_search.cant_find" | t }}</button></a>
