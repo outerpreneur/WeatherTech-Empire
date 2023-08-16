@@ -95,6 +95,22 @@
             "icon_color": "#1d1d1d",
             "background_color": "#f5f3ed"
           }
+        },
+        "6d29b447-f912-426e-a7b5-8010e6256eae": {
+          "type": "request_quote",
+          "settings": {
+            "title": "Order in bulk",
+            "show_quantity": true,
+            "show_message": true
+          }
+        },
+        "fb062f43-0e7d-4816-89f0-7b2d06c47d4c": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "product_recommendation_limit": 10,
+            "products_per_slide": 1
+          }
         }
       },
       "block_order": [
@@ -110,7 +126,9 @@
         "4f805109-2fde-4082-9a44-f3cbbc725107",
         "772f761c-900c-4ac4-9f6e-670f9033d51e",
         "9a63f4d8-6922-4f15-886d-aa0ca45d3f48",
-        "8c334a5f-a20d-46d8-b294-b77fd98e28fa"
+        "8c334a5f-a20d-46d8-b294-b77fd98e28fa",
+        "6d29b447-f912-426e-a7b5-8010e6256eae",
+        "fb062f43-0e7d-4816-89f0-7b2d06c47d4c"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
