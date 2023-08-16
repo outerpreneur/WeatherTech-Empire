@@ -160,13 +160,20 @@
               "position_2": "last",
               "size_2": "medium"
             }
+          },
+          "bc4775d6-9948-487a-afcc-43567d97ffc2": {
+            "type": "multi_column_menu",
+            "settings": {
+              "menu_trigger": "Magasiner par marque"
+            }
           }
         },
         "block_order": [
           "1517255946962",
           "1572476394007",
           "a96c7701-cfed-4b7b-996f-a9f23c7322bb",
-          "b3db7799-62cc-4dd8-864b-633428ec264f"
+          "b3db7799-62cc-4dd8-864b-633428ec264f",
+          "bc4775d6-9948-487a-afcc-43567d97ffc2"
         ],
         "settings": {
           "sticky_header": true,
