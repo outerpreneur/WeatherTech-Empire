@@ -4,7 +4,7 @@
 <div class="search-bar-container">
   <form action="{{ routes.search_url }}">
     <select id="slct1" name="slct1" onchange="unblockYear()">
-      <option value="-Make-">--Make--</option>
+      <option value="-Make-">{{ "hero_filter.filter.make" | t }}</option>
       <option value="Audi">Audi</option>
       <option value="BMW">BMW</option>
       <option value="Dacia">Dacia</option>
@@ -26,7 +26,7 @@
     </select>
 
     <select id="year" onchange="populate(this.id,'slct2')" disabled>
-      <option value="en">--Year--</option>
+      <option value="en">{{ "hero_filter.filter.year" | t }}</option>
       <option value="2023">2023</option>
       <option value="2022">2022</option>
       <option value="2021">2021</option>
@@ -44,7 +44,7 @@
       onchange="unblockText()"
       disabled
     >
-      <option value="Make">--Model--</option>
+      <option value="Make">{{ "hero_filter.filter.model" | t }}</option>
     </select>
     <input
       type="text"
@@ -56,7 +56,7 @@
     <input class="shop-car-button" type="submit" value="Shop by car">
   </form>
   <div class="request-form-container">
-    <a href="https://mauwi.com/pages/product-request-form" class="request-form-button"><button>I can't find my car</button></a>
+    <a href="https://mauwi.com/pages/product-request-form" class="request-form-button"><button>{{ "hero_filter.no_search.cant_find" | t }}</button></a>
   <div>
 </div>
 
