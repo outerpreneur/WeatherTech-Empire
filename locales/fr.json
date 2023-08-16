@@ -701,7 +701,7 @@
           "add_variant": "%{delta} ajouté",
           "increment_item": "%{delta} ajouté",
           "decrement_item": "Supprimé %{delta} de %{total}",
-          "decrem,,sent_fulfilled_line_item": "%{delta} renvoyé sur %{total}"
+          "decrement_fulfilled_line_item": "%{delta} renvoyé sur %{total}"
         }
       }
     }
