@@ -344,8 +344,8 @@
           "2cd61504-254a-42bb-8a27-c8d55a0ce9ff": {
             "type": "Announcement",
             "settings": {
-              "description": "<p>Soft launch August 17th: PRE-ORDER NOW!<\/p>",
-              "url": ""
+              "description": "<p>COMING SOON COLLECTION: PRE-ORDER NOW!<\/p>",
+              "url": "shopify:\/\/collections\/preorder"
             }
           }
         },
