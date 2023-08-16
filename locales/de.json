@@ -603,5 +603,21 @@
     "breadcrumb": "Zurück zu {{ location }}",
     "breadcrumb_generic": "Der Rücken",
     "remove": "Entfernen"
+  },
+  "sales_point": {
+    "settings": {
+      "icon": {
+        "options": {
+          "truck": {
+            "label": "LKW"
+          }
+        }
+      }
+    }
+  },
+  "hero_filter": {
+    "no_search": {
+      "cant_find": "Ich kann mein Auto nicht finden"
+    }
   }
 }
