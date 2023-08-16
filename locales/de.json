@@ -9,20 +9,20 @@
   "product": {
     "variants": {
       "choose_option": "Wählen Sie eine {{ option }}",
-      "chosen_option_html": "{{ option }}: <span>{{ value }}</span>",
+      "chosen_option_html": "{{ option }}: <span>{{ value }}<\/span>",
       "choose_variant": "Wählen Sie eine Variante"
     },
     "general": {
       "by_vendor": "von {{ vendor }}",
       "by_vendor_html": "von {{ vendor_link }}",
-      "sku_html": "<strong>SKU</strong> <span data-product-sku>{{ sku }}",
+      "sku_html": "<strong>SKU<\/strong> <span data-product-sku>{{ sku }}",
       "customer_reviews_title": "Kundenrezensionen",
       "zoom": "Klicken oder scrollen, um zu zoomen",
-      "zoomTap": "Tippen oder Finger auseinander-/zusammenziehen, um zu zoomen",
+      "zoomTap": "Tippen oder Finger auseinander-\/zusammenziehen, um zu zoomen",
       "zoomTapMobile": "Zum Zoomen tippen",
       "discounts": "Rabatte",
       "select_variant": "Bitte wählen Sie eine Variante aus",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}"
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
     },
     "media": {
       "view_in_your_space": "Sehen Sie in Ihrem Raum"
@@ -80,8 +80,8 @@
       "out_of_stock": "Ausverkauft",
       "view_store_info": "Ladeninformationen anzeigen",
       "check_other_stores": "Überprüfen Sie die Verfügbarkeit in anderen Geschäften",
-      "available_for_pick_up_at_html": "Abholung verfügbar unter <b>{{ location_name }}</b>",
-      "unavailable_for_pick_up_at_html": "Abholung derzeit nicht verfügbar unter <b>{{ location_name }}</b>",
+      "available_for_pick_up_at_html": "Abholung verfügbar unter <b>{{ location_name }}<\/b>",
+      "unavailable_for_pick_up_at_html": "Abholung derzeit nicht verfügbar unter <b>{{ location_name }}<\/b>",
       "available_for_pick_up_at_time_html": "Abholung möglich, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Abholung derzeit nicht verfügbar",
       "kilometers": "km",
@@ -102,15 +102,15 @@
     "price": {
       "original": "Ursprünglicher Preis",
       "current": "Aktueller Preis",
-      "range_html": "<span class=\"price--label\">von</span> {{ price }}",
-      "price_per_unit_html": "{{total_quantity}} | {{unit_price}} / {{unit_measure}}",
+      "range_html": "<span class=\"price--label\">von<\/span> {{ price }}",
+      "price_per_unit_html": "{{total_quantity}} | {{unit_price}} \/ {{unit_measure}}",
       "tax_line_html": " "
     },
     "badge": {
-      "sale_percentage_range_html": "Sparen Sie bis zu <span data-price-percent-saved>{{ savings }}</span>%",
-      "sale_percentage_single_html": "Sparen Sie <span data-price-percent-saved>{{ savings }}</span>%",
-      "sale_money_range_html": "Sparen Sie bis zu <span class=\"money\" data-price-money-saved>{{ savings }}</span>",
-      "sale_money_single_html": "Sparen Sie <span class=\"money\" data-price-money-saved>{{ savings }}</span>",
+      "sale_percentage_range_html": "Sparen Sie bis zu <span data-price-percent-saved>{{ savings }}<\/span>%",
+      "sale_percentage_single_html": "Sparen Sie <span data-price-percent-saved>{{ savings }}<\/span>%",
+      "sale_money_range_html": "Sparen Sie bis zu <span class=\"money\" data-price-money-saved>{{ savings }}<\/span>",
+      "sale_money_single_html": "Sparen Sie <span class=\"money\" data-price-money-saved>{{ savings }}<\/span>",
       "sold_out": "Ausverkauft",
       "sale": "Verkauf",
       "pre_order": "Vorbestellen"
@@ -221,7 +221,7 @@
     "complementary_product_block": {
       "from": "Aus",
       "now": "Jetzt",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
       "view_details": "Produkt anzeigen"
     },
     "pxs-newsletter": {
@@ -303,9 +303,9 @@
       "enter_order_note": "Geben Sie unten eine Geschenknotiz oder besondere Lieferanweisungen ein:",
       "special_instructions": "Besondere Anweisungen",
       "tax_and_shipping": "Steuern und Versandkosten werden beim Checkout berechnet",
-      "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten</a>",
+      "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten<\/a>",
       "taxes_included_but_shipping_at_checkout": "inkl. MwSt. und zzgl. Versandkosten",
-      "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
+      "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
       "total_line_price": "Gesamtpreis der Leitung",
       "cart_empty": "Ihr Warenkorb ist leer"
     },
@@ -349,7 +349,7 @@
       "password": "Passwort",
       "repeat_password": "Passwort wiederholen",
       "phone": "Telefon",
-      "province": "Staat/Region",
+      "province": "Staat\/Region",
       "set_default": "Standard festlegen",
       "submit": "Abschicken",
       "zip": "Postleitzahl"
@@ -610,14 +610,114 @@
         "options": {
           "truck": {
             "label": "LKW"
+          },
+          "checkmark": {
+            "label": "Häkchen"
+          },
+          "gift": {
+            "label": "Geschenk"
+          },
+          "globe": {
+            "label": "Globus"
+          },
+          "heart": {
+            "label": "Herz"
+          },
+          "leaf": {
+            "label": "Blatt"
+          },
+          "lock": {
+            "label": "Sperren"
+          },
+          "package": {
+            "label": "Paket"
+          },
+          "phone": {
+            "label": "Telefon"
+          },
+          "ribbon": {
+            "label": "Schleife"
+          },
+          "shield": {
+            "label": "Schild"
+          },
+          "tag": {
+            "label": "Etikett"
           }
-        }
+        },
+        "label": "Symbol"
       }
-    }
+    },
+    "name": "Verkaufsstelle"
   },
   "hero_filter": {
     "no_search": {
       "cant_find": "Ich kann mein Auto nicht finden"
+    },
+    "filter": {
+      "make": "--Machen--",
+      "year": "--Jahr--",
+      "model": "--Modell--"
+    },
+    "search": {
+      "main_input": "Suchen oder geben Sie SKU ein",
+      "button": "Einkaufen mit dem Auto"
+    }
+  },
+  "shopify": {
+    "errors": {
+      "shop_404": {
+        "title": "Erstellen Sie eine E-Commerce-Website und verkaufen Sie online! E-Commerce-Software von Shopify",
+        "heros": {
+          "store_unavailable": "Leider ist dieser Shop derzeit nicht verfügbar.",
+          "store_not_exist": "Dieser Shop existiert nicht.",
+          "no_storefront": "Dieser Shop hat noch keine Website."
+        },
+        "links": {
+          "explore_other_stores": "Entdecken Sie andere Geschäfte",
+          "start_free_trial": "Starten Sie eine kostenlose Testversion"
+        },
+        "owner_ctas": {
+          "header": "Sind Sie der Ladenbesitzer?",
+          "fix_domain": "Schließen Sie die Einrichtung Ihrer neuen Webadresse ab und gehen Sie zu %{domain_settings_link}. Klicken Sie auf „Domäne verbinden“ und geben Sie ein: %{domain}.<br> Wenn Sie Schwierigkeiten haben, in Ihren Shop zu gelangen, versuchen Sie es mit der Seite %{forgot_your_store_link}.",
+          "fix_domain_link_text": "Ihre Domain-Einstellungen",
+          "forgot_your_store_link_text": "Ich habe deinen Shop vergessen",
+          "add_storefront": "Sie können Ihre Website einrichten, indem Sie den Online-Shop-Kanal in Ihrem %{admin_link} hinzufügen. Wenn Sie Schwierigkeiten haben, in Ihren Shop zu gelangen, versuchen Sie es mit der Seite %{forgot_your_store_link}.",
+          "admin_link_text": "Administrator"
+        },
+        "ctas": {
+          "sell_in_person": {
+            "header": "Persönlich verkaufen",
+            "caption": "Holen Sie sich die Funktionen, die Sie für den Betrieb Ihres Einzelhandelsgeschäfts benötigen, egal ob Sie neu starten oder expandieren.",
+            "link_text": "Kostenlos testen"
+          },
+          "open_a_store": {
+            "header": "Eröffnen Sie einen neuen Shopify-Shop",
+            "caption": "Starten Sie eine 3-tägige kostenlose Testversion und fahren Sie dann für die nächsten 3 Monate für 1 $\/Monat fort.",
+            "link_text": "Jetzt registrieren"
+          },
+          "editions": {
+            "header": "Schauen Sie sich Shopify Editions an",
+            "caption": "Mit über 100 Produktaktualisierungen können Sie produktiver, kreativer und leistungsfähiger im Handel sein, als Sie es sich jemals vorgestellt hätten.",
+            "link_text": "Entdecken Sie die neuesten Editionen"
+          },
+          "store_owner": {
+            "header": "Sind Sie der Ladenbesitzer?",
+            "caption": "Haben Sie Schwierigkeiten, in Ihr Geschäft zu gelangen? Probieren Sie die Funktion %{forgot_your_store_link} aus. Wenn Sie Ihren Shop reaktivieren möchten, wenden Sie sich an %{shopify_support_link}.",
+            "shopify_support_link_text": "Shopify-Unterstützung"
+          }
+        }
+      }
+    },
+    "notices": {
+      "line_item": {
+        "item_status": {
+          "add_variant": "%{delta} hinzugefügt",
+          "increment_item": "%{delta} hinzugefügt",
+          "decrement_item": "%{delta} von %{total} entfernt",
+          "decrement_fulfilled_line_item": "%{delta} von %{total} zurückgegeben"
+        }
+      }
     }
   }
 }
