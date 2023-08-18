@@ -396,7 +396,7 @@
     "dynamic_search": {
       "type": "dynamic-search",
       "settings": {
-        "title": "Shop by product or SKU",
+        "title": "Shop by Product or SKU",
         "text": "",
         "placeholder": "Search by SKU",
         "filter_search_by": "disabled",
