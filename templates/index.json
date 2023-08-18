@@ -137,8 +137,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Spring_CarWash_LinerSpray_WEB.jpg",
             "text_alignment": "center-center",
-            "pre_heading": "Shop all",
-            "heading": "Best sellers",
+            "pre_heading": "Shop All",
+            "heading": "Best Sellers",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
             "overlay_opacity": 50
