@@ -135,7 +135,7 @@
         "view-all-card": {
           "type": "view_all_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Spring_CarWash_LinerSpray_WEB.jpg",
+            "image": "shopify:\/\/shop_images\/FloorLiner_washed_outside.webp",
             "text_alignment": "center-center",
             "pre_heading": "Shop All",
             "heading": "Best Sellers",
@@ -193,7 +193,7 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/pavel-anoshin--mlSAA10MKg-unsplash_ford_ranger_raptor_1.jpg",
+            "image": "shopify:\/\/shop_images\/Ford_F150_36603_Construction1.webp",
             "title": "American Trucks",
             "text": "US Trucks, yup, we have the best protection for the best!",
             "color": "#ffffff",
@@ -224,7 +224,7 @@
         "84a1c22a-a2e6-42fe-a78c-09f5de6c132a": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/anton-jansson-LV_TsMPTATE-unsplash_Audi_SUV_1.jpg",
+            "image": "shopify:\/\/shop_images\/jack-lucas-smith-bvxHI7rTKbo-unsplash_rangerover_discovery_sport.webp",
             "title": "SUVs",
             "text": "50% of all vehicles sold in 2022 are an SUV, check out our European Range of custom Cargo and Floor Liners.",
             "color": "#ffffff",
@@ -354,7 +354,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/FORD_F150_Bck_To_School_seat_protectorAP.jpg",
             "title": "Seat Covers",
-            "text": "WeatherTech have a unique range of internal seat cover and protection products, that complement our FloorLiners and CargoLiners. Check them out here!",
+            "text": "WeatherTech have a unique range of internal seat cover and protection products, that complement our Car mats and Cargo mats. Check them out here!",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/seat-protection",
             "button_text": "Seat Protection",
