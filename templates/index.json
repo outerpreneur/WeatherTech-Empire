@@ -3,7 +3,7 @@
     "9261d2ae-6703-4b00-aaf0-f78a5c7dcd27": {
       "type": "car-hero-filter",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/BMW_i8_16_4410171_BlueGlow_DS_header_copy_V2.jpg",
+        "background_image": "shopify:\/\/shop_images\/BMW_i8_16_4410171_BlueGlow_DS_1000_500.webp",
         "image_height": 800,
         "image_position": "center",
         "header_hero": "Select your vehicle",
@@ -71,7 +71,7 @@
         "promotion-4": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ford_Explorer_16_FlipFlops_Sand_1_DS_217fe97a-8bf4-4c64-9ec1-f2c013653e01.jpg",
+            "image": "shopify:\/\/shop_images\/Ford_Explorer_16_FlipFlops_Sand.webp",
             "title": "Floorliners",
             "text": "Our custom fit FloorLiners are the ideal solution that will help you to conquer your all year battle with poor quality carpet or rubber car mats.",
             "color": "#ffffff",
@@ -86,7 +86,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Fall_Floorliner_HP_469451IM_Voyager3_DS1_1.jpg",
+            "image": "shopify:\/\/shop_images\/Fall_Floorliner_HP_469451IM_Voyager3_DS_web.webp",
             "title": "Floorliners HP",
             "text": "Our FloorLiner HP are our most advanced rubber-like, Thermoplastic Elastomer (TPE) FloorLiners making them both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
             "color": "#ffffff",
@@ -101,7 +101,7 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ford_Explorer_16_Summer_Cargo_Bike_DS_1.jpg",
+            "image": "shopify:\/\/shop_images\/Ford_Explorer_16_Summer_Cargo_Bike.webp",
             "title": "Cargoliners",
             "text": "Our Custom fit CargoLiners provide a great way to protect the daily rigours of loading and unloading from your luggage\/cargo area. Check out our range here.",
             "color": "#ffffff",
