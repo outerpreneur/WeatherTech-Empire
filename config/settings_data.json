@@ -1306,7 +1306,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".rale-widget rale-customized {display:none;}"
+      ".rale-widget {display: none;}"
     ]
   }
 }
