@@ -135,7 +135,7 @@
         "view-all-card": {
           "type": "view_all_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FloorLiner_washed_outside.webp",
+            "image": "shopify:\/\/shop_images\/FloorLiner_washed_outside_1.webp",
             "text_alignment": "center-center",
             "pre_heading": "Shop All",
             "heading": "Best Sellers",
