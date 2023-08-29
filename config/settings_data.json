@@ -229,8 +229,8 @@
         ],
         "settings": {
           "payment_icons": true,
-          "show_locale_selector": true,
-          "show_currency_selector": true,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
           "additional_menu": "policies"
         }
       },
