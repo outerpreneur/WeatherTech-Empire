@@ -320,8 +320,8 @@
           "show_menu_mobile": false,
           "mobile_layout": "below",
           "show_locale_selector": true,
-          "show_currency_selector": true,
-          "show_social_icons": true
+          "show_currency_selector": false,
+          "show_social_icons": false
         }
       },
       "advanced-announcement-bar": {
