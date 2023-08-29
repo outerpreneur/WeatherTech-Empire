@@ -316,12 +316,12 @@
           "link_color": "#121212",
           "link_hover_color": "#121212",
           "border_color": "#ffffff",
-          "menu": "category",
+          "menu": "footer",
           "show_menu_mobile": false,
           "mobile_layout": "below",
           "show_locale_selector": true,
           "show_currency_selector": false,
-          "show_social_icons": false
+          "show_social_icons": true
         }
       },
       "advanced-announcement-bar": {
