@@ -316,7 +316,7 @@
           "link_color": "#121212",
           "link_hover_color": "#121212",
           "border_color": "#ffffff",
-          "menu": "footer",
+          "menu": "category",
           "show_menu_mobile": false,
           "mobile_layout": "below",
           "show_locale_selector": true,
