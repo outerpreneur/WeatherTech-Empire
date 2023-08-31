@@ -45,11 +45,10 @@
     },
     "38e9ca57-2dce-4e34-a43b-6eb63c5974fd": {
       "type": "dynamic-featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Featured collection",
         "layout": "grid",
-        "collection": "",
+        "collection": "featured",
         "product_count": 5,
         "cta_label": "Shop collection",
         "cta_button_style": "primary"
