@@ -38,7 +38,7 @@
       ],
       "settings": {
         "show_sku": true,
-        "enable_order_notes": false,
+        "enable_order_notes": true,
         "enable_shipping_calc": false,
         "shipping_calc_default_country": "CH"
       }
@@ -49,7 +49,7 @@
       "settings": {
         "title": "Featured collection",
         "layout": "grid",
-        "collection": "accessories",
+        "collection": "",
         "product_count": 5,
         "cta_label": "Shop collection",
         "cta_button_style": "primary"
