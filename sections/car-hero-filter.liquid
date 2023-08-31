@@ -25,7 +25,8 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    min-height: 200px;
+    background-color: {{ section.settings.section_height }};
+    min-height: {{ section.settings.section_height }}px;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
     background-size: cover;
     background-repeat: no-repeat;
@@ -94,13 +95,19 @@
       },
       {
         "type": "range",
-        "id": "image_height",
+        "id": "section_height",
         "label": "height range in pixels",
         "max": 1200,
         "min": 300,
         "step": 100,
         "default": 500,
         "unit": "px"
+      },
+      {
+        "type": "color_background",
+        "id": "section_color",
+        "label": "Background color",
+        "default": "black"
       },
       {
         "type": "select",
