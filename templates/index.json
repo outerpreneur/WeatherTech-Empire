@@ -61,7 +61,7 @@
             "text": "Summer in Switzerland is not over yet! Find your made to measure dual-purpose vehicle Sunshades and All round Sunshades, for Summer and for Winter.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/sunshades",
-            "button_text": "SunShades",
+            "button_text": "Shop SunShades",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
@@ -76,7 +76,7 @@
             "text": "Our custom fit Car floor mats are the ideal solution that will help you to conquer your all year battle with poor quality carpet or rubber car mats.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliners",
-            "button_text": "FloorLiners",
+            "button_text": "Shop FloorLiners",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
@@ -168,7 +168,7 @@
             "text": "See our Porsche range of in-car protection made to perfection for all weather.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/porsche",
-            "button_text": "Porsche collection",
+            "button_text": "Shop Porsche collection",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
@@ -183,7 +183,7 @@
             "text": "Check out our range of interior protection for the fast selling Electric Vehicles.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/emv",
-            "button_text": "See EV Collection",
+            "button_text": "Shop EV Collection",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
@@ -198,27 +198,11 @@
             "text": "US Trucks, yup, we have the best protection for the best!",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/united-states",
-            "button_text": "USA collection",
+            "button_text": "Shop USA collection",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 50
-          }
-        },
-        "promotion-4": {
-          "type": "promotion",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/y4mvxxuWqJi3er9FXrwlAaEH8SZ20aPbpEcT4fJ3QpV8cc8u4gzrG2aPpPKjz3XVnf_Djk8quSFxncKbJALOe9tp-r8ziynBkySl8B0zai36INe-e8zTmvHOjcejkm4dE1-SOhsn10L9BPSjr0yYVFgnh5BDK6XO7hOFiuyqdGmx9cggKUy61Zq.jpg",
-            "title": "BUILT FOR THE WILD",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/floorliners",
-            "button_text": "Blog",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 34
           }
         },
         "84a1c22a-a2e6-42fe-a78c-09f5de6c132a": {
@@ -229,7 +213,7 @@
             "text": "50% of all vehicles sold in 2022 are an SUV, check out our European Range of custom Cargo and Floor Liners.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/suv",
-            "button_text": "See SUV collection",
+            "button_text": "Shop SUV collection",
             "button_style": "primary",
             "show_overlay": true,
             "background": "#121212",
@@ -241,7 +225,6 @@
         "promotion-1",
         "promotion-2",
         "promotion-3",
-        "promotion-4",
         "84a1c22a-a2e6-42fe-a78c-09f5de6c132a"
       ],
       "settings": {
