@@ -4,7 +4,7 @@
       "type": "car-hero-filter",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/BMW_i8_16_4410171_BlueGlow_DS_1000_500.webp",
-        "image_height": 800,
+        "image_height": 900,
         "image_position": "center",
         "header_hero": "Select your vehicle",
         "subheader_hero": "View suitable All-Weather items for your car"
@@ -38,21 +38,6 @@
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
-        "277faa58-f359-44db-9102-8816c73aa539": {
-          "type": "promotion",
-          "disabled": true,
-          "settings": {
-            "title": "Floorliner Sets",
-            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/floorliner-sets",
-            "button_text": "Floorliner sets",
-            "button_style": "primary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 50
-          }
-        },
         "15a11642-af66-4957-b11a-4b9e906f2c32": {
           "type": "promotion",
           "settings": {
@@ -115,7 +100,6 @@
         }
       },
       "block_order": [
-        "277faa58-f359-44db-9102-8816c73aa539",
         "15a11642-af66-4957-b11a-4b9e906f2c32",
         "promotion-4",
         "promotion-1",
