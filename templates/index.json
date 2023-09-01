@@ -48,7 +48,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/sunshades",
             "button_text": "Shop SunShades",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 50
@@ -63,7 +63,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliners",
             "button_text": "Shop FloorLiners",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 50
@@ -78,7 +78,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliners-hp",
             "button_text": "Shop FloorLiners HP",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 50
@@ -93,7 +93,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "Shop CargoLiners",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#000000",
             "opacity": 51
@@ -154,7 +154,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/porsche",
             "button_text": "Shop Porsche Collection",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 49
@@ -169,7 +169,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/emv",
             "button_text": "Shop EV Collection",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 50
@@ -184,7 +184,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/united-states",
             "button_text": "Shop USA Collection",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 50
@@ -199,7 +199,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/suv",
             "button_text": "Shop SUV Collection",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
             "opacity": 49
