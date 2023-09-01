@@ -2,7 +2,6 @@
   "sections": {
     "9d1793f0-53a3-404d-a862-d3cc7ec101b3": {
       "type": "pxs-image-with-text-overlay",
-      "disabled": true,
       "custom_css": [
         ".pxs-image-with-text-background {background-position: center;}"
       ],
