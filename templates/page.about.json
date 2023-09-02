@@ -5,7 +5,7 @@
       "settings": {
         "section_height": "medium",
         "image": "shopify:\/\/shop_images\/Snow_Close_Up_Cargo_Horz.jpg",
-        "title": "About us",
+        "title": "About Us",
         "text": "",
         "content_position": "center-center",
         "color": "#ffffff",
@@ -22,7 +22,6 @@
     },
     "6a5c8756-58fe-4bc6-9e9c-696fb4406cd9": {
       "type": "dynamic-promo-grid",
-      "disabled": true,
       "blocks": {
         "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-0": {
           "type": "promotion",
@@ -87,6 +86,7 @@
         "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-2",
         "template--16960953188516__6a5c8756-58fe-4bc6-9e9c-696fb4406cd9-1678144489eb70c11d-3"
       ],
+      "disabled": true,
       "settings": {
         "title": "Grid",
         "section_height": "small",
