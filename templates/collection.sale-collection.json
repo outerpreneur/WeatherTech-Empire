@@ -18,6 +18,31 @@
         "button_text": ""
       }
     },
+    "02ae1d29-fd40-4ce5-a785-a38ae62326fe": {
+      "type": "dynamic-countdown-timer",
+      "settings": {
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/weathertech-sunshades-bmw-x2-2018-2023-windshield-sunshade-43137515094180.jpg",
+        "countdown_year": "2023",
+        "countdown_month": "09",
+        "countdown_day": "30",
+        "countdown_hour": "23",
+        "countdown_minute": "59",
+        "countdown_timer_background": false,
+        "countdown_timer_complete": false,
+        "countdown_timer_message": "",
+        "product": "",
+        "title": "END OF THE SUMMER SALE",
+        "text": "<p>Get 10% of off in the Sunshades collection. Use code WTAUTUMN10<\/p>",
+        "button_link": "https:\/\/weathertechch.com\/collections\/sunshades",
+        "button_label": "Add Discount",
+        "button_style": "secondary",
+        "text_color": "#FFFFFF",
+        "overlay_color": "#000000",
+        "overlay_opacity": 15,
+        "product_card_background_color": "#F5F3ED"
+      }
+    },
     "main": {
       "type": "static-collection",
       "blocks": {
@@ -87,6 +112,7 @@
   },
   "order": [
     "9d1793f0-53a3-404d-a862-d3cc7ec101b3",
+    "02ae1d29-fd40-4ce5-a785-a38ae62326fe",
     "main",
     "c4bed344-b833-4bf1-9861-2729b51804ef",
     "static-recently-viewed"
