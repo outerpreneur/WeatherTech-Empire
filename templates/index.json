@@ -437,6 +437,16 @@
         "background_color": "#ffffff",
         "mobile_layout": "grid"
       }
+    },
+    "f61678e6-99ee-4012-9396-1b1d1c713f8a": {
+      "type": "dynamic-blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "news",
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": true
+      }
     }
   },
   "order": [
@@ -449,6 +459,7 @@
     "dynamic_promo_grid-2",
     "36612375-1729-4764-874c-6ec3e9370468",
     "dynamic_search",
-    "dynamic_highlights_banner"
+    "dynamic_highlights_banner",
+    "f61678e6-99ee-4012-9396-1b1d1c713f8a"
   ]
 }
