@@ -16,6 +16,7 @@
       "blocks": {
         "3aaadd72-2616-4d90-915f-8b7a2f150157": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "only_photos": false,
             "hide_thumbnails": false,
