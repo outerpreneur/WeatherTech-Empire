@@ -35,12 +35,12 @@
         "title": "END OF THE SUMMER SALE",
         "text": "<p>Get 10% of off in the Sunshades collection. Use code WTAUTUMN10<\/p>",
         "button_link": "https:\/\/weathertechch.com\/collections\/sunshades",
-        "button_label": "Add Discount",
+        "button_label": "",
         "button_style": "secondary",
-        "text_color": "#FFFFFF",
+        "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 15,
-        "product_card_background_color": "#F5F3ED"
+        "product_card_background_color": "#f5f3ed"
       }
     },
     "main": {
