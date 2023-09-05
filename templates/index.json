@@ -4,11 +4,13 @@
       "type": "car-hero-filter",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/floorlinerWT.png",
-        "section_height": 200,
+        "section_height": 400,
         "section_color": "#000000",
         "image_position": "center",
-        "header_hero": "Select your vehicle",
-        "subheader_hero": ""
+        "header_hero": "Floorliners, Cargoliners and Sunshades",
+        "size_header": 23,
+        "subheader_hero": "Select your vehicle",
+        "size_subheader": 16
       }
     },
     "1678964004457b5f22": {
