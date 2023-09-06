@@ -39,6 +39,7 @@
     "type_section": "work_sans_n7",
     "type_section_capitalize": false,
     "type_section_spacing": 2,
+    "reduce_animations": true,
     "layout_max_width": 1400,
     "product_sales_badge": true,
     "product_sales_badge_style": "percent",
