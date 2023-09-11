@@ -229,11 +229,14 @@
           "1498182572847",
           "static-footer-1"
         ],
+        "custom_css": [
+
+        ],
         "settings": {
           "payment_icons": true,
           "show_locale_selector": false,
           "show_currency_selector": false,
-          "additional_menu": "policies"
+          "additional_menu": ""
         }
       },
       "static-collection": {
