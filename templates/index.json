@@ -145,6 +145,16 @@
         "cta_button_style": "primary"
       }
     },
+    "4e2f16c5-ef28-4d7b-95d7-6d0d73180d54": {
+      "type": "dynamic-rich-text",
+      "settings": {
+        "width": "wide",
+        "title": "Floorliners, Cargoliners and Sunshades",
+        "text": "<p>Weathertech is the world’s leading “Custom-Fit” Automotive, Home and Pet Protection Products. With the iconic Vehicle FloorLiners, Cargo\/Trunk Liners and SunShades, WeatherTech products protect consumers from the challenging SwissAlps weather. <\/p><p>Designed and engineered to perfection, these liners offer unparalleled protection against  rain, snow, mud, and spills. Weathertech Floorlines are no match for their innovative design; these liners are tailored to fit your vehicle precisely, creating a watertight seal that keeps your car's interior pristine<\/p>",
+        "heading_size": "medium",
+        "text_alignment": "center"
+      }
+    },
     "dynamic_promo_grid": {
       "type": "dynamic-promo-grid",
       "blocks": {
@@ -457,6 +467,7 @@
     "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
+    "4e2f16c5-ef28-4d7b-95d7-6d0d73180d54",
     "dynamic_promo_grid",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
