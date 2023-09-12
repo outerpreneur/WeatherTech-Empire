@@ -63,6 +63,7 @@
     "product_grid_image_style": "natural",
     "enable_product_compare": false,
     "product_grid_enable_quickshop": true,
+    "product_grid_quick_shop_display": "desktop",
     "social_email": "info@mauwi.com",
     "social_facebook": "https:\/\/www.facebook.com\/profile.php?id=100089124500462",
     "social_instagram": "https:\/\/www.instagram.com\/weathertech_ch\/",
