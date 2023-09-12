@@ -5,12 +5,13 @@
   },
   "sections": {
     "dynamic_promo_mosaic": {
+      "disabled": false,
       "settings": {
       },
       "blocks": {
         "15a11642-af66-4957-b11a-4b9e906f2c32": {
           "settings": {
-            "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. See our 10% off offer until the end of September."
+            "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. See our additional 0% off offer until the end of September."
           }
         }
       }
