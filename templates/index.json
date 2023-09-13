@@ -42,15 +42,15 @@
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
-        "15a11642-af66-4957-b11a-4b9e906f2c32": {
+        "c24b251e-37b8-4c4f-bfa3-0705be4aff46": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Silver_200723_100K_2.webp",
-            "title": "SunShades",
+            "image": "shopify:\/\/shop_images\/weathertech-sunshades-tesla-model-y-2020-2023-sunshade-auto-fussmatten-sonnenschutz-auto-43231748751524.webp",
+            "title": "Sunshades",
             "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. Check out our additional 10% off before the end of September.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/sunshades",
-            "button_text": "Shop SunShades",
+            "button_text": "Shop Sunshades",
             "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
@@ -101,13 +101,30 @@
             "background": "#000000",
             "opacity": 51
           }
+        },
+        "15a11642-af66-4957-b11a-4b9e906f2c32": {
+          "type": "promotion",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Silver_200723_100K_2.webp",
+            "title": "SunShades",
+            "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. Check out our additional 10% off before the end of September.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/sunshades",
+            "button_text": "Shop SunShades",
+            "button_style": "secondary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 50
+          }
         }
       },
       "block_order": [
-        "15a11642-af66-4957-b11a-4b9e906f2c32",
+        "c24b251e-37b8-4c4f-bfa3-0705be4aff46",
         "promotion-4",
         "promotion-1",
-        "promotion-3"
+        "promotion-3",
+        "15a11642-af66-4957-b11a-4b9e906f2c32"
       ],
       "settings": {
         "title": "",
