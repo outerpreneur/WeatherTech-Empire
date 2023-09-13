@@ -73,6 +73,7 @@
         },
         "101d50bc-9c39-49b7-b6c9-b541a061409d": {
           "type": "complementary_products",
+          "disabled": true,
           "settings": {
             "heading": "Pairs well with",
             "product_recommendation_limit": 10,
