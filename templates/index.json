@@ -18,8 +18,9 @@
       "blocks": {
         "3aaadd72-2616-4d90-915f-8b7a2f150157": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
-            "only_photos": true,
+            "only_photos": false,
             "hide_thumbnails": false,
             "product_handle": "",
             "aggregated": true,
@@ -31,7 +32,6 @@
       "block_order": [
         "3aaadd72-2616-4d90-915f-8b7a2f150157"
       ],
-      "disabled": true,
       "custom_css": [
 
       ],
@@ -65,7 +65,7 @@
             "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. Check out our additional 10% off before the end of September.",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/sunshades",
-            "button_text": "Shop Sunshades",
+            "button_text": "Shop SunShades",
             "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
@@ -101,13 +101,30 @@
             "background": "#000000",
             "opacity": 51
           }
+        },
+        "15a11642-af66-4957-b11a-4b9e906f2c32": {
+          "type": "promotion",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Silver_200723_100K_2.webp",
+            "title": "SunShades",
+            "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. Check out our additional 10% off before the end of September.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/sunshades",
+            "button_text": "Shop SunShades",
+            "button_style": "secondary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 50
+          }
         }
       },
       "block_order": [
         "promotion-4",
         "c24b251e-37b8-4c4f-bfa3-0705be4aff46",
         "promotion-1",
-        "promotion-3"
+        "promotion-3",
+        "15a11642-af66-4957-b11a-4b9e906f2c32"
       ],
       "settings": {
         "title": "",
