@@ -111,6 +111,34 @@
             "product_recommendation_limit": 10,
             "products_per_slide": 1
           }
+        },
+        "c7a0be12-1d33-4e8a-8de4-f3ff9ab27b06": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "142a8205-3973-41af-b84c-534da5174be1": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-card-carousel-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "maxWidth": 1100,
+            "borderRadius": 8,
+            "itemsPerView": 4,
+            "maxNumberOfCharacters": 100,
+            "imageRatio": "0.72",
+            "reviewerNameColor": "#000000",
+            "textColor": "#000000",
+            "itemBackgroundColor": "#ffffff",
+            "starsColor": "",
+            "starsBackgroundColor": "#ffffff",
+            "arrows_backgroundColor": "#FFFFFF",
+            "arrows_iconColor": "#9A9A9A",
+            "shadow": "offset-dark",
+            "border_active": false,
+            "border_width": 2,
+            "border_color": "#000000",
+            "productIds": ""
+          }
         }
       },
       "block_order": [
@@ -128,7 +156,9 @@
         "9a63f4d8-6922-4f15-886d-aa0ca45d3f48",
         "8c334a5f-a20d-46d8-b294-b77fd98e28fa",
         "6d29b447-f912-426e-a7b5-8010e6256eae",
-        "fb062f43-0e7d-4816-89f0-7b2d06c47d4c"
+        "fb062f43-0e7d-4816-89f0-7b2d06c47d4c",
+        "c7a0be12-1d33-4e8a-8de4-f3ff9ab27b06",
+        "142a8205-3973-41af-b84c-534da5174be1"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
@@ -138,6 +168,22 @@
         "gallery_video_looping": true,
         "gallery_hover_zoom": "disabled",
         "gallery_click_to_zoom": "always"
+      }
+    },
+    "1695022377555fe92d": {
+      "type": "apps",
+      "blocks": {
+        "e80eaac9-d070-4bfd-9553-f279a7440ee3": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e80eaac9-d070-4bfd-9553-f279a7440ee3"
+      ],
+      "settings": {
+        "include_padding": true
       }
     },
     "recommendations": {
@@ -156,6 +202,7 @@
   },
   "order": [
     "main",
+    "1695022377555fe92d",
     "recommendations",
     "recently-viewed"
   ]
