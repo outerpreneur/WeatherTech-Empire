@@ -731,6 +731,13 @@
       },
       "address_management": {
         "confirm_address_deletion": "Sind Sie sicher, dass Sie die Adresse {{address}} löschen möchten?"
+      },
+      "thank_you": {
+        "branded_promise": {
+          "buy_with_prime": {
+            "order_tracking_link_text": "Verfolgen und verwalten Sie „Buy with Prime“-Bestellungen"
+          }
+        }
       }
     }
   },
