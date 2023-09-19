@@ -742,6 +742,12 @@
             }
           }
         }
+      },
+      "shipping": {
+        "merchandise_quantity_label": {
+          "standard": "%{count} Artikel",
+          "additional": "+%{count} mehr"
+        }
       }
     }
   },
