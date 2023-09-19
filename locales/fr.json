@@ -728,6 +728,12 @@
             }
           }
         }
+      },
+      "shipping": {
+        "merchandise_quantity_label": {
+          "standard": "%{count} éléments",
+          "additional": "+%{count} de plus"
+        }
       }
     }
   },
