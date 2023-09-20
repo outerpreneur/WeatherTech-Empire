@@ -131,13 +131,27 @@
             "itemBackgroundColor": "#ffffff",
             "starsColor": "",
             "starsBackgroundColor": "#ffffff",
-            "arrows_backgroundColor": "#FFFFFF",
-            "arrows_iconColor": "#9A9A9A",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
             "shadow": "offset-dark",
             "border_active": false,
             "border_width": 2,
             "border_color": "#000000",
             "productIds": ""
+          }
+        },
+        "cbf6a47a-c4c3-46be-99f5-7c51fd22b45b": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
           }
         }
       },
@@ -158,7 +172,8 @@
         "6d29b447-f912-426e-a7b5-8010e6256eae",
         "fb062f43-0e7d-4816-89f0-7b2d06c47d4c",
         "c7a0be12-1d33-4e8a-8de4-f3ff9ab27b06",
-        "142a8205-3973-41af-b84c-534da5174be1"
+        "142a8205-3973-41af-b84c-534da5174be1",
+        "cbf6a47a-c4c3-46be-99f5-7c51fd22b45b"
       ],
       "settings": {
         "gallery_aspect_ratio": "natural",
@@ -186,8 +201,8 @@
             "itemBackgroundColor": "#ffffff",
             "starsColor": "",
             "starsBackgroundColor": "#ffffff",
-            "arrows_backgroundColor": "#FFFFFF",
-            "arrows_iconColor": "#9A9A9A",
+            "arrows_backgroundColor": "#ffffff",
+            "arrows_iconColor": "#9a9a9a",
             "shadow": "offset-dark",
             "border_active": false,
             "border_width": 2,
