@@ -8,6 +8,11 @@
           "settings": {
           }
         },
+        "03d50656-9b19-4bd7-8554-aa41d28ea51f": {
+          "type": "sku",
+          "settings": {
+          }
+        },
         "d8563f87-db28-4a20-a0f2-4858c0fe572c": {
           "type": "inventory_status",
           "settings": {
@@ -157,6 +162,7 @@
       },
       "block_order": [
         "title",
+        "03d50656-9b19-4bd7-8554-aa41d28ea51f",
         "d8563f87-db28-4a20-a0f2-4858c0fe572c",
         "vendor",
         "rating",
