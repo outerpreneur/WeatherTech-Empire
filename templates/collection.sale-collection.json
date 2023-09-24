@@ -7,7 +7,7 @@
       ],
       "settings": {
         "section_height": "small",
-        "image": "shopify:\/\/shop_images\/floorlinerWT.jpg",
+        "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Black.webp",
         "title": "{{ collection.title }}",
         "text": "<p>{{ collection.metafields.custom.collection_tagline.value }}<\/p>",
         "content_position": "center-center",
