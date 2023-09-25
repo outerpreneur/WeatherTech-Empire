@@ -163,6 +163,11 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "6886ab62-190a-44e5-a0ca-15940d02a9be": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -186,7 +191,8 @@
         "9953b17a-14fa-4851-a311-403f09beb7f2",
         "description",
         "3a1b49d3-4b42-44b0-94a0-221d2e9fd4a7",
-        "44b73dad-292d-41eb-b2ce-c2c17100cb01"
+        "44b73dad-292d-41eb-b2ce-c2c17100cb01",
+        "6886ab62-190a-44e5-a0ca-15940d02a9be"
       ],
       "custom_css": [
         ".key-details {border: 1px solid black;}",
@@ -200,22 +206,6 @@
         "gallery_video_looping": true,
         "gallery_hover_zoom": "disabled",
         "gallery_click_to_zoom": "always"
-      }
-    },
-    "1695022157f0900acc": {
-      "type": "apps",
-      "blocks": {
-        "47b4b406-94e5-4ea1-8d9b-cb48a09202b8": {
-          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "47b4b406-94e5-4ea1-8d9b-cb48a09202b8"
-      ],
-      "settings": {
-        "include_padding": true
       }
     },
     "1687518122f53b66e8": {
@@ -255,7 +245,6 @@
   },
   "order": [
     "main",
-    "1695022157f0900acc",
     "1687518122f53b66e8",
     "recommendations",
     "recently-viewed"
