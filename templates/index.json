@@ -61,11 +61,11 @@
           "type": "promotion",
           "settings": {
             "image": "shopify:\/\/shop_images\/weathertech-sunshades-tesla-model-y-2020-2023-sunshade-auto-fussmatten-sonnenschutz-auto-43231748751524.webp",
-            "title": "WinterShades (Frost free!)",
+            "title": "Winter Car Shades (Frost free!)",
             "text": "As Summer moves to Winter, don't forget to keep your windshields \"frost free\" for Winter, check out our unique and world leading \"dual purpose\" WinterShades. No more early morning windshield cleaning!",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/sunshades",
-            "button_text": "Shop SunShades",
+            "button_text": "Shop Winter Car Shades",
             "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
@@ -77,7 +77,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Fall_Floorliner_HP_469451IM_Voyager3_DS_web_2.webp",
             "title": "FloorLiners HP",
-            "text": "Our FloorLiner HP is our most advanced rubber-like, Thermoplastic Elastomer (TPE) FloorLiners making them both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
+            "text": "Our FloorLiner HP is our most advanced rubber-like, Thermoplastic Elastomer (TPE) Car Mats making them both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/floorliners-hp",
             "button_text": "Shop FloorLiners HP",
