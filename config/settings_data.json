@@ -346,19 +346,11 @@
               "description": "<p>Free shipping for orders over 200 CHF<\/p>",
               "url": ""
             }
-          },
-          "2cd61504-254a-42bb-8a27-c8d55a0ce9ff": {
-            "type": "Announcement",
-            "settings": {
-              "description": "<p>COMING SOON COLLECTION: PRE-ORDER NOW!<\/p>",
-              "url": "shopify:\/\/collections\/preorder"
-            }
           }
         },
         "block_order": [
           "07063f27-9651-4f4d-b700-d0525d804a0f",
-          "50dfcbbe-a6ee-45f7-a453-27d025434a49",
-          "2cd61504-254a-42bb-8a27-c8d55a0ce9ff"
+          "50dfcbbe-a6ee-45f7-a453-27d025434a49"
         ],
         "custom_css": [
           "#eg-announcement-bar-advanced-announcement-bar p {padding: 0.5em !important;}"
