@@ -773,7 +773,9 @@
             "text": "Verfolgen und verwalten Sie „Buy with Prime“-Bestellungen",
             "new_window_disclaimer": "(öffnet ein neues Fenster)"
           }
-        }
+        },
+        "attempted_to_deliver_label": "Es wurde versucht zu liefern",
+        "there_was_a_problem_label": "Es gab ein Problem"
       }
     }
   }
