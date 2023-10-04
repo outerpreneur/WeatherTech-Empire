@@ -669,7 +669,7 @@
     "filters": {
       "availability": {
         "value": {
-          "out_of_stock": "Pre-order"
+          "out_of_stock": "Out of stock"
         }
       }
     }
