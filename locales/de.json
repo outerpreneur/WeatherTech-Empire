@@ -777,6 +777,14 @@
         "attempted_to_deliver_label": "Es wurde versucht zu liefern",
         "there_was_a_problem_label": "Es gab ein Problem"
       }
+    },
+    "profile_preview_bar": {
+      "customize_button": "Anpassen",
+      "hide_bar": "Leiste ausblenden",
+      "navigate_to_admin": "Navigieren Sie zu Admin",
+      "previewing": "Sie sehen eine Vorschau:",
+      "saved_at": "Gespeichert am {{date}} um {{time}}",
+      "viewing": "Sie sehen:"
     }
   }
 }
