@@ -9,20 +9,20 @@
   "product": {
     "variants": {
       "choose_option": "Choisissez une {{ option }}",
-      "chosen_option_html": "{{ option }}: <span>{{ value }}<\/span>",
+      "chosen_option_html": "{{ option }}: <span>{{ value }}</span>",
       "choose_variant": "Choisissez une variante"
     },
     "general": {
       "by_vendor": "par {{ vendor }}",
       "by_vendor_html": "par {{ vendor_link }}",
-      "sku_html": "<strong>UGC<\/strong> <span data-product-sku>{{ sku }}",
+      "sku_html": "<strong>UGC</strong> <span data-product-sku>{{ sku }}",
       "customer_reviews_title": "Commentaires des clients",
       "zoom": "Cliquez ou faites défiler pour zoomer",
       "zoomTap": "Appuyez ou pincez pour zoomer",
       "zoomTapMobile": "Appuyez pour zoomer",
       "discounts": "Réductions",
       "select_variant": "Veuillez sélectionner une variante",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}"
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}"
     },
     "media": {
       "view_in_your_space": "Voir dans votre espace"
@@ -49,7 +49,7 @@
       "no_stock": "Rupture de stock",
       "incoming_stock": "D'autres sont en préparation!",
       "pre_order": "Bientôt disponible",
-      "continue_selling": "Précommande (Prêt à expédier sous 10 jours ouvrés)"
+      "continue_selling": "Précommande"
     },
     "color_swatches": {
       "swatches_count": {
@@ -80,8 +80,8 @@
       "out_of_stock": "En rupture de stock",
       "view_store_info": "Afficher les informations du magasin",
       "check_other_stores": "Vérifier la disponibilité dans d'autres magasins",
-      "available_for_pick_up_at_html": "Prise en charge disponible à <b>{{ location_name }}<\/b>",
-      "unavailable_for_pick_up_at_html": "Prise en charge actuellement indisponible à <b>{{ location_name }}<\/b>",
+      "available_for_pick_up_at_html": "Prise en charge disponible à <b>{{ location_name }}</b>",
+      "unavailable_for_pick_up_at_html": "Prise en charge actuellement indisponible à <b>{{ location_name }}</b>",
       "available_for_pick_up_at_time_html": "Ramassage disponible, {{ pick_up_time }}",
       "unavailable_for_pick_up_at_time_html": "Ramassage actuellement indisponible",
       "kilometers": "km",
@@ -102,15 +102,15 @@
     "price": {
       "original": "Prix d'origine",
       "current": "Prix actuel",
-      "range_html": "<span class=\"price--label\">à partir de<\/span> {{ price }}",
-      "price_per_unit_html": "{{total_quantity}} | {{unit_price}} \/ {{unit_measure}}",
+      "range_html": "<span class=\"price--label\">à partir de</span> {{ price }}",
+      "price_per_unit_html": "{{total_quantity}} | {{unit_price}} / {{unit_measure}}",
       "tax_line_html": " "
     },
     "badge": {
-      "sale_percentage_range_html": "Économisez jusqu'à <span data-price-percent-saved>{{ savings }}<\/span>%",
-      "sale_percentage_single_html": "Économisez <span data-price-percent-saved>{{ savings }}<\/span>%",
-      "sale_money_range_html": "Économisez jusqu'à <span class=\"money\" data-price-money-saved>{{ savings }}<\/span>",
-      "sale_money_single_html": "Économisez <span class=\"money\" data-price-money-saved>{{ savings }}<\/span>",
+      "sale_percentage_range_html": "Économisez jusqu'à <span data-price-percent-saved>{{ savings }}</span>%",
+      "sale_percentage_single_html": "Économisez <span data-price-percent-saved>{{ savings }}</span>%",
+      "sale_money_range_html": "Économisez jusqu'à <span class=\"money\" data-price-money-saved>{{ savings }}</span>",
+      "sale_money_single_html": "Économisez <span class=\"money\" data-price-money-saved>{{ savings }}</span>",
       "sold_out": "Épuisé",
       "sale": "Soldes",
       "pre_order": "Pré-commander"
@@ -221,7 +221,7 @@
     "complementary_product_block": {
       "from": "De",
       "now": "À présent",
-      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} \/ {{ unit_measure }}",
+      "price_per_unit_html": "{{ total_quantity }} | {{ unit_price }} / {{ unit_measure }}",
       "view_details": "Voir le produit"
     },
     "pxs-newsletter": {
@@ -303,9 +303,9 @@
       "enter_order_note": "Entrez un message pour votre cadeau ou des instructions de livraison spéciales ci-dessous :",
       "special_instructions": "Instructions spéciales",
       "tax_and_shipping": "Taxes et frais de port calculés à l'étape de paiement",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port<\/a> calculés à l'étape de paiement",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port</a> calculés à l'étape de paiement",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à l'étape de paiement",
-      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port<\/a> calculés à l'étape de paiement.",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port</a> calculés à l'étape de paiement.",
       "total_line_price": "Prix ​​total de la ligne",
       "cart_empty": "Votre panier est vide"
     },
@@ -349,7 +349,7 @@
       "password": "Mot de passe",
       "repeat_password": "Répéter le mot de passe",
       "phone": "Téléphone",
-      "province": "Département\/Région",
+      "province": "Département/Région",
       "set_default": "Définir la valeur par défaut",
       "submit": "Soumettre",
       "zip": "Code postal"
@@ -679,7 +679,7 @@
           },
           "open_a_store": {
             "header": "Ouvrir une nouvelle boutique Shopify",
-            "caption": "Commencez un essai gratuit de 3 jours, puis continuez pour 1 $\/mois pendant les 3 prochains mois.",
+            "caption": "Commencez un essai gratuit de 3 jours, puis continuez pour 1 $/mois pendant les 3 prochains mois.",
             "link_text": "S'inscrire maintenant"
           },
           "editions": {
