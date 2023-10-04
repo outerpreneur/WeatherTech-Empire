@@ -759,8 +759,18 @@
             "text": "Suivez et gérez la commande Acheter avec Prime",
             "new_window_disclaimer": "(ouvre une nouvelle fenêtre)"
           }
-        }
+        },
+        "attempted_to_deliver_label": "Tentative de livraison",
+        "there_was_a_problem_label": "Il y avait un problème"
       }
+    },
+    "profile_preview_bar": {
+      "customize_button": "Personnaliser",
+      "hide_bar": "Masquer la barre",
+      "navigate_to_admin": "Accédez à l'administrateur",
+      "previewing": "Vous prévisualisez :",
+      "saved_at": "Enregistré {{date}} à {{time}}",
+      "viewing": "Vous consultez :"
     }
   }
 }
