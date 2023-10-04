@@ -664,5 +664,14 @@
     "no_search": {
       "cant_find": "I can't find my car"
     }
+  },
+  "shopify": {
+    "filters": {
+      "availability": {
+        "value": {
+          "out_of_stock": "Pre-order"
+        }
+      }
+    }
   }
 }
