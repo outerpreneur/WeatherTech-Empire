@@ -5,72 +5,63 @@ function populate(s1, s2) {
   if (s1.value == "Audi") {
     var optionArray = [
       "|--Model--",
-      "a3|A3",
-      "e-tron|E-tron",
-      "q2|Q2",
-      "q3|Q3",
-      "q4 tron|Q4 tron",
-      "q5|Q5",
-      "q7|Q7",
-      "q8|Q8,",
+      "A3|A3",
+      "e-tron|e-tron",
+      "Q2|Q2",
+      "Q3|Q3",
+      "Q4 e-tron|Q4 e-tron",
+      "Q5|Q5",
+      "Q7|Q7",
+      "Q8|Q8,",
     ];
   } else if (s1.value == "BMW") {
     var optionArray = [
       "|--Model--",
-      "i4|I4",
-      "ix|iX",
-      "x1|X1",
-      "x1|X2",
-      "x1|X3",
-      "x1|X4",
-      "x1|X5",
-      "x1|X6",
-      "x1|X7",
+      "i4|i4",
+      "iX|iX",
+      "X1|X1",
+      "X1|X2",
+      "X1|X3",
+      "X1|X4",
+      "X1|X5",
+      "X1|X6",
+      "X1|X7",
     ];
   } else if (s1.value == "Dacia") {
-    var optionArray = ["|--Model--", "duster|Duster"];
+    var optionArray = ["|--Model--", "Duster|Duster"];
   } else if (s1.value == "Dodge") {
-    var optionArray = [
-      "|--Model--",
-      "avenger|Avenger",
-      "challenger|Challenger",
-      "charger|Charger",
-    ];
+    var optionArray = ["|--Model--", "Durango|Durango"];
   } else if (s1.value == "Ford") {
     var optionArray = [
       "|--Model--",
-      "explorer|Explorer",
-      "f-150|F-150",
-      "ranger|Ranger",
+      "Explorer|Explorer",
+      "F-150|F-150",
+      "Ranger|Ranger",
     ];
   } else if (s1.value == "Jaguar") {
-    var optionArray = ["|--Model--", "f-pace|F-pace", "xf|XF"];
+    var optionArray = ["|--Model--", "F-pace|F-pace", "XF|XF"];
   } else if (s1.value == "Jeep") {
-    var optionArray = ["|--Model--", "wrangler|Wrangler"];
+    var optionArray = ["|--Model--", "Wrangler|Wrangler"];
   } else if (s1.value == "Land Rover") {
     var optionArray = [
       "|--Model--",
-      "defender|defender",
-      "discovery|Discovery",
-      "discovery sport|Discovery Sport",
-      "ranger rover evoque|Ranger Rover Evoque",
-      "velar|Velar",
+      "Defender|Defender",
+      "Discovery|Discovery",
+      "Discovery sport|Discovery Sport",
+      "Ranger Rover Evoque|Ranger Rover Evoque",
+      "Velar|Velar",
     ];
   } else if (s1.value == "Mercedes") {
     var optionArray = [
       "|--Model--",
-      "g-class|G-Class",
-      "glc-class|GLC-Class",
-      "gle-class|GLE-Class",
-      "v-class|V-Class",
-      "vito|Vito",
+      "G-class|G-Class",
+      "Glc-class|GLC-Class",
+      "Gle-class|GLE-Class",
+      "V-class|V-Class",
+      "Vito|Vito",
     ];
   } else if (s1.value == "MINI") {
-    var optionArray = [
-      "|--Model--",
-      "clubman|Clubman",
-      "Countryman|Countryman",
-    ];
+    var optionArray = ["|--Model--", "Countryman|Countryman"];
   } else if (s1.value == "Opel") {
     var optionArray = ["|--Model--", "grandland|Grandland"];
   } else if (s1.value == "Peugeot") {
@@ -79,31 +70,33 @@ function populate(s1, s2) {
     var optionArray = [
       "|--Model--",
       "991|991",
-      "cayenne|Cayenne",
-      "macan|Macan",
-      "panamera|Panamera",
-      "taycan|Taycan",
+      "Cayenne|Cayenne",
+      "Macan|Macan",
+      "Panamera|Panamera",
+      "Taycan|Taycan",
     ];
+  } else if (s1.value == "RAM") {
+    var optionArray = ["|--Model--", "1500|1500"];
   } else if (s1.value == "Seat") {
-    var optionArray = ["|--Model--", "leon|Leon"];
+    var optionArray = ["|--Model--", "Leon|Leon"];
   } else if (s1.value == "Skoda") {
-    var optionArray = ["|--Model--", "octavia|Octavia"];
+    var optionArray = ["|--Model--", "Octavia|Octavia"];
   } else if (s1.value == "Subaru") {
-    var optionArray = ["|--Model--", "impreza|Impreza", "outback|Outback"];
+    var optionArray = ["|--Model--", "Impreza|Impreza", "Outback|Outback"];
   } else if (s1.value == "Tesla") {
-    var optionArray = ["|--Model--", "model 3|Model 3", "model y|Model Y"];
+    var optionArray = ["|--Model--", "Model 3|Model 3", "Model y|Model Y"];
   } else if (s1.value == "Toyota") {
-    var optionArray = ["|--Model--", "rav4|RAV4"];
-  } else if (s1.value == "Wolkswagen") {
+    var optionArray = ["|--Model--", "Rav4|RAV4"];
+  } else if (s1.value == "Volkswagen") {
     var optionArray = [
       "|--Model--",
-      "golf|Golf",
-      "id.4|ID.4",
-      "t-roc|T-roc",
-      "tiguan|Tiguan",
+      "Golf|Golf",
+      "ID.4|ID.4",
+      "T-Roc|T-Roc",
+      "Tiguan|Tiguan",
     ];
   } else if (s1.value == "Volvo") {
-    var optionArray = ["|--Model--", "xc40|XC40", "xc60|XC60", "xc90|xc90"];
+    var optionArray = ["|--Model--", "XC40|XC40", "XC60|XC60", "XC90|xc90"];
   }
 
   for (var option in optionArray) {
