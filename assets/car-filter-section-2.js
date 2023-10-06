@@ -58,8 +58,8 @@ function populate(s1, s2) {
     var optionArray = [
       "|--Model--",
       "G-Class|G-Class",
-      "Glc-Class|GLC-Class",
-      "Gle-Class|GLE-Class",
+      "GLC-Class|GLC-Class",
+      "GLE-Class|GLE-Class",
       "V-Class|V-Class",
       "Vito|Vito",
     ];
@@ -91,7 +91,7 @@ function populate(s1, s2) {
     var optionArray = [
       "|--Model--",
       "Model 3|Model 3",
-      "Model y|Model Y",
+      "Model Y|Model Y",
       "Model X|Model X",
     ];
   } else if (s1.value == "Toyota") {
