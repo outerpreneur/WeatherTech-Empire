@@ -1,16 +1,15 @@
 {
   "sections": {
-    "9261d2ae-6703-4b00-aaf0-f78a5c7dcd27": {
-      "type": "car-hero-filter",
+    "8668db03-2f8c-4a58-8cda-f8dda50a5162": {
+      "type": "car-filter-section-2",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/floorlinerWT.png",
-        "section_height": 300,
+        "section_height": 500,
         "section_color": "#000000",
-        "image_position": "center",
-        "header_hero": "Vehicle FloorLiners, CargoLiners and SunShades",
-        "size_header": 30,
-        "subheader_hero": "Select your vehicle",
-        "size_subheader": 17
+        "image_position": "top",
+        "header_hero": "Select your vehicle",
+        "size_header": 26,
+        "subheader_hero": "Show fitting products for your Vehicle",
+        "size_subheader": 16
       }
     },
     "1678964004457b5f22": {
@@ -481,7 +480,7 @@
     }
   },
   "order": [
-    "9261d2ae-6703-4b00-aaf0-f78a5c7dcd27",
+    "8668db03-2f8c-4a58-8cda-f8dda50a5162",
     "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
