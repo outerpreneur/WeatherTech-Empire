@@ -1,0 +1,177 @@
+{% liquid
+
+%}
+<section class="search-bar-section">
+  <div class="search-bar-section-text">
+
+    <h1 class="search-bar-section-title">{{ section.settings.header_hero }}</h1>
+    <h3 class="search-bar-section-subheader">{{ section.settings.subheader_hero }}</h3>
+
+  </div>
+  <div class="search-bar-inner-section">
+    {% render 'car-filter-master' %}
+  </div>
+</section>
+
+{% liquid
+
+%}
+
+<style>
+  .search-bar-section {
+    font-family: "helvetica";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: {{ section.settings.section_color }}
+    ;
+    min-height: {{ section.settings.section_height }}
+    px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: {{ section.settings.image_position }}
+    ;
+    gap: 25px;
+  }
+
+
+  .search-bar-section-title {
+
+    color: #fff;
+    font-size: {{ section.settings.size_header }}
+    px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .search-bar-section-subheader {
+    color: #fff;
+    font-size: {{ section.settings.size_subheader }}
+    px;
+    text-align: center;
+    margin: 0;
+  }
+
+
+  .search-bar-container input {
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .shop-car-button {
+    background-color: #e32020;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+
+  }
+
+  .request-form-container button {
+    font-size: 12px;
+  }
+
+  @media(max-width: 800px) {
+    .search-bar-container {
+      width: 100%;
+    }
+    .search-bar-section-title {
+      font-size: 30px;
+    }
+
+    .search-bar-section-subheader {
+      font-size: 20px;
+    }
+    .search-bar-inner-section {
+      width: 100%;
+
+    }
+    .search-bar-section-text {
+      width: 90%;
+    }
+
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Car hero filter",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "choose image"
+      },
+      {
+        "type": "range",
+        "id": "section_height",
+        "label": "height range in pixels",
+        "max": 1200,
+        "min": 100,
+        "step": 50,
+        "default": 500,
+        "unit": "px"
+      },
+      {
+        "type": "color",
+        "id": "section_color",
+        "label": "Background color",
+        "default": "#000000"
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "image position",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      }, {
+        "type": "text",
+        "id": "header_hero",
+        "default": "Select your vehicle",
+        "label": "Title"
+      }, {
+        "type": "range",
+        "id": "size_header",
+        "min": 12,
+        "max": 44,
+        "step": 1,
+        "unit": "px",
+        "label": "Header Font size",
+        "default": 26
+      }, {
+        "type": "text",
+        "id": "subheader_hero",
+        "default": "Show fitting products for your Vehicle",
+        "label": "subtitle"
+      }, {
+        "type": "range",
+        "id": "size_subheader",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Subheader Font size",
+        "default": 16
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero hero filter"
+      }
+    ]
+  }
+{% endschema %}
