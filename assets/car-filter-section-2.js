@@ -1,3 +1,6 @@
+const searchBtn = document.getElementById("search-btn");
+const currentUrl = document.location;
+
 function populate(s1, s2) {
   var s1 = document.getElementById("slct1");
   var s2 = document.getElementById("slct2");
@@ -39,37 +42,38 @@ function populate(s1, s2) {
       "Ranger|Ranger",
     ];
   } else if (s1.value == "Jaguar") {
-    var optionArray = ["|--Model--", "F-pace|F-pace", "XF|XF"];
+    var optionArray = ["|--Model--", "XF|XF"];
   } else if (s1.value == "Jeep") {
     var optionArray = ["|--Model--", "Wrangler|Wrangler"];
-  } else if (s1.value == "Land Rover") {
+  } else if (s1.value == "Land-Rover") {
     var optionArray = [
       "|--Model--",
       "Defender|Defender",
       "Discovery|Discovery",
-      "Discovery sport|Discovery Sport",
+      "Discovery Sport|Discovery Sport",
       "Ranger Rover Evoque|Ranger Rover Evoque",
       "Velar|Velar",
     ];
-  } else if (s1.value == "Mercedes") {
+  } else if (s1.value == "Mercedes-Benz") {
     var optionArray = [
       "|--Model--",
-      "G-class|G-Class",
-      "Glc-class|GLC-Class",
-      "Gle-class|GLE-Class",
-      "V-class|V-Class",
+      "G-Class|G-Class",
+      "Glc-Class|GLC-Class",
+      "Gle-Class|GLE-Class",
+      "V-Class|V-Class",
       "Vito|Vito",
     ];
   } else if (s1.value == "MINI") {
     var optionArray = ["|--Model--", "Countryman|Countryman"];
   } else if (s1.value == "Opel") {
-    var optionArray = ["|--Model--", "grandland|Grandland"];
+    var optionArray = ["|--Model--", "Grandland|Grandland"];
   } else if (s1.value == "Peugeot") {
     var optionArray = ["|--Model--", "3008|3008"];
   } else if (s1.value == "Porsche") {
     var optionArray = [
       "|--Model--",
-      "991|991",
+      "911 (991)|911 (991)",
+      "991 (992)|991 (992)",
       "Cayenne|Cayenne",
       "Macan|Macan",
       "Panamera|Panamera",
@@ -84,9 +88,14 @@ function populate(s1, s2) {
   } else if (s1.value == "Subaru") {
     var optionArray = ["|--Model--", "Impreza|Impreza", "Outback|Outback"];
   } else if (s1.value == "Tesla") {
-    var optionArray = ["|--Model--", "Model 3|Model 3", "Model y|Model Y"];
+    var optionArray = [
+      "|--Model--",
+      "Model 3|Model 3",
+      "Model y|Model Y",
+      "Model X|Model X",
+    ];
   } else if (s1.value == "Toyota") {
-    var optionArray = ["|--Model--", "Rav4|RAV4"];
+    var optionArray = ["|--Model--", "RAV4|RAV4"];
   } else if (s1.value == "Volkswagen") {
     var optionArray = [
       "|--Model--",
@@ -96,7 +105,7 @@ function populate(s1, s2) {
       "Tiguan|Tiguan",
     ];
   } else if (s1.value == "Volvo") {
-    var optionArray = ["|--Model--", "XC40|XC40", "XC60|XC60", "XC90|xc90"];
+    var optionArray = ["|--Model--", "XC40|XC40", "XC60|XC60", "XC90|XC90"];
   }
 
   for (var option in optionArray) {
@@ -111,6 +120,7 @@ function populate(s1, s2) {
 function update() {
   var make = document.getElementById("slct1");
   var optionMake = make.options[make.selectedIndex];
+  searchBtn.href = "";
 
   var model = document.getElementById("slct2");
   var optionModel = model.options[model.selectedIndex];
@@ -120,4 +130,13 @@ function update() {
 
   document.getElementById("text").value =
     optionMake.text + " " + optionModel.text + " " + optionYear.text;
+}
+
+function buildLink() {
+  const searchUrl = `${currentUrl}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`;
+  console.log(
+    `${currentUrl}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`
+  );
+  searchBtn.classList.remove("filter-btn-visually-hidden");
+  searchBtn.href = searchUrl;
 }

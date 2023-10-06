@@ -9,7 +9,7 @@
 
   </div>
   <div class="search-bar-inner-section">
-    {% render 'car-filter-master' %}
+    {% render 'car-filter-snippet' %}
   </div>
 </section>
 
@@ -27,8 +27,7 @@
     margin: 0;
     background-color: {{ section.settings.section_color }}
     ;
-    min-height: {{ section.settings.section_height }}
-    px;
+    min-height: {{ section.settings.section_height }}px;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,16 +40,14 @@
   .search-bar-section-title {
 
     color: #fff;
-    font-size: {{ section.settings.size_header }}
-    px;
+    font-size: {{ section.settings.size_header }}px;
     text-align: center;
     margin-top: 20px;
   }
 
   .search-bar-section-subheader {
     color: #fff;
-    font-size: {{ section.settings.size_subheader }}
-    px;
+    font-size: {{ section.settings.size_subheader }}px;
     text-align: center;
     margin: 0;
   }

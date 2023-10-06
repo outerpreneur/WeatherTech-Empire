@@ -1,0 +1,92 @@
+{% liquid
+
+%}
+  <section class="search-filter-section">
+    <div class="search-filter-inner-section">
+      {% render 'car-filter-snippet-2' %}
+    </div>
+  </section>
+
+  {% liquid
+
+%}
+
+
+  {% schema %}
+    {
+      "name": "Car filter section 2",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "choose image"
+        },
+        {
+          "type": "range",
+          "id": "section_height",
+          "label": "height range in pixels",
+          "max": 1200,
+          "min": 100,
+          "step": 50,
+          "default": 500,
+          "unit": "px"
+        },
+        {
+          "type": "color",
+          "id": "section_color",
+          "label": "Background color",
+          "default": "#000000"
+        },
+        {
+          "type": "select",
+          "id": "image_position",
+          "label": "image position",
+          "options": [
+            {
+              "value": "top",
+              "label": "Top"
+            }, {
+              "value": "center",
+              "label": "Center"
+            }, {
+              "value": "bottom",
+              "label": "Bottom"
+            }
+          ]
+        }, {
+          "type": "text",
+          "id": "header_hero",
+          "default": "Select your vehicle",
+          "label": "Title"
+        }, {
+          "type": "range",
+          "id": "size_header",
+          "min": 12,
+          "max": 44,
+          "step": 1,
+          "unit": "px",
+          "label": "Header Font size",
+          "default": 26
+        }, {
+          "type": "text",
+          "id": "subheader_hero",
+          "default": "Show fitting products for your Vehicle",
+          "label": "subtitle"
+        }, {
+          "type": "range",
+          "id": "size_subheader",
+          "min": 12,
+          "max": 24,
+          "step": 1,
+          "unit": "px",
+          "label": "Subheader Font size",
+          "default": 16
+        }
+      ],
+      "presets": [
+        {
+          "name": "Car filter section 2"
+        }
+      ]
+    }
+  {% endschema %}

@@ -15,7 +15,7 @@
 <div id="dialog-wrapper">
   <dialog class="modales">
     <section class="search-bar">
-      {% render 'car-filter-master' %}
+      {% render 'car-filter-master-2' %}
       <svg
         class="close"
         width="15"
@@ -91,6 +91,77 @@
     padding: 2em;
   }
   }
+
+/* version two filter */
+
+.search-bar-section {
+  font-family: "helvetica";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: black;
+  padding: 1em;
+  max-width: 1350px;
+
+}
+
+.search-bar {
+  display: flex;
+  gap: 2em;
+}
+
+.search-bar form {}
+
+.search-bar-section select,
+.search-bar-section button {
+  padding: 0.5em;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.search-bar-section button {
+  background-color: #e32020;
+  color: white;
+  font-weight: none;
+  border: none;
+  padding: 0.5em 1em;
+}
+
+
+.request-form-container button {
+  font-size: 12px;
+}
+
+.filter-btn-visually-hidden {
+  display: none;
+}
+
+
+@media(max-width: 800px) {
+
+  .search-bar-inner-section {
+    width: 100%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    width: 100%
+  }
+  .search-bar form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+  }
+  .search-bar form select,
+  .search-bar button {
+    width: 100%;
+  }
+}
+
 {% endstyle %}
 
 <script>

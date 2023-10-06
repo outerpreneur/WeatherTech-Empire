@@ -1,0 +1,70 @@
+{% liquid
+
+%}
+<div class="search-bar">
+
+  <form action="">
+    <select
+      id="slct1"
+      name="slct1"
+      onchange="populate(this.id,'slct2')">
+      <option value="Make">Make</option>
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Dacia">Dacia</option>
+      <option value="Dodge">Dodge</option>
+      <option value="Ford">Ford</option>
+      <option value="Jaguar">Jaguar</option>
+      <option value="Jeep">Jeep</option>
+      <option value="Land-Rover">Land-Rover</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
+      <option value="MINI">MINI</option>
+      <option value="Opel">Opel</option>
+      <option value="Peugeot">Peugeot</option>
+      <option value="Porsche">Porsche</option>
+      <option value="RAM">RAM</option>
+      <option value="Seat">Seat</option>
+      <option value="Skoda">Skoda</option>
+      <option value="Subaru">Subaru</option>
+      <option value="Tesla">Tesla</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Volvo">Volvo</option>
+
+    </select>
+
+    <select id="slct2" name="slct2">
+      <option value="Make">Model</option>
+    </select>
+
+    <select id="year" onChange="buildLink()">
+      <option value="en">Year</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+    </select>
+
+
+  </form>
+  <a
+    href=""
+    id="search-btn"
+    class="filter-btn-visually-hidden">
+    <button>Search</button>
+  </a>
+</div>
+
+{% liquid
+
+%}

@@ -144,9 +144,9 @@
           sanitized_terms: sanitized_terms,
         %} 
         {% comment %} enable car filter solution {% endcomment %}
-        {%
+        {% comment %} {%
           render 'search-popup'
-        %}
+        %} {% endcomment %}
 
         {% if active_filters == true %}
           <div class="productgrid--filters">
