@@ -4,6 +4,8 @@ const currentUrl = document.location;
 function populate(s1, s2) {
   var s1 = document.getElementById("slct1");
   var s2 = document.getElementById("slct2");
+  s2.removeAttribute("disabled");
+  year.removeAttribute("disabled");
   s2.innerHTML = "";
   if (s1.value == "Audi") {
     var optionArray = [
