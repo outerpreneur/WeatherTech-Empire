@@ -11,6 +11,16 @@
   <div class="search-bar-inner-section">
     {% render 'car-filter-snippet-2' %}
   </div>
+<section class="search-bar-section">
+  <div class="search-bar-section-text">
+
+    <h1 class="search-bar-section-title">{{ section.settings.header_hero }}</h1>
+    <h3 class="search-bar-section-subheader">{{ section.settings.subheader_hero }}</h3>
+
+  </div>
+  <div class="search-bar-inner-section">
+    {% render 'car-filter-snippet-2' %}
+  </div>
   <div class="request-form-container">
     <a href="https://mauwi.com/pages/product-request-form" class="request-form-button"><button>{{ "hero_filter.no_search.cant_find" | t }}</button></a>
   <div>
@@ -20,6 +30,38 @@
 
 %}
 
+{% style %}
+
+  .search-bar-section {
+    font-family: "helvetica";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: {{ section.settings.section_color }};
+    min-height: {{ section.settings.section_color }}px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: {{ section.settings.image_position }};
+    gap: 25px;
+  }
+
+
+  .search-bar-section-title {
+
+    color: #fff;
+    font-size: {{ section.settings.size_header }}px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .search-bar-section-subheader {
+    color: #fff;
+    font-size: {{ section.settings.size_subheader }}px;
+    text-align: center;
+    margin: 0;
 {% style %}
 
   .search-bar-section {
