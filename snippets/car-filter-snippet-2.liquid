@@ -120,6 +120,13 @@
 
 
   @media(max-width: 800px) {
+
+    .search-bar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
     .search-bar form {
       display: flex;
       flex-direction: column;
@@ -127,9 +134,15 @@
       width: 100%;
       padding: 0 2em;
     }
-    .search-bar button {
-      color: black;
+    .search-bar a {
+      width: 85%;
+      margin: 0 auto;
     }
+
+    .search-bar button {
+      width: 100%;
+    }
+
     .search-bar select {
       color: black;
     }
