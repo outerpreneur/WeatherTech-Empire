@@ -1,619 +1,77 @@
 {% liquid
 
 %}
-<div class="search-bar-container">
-  <form action="{{ routes.search_url }}">
-    <select id="slct1" name="slct1" onchange="unblockYear()">
-      <option value="-Make-">{{ "hero_filter.filter.make" | t }}</option>
-      <option value="Audi">Audi</option>
-      <option value="BMW">BMW</option>
-      <option value="Dacia">Dacia</option>
-      <option value="Dodge">Dodge</option>
-      <option value="Ford">Ford</option>
-      <option value="Jaguar">Jaguar</option>
-      <option value="Jeep">Jeep</option>
-      <option value="Land Rover">Land Rover</option>
-      <option value="Mercedes">Mercedes</option>
-      <option value="MINI">MINI</option>
-      <option value="Opel">Opel</option>
-      <option value="Peugeot">Peugeot</option>
-      <option value="Porsche">Porsche</option>
-      <option value="RAM">RAM</option>
-      <option value="Seat">Seat</option>
-      <option value="Skoda">Skoda</option>
-      <option value="Subaru">Subaru</option>
-      <option value="Tesla">Tesla</option>
-      <option value="Toyota">Toyota</option>
-      <option value="Volkswagen">Volkswagen</option>
-      <option value="Volvo">Volvo</option>
-    </select>
+<section class="search-bar-section">
+  <div class="search-bar-section-text">
 
-    <select id="year" onchange="populate(this.id,'slct2')" disabled>
-      <option value="en">{{ "hero_filter.filter.year" | t }}</option>
-      <option value="2023">2023</option>
-      <option value="2022">2022</option>
-      <option value="2021">2021</option>
-      <option value="2020">2020</option>
-      <option value="2019">2019</option>
-      <option value="2018">2018</option>
-      <option value="2017">2017</option>
-      <option value="2016">2016</option>
-    </select>
+    <h1 class="search-bar-section-title">{{ section.settings.header_hero }}</h1>
+    <h3 class="search-bar-section-subheader">{{ section.settings.subheader_hero }}</h3>
 
-    <select
-      id="slct2"
-      name="slct2"
-      onChange="update()"
-      onchange="unblockText()"
-      disabled
-    >
-      <option value="Make">{{ "hero_filter.filter.model" | t }}</option>
-    </select>
-    <input
-      type="text"
-      placeholder="{{ "hero_filter.search.main_input" | t }}"
-      name="q"
-      id="text"
-      class="text-bar"
-    >
-    <input class="shop-car-button" type="submit" value="{{ "hero_filter.search.button" | t }}">
-  </form>
+  </div>
+  <div class="search-bar-inner-section">
+    {% render 'car-filter-snippet-2' %}
+  </div>
   <div class="request-form-container">
     <a href="https://mauwi.com/pages/product-request-form" class="request-form-button"><button>{{ "hero_filter.no_search.cant_find" | t }}</button></a>
   <div>
-</div>
+</section>
 
 {% liquid
 
 %}
 
-<script>
-      function populate(s1,s2){
-        var s1 = document.getElementById("slct1");
-        var s2 = document.getElementById("slct2");
-        const yearValue = document.getElementById("year")
-        s2.innerHTML = "";
-          s1.removeAttribute('disabled');
-          s2.removeAttribute('disabled');
+{% style %}
 
-      {% comment %} Universal {% endcomment %}
-      if(s1.value == "Universal" && yearValue.value == "2016"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Universal" && yearValue.value == "2017"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Universal" && yearValue.value == "2018"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Universal" && yearValue.value == "2019"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "Universal" && yearValue.value == "2020"){
-        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q2|Q2","q7|Q7"];
-      }else if(s1.value == "Universal" && yearValue.value == "2021"){
-        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q3|Q3","q2|Q2","q7|Q7"];
-      }else if(s1.value == "Universal" && yearValue.value == "2022"){
-        var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3","q2|Q2", "q8|Q8","q7|Q7"];
-      }else if(s1.value == "Universal" && yearValue.value == "2023"){
-        var optionArray = ["|Model","e-tron|E-tron","e-tron GT|E-tron GT","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3","q2|Q2","q8|Q8",,"q7|Q7"];
-      }
-
-      {% comment %} Audi {% endcomment %}
-      if(s1.value == "Audi" && yearValue.value == "2016"){
-        var optionArray = ["|Model","q5|Q5","sq5|SQ5","q2|Q2","q7|Q7", "rs5|RS5","q3|Q3","q2|Q2","a3|A3","a3|S3","rs3|RS3"];
-      } else if(s1.value == "Audi" && yearValue.value == "2017"){
-        var optionArray = ["|Model","q5|Q5","sq5|SQ5","q7|Q7","rs5|RS5","q3|Q3","q2|Q2","a3|A3","a3|S3","rs3|RS3"];
-      } else if(s1.value == "Audi" && yearValue.value == "2018"){
-        var optionArray = ["|Model","q5|Q5","sq5|SQ5","q2|Q2","q7|Q7","rs5|RS5","q3|Q3","q2|Q2","a3|A3","a3|S3","rs3|RS3"];
-      } else if(s1.value == "Audi" && yearValue.value == "2019"){
-        var optionArray = ["|Model","q5|Q5","sq5|SQ5","q2|Q2","q7|Q7","q8|Q8","rs5|RS5","q3|Q3","q2|Q2","a3|A3","a3|S3","rs3|RS3"];
-      } else if(s1.value == "Audi" && yearValue.value == "2020"){
-        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","q3|Q3","q8|Q8","sq5|SQ5","q2|Q2","q7|Q7", "s3|S3","rs5|RS5"];
-      }else if(s1.value == "Audi" && yearValue.value == "2021"){
-        var optionArray = ["|Model","e-tron GT|E-tron GT","q5|Q5","q8|Q8","sq5|SQ5","q3|Q3","q2|Q2","q7|Q7","s3|S3","rs5|RS5"];
-      }else if(s1.value == "Audi" && yearValue.value == "2022"){
-        var optionArray = ["|Model","e-tron|E-tron","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3","q2|Q2","q8|Q8","q7|Q7","s3|S3","rs5|RS5"];
-      }else if(s1.value == "Audi" && yearValue.value == "2023"){
-        var optionArray = ["|Model","e-tron|E-tron","q5|Q5","sq5|SQ5","q4 e-tron|Q4 e-tron","q3|Q3","q2|Q2","q8|Q8","q7|Q7","s3|S3","rs5|RS5"];
-      }
-
-    {% comment %} BMW {% endcomment %}
-      if(s1.value == "BMW" && yearValue.value == "2016"){
-        var optionArray = ["|Model","no match| no match"];
-      } else if(s1.value == "BMW" && yearValue.value == "2017"){
-        var optionArray = ["|Model","x3|X3","x2|X2","x1|X1"];
-      } else if(s1.value == "BMW" && yearValue.value == "2018"){
-        var optionArray = ["|Model","x7|X7","x6|X6","x5|X5","x2|X2","x1|X1"];
-      } else if(s1.value == "BMW" && yearValue.value == "2019"){
-        var optionArray = ["|Model","x7|X7","x6|X6","x5|X5","x3|X3","x2|X2","x1|X1"];
-      } else if(s1.value == "BMW" && yearValue.value == "2020"){
-        var optionArray = ["|Model","x7|X7","x6|X6","x5|X5","x3|X3","x2|X2","x1|X1"];
-      }else if(s1.value == "BMW" && yearValue.value == "2021"){
-        var optionArray = ["|Model","x7|X7","x6|X6","x5|X5","x3|X3","x2|X2","x1|X1","i4|I4"];
-      }else if(s1.value == "BMW" && yearValue.value == "2022"){
-        var optionArray = ["|Model","x7|X7","x6|X6","x5|X5","x4|X4","x3|X3","x2|X2","x1|X1","i4|I4","ix|iX"];
-      }else if(s1.value == "BMW" && yearValue.value == "2023"){
-        var optionArray = ["|Model","x7|X7","x6|X6","x5|X5","x4|X4","x3|X3","x2|X2","x1|X1","i4|I4","ix|iX"];
-      }
-
-    {% comment %} Dacia {% endcomment %}
-    if(s1.value == "Dacia" && yearValue.value == "2016"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Dacia" && yearValue.value == "2017"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Dacia" && yearValue.value == "2018"){
-      var optionArray = ["|Model","duster|Duster"];
-    } else if(s1.value == "Dacia" && yearValue.value == "2019"){
-      var optionArray = ["|Model","duster|Duster"];
-    } else if(s1.value == "Dacia" && yearValue.value == "2020"){
-      var optionArray = ["|Model","duster|Duster"];
-    }else if(s1.value == "Dacia" && yearValue.value == "2021"){
-      var optionArray = ["|Model","duster|Duster"];
-    }else if(s1.value == "Dacia" && yearValue.value == "2022"){
-      var optionArray = ["|Model","duster|Duster"];
-    }else if(s1.value == "Dacia" && yearValue.value == "2023"){
-      var optionArray = ["|Model","duster|Duster"];
-    }
-
-    if(s1.value == "Dodge" && yearValue.value == "2016"){
-        var optionArray = ["|Model","durango|Durango"];
-    } else if(s1.value == "Dodge" && yearValue.value == "2017"){
-        var optionArray = ["|Model","durango|Durango"];
-    } else if(s1.value == "Dodge" && yearValue.value == "2018"){
-        var optionArray = ["|Model","durango|Durango"];
-    } else if(s1.value == "Dodge" && yearValue.value == "2019"){
-        var optionArray = ["|Model","durango|Durango"];
-    } else if(s1.value == "Dodge" && yearValue.value == "2020"){
-      var optionArray = ["|Model","durango|Durango"];
-    }else if(s1.value == "Dodge" && yearValue.value == "2021"){
-      var optionArray = ["|Model","no match| no match"];
-    }else if(s1.value == "Dodge" && yearValue.value == "2022"){
-      var optionArray = ["|Model","no match| no match"];
-    }else if(s1.value == "Dodge" && yearValue.value == "2023"){
-      var optionArray = ["|Model","no match| no match"];
-    }
-
-
-    {% comment %} Ford {% endcomment %}
-    if(s1.value == "Ford" && yearValue.value == "2016"){
-      var optionArray = ["|Model","ranger|Ranger"];
-    } else if(s1.value == "Ford" && yearValue.value == "2017"){
-      var optionArray = ["|Model","ranger|Ranger"];
-    } else if(s1.value == "Ford" && yearValue.value == "2018"){
-      var optionArray = ["|Model","ranger|Ranger"];
-    } else if(s1.value == "Ford" && yearValue.value == "2019"){
-      var optionArray = ["|Model","ranger|Ranger"];
-    } else if(s1.value == "Ford" && yearValue.value == "2020"){
-      var optionArray = ["|Model","ranger|Ranger"];
-    }else if(s1.value == "Ford" && yearValue.value == "2021"){
-      var optionArray = ["|Model","ranger|Ranger","f-150|F-150","explorer|Explorer"];
-    }else if(s1.value == "Ford" && yearValue.value == "2022"){
-      var optionArray = ["|Model","ranger|Ranger","f-150|F-150","explorer|Explorer"];
-    }else if(s1.value == "Ford" && yearValue.value == "2023"){
-      var optionArray = ["|Model","ranger|Ranger","f-150|F-150","explorer|Explorer"];
-    }
-
-    {% comment %} Jeep {% endcomment %}
-    if(s1.value == "Jeep" && yearValue.value == "2016"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Jeep" && yearValue.value == "2017"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Jeep" && yearValue.value == "2018"){
-      var optionArray = ["|Model","wrangler|Wrangler"];
-    } else if(s1.value == "Jeep" && yearValue.value == "2019"){
-      var optionArray = ["|Model","wrangler|Wrangler"];
-    } else if(s1.value == "Jeep" && yearValue.value == "2020"){
-      var optionArray = ["|Model","wrangler|Wrangler"];
-    }else if(s1.value == "Jeep" && yearValue.value == "2021"){
-      var optionArray = ["|Model","wrangler|Wrangler"];
-    }else if(s1.value == "Jeep" && yearValue.value == "2022"){
-      var optionArray = ["|Model","wrangler|Wrangler"];
-    }else if(s1.value == "Jeep" && yearValue.value == "2023"){
-      var optionArray = ["|Model","wrangler|Wrangler"];
-    }
-
-    {% comment %} Land Rover {% endcomment %}
-    if(s1.value == "Land Rover" && yearValue.value == "2016"){
-      var optionArray = ["|Model","no match| no match","lr4/discovery|LR4/Discovery"];
-    } else if(s1.value == "Land Rover" && yearValue.value == "2017"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque","lr4/discovery|LR4/Discovery"];
-    } else if(s1.value == "Land Rover" && yearValue.value == "2018"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque","lr4/discovery|LR4/Discovery"];
-    } else if(s1.value == "Land Rover" && yearValue.value == "2019"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque","lr4/discovery|LR4/Discovery"];
-    } else if(s1.value == "Land Rover" && yearValue.value == "2020"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque"];
-    }else if(s1.value == "Land Rover" && yearValue.value == "2021"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque"];         
-    }else if(s1.value == "Land Rover" && yearValue.value == "2022"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque"];
-    }else if(s1.value == "Land Rover" && yearValue.value == "2023"){
-      var optionArray = ["|Model","discovery|Discovery","velar|Velar","defender|Defender","discovery sport|Discovery Sport","range rover evoque|Range Rover Evoque"];
-    }
-
-    {% comment %} Jaguar {% endcomment %}
-    if(s1.value == "Jaguar" && yearValue.value == "2016"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    } else if(s1.value == "Jaguar" && yearValue.value == "2017"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    } else if(s1.value == "Jaguar" && yearValue.value == "2018"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    } else if(s1.value == "Jaguar" && yearValue.value == "2019"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    } else if(s1.value == "Jaguar" && yearValue.value == "2020"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    }else if(s1.value == "Jaguar" && yearValue.value == "2021"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    }else if(s1.value == "Jaguar" && yearValue.value == "2022"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    }else if(s1.value == "Jaguar" && yearValue.value == "2023"){
-      var optionArray = ["|Model","f-pace| F-pace","xf|XF"];
-    }
-
-    {% comment %} Peugeot {% endcomment %}
-
-    if(s1.value == "Peugeot" && yearValue.value == "2016"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2017"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2018"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2019"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2020"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2021"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2022"){
-      var optionArray = ["|Model","3008|3008"];
-    } else if(s1.value == "Peugeot" && yearValue.value == "2023"){
-      var optionArray = ["|Model","3008|3008"];
-    }
-
-    {% comment %} Mercedes-benz {% endcomment %}
-
-    if(s1.value == "Mercedes" && yearValue.value == "2016"){
-      var optionArray = ["|Model","glc class|GLC Class","v-class|V-Class","vito (w447)|Vito (W447)"];
-    } else if(s1.value == "Mercedes" && yearValue.value == "2017"){
-      var optionArray = ["|Model","glc class|GLC Class","v-class|V-Class","vito (w447)|Vito (W447)"];
-    } else if(s1.value == "Mercedes" && yearValue.value == "2018"){
-      var optionArray = ["|Model","glc-class|GLC-Class","v-class|V-Class","vito (w447)|Vito (W447)"];
-    } else if(s1.value == "Mercedes" && yearValue.value == "2019"){
-      var optionArray = ["|Model","glc-class|GLC-Class","g-class|G-Class","v-class|V-Class","vito (w447)|Vito (W447)"];
-    } else if(s1.value == "Mercedes" && yearValue.value == "2020"){
-      var optionArray = ["|Model","glc-class|GLC-Class","g-class|G-Class","gle-class c167 couple|GLE-Class C167 Coupe","gle-class(suv)|GLE-Class (SUV)","vito (w447)|Vito (W447)","v-class|V-Class"];
-    }else if(s1.value == "Mercedes" && yearValue.value == "2021"){
-      var optionArray = ["|Model","glc-class|GLC-Class","g-class|G-Class","gle-class c167 couple|GLE-Class C167 Coupe","gle-class(suv)|GLE-Class (SUV)","vito (w447)|Vito (W447)","v-class|V-Class"];
-    }else if(s1.value == "Mercedes" && yearValue.value == "2022"){
-      var optionArray = ["|Model","glc-class|GLC-Class","g-class|G-Class","gle-class c167 couple|GLE-Class C167 Coupe","gle-class(suv)|GLE-Class (SUV)","vito (w447)|Vito (W447)","v-class|V-Class"];
-    }else if(s1.value == "Mercedes" && yearValue.value == "2023"){
-      var optionArray = ["|Model","glc-class|GLC-Class","g-class|G-Class","gle-class c167 couple|GLE-Class C167 Coupe","gle-class(suv)|GLE-Class (SUV)","vito (w447)|Vito (W447)","v-class|V-Class"];
-    }
-
-  {% comment %} Mini {% endcomment %}
-
-    if(s1.value == "MINI" && yearValue.value == "2016"){
-      var optionArray = ["|Model","clubman| Clubman"];
-    } else if(s1.value == "MINI" && yearValue.value == "2017"){
-      var optionArray = ["|Model","clubman| Clubman"];
-    } else if(s1.value == "MINI" && yearValue.value == "2018"){
-      var optionArray = ["|Model","countryman| Countryman","clubman| Clubman"];
-    } else if(s1.value == "MINI" && yearValue.value == "2019"){
-      var optionArray = ["|Model","countryman| Countryman","clubman| Clubman"];
-    } else if(s1.value == "MINI" && yearValue.value == "2020"){
-      var optionArray = ["|Model","countryman| Countryman","clubman| Clubman"];
-    } else if(s1.value == "MINI" && yearValue.value == "2021"){
-      var optionArray = ["|Model","countryman| Countryman"];
-    } else if(s1.value == "MINI" && yearValue.value == "2022"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "MINI" && yearValue.value == "2023"){
-      var optionArray = ["|Model","no match| no match"];
-    }
-
-  {% comment %} Opel {% endcomment %}
-
-  if(s1.value == "Opel" && yearValue.value == "2016"){
-    var optionArray = ["|Model","no match| no match"];
-  } else if(s1.value == "Opel" && yearValue.value == "2017"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  } else if(s1.value == "Opel" && yearValue.value == "2018"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  } else if(s1.value == "Opel" && yearValue.value == "2019"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  } else if(s1.value == "Opel" && yearValue.value == "2020"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  } else if(s1.value == "Opel" && yearValue.value == "2021"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  } else if(s1.value == "Opel" && yearValue.value == "2022"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  } else if(s1.value == "Opel" && yearValue.value == "2023"){
-    var optionArray = ["|Model","grandland|Grandland"];
-  }
-
-{% comment %} Opel {% endcomment %}
-
-if(s1.value == "RAM" && yearValue.value == "2016"){
-  var optionArray = ["|Model","1500|1500"];
-} else if(s1.value == "RAM" && yearValue.value == "2017"){
-  var optionArray = ["|Model","1500|1500"];
-} else if(s1.value == "RAM" && yearValue.value == "2018"){
-  var optionArray = ["|Model","1500|1500"];
-} else if(s1.value == "RAM" && yearValue.value == "2019"){
-  var optionArray = ["|Model","1500|1500"];
-} else if(s1.value == "RAM" && yearValue.value == "2020"){
-  var optionArray = ["|Model","1500|1500"];
-} else if(s1.value == "RAM" && yearValue.value == "2021"){
-  var optionArray = ["|Model","no match| no match"];
-} else if(s1.value == "RAM" && yearValue.value == "2022"){
-  var optionArray = ["|Model","no match| no match"];
-} else if(s1.value == "RAM" && yearValue.value == "2023"){
-  var optionArray = ["|Model","no match| no match"];
-}
-
-      {% comment %} Porsche {% endcomment %}
-
-      if(s1.value == "Porsche" && yearValue.value == "2016"){
-        var optionArray = ["|Model","macan|Macan", "taycan|Taycan","911|911"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2017"){
-        var optionArray = ["|Model","macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2018"){
-        var optionArray = ["|Model","cayenne| Cayenne", "macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2019"){
-        var optionArray = ["|Model","cayenne| Cayenne", "macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2020"){
-        var optionArray = ["|Model","cayenne| Cayenne", "macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2021"){
-        var optionArray = ["|Model","cayenne| Cayenne", "macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2022"){
-        var optionArray = ["|Model","cayenne| Cayenne", "macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      } else if(s1.value == "Porsche" && yearValue.value == "2023"){
-        var optionArray = ["|Model","cayenne| Cayenne", "macan|Macan","taycan|Taycan","911|911","panamera|Panamera"];
-      }
-
-
-
-    {% comment %} Seat {% endcomment %}
-
-    if(s1.value == "Seat" && yearValue.value == "2016"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2017"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2018"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2019"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2020"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2021"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2022"){
-      var optionArray = ["|Model","leon|Leon"];
-    } else if(s1.value == "Seat" && yearValue.value == "2023"){
-      var optionArray = ["|Model","leon|Leon"];
-    }
-
-
-      {% comment %} Skoda {% endcomment %}
-
-      if(s1.value == "Skoda" && yearValue.value == "2016"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2017"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2018"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2019"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2020"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2021"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2022"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      } else if(s1.value == "Skoda" && yearValue.value == "2023"){
-        var optionArray = ["|Model","octavia|Octavia"];
-      }
-
-    {% comment %} Subaru {% endcomment %}
-
-      if(s1.value == "Subaru" && yearValue.value == "2016"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    } else if(s1.value == "Subaru" && yearValue.value == "2017"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    } else if(s1.value == "Subaru" && yearValue.value == "2018"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    } else if(s1.value == "Subaru" && yearValue.value == "2019"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    } else if(s1.value == "Subaru" && yearValue.value == "2020"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    }else if(s1.value == "Subaru" && yearValue.value == "2021"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    }else if(s1.value == "Subaru" && yearValue.value == "2022"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    }else if(s1.value == "Subaru" && yearValue.value == "2023"){
-        var optionArray = ["|Model","impreza|Impreza"];
-        var optionArray = ["|Model","outback|Outback"];
-    }
-
-
-      {% comment %} Totoya {% endcomment %}
-
-      if(s1.value == "Toyota" && yearValue.value == "2016"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2017"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2018"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2019"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2020"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2021"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2022"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      } else if(s1.value == "Toyota" && yearValue.value == "2023"){
-        var optionArray = ["|Model","rav4 hybrid|RAV4 Hybrid"];
-      }
-
-    {% comment %} Tesla {% endcomment %}
-
-    if(s1.value == "Tesla" && yearValue.value == "2016"){
-      var optionArray = ["|Model","no match| no match"];
-    } else if(s1.value == "Tesla" && yearValue.value == "2017"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    } else if(s1.value == "Tesla" && yearValue.value == "2018"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    } else if(s1.value == "Tesla" && yearValue.value == "2019"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    } else if(s1.value == "Tesla" && yearValue.value == "2020"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    }else if(s1.value == "Tesla" && yearValue.value == "2021"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    }else if(s1.value == "Tesla" && yearValue.value == "2022"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    }else if(s1.value == "Tesla" && yearValue.value == "2023"){
-      var optionArray = ["|Model","model 3|Model 3","model y|Model Y"];
-    }
-
-     {% comment %} Volvo {% endcomment %}
-
-    if(s1.value == "Volvo" && yearValue.value == "2016"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","x90|XC90"];
-    } else if(s1.value == "Volvo" && yearValue.value == "2017"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","xc90|XC90"];
-    } else if(s1.value == "Volvo" && yearValue.value == "2018"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","xc90|XC90"];
-    } else if(s1.value == "Volvo" && yearValue.value == "2019"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","xc90|XC90"];
-    } else if(s1.value == "Volvo" && yearValue.value == "2020"){
-      var optionArray = ["|Model","xc40|XC40","xc60)|XC60","xc90|XC90"];
-    }else if(s1.value == "Volvo" && yearValue.value == "2021"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","xc90|XC90"];
-    }else if(s1.value == "Volvo" && yearValue.value == "2022"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","xc90|XC90"];
-    }else if(s1.value == "Volvo" && yearValue.value == "2023"){
-      var optionArray = ["|Model","xc40|XC40","xc60|XC60","xc90|XC90"];
-    }
-
-    {% comment %} Volkswagen {% endcomment %}
-
-    if(s1.value == "Volkswagen" && yearValue.value == "2016"){
-    var optionArray = ["|Model","t-roc|T-Roc","tiguan|tiguan","golf|Golf","e-golf|E-Golf"];
-  } else if(s1.value == "Volkswagen" && yearValue.value == "2017"){
-    var optionArray = ["|Model","t-roc|T-Roc","tiguan|tiguan","golf|Golf","e-golf|E-Golf"];
-  } else if(s1.value == "Volkswagen" && yearValue.value == "2018"){
-    var optionArray = ["|Model","t-roc|T-Roc","tiguan|tiguan","golf|Golf","e-golf|E-Golf"];
-  } else if(s1.value == "Volkswagen" && yearValue.value == "2019"){
-    var optionArray = ["|Model","t-roc|T-Roc","tiguan|tiguan","golf|Golf","e-golf|E-Golf"];
-  } else if(s1.value == "Volkswagen" && yearValue.value == "2020"){
-    var optionArray = ["|Model","id.4|ID.4","t-roc|T-Roc","tiguan|Tiguan","golf|Golf"];
-  }else if(s1.value == "Volkswagen" && yearValue.value == "2021"){
-    var optionArray = ["|Model","id.4|ID.4","t-roc|T-Roc","tiguan|Tiguan","golf|Golf" ];
-  }else if(s1.value == "Volkswagen" && yearValue.value == "2022"){
-    var optionArray = ["|Model","id.4|ID.4","t-roc|T-Roc","tiguan|Tiguan","golf|Golf"];
-  }else if(s1.value == "Volkswagen" && yearValue.value == "2023"){
-    var optionArray = ["|Model","id.4|ID.4","t-Roc|T-rock","tiguan|Tiguan","golf|Golf"];
-  }
-
-  optionArray.sort(function(a, b) {
-      var aText = a.split("|")[1];
-      var bText = b.split("|")[1];
-      // Move the "Model" option to the top
-      if (aText.toLowerCase() === "model") return -1;
-      if (bText.toLowerCase() === "model") return 1;
-      // Check if both aText and bText are numbers
-      if (!isNaN(aText) && !isNaN(bText)) {
-        return Number(aText) - Number(bText);
-      }
-      // Check if only aText is a number
-      if (!isNaN(aText)) {
-        return -1;
-      }
-      // Check if only bText is a number
-      if (!isNaN(bText)) {
-        return 1;
-      }
-      // Both are non-numeric strings, sort them alphabetically
-      return aText.localeCompare(bText);
-    });
-
-
-  for(var option in optionArray){
-    var pair = optionArray[option].split("|");
-    var newOption = document.createElement("option");
-    newOption.value = pair[0];
-    newOption.innerHTML = pair[1];
-    s2.options.add(newOption);
-    text.placeholder = "Search vehicle"
-  }
-}
-
-function update () {
-
-  var make = document.getElementById('slct1');
-var optionMake = make.options[make.selectedIndex];
-
-var model = document.getElementById('slct2');
-var optionModel = model.options[model.selectedIndex];
-
-const year = document.getElementById('year');
-const optionYear = year.options[year.selectedIndex];
-
-
-document.getElementById('text').value = optionMake.text + " " + optionModel.text + " " + optionYear.text;
-
-}
-
-function unblockYear() {
-const yearValue = document.getElementById("year")
-yearValue.removeAttribute('disabled');
-}
-</script>
-
-<style>
-  .search-bar-container {
-      font-family: "helvetica";
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      gap: 1rem;
+  .search-bar-section {
+    font-family: "helvetica";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: {{ section.settings.section_color }};
+    min-height: {{ section.settings.section_color }}px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: {{ section.settings.image_position }};
+    gap: 25px;
   }
 
 
-  .search-bar-container select {
-      padding: 1em;
-      appearance: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
+  .search-bar-section-title {
+
+    color: #fff;
+    font-size: {{ section.settings.size_header }}px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .search-bar-section-subheader {
+    color: #fff;
+    font-size: {{ section.settings.size_subheader }}px;
+    text-align: center;
+    margin: 0;
+  }
+
 
   .search-bar-container input {
-      padding: 1em;
-      border-radius: 5px;
-  }
-
-  .search-bar-container input {
-      padding: 1em;
-      appearance: none;
-  }
-
-  .search-bar-container select {
-      appearance:none;
-      padding: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
   }
 
   .shop-car-button {
-      background-color: #e32020;
-      border: none;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
+    background-color: #e32020;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+
+  }
+
+  .request-form-container button {
+    font-size: 12px;
   }
 
   .request-form-container {
@@ -632,20 +90,116 @@ yearValue.removeAttribute('disabled');
   }
 
 
+  .filter-btn-visually-hidden {
+    display: none;
+  }
 
-    @media(max-width: 800px) {
-      .search-bar-container form {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-        width: 100%;
-        padding: 0 2em;
-      }
-      .search-bar-container button {
-        color:black;
-      }
-      .search-bar-container select {
-        color:black;
-      }
+
+  @media(max-width: 800px) {
+    .search-bar-container {
+      width: 100%;
     }
-</style>
+    .search-bar-section-title {
+      font-size: 30px;
+    }
+
+    .search-bar-section-subheader {
+      font-size: 20px;
+    }
+    .search-bar-inner-section {
+      width: 100%;
+
+    }
+    .search-bar-section-text {
+      width: 90%;
+    }
+
+  }
+
+
+
+  
+{% endstyle %}
+
+{% schema %}
+  {
+    "name": "Car filter section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "choose image"
+      },
+      {
+        "type": "range",
+        "id": "section_height",
+        "label": "height range in pixels",
+        "max": 1200,
+        "min": 100,
+        "step": 50,
+        "default": 500,
+        "unit": "px"
+      },
+      {
+        "type": "color",
+        "id": "section_color",
+        "label": "Background color",
+        "default": "#000000"
+      },
+      {
+        "type": "select",
+        "id": "image_position",
+        "label": "image position",
+        "options": [
+          {
+            "value": "top",
+            "label": "Top"
+          }, {
+            "value": "center",
+            "label": "Center"
+          }, {
+            "value": "bottom",
+            "label": "Bottom"
+          }
+        ]
+      }, 
+      {
+        "type": "text",
+        "id": "header_hero",
+        "default": "Select your vehicle",
+        "label": "Title"
+      },
+       {
+        "type": "range",
+        "id": "size_header",
+        "min": 12,
+        "max": 44,
+        "step": 1,
+        "unit": "px",
+        "label": "Header Font size",
+        "default": 26
+      }, 
+      {
+        "type": "text",
+        "id": "subheader_hero",
+        "default": "Show fitting products for your Vehicle",
+        "label": "subtitle"
+      }, 
+      {
+        "type": "range",
+        "id": "size_subheader",
+        "min": 12,
+        "max": 24,
+        "step": 1,
+        "unit": "px",
+        "label": "Subheader Font size",
+        "default": 16
+      }
+    ],
+    "presets": [
+      {
+        "name": "car filter section"
+      }
+    ]
+  }
+{% endschema %}
