@@ -1,17 +1,5 @@
 {
   "sections": {
-    "80ac1b59-e1ef-480b-af56-a4249c373fc9": {
-      "type": "car-filter-section-2",
-      "settings": {
-        "section_height": 500,
-        "section_color": "#000000",
-        "image_position": "top",
-        "header_hero": "Select your vehicle",
-        "size_header": 26,
-        "subheader_hero": "Show fitting products for your Vehicle",
-        "size_subheader": 16
-      }
-    },
     "main": {
       "type": "static-search",
       "blocks": {
@@ -52,7 +40,6 @@
     }
   },
   "order": [
-    "80ac1b59-e1ef-480b-af56-a4249c373fc9",
     "main",
     "24636bc1-287f-44d4-8970-761078c9819f"
   ]
