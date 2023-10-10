@@ -733,7 +733,8 @@
         "merchandise_quantity_label": {
           "standard": "%{count} éléments",
           "additional": "+%{count} de plus"
-        }
+        },
+        "split_cart_merchandise_shipment_number": "Expédition %{number} de %{total}"
       }
     }
   },
