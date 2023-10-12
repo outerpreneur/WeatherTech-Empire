@@ -141,7 +141,7 @@ function buildLink() {
   const searchUrl = `https://weathertechch.com/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`;
   const pathName = currentUrl.pathName;
   const completeUrl = currentUrl + pathName;
-  console.log(currentUrl);
+  console.log(`${currentUrl}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`;);
   // console.log(
   //   `${currentUrl}+${pathName}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`
   // );
