@@ -6,6 +6,7 @@ function populate(s1, s2) {
   var s2 = document.getElementById("slct2");
   s2.removeAttribute("disabled");
   year.removeAttribute("disabled");
+  removeBtn();
   s2.innerHTML = "";
   if (s1.value == "Audi") {
     var optionArray = [
@@ -143,4 +144,8 @@ function buildLink() {
   );
   searchBtn.classList.remove("filter-btn-visually-hidden");
   searchBtn.href = searchUrl;
+}
+
+function removeBtn() {
+  searchBtn.classList.add("filter-btn-visually-hidden");
 }

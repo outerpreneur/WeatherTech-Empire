@@ -25,104 +25,110 @@
 %}
 
 {% style %}
-  .search-bar-section {
-    font-family: "helvetica";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color: {{ section.settings.section_color }};
-    min-height: {{ section.settings.section_height_desktop }}px;
-    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: {{ section.settings.image_position }};
-    gap: 25px;
-  }
+  /* Search filter section styles */
 
-
-  .search-bar-section-title {
-
-    color: #fff;
-    font-size: {{ section.settings.size_header }}px;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .search-bar-section-subheader {
-    color: #fff;
-    font-size: {{ section.settings.size_subheader }}px;
-    text-align: center;
-    margin: 0;
-  }
-
-
-  .search-bar-container input {
-    padding: 1em;
-    border-radius: 5px;
-    border: none;
-  }
-
-  .shop-car-button {
-    background-color: #e32020;
-    border: none;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-
-  }
-
-  .request-form-container button {
-    font-size: 12px;
-  }
-
-  .request-form-container {
-    color: white;
-    font-size: 1.1rem;
-    font-family: "helvetica";
-  }
-
-
-  .request-form-button button {
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    padding: 5px 10px;
-    font-weight: 500;
-    color: black;
-  }
-
-
-  .filter-btn-visually-hidden {
-    display: none;
-  }
-
-
-  @media(max-width: 800px) {
     .search-bar-section {
-      min-height: {{ section.settings.section_height_mobile }}px;
+      font-family: "helvetica";
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      background-color: {{ section.settings.section_color }};
+      min-height: {{ section.settings.section_height_desktop }}px;
+      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: {{ section.settings.image_position }};
+      gap: 25px;
     }
 
-    .search-bar-container {
-      width: 100%;
-    }
+
     .search-bar-section-title {
-      font-size: 30px;
+
+      color: #fff;
+      font-size: {{ section.settings.size_header }}px;
+      text-align: center;
+      margin-top: 20px;
     }
 
     .search-bar-section-subheader {
-      font-size: 20px;
-    }
-    .search-bar-inner-section {
-      width: 100%;
-
-    }
-    .search-bar-section-text {
-      width: 90%;
+      color: #fff;
+      font-size: {{ section.settings.size_subheader }}px;
+      text-align: center;
+      margin: 0;
     }
 
-  }
+
+    .search-bar-container input {
+      padding: 1em;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .shop-car-button {
+      background-color: #e32020;
+      border: none;
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+
+    }
+
+    .request-form-container button {
+      font-size: 12px;
+    }
+
+    .request-form-container {
+      color: white;
+      font-size: 1.1rem;
+      font-family: "helvetica";
+    }
+
+
+    .request-form-button button {
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      padding: 5px 10px;
+      font-weight: 500;
+      color: black;
+    }
+
+    .request-form-button button:hover {
+      background-color: white;
+    }
+
+
+    .filter-btn-visually-hidden {
+      display: none;
+    }
+
+
+    @media(max-width: 800px) {
+      .search-bar-section {
+        min-height: {{ section.settings.section_height_mobile }}px;
+      }
+
+      .search-bar-container {
+        width: 100%;
+      }
+      .search-bar-section-title {
+        font-size: 30px;
+      }
+
+      .search-bar-section-subheader {
+        font-size: 20px;
+      }
+      .search-bar-inner-section {
+        width: 100%;
+
+      }
+      .search-bar-section-text {
+        width: 90%;
+      }
+
+    }
 {% endstyle %}
 
 {% schema %}
