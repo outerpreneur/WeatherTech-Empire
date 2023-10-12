@@ -655,9 +655,9 @@
       "cant_find": "Ich kann mein Auto nicht finden"
     },
     "filter": {
-      "make": "--Machen--",
-      "year": "--Jahr--",
-      "model": "--Modell--"
+      "make": "Machen",
+      "year": "Jahr",
+      "model": "Modell"
     },
     "search": {
       "main_input": "Suchen oder geben Sie SKU ein",
