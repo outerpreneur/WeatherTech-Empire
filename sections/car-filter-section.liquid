@@ -33,7 +33,7 @@
     align-items: center;
     margin: 0;
     background-color: {{ section.settings.section_color }};
-    min-height: {{ section.settings.section_height }}px;
+    min-height: {{ section.settings.section_height_desktop }}px;
     background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
     background-size: cover;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@
 
   @media(max-width: 800px) {
     .search-bar-section {
-      min-height: 465px;
+      min-height: {{ section.settings.section_height_mobile }}px;
     }
 
     .search-bar-container {
@@ -136,12 +136,22 @@
     },
     {
       "type": "range",
-      "id": "section_height",
-      "label": "height range in pixels",
+      "id": "section_height_desktop",
+      "label": "Desktop Height range in pixels",
       "max": 1200,
       "min": 100,
       "step": 50,
-      "default": 500,
+      "default": 350,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_height_mobile",
+      "label": "Desktop Height range in pixels",
+      "max": 1200,
+      "min": 100,
+      "step": 50,
+      "default": 450,
       "unit": "px"
     },
     {
