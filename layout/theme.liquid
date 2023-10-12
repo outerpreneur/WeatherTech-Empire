@@ -7,8 +7,11 @@
     </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="p:domain_verify" content="e0045f10adbcf354ac675cc55043a83d" />
-    <meta name="facebook-domain-verification" content="trj3ppy6kces3iygek8lq73w6c0323" />
+    <meta name="p:domain_verify" content="e0045f10adbcf354ac675cc55043a83d">
+    <meta
+      name="facebook-domain-verification"
+      content="trj3ppy6kces3iygek8lq73w6c0323"
+    >
     <!-- Google Tag Manager -->
     <script>
       (function(w, d, s, l, i) {
@@ -33,24 +36,26 @@
     <link
       rel="alternate"
       hreflang="x-default"
-      href="https://weathertechch.com/" />
+      href="https://weathertechch.com/"
+    >
     <link
       rel="alternate"
       hreflang="fr-CH"
-      href="https://weathertechch.com/fr" />
+      href="https://weathertechch.com/fr"
+    >
     <link
       rel="alternate"
       hreflang="de-CH"
-      href="https://weathertechch.com/de" />
-
-
+      href="https://weathertechch.com/de"
+    >
 
     <title>
       {{- page_title -}}
 
       {%- if current_tags -%}
         {% capture cat_array %}
-          {%- render 'advanced-tag-loop' -%}{% endcapture %}
+          {%- render 'advanced-tag-loop' -%}
+        {% endcapture %}
         {% assign cat_array = cat_array | split: '|' %}
         {% assign title_tags = '' %}
         {% assign meta_tags = current_tags | join: ', ' %}
@@ -88,33 +93,35 @@
     {% render 'favicon' %}
 
     {% if template contains 'collection' and current_tags %}
-      <meta name="robots" content="noindex" />
-      <link rel="canonical" href="{{ shop.url }}{{ collection.url }}" />
+      <meta name="robots" content="noindex">
+      <link rel="canonical" href="{{ shop.url }}{{ collection.url }}">
     {% else %}
-      <link rel="canonical" href="{{ canonical_url }}" />
+      <link rel="canonical" href="{{ canonical_url }}">
     {% endif %}
 
     <meta name="viewport" content="width=device-width">
 
     {% assign twitter_handle = settings.social_twitter | split: 'twitter.com/' | last %}
     {%
-       render 'social-meta-tags',
-     twitter_handle: twitter_handle %}
+      render 'social-meta-tags',
+      twitter_handle: twitter_handle
+    %}
 
     <link
       rel="preload"
       href="{{ settings.type_menu | font_url }}"
       as="font"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    >
     <link
       rel="preload"
       as="style"
-      href="{{ 'theme.css' | asset_url }}">
+      href="{{ 'theme.css' | asset_url }}"
+    >
 
     {{ content_for_header }}
 
     {{ 'theme.css' | asset_url | stylesheet_tag }}
-    {{ 'car-filter-section-2.css' | asset_url | stylesheet_tag }}
 
     {% comment %}Inject theme-object begin{% endcomment %}
     <script>
@@ -140,43 +147,49 @@
     </script>
     {% comment %}Inject theme-object end{% endcomment %}
 
-
     {{ shop.metafields.loox["global_html_head"] }}
-    <meta name="facebook-domain-verification" content="ii7ct7vjmuo7abc423zqtifshrgyb2" />
+    <meta
+      name="facebook-domain-verification"
+      content="ii7ct7vjmuo7abc423zqtifshrgyb2"
+    >
   </head>
 
   <body
     class="template-{{ template.name }}"
     data-instant-allow-query-string
-    {% if settings.reduce_animations %}data-reduce-animations{% endif %}>
+    {% if settings.reduce_animations %}
+      data-reduce-animations
+    {% endif %}
+  >
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
         src="https://www.googletagmanager.com/ns.html?id=GTM-PGWKRH8"
         height="0"
         width="0"
-        style="display:none;visibility:hidden"></iframe>
+        style="display:none;visibility:hidden"
+      ></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <div style="--background-color: {{ settings.color_background }}">
       {%
-         render 'age-gate',
-       id: 'page',
-       sections: content_for_layout, %}
+        render 'age-gate',
+        id: 'page',
+        sections: content_for_layout,
+      %}
     </div>
 
     <script>
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
-      if (window.Shopify && window.Shopify.designMode) 
+      if (window.Shopify && window.Shopify.designMode)
         document.documentElement.className += ' in-theme-editor';
-      
 
 
 
-      if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) 
+
+      if (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)
         document.documentElement.className = document.documentElement.className.replace(/\bno-touch\b/, 'has-touch');
-      
     </script>
 
     {% comment %}Inject icon-star-symbol begin{% endcomment %}
@@ -189,7 +202,8 @@
       width="20"
       height="20"
       viewBox="3 3 17 17"
-      fill="none">
+      fill="none"
+    >
       <symbol id="icon-star">
         <rect
           class="icon-star-background"
@@ -215,8 +229,9 @@
     </svg>
     {% comment %}Inject icon-star-symbol end{% endcomment %}
 
-
-    <a class="skip-to-main" href="#site-main">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <a class="skip-to-main" href="#site-main">
+      {{- 'general.accessibility.skip_to_content' | t -}}
+    </a>
 
     {% section 'static-announcement' %}
     {% section 'advanced-announcement-bar' %}
@@ -227,7 +242,8 @@
     <header
       class="site-header site-header-nav--open"
       role="banner"
-      data-site-header>
+      data-site-header
+    >
       {% section 'static-header' %}
     </header>
     <div class="intersection-target" data-header-intersection-target></div>
@@ -236,24 +252,27 @@
       id="site-main"
       class="site-main"
       aria-label="Main content"
-      tabindex="-1">
+      tabindex="-1"
+    >
       {{ content_for_layout }}
     </main>
 
     {% section 'static-footer' %}
 
     {% comment %}
-    Below are various templates used in JavaScript
+      Below are various templates used in JavaScript
     {% endcomment %}
     <div
       style="display: none;"
       aria-hidden="true"
-      data-templates>
+      data-templates
+    >
       {% comment %}Inject message-banner begin{% endcomment %}
       <div
         class="message-banner--container"
         role="alert"
-        data-message-banner>
+        data-message-banner
+      >
         <div class="message-banner--outer">
           <div class="message-banner--inner" data-message-banner-content></div>
 
@@ -261,7 +280,8 @@
             class="message-banner--close"
             type="button"
             aria-label="{{ 'general.accessibility.close' | t }}"
-            data-message-banner-close>
+            data-message-banner-close
+          >
             {%- render 'icon-menu-close' -%}
           </button>
         </div>
@@ -272,15 +292,17 @@
       <section
         class="atc-banner--container"
         role="log"
-        data-atc-banner>
+        data-atc-banner
+      >
         <div class="atc-banner--outer">
           <div class="atc-banner--inner">
             <div class="atc-banner--product">
               <h2 class="atc-banner--product-title">
                 <span class="atc-banner--product-title--icon">
                   {%
-                     render 'icon-library',
-                   id: 'icon-checkmark', %}
+                    render 'icon-library',
+                    id: 'icon-checkmark',
+                  %}
                 </span>
                 {{ 'add_to_cart_banner.general.product_added' | t }}
               </h2>
@@ -290,13 +312,31 @@
                   {{ 'image' | placeholder_svg_tag: 'placeholder--image' }}
                 </div>
                 <div class="atc--product-details">
-                  <h2 class="atc--product-details--title" data-atc-banner-product-title></h2>
-                  <span class="atc--product-details--options" data-atc-banner-product-options></span>
+                  <h2
+                    class="atc--product-details--title"
+                    data-atc-banner-product-title
+                  ></h2>
+                  <span
+                    class="atc--product-details--options"
+                    data-atc-banner-product-options
+                  ></span>
                   <span class="atc--product-details--price">
-                    <span class="atc--product-details--price-quantity" data-atc-banner-product-price-quantity></span>
-                    <span class="atc--product-details--price-value money" data-atc-banner-product-price-value></span>
-                    <span class="atc--product-details--price-discounted money" data-atc-banner-product-price-discounted></span>
-                    <span class="atc--product-details--unit-price hidden" data-atc-banner-unit-price>
+                    <span
+                      class="atc--product-details--price-quantity"
+                      data-atc-banner-product-price-quantity
+                    ></span>
+                    <span
+                      class="atc--product-details--price-value money"
+                      data-atc-banner-product-price-value
+                    ></span>
+                    <span
+                      class="atc--product-details--price-discounted money"
+                      data-atc-banner-product-price-discounted
+                    ></span>
+                    <span
+                      class="atc--product-details--unit-price hidden"
+                      data-atc-banner-unit-price
+                    >
                       {{ 'product.general.price_per_unit_html' | t: total_quantity: '** total_quantity **', unit_price: '** unit_price **', unit_measure: '** unit_measure **' }}
                     </span>
                   </span>
@@ -307,7 +347,10 @@
                       (-<span class="money discount-amount"></span>)
                     </li>
                   </ul>
-                  <span class="atc--line-item-subscriptions" data-atc-banner-product-subscription-title></span>
+                  <span
+                    class="atc--line-item-subscriptions"
+                    data-atc-banner-product-subscription-title
+                  ></span>
                 </div>
               </div>
             </div>
@@ -317,24 +360,30 @@
                 <span class="atc-subtotal--label">
                   {{ 'add_to_cart_banner.general.sub_total' | t }}
                 </span>
-                <span class="atc-subtotal--price money" data-atc-banner-cart-subtotal></span>
+                <span
+                  class="atc-subtotal--price money"
+                  data-atc-banner-cart-subtotal
+                ></span>
               </div>
 
               <footer class="atc-banner--cart-footer">
                 <a
                   class="button-secondary atc-button--viewcart"
                   href="{{ routes.cart_url }}"
-                  data-atc-banner-cart-button>
+                  data-atc-banner-cart-button
+                >
                   {{ 'add_to_cart_banner.general.view_cart_html' | t: count: '<span></span>' }}
                 </a>
                 <form
                   action="{{ routes.cart_url }}"
                   method="post"
-                  aria-label="cart checkout">
+                  aria-label="cart checkout"
+                >
                   <button
                     class="button-primary atc-button--checkout"
                     type="submit"
-                    name="checkout">
+                    name="checkout"
+                  >
                     {% if settings.enable_checkout_lock_icon %}
                       {% render 'icon-checkout-lock' %}
                     {% endif %}
@@ -349,30 +398,32 @@
             class="atc-banner--close"
             type="button"
             aria-label="{{ 'general.accessibility.close' | t }}"
-            data-atc-banner-close>
+            data-atc-banner-close
+          >
             {%- render 'icon-menu-close' -%}
           </button>
         </div>
       </section>
       {% comment %}Inject atc-banner end{% endcomment %}
-
     </div>
 
     {% comment %}
-    Modal container, used on Collections, Password, and QuickShop
+      Modal container, used on Collections, Password, and QuickShop
     {% endcomment %}
     {% comment %}Inject modal begin{% endcomment %}
     <div
       class="modal"
       data-modal-container
       aria-label="modal window"
-      data-trap-focus>
+      data-trap-focus
+    >
       <div class="modal-inner" data-modal-inner>
         <button
           class="modal-close"
           type="button"
           aria-label="{{ 'general.accessibility.close' | t }}"
-          data-modal-close>
+          data-modal-close
+        >
           {% render 'icon-menu-close' %}
         </button>
         <div class="modal-content" data-modal-content></div>
@@ -382,13 +433,15 @@
     <div
       class="modal-1"
       data-modal-container-1
-      aria-label="modal window">
+      aria-label="modal window"
+    >
       <div class="modal-inner" data-modal-inner>
         <button
           class="modal-close"
           type="button"
           aria-label="{{ 'general.accessibility.close' | t }}"
-          data-modal-1-close>
+          data-modal-1-close
+        >
           {% render 'icon-menu-close' %}
         </button>
         <div class="modal-content" data-modal-content></div>
@@ -396,27 +449,32 @@
     </div>
     {% comment %}Inject modal end{% endcomment %}
 
-
     {% comment %}
-    This is the PhotoSwipe dialog which needs to be in the base page
+      This is the PhotoSwipe dialog which needs to be in the base page
     {% endcomment %}
     {% comment %}Inject product-gallery-zoom begin{% endcomment %}
     {% comment %} Root element of PhotoSwipe. Must have class pswp. {% endcomment %}
-      <div
+    <div
       class="pswp"
       tabindex="-1"
       role="dialog"
       aria-hidden="true"
       aria-label="{{ 'general.accessibility.product_zoom_dialog' | t }}"
-      data-photoswipe> {% comment %} Background of PhotoSwipe.
-        It's a separate element as animating opacity is faster than rgba(). {% endcomment %}
+      data-photoswipe
+    >
+      {% comment %}
+         Background of PhotoSwipe.
+        It's a separate element as animating opacity is faster than rgba().
+      {% endcomment %}
       <div class="pswp__bg"></div>
 
       {% comment %} Slides wrapper with overflow:hidden. {% endcomment %}
       <div class="pswp__scroll-wrap">
-        {% comment %} Container that holds slides.
-        PhotoSwipe keeps only 3 of them in the DOM to save memory.
-        Don't modify these 3 pswp__item elements, data is added later on. {% endcomment %}
+        {% comment %}
+           Container that holds slides.
+          PhotoSwipe keeps only 3 of them in the DOM to save memory.
+          Don't modify these 3 pswp__item elements, data is added later on.
+        {% endcomment %}
         <div class="pswp__container" aria-hidden="true">
           <div class="pswp__item"></div>
           <div class="pswp__item"></div>
@@ -428,14 +486,26 @@
           <div class="pswp__top-bar">
             {% comment %}  Controls are self-explanatory. Order can be changed. {% endcomment %}
             <div class="pswp__counter"></div>
-            <button class="pswp__button pswp__button--close" title="{{ 'general.accessibility.close' | t }}">
+            <button
+              class="pswp__button pswp__button--close"
+              title="{{ 'general.accessibility.close' | t }}"
+            >
               <span tabindex="-1">
                 {% render 'icon-library', id: 'icon-close' %}
               </span>
             </button>
-            <button class="pswp__button pswp__button--share" title="Share"></button>
-            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
 
             {% comment %} Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR {% endcomment %}
             {% comment %} element will get class pswp__preloader--active when preloader is running {% endcomment %}
@@ -452,8 +522,14 @@
             <div class="pswp__share-tooltip"></div>
           </div>
 
-          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
 
           <div class="pswp__caption">
             <div class="pswp__caption__center"></div>
@@ -464,27 +540,31 @@
         <button
           class="gallery-navigation--scroll-button scroll-left"
           aria-label="Scroll thumbnails left"
-          data-gallery-scroll-button>
+          data-gallery-scroll-button
+        >
           {% render 'icon-chevron-down' %}
         </button>
         <button
           class="gallery-navigation--scroll-button scroll-right"
           aria-label="Scroll thumbnails right"
-          data-gallery-scroll-button>
+          data-gallery-scroll-button
+        >
           {% render 'icon-chevron-down' %}
         </button>
-        <div class="product-zoom--thumb-scroller" data-photoswipe-thumb-scroller></div>
+        <div
+          class="product-zoom--thumb-scroller"
+          data-photoswipe-thumb-scroller
+        ></div>
       </div>
     </div>
     {% comment %}Inject product-gallery-zoom end{% endcomment %}
 
-
     {% comment %}
-    Product compare drawer, shown when products are compared
+      Product compare drawer, shown when products are compared
     {% endcomment %}
     {% comment %}Inject template-allows-compare begin{% endcomment %}
     {% assign template_allows_compare = settings.enable_product_compare %}
-      {% if template.name == 'cart' %}
+    {% if template.name == 'cart' %}
       {% assign template_allows_compare = false %}
     {% elsif template.name == 'product' and template.suffix contains 'compare' %}
       {% assign template_allows_compare = false %}
@@ -494,8 +574,14 @@
     {% if template_allows_compare %}
       {% comment %}Inject product-compare-drawer begin{% endcomment %}
       <div class="product-compare-drawer" data-product-compare-drawer>
-        <div class="product-compare-drawer__header" data-product-compare-drawer-header>
-          <h2 class="product-compare-drawer__title" data-product-compare-drawer-title>
+        <div
+          class="product-compare-drawer__header"
+          data-product-compare-drawer-header
+        >
+          <h2
+            class="product-compare-drawer__title"
+            data-product-compare-drawer-title
+          >
             {{ 'product_compare.drawer_title' | t }}
           </h2>
 
@@ -503,7 +589,8 @@
             class="product-compare-drawer__notification"
             data-product-count-one="{{ 'product_compare.drawer_notification.one' | t }}"
             data-product-count-other="{{ 'product_compare.drawer_notification.other' | t: count: '** count **' }}"
-            data-product-compare-drawer-notification>
+            data-product-compare-drawer-notification
+          >
             {{ 'product_compare.drawer_notification' | t: count }}
           </p>
 
@@ -513,28 +600,44 @@
         </div>
 
         <div class="product-compare-drawer__container">
-          <div class="product-compare-drawer__items" data-compare-drawer-items-container>
+          <div
+            class="product-compare-drawer__items"
+            data-compare-drawer-items-container
+          >
             <template data-product-compare-drawer-item-template>
-              <div
-                class='
-                product-compare-drawer__item
-                imagestyle--{% if settings.product_grid_image_crop and settings.product_grid_image_style != 'natural' %}cropped-{% endif %}
-                {{ settings.product_grid_image_style }}'>
+              <div class="
+                  product-compare-drawer__item
+                  imagestyle--{% if settings.product_grid_image_crop and settings.product_grid_image_style != 'natural' %}cropped-{% endif %}
+                  {{ settings.product_grid_image_style }}
+                ">
                 <div class="product-compare-drawer__image">
-                  <figure class="productitem--image" data-product-compare-drawer-image></figure>
+                  <figure
+                    class="productitem--image"
+                    data-product-compare-drawer-image
+                  ></figure>
                 </div>
-                <a class="product-compare-drawer__item-title" data-product-compare-drawer-title></a>
-                <button class="product-compare-drawer__remove" data-product-compare-drawer-remove>
+                <a
+                  class="product-compare-drawer__item-title"
+                  data-product-compare-drawer-title
+                ></a>
+                <button
+                  class="product-compare-drawer__remove"
+                  data-product-compare-drawer-remove
+                >
                   {%
-                     render 'icon-library',
-                   id: 'icon-remove',
-                   icon_class: 'product-compare-drawer__remove-icon', %}
+                    render 'icon-library',
+                    id: 'icon-remove',
+                    icon_class: 'product-compare-drawer__remove-icon',
+                  %}
                 </button>
               </div>
             </template>
 
             {% for i in (1..3) %}
-              <div class="product-compare-drawer__item-placeholder" data-product-compare-drawer-item-placeholder>
+              <div
+                class="product-compare-drawer__item-placeholder"
+                data-product-compare-drawer-item-placeholder
+              >
                 <p class="product-compare-drawer__item-placeholder-text">
                   {% if forloop.index == 1 %}
                     {{ 'product_compare.drawer_notification_placeholder.first' | t }}
@@ -551,24 +654,27 @@
           <div class="product-compare-drawer__actions">
             <a
               class="
-                                                                                                                                                                    product-compare-drawer__link
-                                                                                                                                                                    button-primary
-                                                                                                                                                                    disabled
-                                                                                                                                                                  "
+                product-compare-drawer__link
+                button-primary
+                disabled
+              "
               href="{{ routes.root_url }}"
               data-product-compare-drawer-link
-              data-product-compare-drawer-link-text="{{ 'product_compare.compare' | t }}">
+              data-product-compare-drawer-link-text="{{ 'product_compare.compare' | t }}"
+            >
               {{ 'product_compare.compare' | t }}
             </a>
 
-            <button class="product-compare-drawer__clear-all" data-product-compare-clear-all>
+            <button
+              class="product-compare-drawer__clear-all"
+              data-product-compare-clear-all
+            >
               {{ 'product_compare.drawer_clear_all' | t }}
             </button>
           </div>
         </div>
       </div>
       {% comment %}Inject product-compare-drawer end{% endcomment %}
-
     {% endif %}
 
     {% if settings.enable_product_compare %}
@@ -577,13 +683,13 @@
 
       {% case request.page_type %}
         {% when 'product' %}
-        {% assign compare_breadcrumb_title = product.title %}
+          {% assign compare_breadcrumb_title = product.title %}
         {% when 'collection' %}
-        {% assign compare_breadcrumb_title = collection.title %}
+          {% assign compare_breadcrumb_title = collection.title %}
         {% when 'index' %}
-        {% assign compare_breadcrumb_title = 'general.breadcrumbs.home' | t %}
+          {% assign compare_breadcrumb_title = 'general.breadcrumbs.home' | t %}
         {% when 'search' %}
-        {% assign compare_breadcrumb_title = 'general.accessibility.search' | t %}
+          {% assign compare_breadcrumb_title = 'general.accessibility.search' | t %}
       {% endcase %}
 
       {% assign compare_breadcrumb_update = true %}
@@ -599,7 +705,6 @@
         }
       </script>
       {% comment %}Inject product-compare-breadcrumb-data end{% endcomment %}
-
     {% endif %}
 
     {%- if template contains 'customer' -%}
@@ -645,7 +750,9 @@
       data-shopify-countries="/services/javascripts/countries.js"
       data-shopify-common="{{ 'shopify_common.js' | shopify_asset_url }}"
       data-shopify-cart="{{ 'jquery.cart.js' | asset_url }}"
-      data-pxu-polyfills="{{ 'polyfills.min.js' | asset_url }}"></script>
+      data-pxu-polyfills="{{ 'polyfills.min.js' | asset_url }}"
+    >
+    </script>
     <script src="{{ 'car-filter-section-2.js' | asset_url }}"></script>
 
     {% render 'structured-data' %}
@@ -669,7 +776,9 @@
     <script
       src="{{ 'instantPage.min.js' | asset_url }}"
       type="module"
-      defer></script>
+      defer
+    >
+    </script>
 
     {{ shop.metafields.loox["global_html_body"] }}
   </body>
