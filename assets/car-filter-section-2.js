@@ -141,9 +141,9 @@ function buildLink() {
   const searchUrl = `https://weathertechch.com/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`;
   const pathName = searchUrl.pathName;
   console.log(
-    `${currentUrl}/${pathName}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`
+    `${currentUrl}+${pathName}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`
   );
-  console.log(window.location.pathname);
+  console.log(pathName);
   searchBtn.classList.remove("filter-btn-visually-hidden");
   searchBtn.href = searchUrl;
 }
