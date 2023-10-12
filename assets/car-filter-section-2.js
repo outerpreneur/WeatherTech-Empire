@@ -142,8 +142,7 @@ function buildLink() {
   console.log(
     `${currentUrl}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`
   );
-  console.log(window.location.host);
-  console.log(window.location.hostname);
+  console.log(window.location.pathname);
   searchBtn.classList.remove("filter-btn-visually-hidden");
   searchBtn.href = searchUrl;
 }
