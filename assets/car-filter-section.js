@@ -1,5 +1,8 @@
 const searchBtn = document.getElementById("search-btn");
-const currentUrl = document.location;
+const currentURL = window.location.href;
+const urlParts = currentURL.split("/");
+const currentBaseURL =
+  urlParts[0] + "//" + urlParts[2] + (urlParts[3] ? "/" + urlParts[3] : "");
 
 function populate(s1, s2) {
   var s1 = document.getElementById("slct1");
@@ -138,14 +141,9 @@ function update() {
 }
 
 function buildLink() {
-  const searchUrl = `${currentUrl}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`;
-  const pathName = currentUrl.pathName;
-  const completeUrl = currentUrl + pathName;
-  console.log(currentUrl);
-  // console.log(
-  //   `${currentUrl}+${pathName}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`
-  // );
-  console.log(currentUrl);
+  const searchUrl = `${currentBaseURL}/search?filter.p.m.car.make=${slct1.value}&filter.p.m.car.model=${slct2.value}&filter.p.m.car.year=${year.value}&q=${slct1.value}+${slct2.value}+${year.value}`;
+
+  console.log(searchUrl);
 
   searchBtn.classList.remove("filter-btn-visually-hidden");
   searchBtn.href = searchUrl;
