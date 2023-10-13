@@ -4,9 +4,24 @@
       "type": "404",
       "settings": {
       }
+    },
+    "a639e948-9885-4447-9fa0-2902147e7c4b": {
+      "type": "car-filter-section",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/weathertech-floorliners-hyundai-tucson-2015-2019-1st-row-auto-fussmatten-sonnenschutz-auto-43339109728420.jpg",
+        "section_height_desktop": 350,
+        "section_height_mobile": 450,
+        "section_color": "#000000",
+        "image_position": "top",
+        "header_hero": "Select your vehicle",
+        "size_header": 26,
+        "subheader_hero": "Show fitting products for your Vehicle",
+        "size_subheader": 16
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "a639e948-9885-4447-9fa0-2902147e7c4b"
   ]
 }
