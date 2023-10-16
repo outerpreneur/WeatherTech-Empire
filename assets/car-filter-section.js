@@ -103,7 +103,7 @@ function populate(s1, s2) {
       "Model X|Model X",
     ];
   } else if (s1.value == "Toyota") {
-    var optionArray = ["|--Model--", "RAV4|RAV4"];
+    var optionArray = ["|--Model--", "RAV4|RAV4", "4Runner|4Runner"];
   } else if (s1.value == "Volkswagen") {
     var optionArray = [
       "|--Model--",
