@@ -15,7 +15,8 @@
         "filter-1"
       ],
       "custom_css": [
-        ".form-field {display: none;}"
+        ".form-field {display: none;}",
+        ".productgrid--no-results-title {margin-bottom: 2em;}"
       ],
       "settings": {
         "results_per_page_range": 24,
@@ -23,8 +24,23 @@
         "enable_search_articles_pages": false
       }
     },
+    "6971db31-123a-43f4-bb83-8ead95723c4d": {
+      "type": "car-filter-section",
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/weathertech-floorliners-volkswagen-t-roc-2018-2023-2nd-row-floorliners-auto-fussmatten-sonnenschutz-auto-43358189944996.jpg",
+        "section_height_desktop": 350,
+        "section_height_mobile": 450,
+        "section_color": "#000000",
+        "image_position": "center",
+        "header_hero": "Select your vehicle",
+        "size_header": 26,
+        "subheader_hero": "Show fitting products for your Vehicle",
+        "size_subheader": 16
+      }
+    },
     "24636bc1-287f-44d4-8970-761078c9819f": {
       "type": "pxs-image-with-text-overlay",
+      "disabled": true,
       "settings": {
         "section_height": "small",
         "image": "shopify:\/\/shop_images\/911.jpg",
@@ -41,6 +57,7 @@
   },
   "order": [
     "main",
+    "6971db31-123a-43f4-bb83-8ead95723c4d",
     "24636bc1-287f-44d4-8970-761078c9819f"
   ]
 }
