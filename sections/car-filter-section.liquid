@@ -41,6 +41,8 @@
       background-repeat: no-repeat;
       background-position: {{ section.settings.image_position }};
       gap: 25px;
+      max-width: {{ section.settings.section_width }}px;
+      margin: 0 auto;
     }
 
 
@@ -158,6 +160,16 @@
       "min": 100,
       "step": 50,
       "default": 450,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "section_width",
+      "label": "Max width range in pixels",
+      "max": 2500,
+      "min": 100,
+      "step": 50,
+      "default": 2500,
       "unit": "px"
     },
     {
