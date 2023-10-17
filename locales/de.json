@@ -661,7 +661,8 @@
     },
     "search": {
       "main_input": "Suchen oder geben Sie SKU ein",
-      "button": "Einkaufen mit dem Auto"
+      "button": "Einkaufen mit dem Auto",
+      "click_button": "Suche"
     }
   },
   "shopify": {

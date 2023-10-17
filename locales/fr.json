@@ -746,7 +746,8 @@
     },
     "search": {
       "main_input": "Rechercher ou saisir SKU",
-      "button": "Rechercher par voiture"
+      "button": "Rechercher par voiture",
+      "click_button": "Rechercher"
     },
     "no_search": {
       "cant_find": "Je ne trouve pas ma voiture"
