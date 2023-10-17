@@ -346,11 +346,19 @@
               "description": "<p>Free shipping for orders over 200 CHF<\/p>",
               "url": ""
             }
+          },
+          "c3fdb1e1-6d5b-4a9f-9893-a42eec06bfd2": {
+            "type": "Announcement",
+            "settings": {
+              "description": "<p>10% off All Volkswagen Products until 31st October<\/p>",
+              "url": "shopify:\/\/collections\/volkswagen"
+            }
           }
         },
         "block_order": [
           "07063f27-9651-4f4d-b700-d0525d804a0f",
-          "50dfcbbe-a6ee-45f7-a453-27d025434a49"
+          "50dfcbbe-a6ee-45f7-a453-27d025434a49",
+          "c3fdb1e1-6d5b-4a9f-9893-a42eec06bfd2"
         ],
         "custom_css": [
           "#eg-announcement-bar-advanced-announcement-bar p {padding: 0.5em !important;}"
