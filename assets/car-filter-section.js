@@ -1,3 +1,5 @@
+// Car filter tool
+
 const searchBtn = document.getElementById("search-btn");
 const currentURL = window.location.href;
 const urlParts = currentURL.split("/");
@@ -152,3 +154,17 @@ function buildLink() {
 function removeBtn() {
   searchBtn.classList.add("filter-btn-visually-hidden");
 }
+
+// Search by sku pop-up
+
+const searchBySkuBtn = document.getElementById("search-by-sku-btn");
+const modal = document.getElementById("modal");
+const cancelSkuBtn = document.getElementById("cancel-sku-btn");
+
+searchBySkuBtn.addEventListener("click", (event) => {
+  modal.showModal();
+});
+
+cancelSkuBtn.addEventListener("click", (event) => {
+  modal.close();
+});

@@ -11,13 +11,37 @@
   <div class="search-bar-inner-section">
     {% render 'car-filter-snippet' %}
   </div>
+
   <div class="request-form-container">
     <a
       href="https://mauwi.com/pages/product-request-form"
       class="request-form-button"
       ><button>{{ "hero_filter.no_search.cant_find" | t }}</button></a
     >
+    <button class="search-by-sku-btn" id="search-by-sku-btn">
+      {{ "hero_filter.no_search.search_by_sku" | t }}
+    </button>
   </div>
+  <dialog id="modal">
+    <div class="search-by-sku">
+      <form action="/search" method="get" class="sku-search-form">
+        <input
+          type="search"
+          name="q"
+          placeholder="{{ "hero_filter.sku_search.placeholder" | t }}"
+          class="search-sku-input"
+          aria-label="Search products"
+          required
+        >
+        <button type="submit" class="shopify-search-sku-button">
+          {{ "hero_filter.sku_search.search_sku" | t }}
+        </button>
+      </form>
+      <button id="cancel-sku-btn">
+        {{ "hero_filter.sku_search.cancel_button" | t }}
+      </button>
+    </div>
+  </dialog>
 </section>
 
 {% liquid
@@ -27,110 +51,182 @@
 {% style %}
   /* Search filter section styles */
 
+  .search-bar-section {
+    font-family: "helvetica";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: {{ section.settings.section_color }};
+    min-height: {{ section.settings.section_height_desktop }}px;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: {{ section.settings.image_position }};
+    gap: 25px;
+    max-width: {{ section.settings.section_width }}px;
+    margin: 0 auto;
+  }
+
+
+  .search-bar-section-title {
+
+    color: #fff;
+    font-size: {{ section.settings.size_header }}px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .search-bar-section-subheader {
+    color: #fff;
+    font-size: {{ section.settings.size_subheader }}px;
+    text-align: center;
+    margin: 0;
+  }
+
+
+  .search-bar-container input {
+    padding: 1em;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .shop-car-button {
+    background-color: #e32020;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+
+  }
+
+
+   /* Search by SKU styles */
+
+   dialog {
+    border: none;
+    border-radius: 5px;
+   }
+
+  .modal::backdrop {
+  background: rgb(0 0 0 / 0.9);
+  }
+
+   .sku-search-form {
+     display: flex;
+     align-items: center;
+   }
+
+   .search-sku-input {
+
+     padding: 7px 12px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+
+   }
+
+   .search-by-sku-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 500;
+    color: black;
+  }
+
+   .shopify-search-sku-button:hover {
+    opacity: 0.8;
+   }
+
+
+   .shopify-search-sku-button {
+     margin-left: 10px;
+     padding: 7px 12px;
+     border: none;
+     border-radius: 5px;
+     background-color: #194ba0;
+     color: #fff;
+     cursor: pointer;
+     font-size: 16px;
+   }
+
+  #cancel-sku-btn {
+    background-color: #e32020;
+    color:white;
+    margin-top: 1em;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    width:100%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #cancel-sku-btn:hover {
+    opacity: 0.8;
+  }
+
+   /* request form Styles */
+
+  .request-form-container button {
+    font-size: 12px;
+  }
+
+  .request-form-container {
+    color: white;
+    font-size: 1.1rem;
+    font-family: "helvetica";
+  }
+
+
+  .request-form-button button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .request-form-button button:hover {
+    background-color: white;
+  }
+
+
+  .filter-btn-visually-hidden {
+    display: none;
+  }
+
+
+
+   /* Mobile styles */
+
+  @media(max-width: 800px) {
     .search-bar-section {
-      font-family: "helvetica";
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      background-color: {{ section.settings.section_color }};
-      min-height: {{ section.settings.section_height_desktop }}px;
-      background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.12),rgba(0, 0, 0, 0.60), rgba(117, 19, 93, 0)), url("{{ section.settings.background_image | img_url: '1024x1024' }}");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: {{ section.settings.image_position }};
-      gap: 25px;
-      max-width: {{ section.settings.section_width }}px;
-      margin: 0 auto;
+      min-height: {{ section.settings.section_height_mobile }}px;
     }
 
-
+    .search-bar-container {
+      width: 100%;
+    }
     .search-bar-section-title {
-
-      color: #fff;
-      font-size: {{ section.settings.size_header }}px;
-      text-align: center;
-      margin-top: 20px;
+      font-size: 30px;
     }
 
     .search-bar-section-subheader {
-      color: #fff;
-      font-size: {{ section.settings.size_subheader }}px;
-      text-align: center;
-      margin: 0;
+      font-size: 20px;
     }
-
-
-    .search-bar-container input {
-      padding: 1em;
-      border-radius: 5px;
-      border: none;
-    }
-
-    .shop-car-button {
-      background-color: #e32020;
-      border: none;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
+    .search-bar-inner-section {
+      width: 100%;
 
     }
-
-    .request-form-container button {
-      font-size: 12px;
+    .search-bar-section-text {
+      width: 90%;
     }
 
-    .request-form-container {
-      color: white;
-      font-size: 1.1rem;
-      font-family: "helvetica";
-    }
-
-
-    .request-form-button button {
-      cursor: pointer;
-      border-radius: 5px;
-      border: none;
-      padding: 5px 10px;
-      font-weight: 500;
-      color: black;
-    }
-
-    .request-form-button button:hover {
-      background-color: white;
-    }
-
-
-    .filter-btn-visually-hidden {
-      display: none;
-    }
-
-
-    @media(max-width: 800px) {
-      .search-bar-section {
-        min-height: {{ section.settings.section_height_mobile }}px;
-      }
-
-      .search-bar-container {
-        width: 100%;
-      }
-      .search-bar-section-title {
-        font-size: 30px;
-      }
-
-      .search-bar-section-subheader {
-        font-size: 20px;
-      }
-      .search-bar-inner-section {
-        width: 100%;
-
-      }
-      .search-bar-section-text {
-        width: 90%;
-      }
-
-    }
+  }
 {% endstyle %}
 
 {% schema %}
