@@ -4,7 +4,9 @@
       "type": "car-filter-section",
       "settings": {
         "background_image": "shopify:\/\/shop_images\/weathertech-floorliners-hp-ford-f-150-raptor-2021-2023-2nd-row-floorliners-hp-auto-fussmatten-sonnenschutz-auto-43309756416164.jpg",
-        "section_height": 500,
+        "section_height_desktop": 350,
+        "section_height_mobile": 450,
+        "section_width": 1350,
         "section_color": "#000000",
         "image_position": "center",
         "header_hero": "Vehicle FloorLiners, CargoLiners and SunShades",
