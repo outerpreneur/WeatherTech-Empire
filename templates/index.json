@@ -11,7 +11,7 @@
         "image_position": "center",
         "header_hero": "Vehicle FloorLiners, CargoLiners and SunShades",
         "size_header": 26,
-        "subheader_hero": "Select your vehicle",
+        "subheader_hero": "Select your Vehicle",
         "size_subheader": 16
       }
     },
@@ -59,6 +59,21 @@
             "opacity": 50
           }
         },
+        "promotion-3": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ford_Explorer_16_Summer_Cargo_Bike_V2.webp",
+            "title": "CargoLiners",
+            "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo\/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
+            "button_text": "Shop CargoLiners",
+            "button_style": "secondary",
+            "show_overlay": true,
+            "background": "#000000",
+            "opacity": 51
+          }
+        },
         "c24b251e-37b8-4c4f-bfa3-0705be4aff46": {
           "type": "promotion",
           "settings": {
@@ -89,21 +104,6 @@
             "opacity": 50
           }
         },
-        "promotion-3": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Ford_Explorer_16_Summer_Cargo_Bike_V2.webp",
-            "title": "CargoLiners",
-            "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo\/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
-            "button_text": "Shop CargoLiners",
-            "button_style": "secondary",
-            "show_overlay": true,
-            "background": "#000000",
-            "opacity": 51
-          }
-        },
         "15a11642-af66-4957-b11a-4b9e906f2c32": {
           "type": "promotion",
           "disabled": true,
@@ -123,9 +123,9 @@
       },
       "block_order": [
         "promotion-4",
+        "promotion-3",
         "c24b251e-37b8-4c4f-bfa3-0705be4aff46",
         "promotion-1",
-        "promotion-3",
         "15a11642-af66-4957-b11a-4b9e906f2c32"
       ],
       "settings": {
@@ -178,36 +178,6 @@
     "dynamic_promo_grid": {
       "type": "dynamic-promo-grid",
       "blocks": {
-        "promotion-1": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/911.jpg",
-            "title": "Enhance the Elegance",
-            "text": "See our Porsche range of in-car protection made to perfection for your Alpine excursions.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/porsche",
-            "button_text": "Shop Porsche Collection",
-            "button_style": "secondary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 49
-          }
-        },
-        "promotion-2": {
-          "type": "promotion",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/craventure-media-BOhTjxHvfkU-unsplash_tesla_model_y_1.jpg",
-            "title": "Electric Vehicles",
-            "text": "Check out our range of interior protection for the fast selling Electric Vehicles.",
-            "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/emv",
-            "button_text": "Shop EV Collection",
-            "button_style": "secondary",
-            "show_overlay": true,
-            "background": "#121212",
-            "opacity": 50
-          }
-        },
         "promotion-3": {
           "type": "promotion",
           "settings": {
@@ -237,13 +207,43 @@
             "background": "#121212",
             "opacity": 49
           }
+        },
+        "promotion-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/911.jpg",
+            "title": "Enhance the Elegance",
+            "text": "See our Porsche range of in-car protection made to perfection for your Alpine excursions.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/porsche",
+            "button_text": "Shop Porsche Collection",
+            "button_style": "secondary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 49
+          }
+        },
+        "promotion-2": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/craventure-media-BOhTjxHvfkU-unsplash_tesla_model_y_1.jpg",
+            "title": "Electric Vehicles",
+            "text": "Check out our range of interior protection for the fast selling Electric Vehicles.",
+            "color": "#ffffff",
+            "block_link": "shopify:\/\/collections\/emv",
+            "button_text": "Shop EV Collection",
+            "button_style": "secondary",
+            "show_overlay": true,
+            "background": "#121212",
+            "opacity": 50
+          }
         }
       },
       "block_order": [
-        "promotion-1",
-        "promotion-2",
         "promotion-3",
-        "84a1c22a-a2e6-42fe-a78c-09f5de6c132a"
+        "84a1c22a-a2e6-42fe-a78c-09f5de6c132a",
+        "promotion-1",
+        "promotion-2"
       ],
       "settings": {
         "title": "",
