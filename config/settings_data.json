@@ -349,6 +349,13 @@
               "url": ""
             }
           },
+          "05a63f94-f661-41ea-9c56-56a2f53028ef": {
+            "type": "Announcement",
+            "settings": {
+              "description": "<p>AUTUMN SALE COLLECTION<\/p>",
+              "url": "shopify:\/\/collections\/autumn-collection"
+            }
+          },
           "c3fdb1e1-6d5b-4a9f-9893-a42eec06bfd2": {
             "type": "Announcement",
             "settings": {
@@ -360,6 +367,7 @@
         "block_order": [
           "07063f27-9651-4f4d-b700-d0525d804a0f",
           "50dfcbbe-a6ee-45f7-a453-27d025434a49",
+          "05a63f94-f661-41ea-9c56-56a2f53028ef",
           "c3fdb1e1-6d5b-4a9f-9893-a42eec06bfd2"
         ],
         "custom_css": [
