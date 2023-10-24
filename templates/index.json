@@ -156,7 +156,7 @@
         "view-all-card"
       ],
       "settings": {
-        "title": "",
+        "title": "Best Sellers",
         "layout": "slideshow",
         "collection": "bestsellers",
         "product_count": 4,
