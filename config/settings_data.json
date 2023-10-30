@@ -338,6 +338,7 @@
         "blocks": {
           "07063f27-9651-4f4d-b700-d0525d804a0f": {
             "type": "Announcement",
+            "disabled": true,
             "settings": {
               "description": "<p>Authorised WeatherTech Agent for Switzerland<\/p>",
               "url": ""
@@ -345,6 +346,7 @@
           },
           "50dfcbbe-a6ee-45f7-a453-27d025434a49": {
             "type": "Announcement",
+            "disabled": true,
             "settings": {
               "description": "<p>Free shipping for orders over 200 CHF<\/p>",
               "url": ""
