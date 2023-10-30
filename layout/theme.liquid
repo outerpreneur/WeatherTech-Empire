@@ -145,6 +145,8 @@
         "product_recommendations_url": "{{ routes.product_recommendations_url }}"
       };
     </script>
+    {{ "lazysizes.min.js" | asset_url | script_tag }}
+
     {% comment %}Inject theme-object end{% endcomment %}
 
     {{ shop.metafields.loox["global_html_head"] }}
@@ -781,8 +783,5 @@
     </script>
 
     {{ shop.metafields.loox["global_html_body"] }}
-
-    {% comment %} lazy loading {% endcomment %}
-    <script src="lazysizes.min.js" async=""></script>
   </body>
 </html>
