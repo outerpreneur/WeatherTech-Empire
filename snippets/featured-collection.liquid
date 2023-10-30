@@ -54,6 +54,7 @@
             size: '500x750',
             background: true,
             lazy: true,
+            class: "lazyload",
             focal_point: title_card_block.settings.image.presentation.focal_point,
           %}
         {% endif %}
@@ -66,6 +67,7 @@
             render 'rimg',
             img: title_card_block.settings.image
             size: '500x750',
+            class: "lazyload",
             canvas: true,
             lazy: true,
             focal_point: title_card_block.settings.image.presentation.focal_point,
@@ -76,10 +78,10 @@
       {% endif %}
 
       <a
-      class="
-        featured-collection__title-card-outer
-        featured-collection__title-card-outer--align-{{ title_card_block.settings.text_alignment | default: 'center-center' }}
-      "
+        class="
+          featured-collection__title-card-outer
+          featured-collection__title-card-outer--align-{{ title_card_block.settings.text_alignment | default: 'center-center' }}
+        "
         {% if selected_collection.url != blank %}
           href="{{ selected_collection.url }}"
         {% endif %}
@@ -115,7 +117,7 @@
           {% elsif title_card_source == 'simple' %}
             {% unless section.settings.cta_label == blank %}
               <span class="featured-collection__title-card-pre-heading">
-                  {{ section.settings.cta_label }}
+                {{ section.settings.cta_label }}
               </span>
             {% endunless %}
 
@@ -167,7 +169,9 @@
           button-{{ section.settings.cta_button_style }}
           featured-collection__button
         "
-        {% if selected_collection.url != blank %}href="{{ selected_collection.url }}"{% endif %}
+        {% if selected_collection.url != blank %}
+          href="{{ selected_collection.url }}"
+        {% endif %}
       >
         {{ section.settings.cta_label | escape }}
       </a>

@@ -9,8 +9,7 @@
 {% endcomment %}
 
 {%- capture excerpt_class -%}
-  article--excerpt-wrapper
-  article--excerpt-wrapper--featured
+  article--excerpt-wrapper article--excerpt-wrapper--featured
   {% if article.image %}
     article--excerpt-wrapper--has-image
   {% else %}
@@ -19,7 +18,6 @@
 {%- endcapture -%}
 
 <article class="{{ excerpt_class | strip_newlines }}">
-
   {% if article.image %}
     <a
       class="article--excerpt-image"
@@ -29,6 +27,7 @@
         render 'rimg',
         img: article.image,
         lazy: true,
+        class: "lazyload",
         size: '526x526',
         crop: 'center',
         background: true
@@ -37,6 +36,7 @@
       {%
         render 'rimg',
         img: article.image,
+        class: "lazyload",
         lazy: true,
         canvas: true,
         crop: 'center',
@@ -78,9 +78,12 @@
       </div>
     {% endif %}
 
-    <a class="article--excerpt-button" href="{{ article.url }}" aria-label="read {{ article.title }}">
+    <a
+      class="article--excerpt-button"
+      href="{{ article.url }}"
+      aria-label="read {{ article.title }}"
+    >
       {{ 'blog.general.read_more' | t }}
     </a>
   </div>
-
 </article>
