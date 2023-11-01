@@ -39,7 +39,7 @@
     "type_section": "work_sans_n7",
     "type_section_capitalize": false,
     "type_section_spacing": 2,
-    "reduce_animations": true,
+    "reduce_animations": false,
     "layout_max_width": 1400,
     "product_sales_badge": true,
     "product_sales_badge_style": "percent",
@@ -418,12 +418,6 @@
       "6279071938380501511": {
         "type": "shopify:\/\/apps\/powerful-contact-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
-        "settings": {
-        }
-      },
-      "4015264832934714879": {
-        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": true,
         "settings": {
         }
       },
