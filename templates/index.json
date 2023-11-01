@@ -93,7 +93,7 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "Shop CargoLiners",
-            "button_style": "primary",
+            "button_style": "secondary",
             "show_overlay": true,
             "background": "#000000",
             "opacity": 45
