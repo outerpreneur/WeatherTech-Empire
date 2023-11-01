@@ -319,6 +319,31 @@
         "text_alignment": "center-left"
       }
     },
+    "1678964004457b5f22": {
+      "type": "apps",
+      "blocks": {
+        "3aaadd72-2616-4d90-915f-8b7a2f150157": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 4,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "3aaadd72-2616-4d90-915f-8b7a2f150157"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "include_padding": true
+      }
+    },
     "36612375-1729-4764-874c-6ec3e9370468": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
@@ -382,31 +407,6 @@
         "compress_blocks": false
       }
     },
-    "1678964004457b5f22": {
-      "type": "apps",
-      "blocks": {
-        "3aaadd72-2616-4d90-915f-8b7a2f150157": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "hide_thumbnails": false,
-            "product_handle": "",
-            "aggregated": true,
-            "data-limit": 4,
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "3aaadd72-2616-4d90-915f-8b7a2f150157"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "include_padding": true
-      }
-    },
     "dynamic_search": {
       "type": "dynamic-search",
       "settings": {
@@ -422,6 +422,16 @@
         "color": "#ffffff",
         "background": "#000000",
         "opacity": 36
+      }
+    },
+    "f61678e6-99ee-4012-9396-1b1d1c713f8a": {
+      "type": "dynamic-blog-posts",
+      "settings": {
+        "title": "Blog posts",
+        "blog": "news",
+        "show_date": true,
+        "show_author": true,
+        "show_excerpt": true
       }
     },
     "dynamic_highlights_banner": {
@@ -474,6 +484,7 @@
         "highlight-3",
         "highlight-4"
       ],
+      "disabled": true,
       "settings": {
         "section_spacing": false,
         "section_width": "content-width",
@@ -482,16 +493,6 @@
         "icon_color": "#e22120",
         "background_color": "#ffffff",
         "mobile_layout": "grid"
-      }
-    },
-    "f61678e6-99ee-4012-9396-1b1d1c713f8a": {
-      "type": "dynamic-blog-posts",
-      "settings": {
-        "title": "Blog posts",
-        "blog": "news",
-        "show_date": true,
-        "show_author": true,
-        "show_excerpt": true
       }
     }
   },
@@ -503,10 +504,10 @@
     "dynamic_promo_grid",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
-    "36612375-1729-4764-874c-6ec3e9370468",
     "1678964004457b5f22",
+    "36612375-1729-4764-874c-6ec3e9370468",
     "dynamic_search",
-    "dynamic_highlights_banner",
-    "f61678e6-99ee-4012-9396-1b1d1c713f8a"
+    "f61678e6-99ee-4012-9396-1b1d1c713f8a",
+    "dynamic_highlights_banner"
   ]
 }
