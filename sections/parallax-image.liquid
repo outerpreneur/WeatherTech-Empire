@@ -140,7 +140,7 @@
       {% if section.settings.img == blank %}
         {% comment %}theme-check-disable{% endcomment %}
         <img
-          class="jarallax-img lazyload"
+          class="jarallax-img"
           src="https://via.placeholder.com/1600x900.png?text=Sample+Image"
           alt=""
           width="1600"
@@ -150,7 +150,7 @@
         {% comment %}theme-check-enable{% endcomment %}
       {% else %}
         <img
-          class="jarallax-img lazyload"
+          class="jarallax-img"
           src="{{ section.settings.img.src | img_url: '1600x', crop: section.settings.img_crop }}"
           srcset="
             {{ section.settings.img.src | img_url: '800x', crop: section.settings.img_crop }} 600w,
