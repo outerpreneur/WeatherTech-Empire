@@ -180,12 +180,12 @@
         "view-all-card"
       ],
       "settings": {
-        "title": "Our Top Choices",
+        "title": "Most Popular in Switzerland 🇨🇭",
         "layout": "slideshow",
         "collection": "bestsellers",
         "product_count": 4,
-        "cta_label": "See more",
-        "cta_button_style": "primary"
+        "cta_label": "Find Yours",
+        "cta_button_style": "secondary"
       }
     },
     "dynamic_promo_grid": {
