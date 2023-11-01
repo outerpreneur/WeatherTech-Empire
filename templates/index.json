@@ -81,7 +81,7 @@
             "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 50
+            "opacity": 45
           }
         },
         "promotion-3": {
@@ -93,10 +93,10 @@
             "color": "#ffffff",
             "block_link": "shopify:\/\/collections\/cargo-trunk-liners",
             "button_text": "Shop CargoLiners",
-            "button_style": "secondary",
+            "button_style": "primary",
             "show_overlay": true,
             "background": "#000000",
-            "opacity": 51
+            "opacity": 45
           }
         },
         "c24b251e-37b8-4c4f-bfa3-0705be4aff46": {
@@ -111,7 +111,7 @@
             "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 50
+            "opacity": 45
           }
         },
         "promotion-1": {
@@ -126,7 +126,7 @@
             "button_style": "secondary",
             "show_overlay": true,
             "background": "#121212",
-            "opacity": 50
+            "opacity": 45
           }
         },
         "15a11642-af66-4957-b11a-4b9e906f2c32": {
