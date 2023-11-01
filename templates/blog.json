@@ -23,8 +23,9 @@
     },
     "0f34488b-9a19-4c51-a899-502b1f5b6092": {
       "type": "pxs-image-with-text-overlay",
+      "disabled": true,
       "settings": {
-        "section_height": "medium",
+        "section_height": "small",
         "image": "shopify:\/\/shop_images\/weathertech-floorliners-dodge-durango-2011-2020-2nd-row-bucket-tan-auto-fussmatten-sonnenschutz-auto-43239658291364.jpg",
         "title": "WeatherTech Switzerland",
         "text": "<p>WeatherTech is your trusted partner in preserving and enhancing your car's interior. We're committed to sharing expert insights, breaking news, practical advice, and the latest trends in car interior protection. Whether you're a car aficionado, a meticulous owner, or simply looking to prolong the life and appearance of your vehicle's interior, WeatherTech is your go-to resource. Join us today and embark on a journey to safeguard and elevate your car's interior protection game with confidence and style!<\/p>",
