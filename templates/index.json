@@ -15,6 +15,31 @@
         "size_subheader": 18
       }
     },
+    "2191d06c-7647-4fef-8070-cefd884d5f10": {
+      "type": "dynamic-countdown-timer",
+      "settings": {
+        "section_height": "small",
+        "image": "shopify:\/\/shop_images\/HOND_Odyssey_15_463471-2_Soccer.webp",
+        "countdown_year": "2023",
+        "countdown_month": "11",
+        "countdown_day": "30",
+        "countdown_hour": "23",
+        "countdown_minute": "59",
+        "countdown_timer_background": true,
+        "countdown_timer_complete": true,
+        "countdown_timer_message": "<p>Offer Expired<\/p>",
+        "product": "",
+        "title": "Autumn SALE Collection",
+        "text": "<p>As we head into Autumn, check out our \"Special Offers\" on our WeatherTech Car Mats for the BMW X1, Ford F-150 Truck, SEAT Léon\/ST and Toyota RAV4. Great prices on full kits for these muddy months ahead. <\/p>",
+        "button_link": "shopify:\/\/collections\/autumn-collection",
+        "button_label": "Autumn SALE Collection",
+        "button_style": "secondary",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "product_card_background_color": "#f5f3ed"
+      }
+    },
     "1678964004457b5f22": {
       "type": "apps",
       "blocks": {
@@ -39,31 +64,6 @@
       ],
       "settings": {
         "include_padding": true
-      }
-    },
-    "2191d06c-7647-4fef-8070-cefd884d5f10": {
-      "type": "dynamic-countdown-timer",
-      "settings": {
-        "section_height": "small",
-        "image": "shopify:\/\/shop_images\/HOND_Odyssey_15_463471-2_Soccer.webp",
-        "countdown_year": "2023",
-        "countdown_month": "11",
-        "countdown_day": "30",
-        "countdown_hour": "23",
-        "countdown_minute": "59",
-        "countdown_timer_background": true,
-        "countdown_timer_complete": true,
-        "countdown_timer_message": "<p>Offer Expired<\/p>",
-        "product": "",
-        "title": "Autumn SALE Collection",
-        "text": "<p>As we head into Autumn, check out our \"Special Offers\" on our WeatherTech Car Mats for the BMW X1, Ford F-150 Truck, SEAT Léon\/ST and Toyota RAV4. Great prices on full kits for these muddy months ahead. <\/p>",
-        "button_link": "shopify:\/\/collections\/autumn-collection",
-        "button_label": "Autumn SALE Collection",
-        "button_style": "secondary",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30,
-        "product_card_background_color": "#f5f3ed"
       }
     },
     "dynamic_promo_mosaic": {
@@ -498,8 +498,8 @@
   },
   "order": [
     "853bebcd-5ca2-4fcc-b8fa-82600f2e2b26",
-    "1678964004457b5f22",
     "2191d06c-7647-4fef-8070-cefd884d5f10",
+    "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
     "dynamic_promo_grid",
