@@ -40,32 +40,6 @@
         "product_card_background_color": "#f5f3ed"
       }
     },
-    "1678964004457b5f22": {
-      "type": "apps",
-      "blocks": {
-        "3aaadd72-2616-4d90-915f-8b7a2f150157": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "disabled": true,
-          "settings": {
-            "only_photos": false,
-            "hide_thumbnails": false,
-            "product_handle": "",
-            "aggregated": true,
-            "data-limit": 4,
-            "maxwidth": 1080
-          }
-        }
-      },
-      "block_order": [
-        "3aaadd72-2616-4d90-915f-8b7a2f150157"
-      ],
-      "custom_css": [
-
-      ],
-      "settings": {
-        "include_padding": true
-      }
-    },
     "dynamic_promo_mosaic": {
       "type": "dynamic-promo-mosaic",
       "blocks": {
@@ -181,12 +155,12 @@
         "view-all-card"
       ],
       "settings": {
-        "title": "Most Popular in Switzerland 🇨🇭",
+        "title": "Our Top Choices",
         "layout": "slideshow",
         "collection": "bestsellers",
         "product_count": 4,
-        "cta_label": "Find Yours",
-        "cta_button_style": "secondary"
+        "cta_label": "See more",
+        "cta_button_style": "primary"
       }
     },
     "dynamic_promo_grid": {
@@ -408,6 +382,31 @@
         "compress_blocks": false
       }
     },
+    "1678964004457b5f22": {
+      "type": "apps",
+      "blocks": {
+        "3aaadd72-2616-4d90-915f-8b7a2f150157": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "hide_thumbnails": false,
+            "product_handle": "",
+            "aggregated": true,
+            "data-limit": 4,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "3aaadd72-2616-4d90-915f-8b7a2f150157"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "include_padding": true
+      }
+    },
     "dynamic_search": {
       "type": "dynamic-search",
       "settings": {
@@ -499,13 +498,13 @@
   "order": [
     "853bebcd-5ca2-4fcc-b8fa-82600f2e2b26",
     "2191d06c-7647-4fef-8070-cefd884d5f10",
-    "1678964004457b5f22",
     "dynamic_promo_mosaic",
     "dynamic_featured_collection",
     "dynamic_promo_grid",
     "81b0c73a-57ed-440f-96c3-3065a483b831",
     "dynamic_promo_grid-2",
     "36612375-1729-4764-874c-6ec3e9370468",
+    "1678964004457b5f22",
     "dynamic_search",
     "dynamic_highlights_banner",
     "f61678e6-99ee-4012-9396-1b1d1c713f8a"
