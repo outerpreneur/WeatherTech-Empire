@@ -2,6 +2,7 @@
   "sections": {
     "9d1793f0-53a3-404d-a862-d3cc7ec101b3": {
       "type": "pxs-image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         ".pxs-image-with-text-background {background-position: center;}"
       ],
@@ -24,8 +25,8 @@
         "section_height": "small",
         "image": "shopify:\/\/shop_images\/weathertech-floorliners-volkswagen-t-roc-2018-2023-2nd-row-floorliners-auto-fussmatten-sonnenschutz-auto-43358189944996.jpg",
         "countdown_year": "2023",
-        "countdown_month": "10",
-        "countdown_day": "31",
+        "countdown_month": "11",
+        "countdown_day": "30",
         "countdown_hour": "23",
         "countdown_minute": "59",
         "countdown_timer_background": false,
