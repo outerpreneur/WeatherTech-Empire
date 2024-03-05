@@ -50,7 +50,7 @@
             "title": "Winter FloorLiners",
             "text": "Made for the Swiss Winter Sports season our \"custom-fit\" Car Mats are an ideal solution to tackle the challenges of the 🇨🇭 outdoors, from dirt, leaves, snow and ice, they offer the best winter interior protection. So you have winter tyres every year, now get your winter car mats as well!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/floorliners",
+            "block_link": "shopify:\/\/collections\/car-mats",
             "button_text": "Shop FloorLiners",
             "button_style": "secondary",
             "show_overlay": true,
@@ -323,7 +323,7 @@
       "type": "apps",
       "blocks": {
         "3aaadd72-2616-4d90-915f-8b7a2f150157": {
-          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "hide_thumbnails": false,
