@@ -65,7 +65,7 @@
             "title": "CargoLiners",
             "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo\/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/cargomats-trunkliners",
+            "block_link": "shopify:\/\/collections\/cargomats-and-trunk-liners",
             "button_text": "Shop CargoLiners",
             "button_style": "secondary",
             "show_overlay": true,
@@ -474,7 +474,7 @@
             "image": "shopify:\/\/shop_images\/WT_Web_Icon-LLL_Hover.png",
             "title": "Excellent Service",
             "text": "",
-            "link": "shopify:\/\/pages\/our-products"
+            "link": "shopify:\/\/pages\/weathertech-products"
           }
         }
       },
