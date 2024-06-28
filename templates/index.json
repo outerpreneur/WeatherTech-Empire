@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "853bebcd-5ca2-4fcc-b8fa-82600f2e2b26": {
@@ -65,7 +74,7 @@
             "title": "CargoLiners",
             "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo\/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/cargomats-and-trunk-liners",
+            "block_link": "shopify:\/\/collections\/cargo-mats",
             "button_text": "Shop CargoLiners",
             "button_style": "secondary",
             "show_overlay": true,
