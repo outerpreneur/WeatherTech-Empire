@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "color_background": "#ffffff",
@@ -174,7 +183,7 @@
           "small_promo_heading": "",
           "small_promo_text": "<p>Official Swiss store<\/p>",
           "small_promo_text_mobile": "",
-          "small_promo_link": "shopify:\/\/pages\/weathertech-products",
+          "small_promo_link": "shopify:\/\/pages\/weathertech-product-design-and-engineering",
           "small_promo_icon": "icon-rating-star",
           "image": "shopify:\/\/shop_images\/switzerland.png",
           "cart_icon": "icon-cart"
@@ -407,15 +416,7 @@
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "18228966181090706294": {
-        "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Supply": {
