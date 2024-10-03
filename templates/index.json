@@ -12,7 +12,7 @@
     "853bebcd-5ca2-4fcc-b8fa-82600f2e2b26": {
       "type": "car-filter-section",
       "settings": {
-        "background_image": "shopify:\/\/shop_images\/weathertech-floorliners-hp-ford-f-150-raptor-2021-2023-2nd-row-floorliners-hp-auto-fussmatten-sonnenschutz-auto-43309756416164.jpg",
+        "background_image": "shopify://shop_images/weathertech-floorliners-hp-ford-f-150-raptor-2021-2023-2nd-row-floorliners-hp-auto-fussmatten-sonnenschutz-auto-43309756416164.jpg",
         "section_height_desktop": 350,
         "section_height_mobile": 500,
         "section_width": 1350,
@@ -28,7 +28,7 @@
       "type": "dynamic-countdown-timer",
       "settings": {
         "section_height": "small",
-        "image": "shopify:\/\/shop_images\/HOND_Odyssey_15_463471-2_Soccer.webp",
+        "image": "shopify://shop_images/HOND_Odyssey_15_463471-2_Soccer.webp",
         "countdown_year": "2023",
         "countdown_month": "11",
         "countdown_day": "30",
@@ -36,11 +36,11 @@
         "countdown_minute": "59",
         "countdown_timer_background": true,
         "countdown_timer_complete": true,
-        "countdown_timer_message": "<p>Offer Expired<\/p>",
+        "countdown_timer_message": "<p>Offer Expired</p>",
         "product": "",
         "title": "Autumn SALE Collection",
-        "text": "<p>As we head into Autumn, check out our \"Special Offers\" on our WeatherTech Car Mats for the BMW X1, Ford F-150 Truck, SEAT Léon\/ST and Toyota RAV4. Great prices on full kits for these muddy months ahead. <\/p>",
-        "button_link": "shopify:\/\/collections\/autumn-special-offers-weathertech-car-mats",
+        "text": "<p>As we head into Autumn, check out our \"Special Offers\" on our WeatherTech Car Mats for the BMW X1, Ford F-150 Truck, SEAT Léon/ST and Toyota RAV4. Great prices on full kits for these muddy months ahead. </p>",
+        "button_link": "shopify://collections/autumn-special-offers-weathertech-car-mats",
         "button_label": "Autumn SALE Collection",
         "button_style": "secondary",
         "text_color": "#ffffff",
@@ -55,11 +55,11 @@
         "promotion-4": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/weathertech-floorliners-hp-toyota-rav4-2019-2023-floorliners-hp-1st-row-auto-fussmatten-sonnenschutz-auto-43368914616484_800x533_3d95e007-3a68-416f-832d-c545623ffa64.jpg",
+            "image": "shopify://shop_images/weathertech-floorliners-hp-toyota-rav4-2019-2023-floorliners-hp-1st-row-auto-fussmatten-sonnenschutz-auto-43368914616484_800x533_3d95e007-3a68-416f-832d-c545623ffa64.jpg",
             "title": "Winter FloorLiners",
             "text": "Made for the Swiss Winter Sports season our \"custom-fit\" Car Mats are an ideal solution to tackle the challenges of the 🇨🇭 outdoors, from dirt, leaves, snow and ice, they offer the best winter interior protection. So you have winter tyres every year, now get your winter car mats as well!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/car-mats",
+            "block_link": "shopify://collections/car-mats",
             "button_text": "Shop FloorLiners",
             "button_style": "secondary",
             "show_overlay": true,
@@ -70,11 +70,11 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/weathertech-cargoliners-toyota-4runner-2013-2023-cargoliner-with-3rd-row-auto-fussmatten-sonnenschutz-auto-43368877654180_1350x1013_1.jpg",
+            "image": "shopify://shop_images/weathertech-cargoliners-toyota-4runner-2013-2023-cargoliner-with-3rd-row-auto-fussmatten-sonnenschutz-auto-43368877654180_1350x1013_1.jpg",
             "title": "CargoLiners",
-            "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo\/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
+            "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/cargo-mats",
+            "block_link": "shopify://collections/cargo-mats",
             "button_text": "Shop CargoLiners",
             "button_style": "secondary",
             "show_overlay": true,
@@ -85,11 +85,11 @@
         "c24b251e-37b8-4c4f-bfa3-0705be4aff46": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Black_copy_1000x750_8eb4205a-f783-4079-9eb3-33a19baffdad.jpg",
+            "image": "shopify://shop_images/BMW_X7_19_TS1260K1_FV_front_Black_copy_1000x750_8eb4205a-f783-4079-9eb3-33a19baffdad.jpg",
             "title": "WinterShades (Frost free!)",
-            "text": "As Summer moves to Winter, don't forget to keep your windshields \"frost free\" for Winter, check out our unique and world leading \"dual purpose\" Summer\/Winter Shades. No more early morning windshield cleaning!",
+            "text": "As Summer moves to Winter, don't forget to keep your windshields \"frost free\" for Winter, check out our unique and world leading \"dual purpose\" Summer/Winter Shades. No more early morning windshield cleaning!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/car-windshield-sunshades",
+            "block_link": "shopify://collections/car-windshield-sunshades",
             "button_text": "Shop Winter Car Shades",
             "button_style": "secondary",
             "show_overlay": true,
@@ -100,11 +100,11 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Fall_Floorliner_HP_469451IM_Voyager3_DS_web_2.webp",
+            "image": "shopify://shop_images/Fall_Floorliner_HP_469451IM_Voyager3_DS_web_2.webp",
             "title": "FloorLiners HP",
             "text": "Our FloorLiner HP is our most advanced rubber-like, Thermoplastic Elastomer (TPE) Car Mats making them both soft and durable. This material is also 100% recyclable and is both latex and PVC-free!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/premium-car-mats-hp",
+            "block_link": "shopify://collections/premium-car-mats-hp",
             "button_text": "Shop FloorLiners HP",
             "button_style": "secondary",
             "show_overlay": true,
@@ -116,11 +116,11 @@
           "type": "promotion",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/BMW_X7_19_TS1260K1_FV_front_Silver_200723_100K_2.webp",
+            "image": "shopify://shop_images/BMW_X7_19_TS1260K1_FV_front_Silver_200723_100K_2.webp",
             "title": "SunShades",
             "text": "Summer in Switzerland is not over yet! Find your custom-fit dual-purpose vehicle SunShades and Full Kit SunShades, for Summer and for Winter. Check out our additional 10% off before the end of September.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/car-windshield-sunshades",
+            "block_link": "shopify://collections/car-windshield-sunshades",
             "button_text": "Shop SunShades",
             "button_style": "secondary",
             "show_overlay": true,
@@ -150,7 +150,7 @@
         "view-all-card": {
           "type": "view_all_card",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FloorLiner_washed_outside_1.webp",
+            "image": "shopify://shop_images/FloorLiner_washed_outside_1.webp",
             "text_alignment": "center-center",
             "pre_heading": "Shop All",
             "heading": "Bestsellers",
@@ -178,11 +178,11 @@
         "promotion-3": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Ford_F150_36603_Construction1.webp",
+            "image": "shopify://shop_images/Ford_F150_36603_Construction1.webp",
             "title": "American Trucks",
-            "text": "There's a great many US Trucks in Switzerland, WeatherTech (made in 🇺🇸 ) are the ultimate fitting FloorLiners & Cargo\/Trunk Liners. Check-out our range from the Ford Raptor to F-150, more to come!",
+            "text": "There's a great many US Trucks in Switzerland, WeatherTech (made in 🇺🇸 ) are the ultimate fitting FloorLiners & Cargo/Trunk Liners. Check-out our range from the Ford Raptor to F-150, more to come!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/american-trucks",
+            "block_link": "shopify://collections/american-trucks",
             "button_text": "Shop USA Collection",
             "button_style": "secondary",
             "show_overlay": true,
@@ -193,11 +193,11 @@
         "84a1c22a-a2e6-42fe-a78c-09f5de6c132a": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jack-lucas-smith-bvxHI7rTKbo-unsplash_rangerover_discovery_sport.webp",
+            "image": "shopify://shop_images/jack-lucas-smith-bvxHI7rTKbo-unsplash_rangerover_discovery_sport.webp",
             "title": "SUVs",
-            "text": "50% of all vehicles sold in 2022 are an SUV, check out our European Range of custom FloorLiners and Cargo\/Trunk Liners. The ultimate in Alpine Winter Sports Protection!",
+            "text": "50% of all vehicles sold in 2022 are an SUV, check out our European Range of custom FloorLiners and Cargo/Trunk Liners. The ultimate in Alpine Winter Sports Protection!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/sports-utility-vehicles-suv",
+            "block_link": "shopify://collections/sports-utility-vehicles-suv",
             "button_text": "Shop SUV Collection",
             "button_style": "secondary",
             "show_overlay": true,
@@ -208,11 +208,11 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/911.jpg",
+            "image": "shopify://shop_images/911.jpg",
             "title": "Enhance the Elegance",
             "text": "See our Porsche range of in-car protection made to perfection for your Alpine excursions.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/porsche",
+            "block_link": "shopify://collections/porsche-car-accessories",
             "button_text": "Shop Porsche Collection",
             "button_style": "secondary",
             "show_overlay": true,
@@ -223,11 +223,11 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/craventure-media-BOhTjxHvfkU-unsplash_tesla_model_y_1.jpg",
+            "image": "shopify://shop_images/craventure-media-BOhTjxHvfkU-unsplash_tesla_model_y_1.jpg",
             "title": "Electric Vehicles",
             "text": "Check out our range of interior protection for the fast selling Electric Vehicles.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/electric-motor-vehicles-emv",
+            "block_link": "shopify://collections/electric-motor-vehicles-emv",
             "button_text": "Shop EV Collection",
             "button_style": "secondary",
             "show_overlay": true,
@@ -252,10 +252,10 @@
     "81b0c73a-57ed-440f-96c3-3065a483b831": {
       "type": "parallax-image",
       "settings": {
-        "img": "shopify:\/\/shop_images\/ShopByCategory1-trimmed.jpg",
+        "img": "shopify://shop_images/ShopByCategory1-trimmed.jpg",
         "img_crop": "bottom",
         "img_min_height": "320",
-        "video": "https:\/\/youtu.be\/3GXxIxA5v58?si=tK7oaHITFxkBtorX",
+        "video": "https://youtu.be/3GXxIxA5v58?si=tK7oaHITFxkBtorX",
         "video_start_time": "",
         "video_end_time": "",
         "video_loop": true,
@@ -288,7 +288,7 @@
         "promotion-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/TechShade_Black_Winter_BMW_copy_copy.jpg",
+            "image": "shopify://shop_images/TechShade_Black_Winter_BMW_copy_copy.jpg",
             "title": "SUN SHADES",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -303,7 +303,7 @@
         "promotion-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FORD_F150_Bck_To_School_seat_protectorAP.jpg",
+            "image": "shopify://shop_images/FORD_F150_Bck_To_School_seat_protectorAP.jpg",
             "title": "SEAT COVERS",
             "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
             "color": "#ffffff",
@@ -332,7 +332,7 @@
       "type": "apps",
       "blocks": {
         "3aaadd72-2616-4d90-915f-8b7a2f150157": {
-          "type": "shopify:\/\/apps\/loox-reviews\/blocks\/loox-agg-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "type": "shopify://apps/loox-reviews/blocks/loox-agg-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
             "only_photos": false,
             "hide_thumbnails": false,
@@ -360,11 +360,11 @@
           "type": "promotion",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/TechShade_Black_Winter_BMW_copy_copy.jpg",
+            "image": "shopify://shop_images/TechShade_Black_Winter_BMW_copy_copy.jpg",
             "title": "SunShades",
             "text": "SunShades are useful all year round. To prevent your vehicle from heating up during the Summer and avoiding excessive use of \"air-conditioning.\" Then in the Winter absorbing the Sun to keep your windows free of frost. Check out our dual-purpose, custom-fit range.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/car-windshield-sunshades",
+            "block_link": "shopify://collections/car-windshield-sunshades",
             "button_text": "Sunshades",
             "button_style": "primary",
             "show_overlay": true,
@@ -375,11 +375,11 @@
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-1": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/FORD_F150_Bck_To_School_seat_protectorAP_V2.webp",
+            "image": "shopify://shop_images/FORD_F150_Bck_To_School_seat_protectorAP_V2.webp",
             "title": "Seat Covers",
-            "text": "WeatherTech have a unique range of internal seat covers and protection products, that complement our FloorLiners and Cargo\/Trunk Liners. Check them out here!",
+            "text": "WeatherTech have a unique range of internal seat covers and protection products, that complement our FloorLiners and Cargo/Trunk Liners. Check them out here!",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/car-seat-covers-protectors",
+            "block_link": "shopify://collections/car-seat-covers-protectors",
             "button_text": "Seat Protection",
             "button_style": "secondary",
             "show_overlay": true,
@@ -390,11 +390,11 @@
         "template--16956439658660__36612375-1729-4764-874c-6ec3e9370468-1679395694c111fafd-2": {
           "type": "promotion",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2000x1500_0316_FloorLiner_Cleaner_New_Bottle.webp",
+            "image": "shopify://shop_images/2000x1500_0316_FloorLiner_Cleaner_New_Bottle.webp",
             "title": "Cleaning Products",
-            "text": "We have a series of TechCare Cleaning Products, made just for us. So, check out the dual-pack FloorLiner & Cargo\/Trunk Liner Protector and Cleaner. An essential starter kit for the best protection.",
+            "text": "We have a series of TechCare Cleaning Products, made just for us. So, check out the dual-pack FloorLiner & Cargo/Trunk Liner Protector and Cleaner. An essential starter kit for the best protection.",
             "color": "#ffffff",
-            "block_link": "shopify:\/\/collections\/cleaning-and-finishing",
+            "block_link": "shopify://collections/cleaning-and-finishing",
             "button_text": "Cleaning Products",
             "button_style": "secondary",
             "show_overlay": true,
@@ -426,7 +426,7 @@
         "enable_live_search": true,
         "enable_live_search_images": true,
         "enable_live_search_articles_pages": false,
-        "image": "shopify:\/\/shop_images\/Cargo_Liner_Raised_Lip_Macro_0068.webp",
+        "image": "shopify://shop_images/Cargo_Liner_Raised_Lip_Macro_0068.webp",
         "show-overlay": true,
         "color": "#ffffff",
         "background": "#000000",
@@ -450,40 +450,40 @@
           "type": "highlight",
           "settings": {
             "icon": "icon-delivery",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Products_Hover.png",
+            "image": "shopify://shop_images/WT_Web_Icon-Products_Hover.png",
             "title": "Free Shipping",
-            "text": "<p>When you spend CHF 200+<\/p>",
-            "link": "shopify:\/\/policies\/shipping-policy"
+            "text": "<p>When you spend CHF 200+</p>",
+            "link": "shopify://policies/shipping-policy"
           }
         },
         "highlight-2": {
           "type": "highlight",
           "settings": {
             "icon": "icon-thumbs-up",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Auto-Cleaning_Hover.png",
+            "image": "shopify://shop_images/WT_Web_Icon-Auto-Cleaning_Hover.png",
             "title": "Lifetime Limited Warranty",
             "text": "",
-            "link": "shopify:\/\/pages\/advance-faq"
+            "link": "shopify://pages/advance-faq"
           }
         },
         "highlight-3": {
           "type": "highlight",
           "settings": {
             "icon": "icon-chat-alternate",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-Customer-Service_Hover.png",
+            "image": "shopify://shop_images/WT_Web_Icon-Customer-Service_Hover.png",
             "title": "Chat With Us",
             "text": "",
-            "link": "shopify:\/\/pages\/contact-us"
+            "link": "shopify://pages/contact-us"
           }
         },
         "highlight-4": {
           "type": "highlight",
           "settings": {
             "icon": "icon-rating-five-star",
-            "image": "shopify:\/\/shop_images\/WT_Web_Icon-LLL_Hover.png",
+            "image": "shopify://shop_images/WT_Web_Icon-LLL_Hover.png",
             "title": "Excellent Service",
             "text": "",
-            "link": "shopify:\/\/pages\/weathertech-product-design-and-engineering"
+            "link": "shopify://pages/weathertech-product-design-and-engineering"
           }
         }
       },
