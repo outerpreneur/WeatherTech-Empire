@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "853bebcd-5ca2-4fcc-b8fa-82600f2e2b26": {
@@ -59,7 +59,7 @@
             "title": "Winter FloorLiners",
             "text": "Made for the Swiss Winter Sports season our \"custom-fit\" Car Mats are an ideal solution to tackle the challenges of the 🇨🇭 outdoors, from dirt, leaves, snow and ice, they offer the best winter interior protection. So you have winter tyres every year, now get your winter car mats as well!",
             "color": "#ffffff",
-            "block_link": "shopify://collections/car-mats",
+            "block_link": "shopify://collections/car-floor-mats",
             "button_text": "Shop FloorLiners",
             "button_style": "secondary",
             "show_overlay": true,

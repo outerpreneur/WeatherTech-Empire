@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "color_background": "#ffffff",
@@ -129,7 +129,7 @@
               "meganav_trigger": "All products",
               "image_1": "shopify://shop_images/MB_ML350_13_446901_snow_RHD_webp_v2.webp",
               "text_1": "FloorLiners",
-              "link_1": "shopify://collections/car-mats",
+              "link_1": "shopify://collections/car-floor-mats",
               "position_1": "last",
               "size_1": "medium",
               "image_2": "shopify://shop_images/Laren_Sunshade_DS_WEBP_v2_1.webp",
