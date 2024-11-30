@@ -74,7 +74,7 @@
             "title": "CargoLiners",
             "text": "Don't worry about what you put in the back of your car. Our custom-fit Cargo/Trunk Liners provide a great way to protect your vehicle from the daily rigours of loading and unloading. Check out our range here.",
             "color": "#ffffff",
-            "block_link": "shopify://collections/cargo-mats",
+            "block_link": "shopify://collections/cargo-mats-and-boot-liners",
             "button_text": "Shop CargoLiners",
             "button_style": "secondary",
             "show_overlay": true,
@@ -346,9 +346,7 @@
       "block_order": [
         "3aaadd72-2616-4d90-915f-8b7a2f150157"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "include_padding": true
       }
